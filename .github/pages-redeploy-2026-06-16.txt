@@ -1,0 +1,2 @@
+Trigger GitHub Pages redeploy after enabling GitHub Actions source.
+Date: 2026-06-16 Asia/Taipei
