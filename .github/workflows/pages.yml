@@ -59,6 +59,9 @@ jobs:
       - name: Remove Bus Geschmack from writing section
         run: node .github/scripts/remove-writing-bus-geschmack-20260621.mjs
 
+      - name: Keep writing sources original
+        run: node .github/scripts/strict-writing-source-20260621.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
