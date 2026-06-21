@@ -50,6 +50,9 @@ jobs:
       - name: Inject Hallo Servus latest article
         run: node .github/scripts/inject-hallo-servus.mjs
 
+      - name: Inject article updates 20260621
+        run: node .github/scripts/inject-article-updates-20260621.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
