@@ -53,6 +53,12 @@ jobs:
       - name: Inject article updates 20260621
         run: node .github/scripts/inject-article-updates-20260621.mjs
 
+      - name: Add images to writing section
+        run: node .github/scripts/inject-writing-images-20260621.mjs
+
+      - name: Remove Bus Geschmack from writing section
+        run: node .github/scripts/remove-writing-bus-geschmack-20260621.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
