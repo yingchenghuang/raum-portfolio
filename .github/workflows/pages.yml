@@ -31,6 +31,22 @@ jobs:
       - name: Inject latest writing articles
         run: node .github/scripts/inject-writings.mjs
 
+      - name: Normalize latest writing articles
+        run: |
+          node <<'NODE'
+          const { readFileSync, writeFileSync } = require('node:fs');
+          const start = '/* RAUM_LAND_NARRATIVE_PATCH_START */';
+          const end = '/* RAUM_LAND_NARRATIVE_PATCH_END */';
+          let html = readFileSync('index.html', 'utf8');
+          const open = `const WRITINGS = [\n  ${start}\n  [\n`;
+          const close = `\n  ],\n  ${end}`;
+          if (html.includes(open) && html.includes(close)) {
+            html = html.replace(open, `const WRITINGS = [\n  ${start}\n`);
+            html = html.replace(close, `,\n  ${end}`);
+          }
+          writeFileSync('index.html', html, 'utf8');
+          NODE
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
