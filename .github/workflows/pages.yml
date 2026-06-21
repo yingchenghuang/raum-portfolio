@@ -47,6 +47,9 @@ jobs:
           writeFileSync('index.html', html, 'utf8');
           NODE
 
+      - name: Inject Hallo Servus latest article
+        run: node .github/scripts/inject-hallo-servus.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
