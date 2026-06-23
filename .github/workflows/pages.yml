@@ -68,6 +68,9 @@ jobs:
       - name: Translate SUBBUS writing article
         run: node .github/scripts/translate-subbus-20260624.mjs
 
+      - name: Translate visible writing articles
+        run: node .github/scripts/translate-visible-writing-three-20260624.mjs
+
       - name: Trim writing image sources
         run: node .github/scripts/trim-writing-images-20260623.mjs
 
