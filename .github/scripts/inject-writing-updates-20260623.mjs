@@ -88,7 +88,7 @@ function textFromBody(body) {
 
   text = text
     .replace(/([。！？])([一二三四五六七八九十]、)/g, '$1\n$2')
-    .replace(/(。)(SUBBUS｜Kuratorisches Project|SUBBUS｜Kuratorisches Projekt)/g, '$1\n$2')
+    .replace(/(。)(SUBBUS｜Kuratorisches Projekt)/g, '$1\n$2')
     .replace(/([。！？])(Ausstellungszeit|展覽時間)/g, '$1\n$2')
     .replace(/([。！？])(\d+\.\s)/g, '$1\n$2');
 
@@ -146,6 +146,7 @@ const RAUM_WRITING_UPDATE_IDS = new Set(RAUM_WRITING_UPDATES_20260623.map((item)
 for (let index = WRITINGS.length - 1; index >= 0; index -= 1) {
   const writing = WRITINGS[index];
   if (
+    Array.isArray(writing) ||
     RAUM_WRITING_UPDATE_IDS.has(writing.id) ||
     RAUM_WRITING_UPDATES_20260623.some((item) => item.href === writing.href) ||
     writing.href === 'https://genius912.blogspot.com/2015/07/bus-geschmacke.html'
