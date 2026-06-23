@@ -74,6 +74,9 @@ jobs:
       - name: Fix public space writing image
         run: node .github/scripts/fix-public-space-image-20260623.mjs
 
+      - name: Force DSC06519 public space image
+        run: node .github/scripts/fix-public-space-image-dsc06519-20260623.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
