@@ -21,6 +21,7 @@ function removeMarkedBlock(html) {
 
 let html = readFileSync(file, 'utf8');
 html = removeMarkedBlock(html);
+html = html.replace(/(data:image\/[a-z0-9.+-]+;base64,[A-Za-z0-9+/=]+)\s+(['"])/gi, '$1$2');
 
 const block = `
 ${start}
