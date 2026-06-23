@@ -65,6 +65,9 @@ jobs:
       - name: Inject writing updates 20260623
         run: node .github/scripts/inject-writing-updates-20260623.mjs
 
+      - name: Trim writing image sources
+        run: node .github/scripts/trim-writing-images-20260623.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
