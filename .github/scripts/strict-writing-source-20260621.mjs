@@ -20,7 +20,7 @@ const sources = {
   'w-land-narrative-03': {
     href: 'https://genius912.blogspot.com/2026/06/blog-post_20.html',
     title_zh: '公共空間的美感經驗',
-    image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt2P22WULthTcN_Hbq-dgeXga7HN-_Z2z29zSybcG3I_RTT0Gw8Zx7hA0ukncb1FrU6UREaJ3QxoKrbtf2Kn8ww-GTSZpJ1sKCWqGqmjp0e5sZQ3m2VZRhc8MigueDiGaJL9HCo3yKSK0/s1600/DSC08834.JPG'
+    image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGam9mc8jEyFjgVowLxgdsjrXoA5ouHgPBbJclPuAej_uC-k_YlAk5eViF1OHWFruiHENo_j5hE-CBG_fjYNDqblbW8RjwxZf_MnSMydoQZhEn5M6o5BKjwq9ThJF_zqs11Uu7N3AQTOsUAcnpDf3p1ydcueIgcnAufA48BVIE8Yvco9PAw_zyhPVGEnU/w640-h480/DSC06519-1.jpg'
   },
   'w-hallo-servus-2026': {
     href: 'https://genius912.blogspot.com/2026/06/hallo-servus.html',
