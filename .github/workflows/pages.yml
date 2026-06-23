@@ -62,6 +62,9 @@ jobs:
       - name: Keep writing sources original
         run: node .github/scripts/strict-writing-source-20260621.mjs
 
+      - name: Inject writing updates 20260623
+        run: node .github/scripts/inject-writing-updates-20260623.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
