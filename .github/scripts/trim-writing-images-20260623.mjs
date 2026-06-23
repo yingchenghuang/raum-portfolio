@@ -30,7 +30,9 @@ WRITINGS.forEach((writing) => {
     writing.images = writing.images.map((image) => typeof image === 'string' ? image.trim() : image);
   }
 });
-const RAUM_PUBLIC_SPACE_IMAGE = RAUM_WRITING_SOURCE_STRICT?.['w-land-narrative-03']?.image?.trim();
+const RAUM_PUBLIC_SPACE_IMAGE = typeof RAUM_WRITING_SOURCE_STRICT !== 'undefined'
+  ? RAUM_WRITING_SOURCE_STRICT?.['w-land-narrative-03']?.image?.trim()
+  : '';
 if (RAUM_PUBLIC_SPACE_IMAGE) {
   WRITINGS.forEach((writing) => {
     if (writing.id !== 'w-land-narrative-03') return;
