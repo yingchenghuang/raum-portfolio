@@ -71,6 +71,9 @@ jobs:
       - name: Update Calameo portfolio link
         run: node .github/scripts/update-calameo-link-20260623.mjs
 
+      - name: Fix public space writing image
+        run: node .github/scripts/fix-public-space-image-20260623.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
