@@ -5530,6 +5530,8 @@ html[lang="zh-Hant"] body .rp-about-lead {
 
 
 
+
+
 /* RAUM_WRITING_IMAGE_LAYOUT_START */
 .rp-writing-inner {
   grid-template-columns: 112px clamp(112px, 13vw, 176px) minmax(0, 1fr) 32px !important;
@@ -7499,6 +7501,13 @@ const WRITINGS = [
 
 
 
+
+
+
+
+
+
+
 /* RAUM_WRITING_IMAGE_DATA_START */
 const RAUM_WRITING_IMAGES = {
   "w-hallo-servus-2026": {
@@ -8164,6 +8173,17 @@ WRITINGS.forEach((writing) => {
 });
 window.WRITINGS = WRITINGS;
 /* RAUM_WRITING_UPDATES_20260623_END */
+
+
+/* RAUM_TRIM_WRITING_IMAGES_20260623_START */
+WRITINGS.forEach((writing) => {
+  if (typeof writing.image === 'string') writing.image = writing.image.trim();
+  if (Array.isArray(writing.images)) {
+    writing.images = writing.images.map((image) => typeof image === 'string' ? image.trim() : image);
+  }
+});
+window.WRITINGS = WRITINGS;
+/* RAUM_TRIM_WRITING_IMAGES_20260623_END */
 
 const LINKS = [
   { label: 'Blog', sub: '「旅行」越來越是換個地方看書', href: 'https://genius912.blogspot.com/' },
