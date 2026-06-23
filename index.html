@@ -5527,6 +5527,131 @@ html[lang="zh-Hant"] body .rp-about-lead {
   }
 }
 
+
+/* RAUM_WRITING_IMAGE_LAYOUT_START */
+.rp-writing-inner {
+  grid-template-columns: 112px clamp(112px, 13vw, 176px) minmax(0, 1fr) 32px !important;
+  align-items: center !important;
+  gap: clamp(14px, 2.4vw, 36px) !important;
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+.rp-writing-inner .w-media {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: clamp(76px, 8.8vw, 118px);
+  border: 1px solid var(--ink-30);
+  background: var(--ink-06);
+  border-radius: 3px;
+  overflow: hidden;
+  justify-self: stretch;
+}
+.rp-writing-inner .w-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 58%, color-mix(in oklab, var(--accent) 38%, transparent));
+  opacity: .36;
+  pointer-events: none;
+}
+.rp-writing-inner .w-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(.26) contrast(1.05);
+  transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .35s;
+}
+.rp-writing-inner:hover .w-media img {
+  transform: scale(1.06);
+  filter: grayscale(0) contrast(1.08);
+}
+.rp-writing-inner:hover .w-note,
+.rp-writing-inner:hover .w-alt {
+  color: color-mix(in oklab, #fff 82%, var(--accent)) !important;
+}
+.rp-writing-detail-body {
+  display: grid !important;
+  grid-template-columns: minmax(260px, 420px) minmax(0, 720px);
+  gap: clamp(28px, 5vw, 76px);
+  justify-content: center;
+  align-items: start;
+}
+.rp-writing-figure {
+  position: sticky;
+  top: 88px;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--ink);
+  background: var(--ink-06);
+  overflow: hidden;
+}
+.rp-writing-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(.08) contrast(1.04);
+}
+.rp-writing-figure figcaption {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: end;
+  color: var(--paper);
+  font: 500 11px/1.35 var(--font-mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 14px rgba(0,0,0,.55);
+}
+.rp-writing-figure figcaption em {
+  font-style: normal;
+  text-align: right;
+  max-width: 62%;
+}
+@media (max-width: 900px) {
+  .rp-writing-inner {
+    grid-template-columns: 68px 90px minmax(0, 1fr) 20px !important;
+    gap: 12px !important;
+    padding: 16px var(--gutter) !important;
+  }
+  .rp-writing-inner .w-media { height: 74px; }
+  .rp-writing-detail-body {
+    grid-template-columns: 1fr !important;
+    padding: 42px var(--gutter) 48px !important;
+  }
+  .rp-writing-figure {
+    position: relative;
+    top: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+@media (max-width: 560px) {
+  .rp-writing-inner {
+    grid-template-columns: 60px 72px minmax(0, 1fr) 16px !important;
+    gap: 10px !important;
+  }
+  .rp-writing-inner .w-media { height: 62px; }
+  .rp-writing-inner .w-title {
+    font-size: 16px !important;
+    line-height: 1.28 !important;
+  }
+  .rp-writing-inner .w-note { display: none; }
+  .rp-writing-figure figcaption {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 10px;
+  }
+}
+/* RAUM_WRITING_IMAGE_LAYOUT_END */
+
 </style>
 </head>
 <body>
@@ -6003,7 +6128,7 @@ const PROJECTS = [
     id: 'hallo-servus',
     no: 'H12',
     featured: false,
-    blogUrl: 'https://genius912.blogspot.com/2015/02/hallo-servus-2012.html',
+    blogUrl: 'https://genius912.blogspot.com/2026/06/hallo-servus.html',
     videos: ['CO-uwI7Ta8w'],
     year: '2012',
     month: '02',
@@ -7034,6 +7159,277 @@ const ARCHIVE = [
 
 // 為自己書寫 — reflective essays & field journals (手札). NOT art works.
 const WRITINGS = [
+  /* RAUM_20260621_ARTICLE_UPDATES_START */
+    {
+      "id": "w-hallo-servus-2026",
+      "year": "2026",
+      "month": "06",
+      "title_zh": "以物易物．街道的人情與城市秩序",
+      "title_en": "Barter, Street Affection and Urban Order",
+      "title_de": "Tauschhandel, Straßennähe und städtische Ordnung",
+      "note_zh": "從一句「Hallo! Servus!」開始，以改造嬰兒車、客家花布、奉茶與以物易物，重新測試街道中的價值、信任與公共關係。",
+      "note_en": "Beginning with “Hallo! Servus!”, this action uses a converted pram, Hakka floral cloth, tea hospitality and barter to test value, trust and public relations in the street.",
+      "note_de": "Ausgehend von „Hallo! Servus!“ untersucht diese Aktion mit umgebautem Kinderwagen, Hakka-Blumenstoff, Tee und Tauschhandel Wert, Vertrauen und öffentliche Beziehungen auf der Straße.",
+      "essay_zh": [
+        "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+        "在不同的制度與文化裡，街頭買賣如何形塑都市的節奏與社會關係？以物易物，能否重置我們對價值與信任的想像？台灣的街販以機動與彈性見長，約翰尼斯堡的街販展現都市邊緣群體的經濟韌性，德國的街販則在營業時間與空間規範中呈現固定、合規、秩序分明的狀態。",
+        "三地構成一道光譜：從台灣的高機動、弱合法性，到德國的高秩序、低機動；約翰尼斯堡則標示出移動群體的生存策略。這些差異映照的，是制度、經濟與公共空間文化交疊出的層理。",
+        "景氣低迷時，許多人轉向小本流動生意，把租金與固定成本壓到最低。即使要面對稽查與罰單，他們仍選擇上路。手推車、貨車與機車成了店面的替身，更貼近街道、貼近人群，也更能接住零碎的市場需求。",
+        "本計畫把以物易物當成一種方法學。交換不必等價，它建立在彼此的需求與互信之上。價值從來不只由價格決定，還包括記憶、文化意義，以及關係本身。我們不美化以物易物，也不否定貨幣，而是把交換還原成社會關係的生成與談判。",
+        "我用一個可移動的攤位作為行動載具，走進街道與人流。用一句日常問候開場，放低對話門檻；攤上擺著來自台灣的日用品、食品、書籍與文化小物，讓每一件東西都開口說話；不標價，邀請對方拿出願意交換的物件，或一個承諾；再以台灣的奉茶文化作為待客之道，化開陌生。",
+        "為什麼是嬰兒車？在歐洲城市，推著嬰兒車散步是再尋常不過的畫面。它形象親和、步調緩慢、容易停下來，讓行動者在主動與被動之間取得一層自然的掩護，也製造出可以駐足的時刻。車身覆上客家花布，讓傳統圖騰包裹一件西方的工業製品，形成跨文化的視覺衝突，也成為吸引人靠近的點。",
+        "德國城市有完整的公共空間系統，以及以步行為主的節奏，提供了慢速交流的現場條件。週末店鋪休息的制度，又留出了服務的空缺。臨時街售在這裡屬於法律灰區，因此本計畫把自己定位為一場行動測試：不為營利，只為了藝術性地試探制度、日常與人情三者之間的關係。",
+        "攤販是我們認識一座城市的第一印象來源。它讓開放空間不再抽象，變成居民可以自由活動、停留與交流的地方。固定攤販靠時間與地點建立認同；移動攤販在法律與空間的縫隙中求生。公共空間正是在這些「能不能擺攤」「可以停在哪裡」的細節中被具體地定了下來。",
+        "現場可以呈現改造後的嬰兒車裝置、待客茶水、可供交換的台灣物件，以及一面交易與對話的記錄牆；檔案則包含交換清單、故事片段、觀眾語錄、行動路徑、停留點、對話片段，以及台灣、約翰尼斯堡與德國的街販規則摘要。",
+        "以物易物不是要回到過去。它把價值的錨，從價格移向關係。在問候、遞茶與交換的慢速時刻裡，城市露出了它的心跳。它不只有規則，還有人情；不只有效率，還有等待。這就是我們想和觀眾一起經歷的事：在秩序之中，重新發明信任。"
+      ],
+      "essay_en": [
+        "It begins with the greeting “Hallo! Servus!” An ordinary salutation is enough to open an observation: how is a city seen, touched and understood? Travellers often remember street vendors first. A brief conversation can exchange a great deal of local knowledge. The tiny scene formed by vendor, passerby and space becomes the sharpest incision into urban vitality.",
+        "How does street trade shape the rhythm of a city and its social relations under different systems and cultures? Can barter reset our imagination of value and trust? Taiwanese street vending is marked by mobility and flexibility; vendors in Johannesburg reveal the economic resilience of urban marginal groups; in Germany, street vending appears more fixed, regulated and orderly under rules of time and space.",
+        "These three places form a spectrum: from Taiwan’s high mobility and weak legality to Germany’s high order and low mobility, while Johannesburg points to survival strategies among mobile groups. The differences reveal layered crossings of institution, economy and public-space culture.",
+        "When the economy weakens, many people turn to small mobile businesses to reduce rent and fixed costs. Even when facing inspections and fines, they still take to the street. Carts, vans and scooters become substitutes for storefronts, closer to the street, closer to people, and more able to catch fragmented market demand.",
+        "This project treats barter as a methodology. Exchange does not need to be equivalent; it rests on mutual need and trust. Value is never decided by price alone. It also includes memory, cultural meaning and relationship itself. The project does not beautify barter or reject money; it restores exchange as the making and negotiation of social relations.",
+        "I use a mobile stall as an action vehicle, entering streets and pedestrian flows. A greeting lowers the threshold of dialogue. Taiwanese daily objects, foods, books and cultural items are placed on the stall so each object can speak. Nothing is priced; participants are invited to offer an object, or a promise. Tea hospitality from Taiwan then softens the distance between strangers.",
+        "Why a pram? In European cities, walking with a pram is an ordinary image. It is approachable, slow and easy to stop with, giving the performer a natural cover between active and passive presence while producing moments of pause. Covered in Hakka floral cloth, a western industrial object is wrapped in traditional pattern, creating a cross-cultural visual friction and a point of attraction.",
+        "German cities have complete public-space systems and pedestrian rhythms that support slow exchange. Weekend shop closures leave service gaps. Temporary street selling occupies a legal grey zone, so the project positions itself as an action test: not for profit, but as an artistic probe into the relationship among systems, everyday life and human warmth.",
+        "The street vendor is a first-impression generator of the city. It turns open space from abstraction into a place where residents can move, pause and communicate. Fixed vendors build recognition through time and location; mobile vendors survive in the gaps between law and space. Public space is defined through such details as whether one may set up a stall, and where one may stop.",
+        "The exhibition can present the converted pram, tea, exchangeable Taiwanese objects and a wall of transactions and conversations. Its archive can include exchange lists, fragments of stories, audience quotations, routes, stopping points, video records and comparisons of vending regulations in Taiwan, Johannesburg and Germany.",
+        "Barter is not a return to the past. It moves the anchor of value from price to relationship. In the slow moments of greeting, serving tea and exchanging objects, the city reveals its pulse. It has not only rules, but human feeling; not only efficiency, but waiting. This is the experience the project hopes to share with its audience: reinventing trust within order."
+      ],
+      "essay_de": [
+        "Es beginnt mit dem Gruß „Hallo! Servus!“ Eine alltägliche Begrüßung genügt, um eine Beobachtung zu eröffnen: Wie wird eine Stadt gesehen, berührt und verstanden? Reisende erinnern sich oft zuerst an Straßenverkäufer. In einem kurzen Gespräch lässt sich viel lokales Wissen austauschen. Die kleine Szene aus Verkäufer, Passant und Raum wird zum schärfsten Einschnitt in die urbane Lebendigkeit.",
+        "Wie prägt Straßenhandel unter verschiedenen Systemen und Kulturen den Rhythmus einer Stadt und ihre sozialen Beziehungen? Kann Tauschhandel unsere Vorstellung von Wert und Vertrauen neu ausrichten? In Taiwan steht Straßenhandel für Mobilität und Flexibilität; in Johannesburg zeigt er die ökonomische Widerstandskraft marginalisierter Gruppen; in Deutschland erscheint er durch Zeit- und Raumregeln stärker fixiert, reguliert und geordnet.",
+        "Diese drei Orte bilden ein Spektrum: von Taiwans hoher Mobilität und schwacher Legalität bis zu Deutschlands hoher Ordnung und geringer Mobilität, während Johannesburg auf Überlebensstrategien mobiler Gruppen verweist. Die Unterschiede zeigen die Schichtungen von Institution, Ökonomie und öffentlicher Raumkultur.",
+        "In wirtschaftlich schwierigen Zeiten wenden sich viele Menschen kleinen mobilen Geschäften zu, um Miete und fixe Kosten zu senken. Auch angesichts von Kontrollen und Bußgeldern gehen sie auf die Straße. Handwagen, Lieferwagen und Roller ersetzen das Geschäftslokal; sie sind näher an der Straße, näher an den Menschen und können fragmentierte Bedürfnisse besser aufnehmen.",
+        "Das Projekt versteht Tauschhandel als Methode. Austausch muss nicht gleichwertig sein; er beruht auf gegenseitigem Bedarf und Vertrauen. Wert wird nie nur durch Preis bestimmt. Er umfasst Erinnerung, kulturelle Bedeutung und die Beziehung selbst. Das Projekt verschönt den Tausch nicht und lehnt Geld nicht ab; es führt Austausch zurück auf die Entstehung und Aushandlung sozialer Beziehungen.",
+        "Ich nutze einen mobilen Stand als Handlungsträger und betrete damit Straßen und Fußgängerströme. Eine Begrüßung senkt die Schwelle zum Gespräch. Auf dem Stand liegen taiwanische Alltagsobjekte, Lebensmittel, Bücher und kulturelle Dinge, sodass jedes Objekt sprechen kann. Nichts ist ausgezeichnet; die Teilnehmenden bieten ein Objekt oder ein Versprechen an. Die taiwanische Teegastfreundschaft löst anschließend die Distanz zwischen Fremden.",
+        "Warum ein Kinderwagen? In europäischen Städten ist der Spaziergang mit Kinderwagen ein gewöhnliches Bild. Er wirkt zugänglich, langsam und leicht anzuhalten. Dadurch gibt er der Handlung eine natürliche Deckung zwischen aktiver und passiver Präsenz und erzeugt Momente des Verweilens. Mit Hakka-Blumenstoff bedeckt, wird ein westliches Industrieobjekt von traditionellem Muster umhüllt; daraus entsteht eine interkulturelle visuelle Reibung und ein Anziehungspunkt.",
+        "Deutsche Städte besitzen ausgeprägte öffentliche Räume und fußgängerorientierte Rhythmen, die langsamen Austausch ermöglichen. Die Schließzeiten am Wochenende schaffen Lücken der Versorgung. Temporärer Straßenverkauf bewegt sich in einer rechtlichen Grauzone; deshalb versteht sich das Projekt als Handlungstest: nicht gewinnorientiert, sondern als künstlerische Erprobung des Verhältnisses von System, Alltag und menschlicher Wärme.",
+        "Der Straßenverkäufer erzeugt den ersten Eindruck einer Stadt. Er macht offenen Raum konkret: zu einem Ort, an dem Bewohner sich bewegen, verweilen und austauschen können. Feste Stände schaffen Anerkennung durch Zeit und Ort; mobile Stände überleben in den Zwischenräumen von Gesetz und Raum. Öffentlicher Raum wird in Details bestimmt: Darf man einen Stand aufbauen, und wo darf man halten?",
+        "Die Ausstellung kann den umgebauten Kinderwagen, Tee, tauschbare taiwanische Objekte und eine Wand mit Tausch- und Gesprächsprotokollen zeigen. Das Archiv umfasst Tauschlisten, Geschichten, Publikumszitate, Routen, Haltepunkte, Videoaufnahmen und Vergleiche der Straßenverkaufsregeln in Taiwan, Johannesburg und Deutschland.",
+        "Tauschhandel bedeutet nicht, in die Vergangenheit zurückzukehren. Er verschiebt den Anker des Wertes vom Preis zur Beziehung. In den langsamen Momenten von Gruß, Tee und Austausch zeigt die Stadt ihren Puls. Sie besteht nicht nur aus Regeln, sondern auch aus Menschlichkeit; nicht nur aus Effizienz, sondern auch aus Warten. Diese Erfahrung möchte das Projekt mit dem Publikum teilen: Vertrauen innerhalb der Ordnung neu zu erfinden."
+      ],
+      "href": "https://genius912.blogspot.com/2026/06/hallo-servus.html"
+    },
+    {
+      "id": "w-subbus-european-action",
+      "year": "2026",
+      "month": "06",
+      "title_zh": "SUBBUS 歐洲行動計畫",
+      "title_en": "SUBBUS European Action Project",
+      "title_de": "SUBBUS Europäisches Aktionsprojekt",
+      "note_zh": "以巴士作為移動場域，把公共交通轉化為展覽、討論、飲食、臨時居所與跨文化交流的平台。",
+      "note_en": "A bus becomes a mobile field, transforming public transport into a platform for exhibition, discussion, food, temporary dwelling and cross-cultural exchange.",
+      "note_de": "Ein Bus wird zum mobilen Feld und verwandelt öffentlichen Verkehr in eine Plattform für Ausstellung, Gespräch, Essen, temporäres Wohnen und interkulturellen Austausch.",
+      "essay_zh": [
+        "SUBBUS 歐洲行動計畫是一項以巴士作為移動場域的公共空間與行為藝術實驗。計畫始於 2014 年德國藝術學院的策展課程，參與者共同思考一輛巴士如何從交通工具轉化為展覽空間、討論平台、臨時居所與城市中的公共介面。",
+        "我以自身在台灣搭乘擁擠公車的身體經驗為出發點，對照德國公共運輸中禁止飲食的日常規訓，提出「公車作為文化衝突與身體協商現場」的藝術命題。巴士並非單純的移動載具，而是一個壓縮的社會模型：人們在有限空間中並置、靠近、移動、等待、遵守規則，也在無形中暴露階級、文化、禮儀與身體邊界。",
+        "在這個計畫中，我將公車視為一個可被重新編排的行動舞台。它既承載乘客，也承載城市記憶、文化習慣、公共秩序與個人感受。透過行為、飲食、聚會與空間改造，我試圖讓這輛巴士成為一個能夠生產對話的移動空間。",
+        "2014 年的 SUBBUS 計畫要求每位參與者提出自己對「公車」的詮釋與可能性。我從台灣都市生活中的擠公車經驗出發，思考身體如何在公共運輸中被擠壓、被規訓，也被迫與他人建立短暫而親密的關係。相對於台灣公車中的擁擠、流動與混雜，德國公共運輸系統呈現出另一種秩序感。",
+        "我將飲食導入公車空間，讓食物成為打開文化規範的媒介。當人在巴士中進食、交換味覺、分享早餐或甜點，原本被規訓的交通空間便開始鬆動，轉化為一個臨時性的社交場域。",
+        "年展期間，我策劃並執行行為藝術《公車三明治計畫》。作品靈感來自「中間世代」的生存狀態：我們如同三明治中的夾層，被上方既有體制、傳統價值與社會期待壓迫，也被下方快速變動的新世代、新技術與新生活方式推擠。",
+        "SUBBUS 是一個多重轉譯的策展平台。這輛巴士承載人與物，也承載移動中的知識、辯論、集體決策與空間實驗。它可以是展覽場，也可以是研究室、會議室、講座空間、臨時俱樂部、露營空間與城市觀察站。這種不穩定性正是 SUBBUS 的核心價值。",
+        "白天，SUBBUS 可以作為研究、會議、展示與討論的場所；夜晚，它可以轉化為臨時居住、聚會與停留的空間。這使巴士不再只是通過城市的工具，而是能夠暫時停靠、介入、開啟對話的行動場域。公共性並非固定屬性，而是在使用、協商與互動中逐步形成。",
+        "計畫期間，SUBBUS 巡迴德國與歐洲多座城市，與博物館、藝術協會、社群空間及不同公共場域發生連結。每個地方都有自己的歷史、制度、交通秩序與社會氛圍。當 SUBBUS 停靠於不同場域，它同時也將自身暴露於地方條件之中：誰願意靠近？誰能進入？誰開始交談？誰保持距離？",
+        "在延伸行動中，我以巧克力作為計畫的味覺總結，發展出 Bus Geschmack 的概念。苦、酸、辣、甜對應計畫中的複雜經驗：規則與限制、文化摩擦、行動中的衝突與刺激，以及相遇、分享與短暫的共同生活。",
+        "SUBBUS 是一段持續生成的策展旅程。它讓藝術離開固定展場，進入交通、街道、城市邊界與日常生活。公車在此不只是作品的容器，而是一個濃縮的城市模型：有限、移動、共享、擁擠，也充滿偶然性。它證明藝術可以發生在沒有白牆的地方，策展可以存在於行進中的對話、衝突、停靠與交換之中。"
+      ],
+      "essay_en": [
+        "The SUBBUS European Action Project is an experiment in public space and performance art that uses a bus as a mobile field. It began in 2014 in a curatorial course at a German art academy, where participants asked how a bus could shift from transport vehicle into exhibition space, discussion platform, temporary dwelling and public interface within the city.",
+        "My starting point was the bodily experience of crowded buses in Taiwan, set against the everyday discipline of no eating on German public transport. From this contrast I proposed the bus as a site of cultural conflict and bodily negotiation. A bus is not merely a vehicle; it is a compressed social model in which people are placed side by side, moved, made to wait, asked to follow rules, and quietly exposed through class, culture, etiquette and bodily boundaries.",
+        "In this project I treat the bus as an action stage that can be rearranged. It carries passengers, but also urban memory, cultural habits, public order and individual feeling. Through performance, food, gathering and spatial transformation, I try to make the bus into a mobile space capable of producing dialogue.",
+        "The 2014 SUBBUS project asked each participant to propose an interpretation of the bus and its possibilities. I began with the experience of squeezing into buses in Taiwanese urban life, thinking about how bodies are compressed, disciplined and forced into brief forms of intimacy with strangers. Compared with the crowding, flow and mixture of Taiwanese buses, German public transport presents another sense of order.",
+        "I introduced food into the bus space so that eating could become a medium for opening cultural norms. When people eat, exchange tastes, share breakfast or sweets inside a bus, the disciplined space of transit begins to loosen and becomes a temporary social field.",
+        "During the annual exhibition, I curated and performed the Bus Sandwich action. The work came from the survival condition of an in-between generation: like the filling in a sandwich, we are pressed from above by existing systems, tradition and expectation, and from below by fast-changing new generations, new technologies and new ways of life.",
+        "SUBBUS is a curatorial platform of multiple translations. The bus carries people and things, but also moving knowledge, debate, collective decision-making and spatial experiment. It can be an exhibition venue, research room, meeting room, lecture space, temporary club, camping space or urban observatory. This instability is the core value of SUBBUS.",
+        "By day, SUBBUS can become a place for research, meetings, display and discussion; by night, it can turn into a temporary dwelling, gathering and stopping space. The bus is no longer only a tool passing through the city, but an action field that can pause, intervene and open dialogue. Publicness is not a fixed property; it is gradually formed through use, negotiation and interaction.",
+        "During the project, SUBBUS travelled through Germany and several European cities, connecting with museums, art associations, community spaces and other public fields. Each place has its own history, institutions, traffic order and social atmosphere. When SUBBUS stops in a site, it is exposed to local conditions: who approaches, who enters, who begins to talk, and who keeps distance?",
+        "In an extended action, I used chocolate as a tasting summary of the project and developed the idea of Bus Geschmack. Bitter, sour, spicy and sweet correspond to the complex experiences of the project: rules and limits, cultural friction, conflict and stimulus in action, and the sweetness of encounter, sharing and brief collective life.",
+        "SUBBUS is a curatorial journey in continual formation. It lets art leave the fixed exhibition space and enter traffic, streets, urban edges and everyday life. The bus is not only a container for the work, but a condensed urban model: limited, mobile, shared, crowded and full of contingency. It proves that art can happen without white walls, and that curating can exist in moving dialogue, conflict, stopping and exchange."
+      ],
+      "essay_de": [
+        "Das SUBBUS Europäische Aktionsprojekt ist ein Experiment im öffentlichen Raum und in der Performancekunst, das einen Bus als mobiles Feld nutzt. Es begann 2014 in einem kuratorischen Kurs an einer deutschen Kunstakademie, wo die Beteiligten fragten, wie ein Bus vom Verkehrsmittel zum Ausstellungsraum, Diskussionsort, temporären Wohnraum und öffentlichen Interface der Stadt werden kann.",
+        "Ausgangspunkt war meine körperliche Erfahrung überfüllter Busse in Taiwan, im Kontrast zur alltäglichen Disziplin des Essverbots im deutschen öffentlichen Verkehr. Daraus entstand die These vom Bus als Ort kultureller Reibung und körperlicher Aushandlung. Ein Bus ist nicht nur ein Fahrzeug, sondern ein verdichtetes soziales Modell: Menschen stehen nebeneinander, bewegen sich, warten, folgen Regeln und zeigen unmerklich Klasse, Kultur, Etikette und körperliche Grenzen.",
+        "In diesem Projekt verstehe ich den Bus als eine neu arrangierbare Handlungsbühne. Er trägt Fahrgäste, aber auch Stadterinnerung, kulturelle Gewohnheiten, öffentliche Ordnung und persönliche Empfindungen. Durch Performance, Essen, Zusammenkunft und räumliche Veränderung versuche ich, den Bus zu einem mobilen Raum zu machen, der Dialog erzeugen kann.",
+        "Das SUBBUS Projekt von 2014 forderte jede beteiligte Person auf, eine eigene Deutung des Busses und seiner Möglichkeiten zu entwickeln. Ich ging von der Erfahrung aus, sich in taiwanischen Stadtbussen zu drängen, und fragte, wie Körper im öffentlichen Verkehr zusammengedrückt, diszipliniert und zu kurzen Formen der Nähe mit Fremden gezwungen werden. Gegenüber der Enge, Bewegung und Mischung taiwanischer Busse zeigt der deutsche öffentliche Verkehr eine andere Ordnung.",
+        "Ich führte Essen in den Busraum ein, damit Nahrung zum Medium werden konnte, um kulturelle Normen zu öffnen. Wenn Menschen im Bus essen, Geschmäcker austauschen, Frühstück oder Süßes teilen, beginnt der disziplinierte Verkehrsraum sich zu lockern und verwandelt sich in ein temporäres soziales Feld.",
+        "Während der Jahresausstellung kuratierte und realisierte ich die Aktion Bus Sandwich. Die Arbeit entstand aus dem Lebensgefühl einer Zwischengeneration: Wie die Füllung eines Sandwichs werden wir von oben durch bestehende Systeme, Traditionen und Erwartungen gedrückt und von unten durch neue Generationen, neue Technologien und neue Lebensweisen geschoben.",
+        "SUBBUS ist eine kuratorische Plattform mehrfacher Übersetzungen. Der Bus trägt Menschen und Dinge, aber auch Wissen in Bewegung, Debatten, kollektive Entscheidungen und räumliche Experimente. Er kann Ausstellungsort, Forschungsraum, Sitzungsraum, Vortragsraum, temporärer Club, Campingraum oder Stadtbeobachtungsstation sein. Diese Instabilität ist der Kernwert von SUBBUS.",
+        "Tagsüber kann SUBBUS als Ort für Forschung, Treffen, Präsentation und Diskussion dienen; nachts kann er sich in einen temporären Wohn-, Versammlungs- und Aufenthaltsraum verwandeln. Der Bus ist nicht mehr nur ein Werkzeug, das durch die Stadt fährt, sondern ein Handlungsfeld, das anhalten, eingreifen und Dialog eröffnen kann. Öffentlichkeit ist keine feste Eigenschaft; sie entsteht durch Nutzung, Aushandlung und Interaktion.",
+        "Während des Projekts reiste SUBBUS durch Deutschland und mehrere europäische Städte und verband sich mit Museen, Kunstvereinen, Gemeinschaftsräumen und verschiedenen öffentlichen Feldern. Jeder Ort besitzt seine eigene Geschichte, Institutionen, Verkehrsordnung und soziale Atmosphäre. Wenn SUBBUS an einem Ort hält, setzt er sich zugleich den lokalen Bedingungen aus: Wer nähert sich, wer tritt ein, wer beginnt zu sprechen, wer hält Abstand?",
+        "In einer erweiterten Aktion verwendete ich Schokolade als geschmackliche Zusammenfassung des Projekts und entwickelte die Idee von Bus Geschmack. Bitter, sauer, scharf und süß stehen für die komplexen Erfahrungen des Projekts: Regeln und Grenzen, kulturelle Reibung, Konflikt und Reiz in der Aktion sowie die Süße von Begegnung, Teilen und kurzem gemeinsamen Leben.",
+        "SUBBUS ist eine kuratorische Reise im ständigen Werden. Sie lässt Kunst den festen Ausstellungsraum verlassen und in Verkehr, Straße, Stadtränder und Alltag eintreten. Der Bus ist nicht nur Behälter der Arbeit, sondern ein verdichtetes Stadtmodell: begrenzt, mobil, geteilt, eng und voller Zufall. Er zeigt, dass Kunst auch ohne weiße Wände stattfinden kann und dass Kuratieren in bewegten Gesprächen, Konflikten, Stopps und Austausch existiert."
+      ],
+      "href": "https://genius912.blogspot.com/2026/06/subbus.html"
+    },
+    {
+      "id": "w-bus-geschmacke-2015-update",
+      "year": "2026",
+      "month": "06",
+      "title_zh": "Bus Geschmack｜以味覺總結移動經驗",
+      "title_en": "Bus Geschmack: A Tasting Summary of Movement",
+      "title_de": "Bus Geschmack: Eine geschmackliche Zusammenfassung der Bewegung",
+      "note_zh": "以巧克力作為 SUBBUS 的感官總結，讓苦、酸、辣、甜對應規則、文化摩擦、衝突刺激與相遇分享。",
+      "note_en": "Chocolate becomes a sensory summary of SUBBUS, with bitter, sour, spicy and sweet corresponding to rules, cultural friction, conflict and encounter.",
+      "note_de": "Schokolade wird zur sinnlichen Zusammenfassung von SUBBUS: bitter, sauer, scharf und süß stehen für Regeln, kulturelle Reibung, Konflikt und Begegnung.",
+      "essay_zh": [
+        "在 SUBBUS 的延伸行動中，我以巧克力作為計畫的味覺總結，發展出 Bus Geschmack 的概念。巧克力被設計為展覽中的贈禮與感官物件，混合多種味覺比例：苦、酸、辣、甜。",
+        "這些味道對應 SUBBUS 計畫中的複雜經驗。苦味來自規則與限制，酸味來自文化摩擦，辣味來自行動中的衝突與刺激，甜味則來自相遇、分享與短暫的共同生活。",
+        "我認為每一個味道都應該保留差異，不必被調和成單一口感。這正如公共空間中的人群，每個人帶著不同背景、習慣、語言與身體感受進入同一個場域。",
+        "藝術的任務不一定是消除差異，而是創造一個可以讓差異被感知、被承受、被交換的條件。Bus Geschmack 因此不是一件單純的甜點作品，而是一種把移動、規則、身體與文化翻譯成味覺的公共空間練習。",
+        "作品於 2015 年 7 月在紐倫堡美術學院 AdBK Nürnberg 年展中呈現，作為 SUBBUS 歐洲行動計畫的一個味覺註腳，也是一段旅程的暫時總結。"
+      ],
+      "essay_en": [
+        "In an extended action of SUBBUS, I used chocolate as a tasting summary of the project and developed the idea of Bus Geschmack. The chocolate was designed as both a gift and a sensory object within the exhibition, mixing several taste proportions: bitter, sour, spicy and sweet.",
+        "These tastes correspond to the complex experiences of SUBBUS. Bitterness comes from rules and limits, sourness from cultural friction, spiciness from conflict and stimulation within action, and sweetness from encounter, sharing and brief collective life.",
+        "I believe each taste should keep its difference rather than being blended into one smooth flavour. Public space works in a similar way: people enter the same field with different backgrounds, habits, languages and bodily perceptions.",
+        "The task of art is not always to erase difference, but to create conditions in which difference can be sensed, endured and exchanged. Bus Geschmack is therefore not simply a dessert work, but a public-space exercise that translates movement, rules, bodies and culture into taste.",
+        "The work was presented in July 2015 at the annual exhibition of the Academy of Fine Arts Nuremberg, as a tasting footnote to the SUBBUS European Action Project and a temporary summary of the journey."
+      ],
+      "essay_de": [
+        "In einer erweiterten Aktion von SUBBUS verwendete ich Schokolade als geschmackliche Zusammenfassung des Projekts und entwickelte die Idee von Bus Geschmack. Die Schokolade wurde als Geschenk und als sinnliches Objekt der Ausstellung gestaltet und verband mehrere Geschmacksanteile: bitter, sauer, scharf und süß.",
+        "Diese Geschmäcker entsprechen den komplexen Erfahrungen von SUBBUS. Bitterkeit kommt von Regeln und Grenzen, Säure von kultureller Reibung, Schärfe von Konflikt und Reiz in der Handlung, Süße von Begegnung, Teilen und kurzem gemeinsamen Leben.",
+        "Ich glaube, dass jeder Geschmack seine Differenz behalten sollte, statt zu einem einheitlichen Aroma geglättet zu werden. Ähnlich ist es im öffentlichen Raum: Menschen betreten dasselbe Feld mit unterschiedlichen Hintergründen, Gewohnheiten, Sprachen und körperlichen Empfindungen.",
+        "Die Aufgabe der Kunst besteht nicht immer darin, Differenzen aufzulösen, sondern Bedingungen zu schaffen, unter denen Differenz wahrgenommen, ausgehalten und ausgetauscht werden kann. Bus Geschmack ist daher nicht einfach ein Dessert, sondern eine Übung im öffentlichen Raum, die Bewegung, Regeln, Körper und Kultur in Geschmack übersetzt.",
+        "Die Arbeit wurde im Juli 2015 bei der Jahresausstellung der Akademie der Bildenden Künste Nürnberg gezeigt, als geschmackliche Fußnote zum SUBBUS Europäischen Aktionsprojekt und als vorläufige Zusammenfassung einer Reise."
+      ],
+      "href": "https://genius912.blogspot.com/2015/07/bus-geschmacke.html"
+    },
+  /* RAUM_20260621_ARTICLE_UPDATES_END */
+  /* RAUM_LAND_NARRATIVE_PATCH_START */
+    {
+      "id": "w-land-narrative-01",
+      "year": "2026",
+      "month": "06",
+      "title_zh": "無人的市場，與自己的對話",
+      "title_en": "An Unattended Market, a Conversation with Oneself",
+      "title_de": "Ein unbeaufsichtigter Markt und das Gespräch mit sich selbst",
+      "note_zh": "從德國鄉間的無人農產亭談起：信任、良知與制度之間，真正被測量的是一個人如何面對自己。",
+      "note_en": "Beginning with unattended farm stands in rural Germany: between trust, conscience and systems, what is truly measured is how one faces oneself.",
+      "note_de": "Ausgehend von unbeaufsichtigten Hofständen in Deutschland: Zwischen Vertrauen, Gewissen und Systemen wird vor allem gemessen, wie ein Mensch sich selbst begegnet.",
+      "essay_zh": [
+        "人與土地之間有一種信任。你播種，它就生長；你照料，它就回報。土地從不過問你是誰。這種信任久了，會從人與土地之間，溢到人與人之間。",
+        "公路旁偶爾會看見一座無人看守的農產亭。新鮮的瓜果擺在棚架上，標著價，旁邊一只投幣盒。第一次經過的人多半會愣一下：為什麼沒有人看守。這個愣神的瞬間，正是一切的起點。",
+        "在德國的鄉間，這樣的無人銷售隨處可見。當天現摘的農作擺上簡單的架位，每一樣標好價格，一只木盒或鐵箱收錢。沒有店員，沒有監視，沒有人提醒你該付多少。人們把這叫做良心市場。要理解它為什麼能成立，得回頭去看德國的品德教育，看這個民族如何維持如此高度的自治。",
+        "最耐人尋味的是找零。架上無人，盒裡的零錢未必湊得齊。當你手上只有一張大鈔，當你挑的南瓜大小不一、價格全憑喜好，這時你會多付，還是少付。你心裡認定的合理價位，又是多少。這一刻沒有人和你交易，你是在跟自己對話，也是在跟這片土地的神祇交換意念。紐倫堡萬聖節前的南瓜田正是如此，一顆南瓜值多少，最終由站在它面前的那個人說了算。",
+        "把這件事放大，就是搭車該不該買票的問題。城市的地鐵與輕軌沒有閘機，車上擺一台售票機，買不買隨你。於是要問，真的不會有人逃票嗎。答案是有的。德國逃票的人並不少，他們有個專稱叫黑乘客，柏林的地鐵裡甚至掛過「每六個人就有一個逃票者」的標語。",
+        "那麼，信任的基礎是不是就此崩解。先別急著感傷。從經濟成本的角度看，這套系統的邏輯一點也不浪漫。閘機的缺席與信任無關，德鐵算的是另一筆帳。在每一個站台架設閘機、長年雇人維護的開銷，遠高於逃票的損失；再養一支不必穿制服的查票隊伍，配上一張六十歐元的罰單，虧空也就補得差不多。所謂的信任，在帳本上是一道成本最優解。學期票印在學生證上，老人有優惠年票，多數德國人有車有單車，真正能逃、想逃的其實是少數。容許你不買票，是因為防你買票太貴。",
+        "浪漫被拆穿了，更深的問題卻剛浮現。經濟理性能解釋制度為什麼容許信任，解釋不了站在投幣盒前的那個人，為什麼選擇誠實。制度算的是群體的成本，個人面對的是自己的良知。良心市場真正的份量，不靠它證明人性本善。它的價值在另一處。每一枚硬幣落進盒裡，都是一次主體性的演練。",
+        "法律管的是行為，良心管的是意念。罰款劃出一條底線，越界就得付代價；奉獻指向一道上限，那是沒有人看著時你仍願意給出的東西。一個社會的成熟，先靠生活教育把守規矩養成習慣，再靠法律把底線兜住。良心市場，恰好站在這兩者交會的地方。",
+        "於是回到土地。信任不會因為有人逃票而崩解，因為信任這件事，問的從來都是自己。這也是土地教人的第一課。你怎麼對待它，它不會當場拆穿你，時間會。站在無人的攤位前那一念之差的多投或少投，和你埋下一粒種子時的誠意，原是同一件事。"
+      ],
+      "essay_en": [
+        "There is a kind of trust between people and land. You sow, and it grows; you tend, and it answers. The land never asks who you are. Over time, this trust can spill over from the relation between people and soil into the relation between people themselves.",
+        "At the roadside one sometimes sees a small unattended farm stand. Fresh fruit and vegetables are placed on shelves, prices marked, with a coin box beside them. Most first-time passersby pause for a second: why is no one watching? That moment of hesitation is where everything begins.",
+        "In rural Germany, this kind of self-service sale is common. Produce harvested that day is set out on simple racks; each item is labelled, and a wooden box or metal tin receives the money. There is no clerk, no surveillance, no one to remind you what you owe. People call it an honesty market. To understand why it works, one has to look back toward civic education and the ways a society sustains a high degree of self-governance.",
+        "The most revealing moment is change. When no one is there and the box cannot make exact change, when you hold only a larger bill, when the pumpkins differ in size and the price is partly a matter of preference: will you pay more, or less? What do you believe is reasonable? In that instant no one is trading with you. You are speaking with yourself, and perhaps also with the spirits of the land. In the pumpkin fields around Nuremberg before Halloween, a pumpkin is finally worth what the person standing before it decides it is worth.",
+        "Enlarge the question and it becomes the question of whether one buys a ticket on public transport. In many cities there are no ticket gates; a machine stands in the carriage or on the platform, and whether you buy is up to you. So do people really never evade fares? Of course they do. Germany has plenty of fare dodgers, Schwarzfahrer, and Berlin once displayed a slogan saying that one in six passengers was riding without a ticket.",
+        "Does that mean the foundation of trust has collapsed? Not so quickly. From the perspective of economic cost, the system is not romantic at all. The absence of gates has less to do with trust than with accounting. Installing and maintaining gates at every station costs more than the losses from fare evasion; a plain-clothes inspection team and a sixty-euro fine can cover much of the gap. What we call trust is, in the ledger, an optimized cost structure. Student passes are printed on student IDs, seniors buy discounted annual tickets, many Germans own cars or bicycles; those who can and want to evade are a smaller group than the myth suggests. You are allowed not to buy immediately because forcing everyone to buy is too expensive.",
+        "Once the romance is dismantled, the deeper question appears. Economic reason can explain why a system permits trust, but not why the person standing before the coin box chooses honesty. The system calculates collective cost; the individual faces conscience. The real weight of an honesty market does not lie in proving that human nature is good. It lies elsewhere. Every coin dropped into the box is a small rehearsal of subjectivity.",
+        "Law governs behavior; conscience governs intention. A fine draws the lower limit: cross it, and you pay. Offering points toward an upper limit: what you are still willing to give when no one is watching. A mature society first uses everyday education to turn rules into habits, then relies on law to hold the bottom line. The honesty market stands precisely where these two forces meet.",
+        "So we return to the land. Trust does not collapse because someone evades a fare, because trust has always been a question addressed to oneself. This is also the first lesson the land teaches. How you treat it may not be exposed immediately; time will answer. The slight difference between paying a little more or a little less at an unattended stand, and the sincerity with which you plant a seed, are in the end the same thing."
+      ],
+      "essay_de": [
+        "Zwischen Mensch und Land gibt es eine Art Vertrauen. Man sät, und es wächst; man pflegt, und es antwortet. Das Land fragt nie, wer man ist. Wenn dieses Vertrauen lange genug besteht, kann es aus der Beziehung zwischen Mensch und Boden in die Beziehung zwischen Menschen übergehen.",
+        "Am Straßenrand sieht man manchmal einen kleinen, unbeaufsichtigten Hofstand. Frisches Obst und Gemüse liegen auf einfachen Gestellen, die Preise sind angeschrieben, daneben steht eine Kasse. Wer zum ersten Mal vorbeikommt, hält meist kurz inne: Warum passt hier niemand auf? Genau in diesem Moment des Innehaltens beginnt alles.",
+        "In ländlichen Gegenden Deutschlands sind solche Formen des Selbstverkaufs alltäglich. Was am selben Tag geerntet wurde, liegt auf einfachen Regalen; jedes Stück hat seinen Preis, eine Holzkiste oder Metallbox sammelt das Geld. Kein Verkäufer, keine Überwachung, niemand erinnert einen daran, wie viel zu zahlen ist. Man nennt das einen Vertrauensstand oder einen Markt der Ehrlichkeit. Um zu verstehen, warum er funktioniert, muss man auf die moralische und bürgerliche Erziehung blicken, durch die eine Gesellschaft ein hohes Maß an Selbstverwaltung trägt.",
+        "Am aufschlussreichsten ist der Moment des Wechselgeldes. Wenn niemand da ist und in der Kasse nicht genug Münzen liegen, wenn man nur einen größeren Schein hat, wenn die Kürbisse unterschiedlich groß sind und der Preis auch vom eigenen Ermessen abhängt: Zahlt man mehr oder weniger? Was hält man selbst für angemessen? In diesem Augenblick handelt niemand mit einem. Man spricht mit sich selbst, vielleicht auch mit den Gottheiten dieses Landes. In den Kürbisfeldern um Nürnberg vor Halloween ist ein Kürbis am Ende so viel wert, wie der Mensch, der vor ihm steht, ihm zuspricht.",
+        "Vergrößert man diese Frage, wird sie zur Frage, ob man im öffentlichen Verkehr eine Fahrkarte kauft. U-Bahn und Straßenbahn haben oft keine Schranken; ein Automat steht auf dem Bahnsteig oder im Wagen, kaufen muss man selbst. Bedeutet das, dass niemand schwarzfährt? Natürlich nicht. Schwarzfahrer gibt es auch in Deutschland, und in Berlin hing einmal der Satz, jeder sechste Fahrgast fahre ohne Ticket.",
+        "Bricht damit die Grundlage des Vertrauens zusammen? Nicht so schnell. Aus ökonomischer Sicht ist die Logik dieses Systems kaum romantisch. Das Fehlen von Schranken hat weniger mit Vertrauen zu tun als mit einer Rechnung. An jedem Bahnhof Schranken zu bauen und dauerhaft zu warten, kostet mehr als der Verlust durch Schwarzfahren; eine Kontrolleinheit ohne Uniform und ein Bußgeld von sechzig Euro gleichen vieles aus. Was Vertrauen heißt, ist im Kassenbuch eine optimale Kostenlösung. Semestertickets stehen auf Studierendenausweisen, ältere Menschen haben vergünstigte Jahreskarten, viele besitzen Auto oder Fahrrad; wer tatsächlich schwarzfahren kann und will, bleibt eine begrenzte Gruppe. Man darf scheinbar frei entscheiden, weil die vollständige Kontrolle zu teuer wäre.",
+        "Ist die Romantik entzaubert, taucht erst die tiefere Frage auf. Ökonomische Vernunft erklärt, warum ein System Vertrauen zulässt; sie erklärt nicht, warum der Mensch vor der Kasse ehrlich bleibt. Das System berechnet die Kosten der Gruppe, der Einzelne begegnet seinem Gewissen. Das eigentliche Gewicht des Ehrlichkeitsmarktes liegt nicht darin, die Güte des Menschen zu beweisen. Es liegt an anderer Stelle. Jede Münze, die in die Kasse fällt, ist eine kleine Übung der Subjektivität.",
+        "Das Recht regelt das Verhalten, das Gewissen die Absicht. Die Strafe zieht eine untere Grenze: Wer sie überschreitet, zahlt. Die freiwillige Gabe zeigt nach oben: auf das, was man noch zu geben bereit ist, wenn niemand hinsieht. Eine reife Gesellschaft macht Regeln zunächst durch Alltagserziehung zur Gewohnheit und sichert die untere Grenze anschließend durch das Recht. Der Ehrlichkeitsmarkt steht genau an dieser Schnittstelle.",
+        "So kehren wir zum Land zurück. Vertrauen zerbricht nicht, weil jemand schwarzfährt, denn Vertrauen fragt immer zuerst nach einem selbst. Das ist auch die erste Lektion des Landes. Wie man es behandelt, verrät es nicht sofort; die Zeit wird antworten. Der kleine Unterschied zwischen etwas mehr oder etwas weniger Geld an einem unbeaufsichtigten Stand und der Aufrichtigkeit, mit der man einen Samen in die Erde legt, ist letztlich ein und dieselbe Sache."
+      ],
+      "href": ""
+    },
+    {
+      "id": "w-land-narrative-02",
+      "year": "2026",
+      "month": "06",
+      "title_zh": "一座無魂城市的考古學",
+      "title_en": "Archaeology of a Soulless City",
+      "title_de": "Archäologie einer seelenlosen Stadt",
+      "note_zh": "都市更新、房地產、農地與地窖中的陪葬品：一座城市失去靈魂之後，留下的是欲望、殘片與地下的記憶。",
+      "note_en": "Urban renewal, real estate, farmland and burial objects in a cellar: when a city loses its soul, what remains are desire, fragments and subterranean memory.",
+      "note_de": "Stadterneuerung, Immobilien, Ackerland und Grabbeigaben im Keller: Verliert eine Stadt ihre Seele, bleiben Begierde, Fragmente und unterirdische Erinnerung zurück.",
+      "essay_zh": [
+        "都市更新與房地產開發像一個沒有終點的循環。城市不斷被建造，卻越來越不像有人真正生活其中。理想城市並不存在。它也許只能被想像在天空，而它在現實中的殘骸，則像陪葬品一樣被安放在地窖裡。",
+        "《大富翁》是一種資本市場的虛擬模型。現實中的城市也像這場遊戲，由土地、投資、佔有、獵捕與被獵捕組成。因此，我在作品中象徵性地買下一座城市，用來回應社會地位、財產制度與階級不平等。",
+        "旅行者是城市觀察者。他帶著對歐洲文化的浪漫想像穿越不同城市，並在各種時代、建築樣式與歷史層疊中，形成一座拼貼城市。這座城市像一本生活字典，記錄人的移動、記憶與慾望。家是安身之處，也可能成為一種被困住的狀態。",
+        "對我而言，買房是一種遙遠的幻想。在這段旅程中，我試圖透過互動遊戲建立自己的記憶。這個遊戲以城市為棋盤，以房屋為棋子，讓觀者在看似輕鬆的參與中，感受到居住、資本與失落之間的拉扯。",
+        "我收集都市更新過程中被拆除的建築廢棄物，將不同區域的建材搗碎，轉化為創作材料。在盧森堡的美術館經驗中，我重新思考歷史建築再利用的可能性，也對照台灣在古蹟修復與空間再生上的困難。我在舊城牆上進行一場修補表演，讓站在壕溝上的觀者共同面對古蹟保存、再利用與觀看位置的問題。",
+        "在 Friedrichshafen 湖區，人們想像並建構自己的度假村，如同外國房地產投資者，在一塊被想像為理想的度假地上興建房屋。然而這些房子呈現出無人照管、逐漸風化與毀壞的狀態，暗示所有居住夢想都建立在一個並不穩固的基礎上。",
+        "在都市更新之下，農業用地逐漸被建築佔領。房地產炒作使年輕人購屋成為遙不可及的夢。城市表面持續擴張，內部卻失去生活的重量，最終形成一座沒有靈魂的城市。",
+        "不清楚的建築樣式，顯示城市失去自身的文化辨識度。地窖的開啟如同一座考古現場的發掘。東方風水神秘學中，方位、色彩與物件被重新安置；陶罐中保存著小麥種子，像是對土地記憶的封存。也許理想的房子最後像一件陪葬品，安靜長眠。人終究什麼都帶不走，只留下城市的殘片、欲望的模型，以及被壓在地下的靈魂。"
+      ],
+      "essay_en": [
+        "Urban renewal and real-estate development form an endless loop. The city keeps being built, yet it increasingly feels as though no one truly lives inside it. The ideal city does not exist. Perhaps it can only be imagined in the sky, while its material remains are placed in a cellar like burial objects.",
+        "Monopoly is a virtual model of the capital market. The real city resembles this game as well: a system of land, investment, possession, hunting and being hunted. In the work, I therefore symbolically purchase a city in response to social status, property systems and class inequality.",
+        "The traveler becomes an observer of cities. Carrying a romantic imagination of European culture, he passes through different cities and gathers eras, architectural styles and historical layers into a collage-city. This city becomes a dictionary of living, recording movement, memory and desire. Home is a place of shelter, but it can also become a condition of confinement.",
+        "For me, buying a house remains a distant fantasy. On this journey I attempt to build my own memory through an interactive game. The city becomes the board and houses become the pieces, allowing viewers, through an apparently light form of participation, to feel the tension among dwelling, capital and loss.",
+        "I collect construction waste from buildings demolished during urban renewal, crush materials from different districts and transform them into artistic matter. In Luxembourg, the experience of the museum led me to reconsider the possibility of reusing historic architecture, while also reflecting on the difficulties of restoration and spatial regeneration in Taiwan. I carried out a repair performance on an old city wall, so that viewers standing along the moat confronted questions of preservation, reuse and the position from which history is seen.",
+        "In the lake region of Friedrichshafen, people imagine and construct their own holiday resorts, like foreign real-estate investors building houses on an idealized vacation site. Yet these houses appear unattended, weathered and damaged, suggesting that every dream of dwelling rests on an unstable foundation.",
+        "Under urban renewal, agricultural land is gradually occupied by buildings. Real-estate speculation makes home ownership an unreachable dream for young people. The city expands on the surface, while inside it loses the weight of life, eventually becoming a city without a soul.",
+        "Ambiguous architectural styles reveal the loss of cultural self-recognition. The opening of a cellar appears like the excavation of an archaeological site. Within it, eastern Feng Shui mysticism, directions, colors and objects are rearranged; wheat seeds preserved in ceramic jars become a sealing of land memory. Perhaps the ideal house finally resembles a burial object, quietly asleep. In the end, one can take nothing away, leaving only fragments of the city, models of desire and a soul pressed underground."
+      ],
+      "essay_de": [
+        "Stadterneuerung und Immobilienentwicklung bilden einen endlosen Kreislauf. Es wird immer weiter gebaut, doch die Stadt wirkt zunehmend unbewohnt. Die ideale Stadt existiert nicht. Vielleicht liegt sie nur noch im Himmel, während ihre materiellen Überreste als Grabbeigaben in einem Keller ruhen.",
+        "Monopoly ist ein virtuelles Modell des Kapitalmarktes. Tatsächlich ähneln unsere Städte diesem Spiel: einem System aus Besitz, Spekulation, Jagd und Beute. Deshalb kaufe ich in dieser Arbeit symbolisch eine Stadt, als kritische Untersuchung von sozialem Status, Eigentum und sozialer Ungleichheit.",
+        "Der Reisende wird zum Stadtbeobachter. Er trägt eine romantische Vorstellung der europäischen Kultur in sich. Die Collage-Stadt führt durch verschiedene Zeiten, Architekturen und historische Schichten; sie wird zu einem Wörterbuch des Lebens. Zuhause bedeutet Geborgenheit, kann aber auch Einschließung sein.",
+        "Für mich bleibt der Kauf eines Hauses eine entfernte Fantasie. Auf dieser Reise baue ich mir ein Gedächtnis auf, durch ein interaktives Spiel, in dem Beobachtung, Erinnerung und Kritik miteinander verbunden werden.",
+        "Aus abgerissenen Gebäuden der Stadterneuerung sammle ich Baumaterialien aus verschiedenen Stadtteilen. Ich zerkleinere sie und verwandle sie in künstlerisches Material. In Luxemburg reflektierte ich darüber, warum die Wiederverwendung historischer Architektur in Taiwan so schwer realisierbar scheint. Auf der alten Stadtmauer führte ich eine Reparatur-Performance durch. Die Zuschauerinnen und Zuschauer standen am Graben und wurden Teil einer Betrachtung über Restaurierung, Erhaltung und Wiederverwendung historischer Orte.",
+        "In Friedrichshafen entwerfen Menschen ihre eigenen Ferienresorts. Sie agieren wie ausländische Immobilieninvestoren, die auf einem idealisierten Urlaubsort ihr eigenes Haus errichten. Doch die Häuser wirken verlassen, verwittert und beschädigt. Alles steht auf einem unsicheren Fundament.",
+        "Landwirtschaftliche Flächen werden im Prozess der Stadterneuerung zunehmend von Gebäuden besetzt. Immobilienspekulation macht den Erwerb eines Hauses für junge Menschen zu einem unerreichbaren Traum. Am Ende entsteht eine Stadt ohne Seele.",
+        "Uneindeutige Baustile zeigen den Verlust kultureller Selbstvergewisserung. Ein geöffneter Keller erscheint wie eine archäologische Fundstelle. In ihm begegnen sich östliche Feng-Shui-Vorstellungen, Farbordnungen verschiedener Himmelsrichtungen und Gefäße mit Weizensamen. Vielleicht gleicht das ideale Haus am Ende einer Grabbeigabe: Es wird sorgsam aufbewahrt, bleibt jedoch im Dunkeln zurück. Auch wir können am Ende nichts mitnehmen."
+      ],
+      "href": "https://genius912.blogspot.com/2026/06/archaologie-einer-seelenlosen-stadt.html"
+    },
+    {
+      "id": "w-land-narrative-03",
+      "year": "2026",
+      "month": "06",
+      "title_zh": "公共空間的美感經驗",
+      "title_en": "The Aesthetic Experience of Public Space",
+      "title_de": "Die ästhetische Erfahrung im öffentlichen Raum",
+      "note_zh": "公共藝術不是一件被放進空間的作品，而是一種生活場域、共享經驗與環境創造力的持續經營。",
+      "note_en": "Public art is not simply an object placed in space, but an ongoing cultivation of lived environment, shared experience and environmental imagination.",
+      "note_de": "Kunst im öffentlichen Raum ist nicht bloß ein Objekt im Raum, sondern die dauerhafte Pflege von Lebenswelt, geteilter Erfahrung und schöpferischem Umfeld.",
+      "essay_zh": [
+        "公共藝術的起點，是對區域環境的整體理解。它要在社會、經濟、文化、歷史、空間與時間這些層面之間來回思考，並將它們整合成一個完整的視野。它面對的是人文地景，是居民的共同記憶與生命經驗，是人們對場域與地方所累積的情感。",
+        "正因如此，公共藝術不只是一件放置於空間中的藝術品。它牽涉公共的社會性，牽涉公共服務，也牽涉一段引導公眾參與的過程。它關心生活場域，關心空間的本質，關心公眾日常的視覺經驗。從一件作品到一種公眾意識，從設置點的價值到整體環境的未來發展，藝術進入空間的本質，始終是主體與客體之間的互動，以及地方文化厚度的累積。",
+        "對居民而言，美麗也許就藏在繁雜街景裡的一次偶然遇見。隨手用手機拍下，又匆匆離去。是誰造就了這樣的場景，又是如何吸引了民眾的目光？",
+        "市容之美，從來不只是公部門在公共空間的造景美化。它來自人與環境之間長期累積的默契，一種彼此共享的美感連結。都市的美感經驗，絕非少數公共藝術作品就能達成。",
+        "每個人都有自己的生活領域。在日常移動的經驗裡，有多少事物讓我們覺得愉悅而美麗？還是我們總是低頭看著手機螢幕，在虛幻的世界裡遨遊，反倒覺得踏實些？",
+        "美感經驗，關乎一片不可忽視的心靈視野。當環境的粗糙被縱容或默許，居民的回應不會只是無奈的申訴。視覺需要鍛鍊。一盆造景，可能是用心的點綴，也可能只是空間的佔據。我們究竟在美化環境，還是在美化心靈？這個世界，沒有所謂理所當然的美麗。",
+        "一件美麗的事物，從來不是憑空而來。即便只是一盆造景，背後也需要多少心思與時間的付出，才能換來眼前的樣貌。公共藝術對空間的干預，正是這份付出的延伸。藝術創作者所打開的，是一個社會的向度，一種詩意的營造。它透過符碼進行溝通，也藉此傳播議題。",
+        "若對社會脈絡的理解只停留在浮面的樣板樣式，文化觀光與社區景點便容易流於形式，公仔文化也成為另一種型態的裝飾品。藝術如何真正介入空間，取決於它對生活觀點與文化價值的理解有多深。",
+        "情感所建構的環境，無法用單一的設施或裝置完成。它需要的是一個可以被經營、能夠持續的環境，一種環境創造力的思維。這才是公共藝術文化行銷真正的起點。"
+      ],
+      "essay_en": [
+        "The starting point of public art is a holistic understanding of the regional environment. It must move among social, economic, cultural, historical, spatial and temporal layers, integrating them into a wider field of vision. What it faces is a human landscape: the shared memory and lived experience of residents, and the feelings accumulated toward a site and place.",
+        "For this reason, public art is more than an artwork placed in space. It concerns the social nature of the public, the provision of public service, and a process that guides people toward participation. It cares for the lived environment, for the essence of space, and for the everyday visual experience of the public. From a single work to public consciousness, from the value of the site to the future development of the whole environment, the essence of art entering space remains the interaction between subject and object, and the accumulation of a place’s cultural depth.",
+        "For residents, beauty may be hidden in an accidental encounter within a busy streetscape: a quick photo on a phone, then a hurried departure. Who created such a scene, and how did it draw the public gaze?",
+        "The beauty of the cityscape has never been merely the beautification of public space by public agencies. It comes from a long-formed tacit understanding between people and environment, a shared aesthetic connection. The aesthetic experience of the city can never be achieved by a small number of public artworks alone.",
+        "Everyone has their own sphere of daily life. In the experience of moving through our everyday routes, how many things do we find pleasing and beautiful? Or do we always lower our eyes to the phone screen, roaming through a virtual world that somehow feels more secure?",
+        "Aesthetic experience concerns an inner horizon that cannot be ignored. When the roughness of an environment is tolerated or silently permitted, the response of residents will not be merely helpless complaint. Vision must be trained. A potted arrangement may be a careful accent, or it may simply occupy space. Are we beautifying the environment, or beautifying the mind? In this world, there is no such thing as beauty that can be taken for granted.",
+        "A beautiful thing never comes from nowhere. Even a modest plant arrangement requires thought and time before it becomes what we see. The intervention of public art in space is an extension of that devotion. What artists open is a social dimension, a poetic construction. Through signs they communicate, and through that communication they carry issues forward.",
+        "If the understanding of social context remains only at the level of surface templates, cultural tourism and community attractions easily become formal gestures, while mascot culture turns into another mode of decoration. Whether art can truly intervene in space depends on how deeply it understands ways of living and cultural value.",
+        "An environment built through feeling cannot be completed by a single facility or installation. It requires an environment that can be cultivated and sustained, a way of thinking rooted in environmental creativity. This is the true starting point of cultural marketing for public art."
+      ],
+      "essay_de": [
+        "Der Ausgangspunkt der Kunst im öffentlichen Raum liegt im ganzheitlichen Verständnis des regionalen Umfelds. Sie muss zwischen den Ebenen des Sozialen, Ökonomischen, Kulturellen, Historischen, Räumlichen und Zeitlichen hin und her denken und sie zu einer umfassenden Sichtweise zusammenführen. Ihr Gegenüber ist die Kulturlandschaft, das gemeinsame Gedächtnis und die Lebenserfahrung der Bewohner, jene Gefühle, die sich gegenüber Schauplätzen und Orten angesammelt haben.",
+        "Eben deshalb ist Kunst im öffentlichen Raum mehr als ein im Raum platziertes Kunstwerk. Sie berührt das soziale Wesen des Öffentlichen, sie berührt den Dienst an der Öffentlichkeit, und sie berührt einen Prozess, der die Öffentlichkeit zur Teilhabe führt. Es geht ihr um die Lebenswelt, um das Wesen des Raumes, um die alltägliche visuelle Erfahrung der Öffentlichkeit. Vom einzelnen Werk zum öffentlichen Bewusstsein, vom Wert des Standorts zur zukünftigen Entwicklung des gesamten Umfelds: Wenn Kunst in den Raum eintritt, bleibt ihr Wesen stets das Wechselspiel zwischen Subjekt und Objekt sowie das Anwachsen der kulturellen Dichte eines Ortes.",
+        "Für die Bewohner verbirgt sich das Schöne vielleicht in einer zufälligen Begegnung inmitten des dichten Straßenbildes. Rasch mit dem Handy festgehalten, und schon eilt man weiter. Wer hat diese Szene geschaffen, und wie hat sie den Blick der Menschen auf sich gezogen?",
+        "Die Schönheit des Stadtbildes war noch nie bloß die gestalterische Verschönerung des öffentlichen Raums durch die Behörden. Sie entsteht aus dem über lange Zeit gewachsenen, stillschweigenden Einverständnis zwischen Mensch und Umgebung, aus einer gemeinsam geteilten ästhetischen Verbindung. Die ästhetische Erfahrung der Stadt lässt sich niemals durch einige wenige Werke der Kunst im öffentlichen Raum erreichen.",
+        "Jeder Mensch hat seinen eigenen Lebensbereich. Wie viele Dinge in der Erfahrung der täglichen Wege empfinden wir als angenehm und schön? Oder senken wir den Blick doch immerzu auf den Bildschirm des Handys und treiben durch eine Scheinwelt, in der wir uns paradoxerweise geborgener fühlen?",
+        "Die ästhetische Erfahrung betrifft einen inneren Horizont, der sich nicht übersehen lässt. Wo die Rohheit der Umgebung geduldet oder stillschweigend hingenommen wird, erschöpft sich die Antwort der Bewohner nicht in einer hilflosen Beschwerde. Das Sehen will geschult sein. Ein Pflanzenarrangement kann ein mit Bedacht gesetzter Akzent sein oder bloß eine Besetzung des Raumes. Verschönern wir die Umgebung oder verschönern wir das Gemüt? Es gibt auf dieser Welt keine Schönheit, die sich von selbst versteht.",
+        "Etwas Schönes entsteht niemals aus dem Nichts. Selbst ein bloßes Pflanzenarrangement verlangt nach viel Gedanken und Zeit, ehe es die Gestalt annimmt, die vor uns liegt. Der Eingriff der Kunst in den öffentlichen Raum ist die Verlängerung eben dieser Hingabe. Was die Kunstschaffenden eröffnen, ist eine gesellschaftliche Dimension, eine poetische Gestaltung. Sie verständigt sich über Zeichen und trägt damit ihre Anliegen weiter.",
+        "Bleibt das Verständnis des gesellschaftlichen Zusammenhangs an der Oberfläche schablonenhafter Muster, so geraten Kulturtourismus und Quartiersattraktionen leicht zur bloßen Form, und die Maskottchenkultur wird zu einer weiteren Spielart des Dekorativen. Wie weit die Kunst wirklich in den Raum eingreift, hängt davon ab, wie tief ihr Verständnis von Lebensperspektive und kulturellem Wert reicht.",
+        "Ein Umfeld, das aus Gefühlen gebaut ist, lässt sich nicht durch eine einzelne Einrichtung oder Installation herstellen. Es verlangt nach einem Umfeld, das sich pflegen lässt und Bestand hat, nach einer Denkweise schöpferischer Gestaltung des Umfelds. Genau hier liegt der wahre Ausgangspunkt des kulturellen Marketings der Kunst im öffentlichen Raum."
+      ],
+      "href": "https://genius912.blogspot.com/2026/06/blog-post_20.html"
+    },
+  /* RAUM_LAND_NARRATIVE_PATCH_END */
   {
     id: 'w-20km',
     year: '2020', month: '10',
@@ -7092,6 +7488,673 @@ const WRITINGS = [
     href: '',
   },
 ];
+
+
+/* RAUM_WRITING_IMAGE_DATA_START */
+const RAUM_WRITING_IMAGES = {
+  "w-hallo-servus-2026": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc_3-YtqTQ-xv8tBAVCeyrrMR_x4nfDbGpyFaNqP1yirE3rl2oK1Z5CBRghS1GRYctH7832-fBcYMFDgMPlI0bjKDr4LGdnJsoLRmcodf3Thy804VZ0orslzMlxPs7zMnw806Yj8PYOUg/s1600/Hallo!%2BServus%2B!%2B%2B2012.10.03.jpg",
+    "image_alt_zh": "Hallo! Servus! 以物易物行動中的改造嬰兒車",
+    "image_alt_en": "The converted pram in the Hallo! Servus! barter action",
+    "image_alt_de": "Der umgebaute Kinderwagen in der Tauschaktion Hallo! Servus!",
+    "image_caption_zh": "以物易物的行動載具",
+    "image_caption_en": "A vehicle for barter",
+    "image_caption_de": "Ein Träger des Tauschhandels"
+  },
+  "w-subbus-european-action": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA_30cWd-HvldCmT5GLGtUCLVSjyxln8aEsossr0C62TuhsstwB3Uml9lwkwAaO1fc4bfxSXSqL-tD827j-cgqOlcBJ1qZIAJJpCipnEdBnqoHS_ngHw9jdznilxEyL1EB-YmXyHKHLNw/s1600/DSC01236.JPG",
+    "image_alt_zh": "SUBBUS 歐洲行動計畫中的巴士現場",
+    "image_alt_en": "The bus site in the SUBBUS European Action Project",
+    "image_alt_de": "Der Bus-Ort im SUBBUS Europäischen Aktionsprojekt",
+    "image_caption_zh": "公車作為移動場域",
+    "image_caption_en": "The bus as a mobile field",
+    "image_caption_de": "Der Bus als mobiles Feld"
+  },
+  "w-bus-geschmacke-2015-update": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3oNZsnTbJReMI-D7GbJQACU8SPgUhVgUdfcLn5CdWLJAlxeEASTViSMHAezNICbse4880ckbcllON0itL-B4j9e0FGzyMj-1Eh5q-p-FMbiS5n1I3XnG5ANLeq0XsnDKgjPlWMs2SvbE/s1600/DSC01586.JPG",
+    "image_alt_zh": "SUBBUS 計畫中的味覺與公共空間行動",
+    "image_alt_en": "Taste and public-space action in the SUBBUS project",
+    "image_alt_de": "Geschmack und Handlung im öffentlichen Raum im SUBBUS Projekt",
+    "image_caption_zh": "味覺作為旅程總結",
+    "image_caption_en": "Taste as a summary of the journey",
+    "image_caption_de": "Geschmack als Zusammenfassung der Reise"
+  },
+  "w-land-narrative-01": {
+    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEhYEqJDoBol1gIqGCTbdy_pPqetg5ygAdfY8QipgAv8rd6OR4ugH236BY0aoDesBQM_ztbzBFSzWsWdwUKD93At_d9i4eggFQFPo8M_8JYdlLCJRj28TLygSb0ABeoeQT4Qv-tCFjksiGV5ns353CTgEDXUse-Tdbim-DFjaAY1wnY9NHl3TeSdJYKZ=s1600",
+    "image_alt_zh": "德國田野中的地景行動",
+    "image_alt_en": "A land-art action in a German field",
+    "image_alt_de": "Eine Land-Art-Aktion auf einem deutschen Feld",
+    "image_caption_zh": "土地與信任",
+    "image_caption_en": "Land and trust",
+    "image_caption_de": "Land und Vertrauen"
+  },
+  "w-land-narrative-02": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUI-HsqEPaKgG5WDu0Gaf_jKCTv5goWYjrv6wzJn1lKbFDd3A4gCN1030RzSasrmN5NUAJZcx2KMY2T7RcHSMWP5YHQv9DRUEfeRipnnxqFZ1mU5tqTiAEiNJqIf01uK2Zgcatxk5f2Es/s1600/Altrathaus-11.jpg",
+    "image_alt_zh": "紐倫堡公共空間中的工程圍欄裝置",
+    "image_alt_en": "Construction barriers installed in a public courtyard in Nuremberg",
+    "image_alt_de": "Bauzäune in einem öffentlichen Hof in Nürnberg",
+    "image_caption_zh": "城市、秩序與殘片",
+    "image_caption_en": "City, order and fragments",
+    "image_caption_de": "Stadt, Ordnung und Fragmente"
+  },
+  "w-land-narrative-03": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt2P22WULthTcN_Hbq-dgeXga7HN-_Z2z29zSybcG3I_RTT0Gw8Zx7hA0ukncb1FrU6UREaJ3QxoKrbtf2Kn8ww-GTSZpJ1sKCWqGqmjp0e5sZQ3m2VZRhc8MigueDiGaJL9HCo3yKSK0/s1600/DSC08834.JPG",
+    "image_alt_zh": "清水地景藝術節的公共藝術現場",
+    "image_alt_en": "A public-art site from the Qingshui Land Art Festival",
+    "image_alt_de": "Ein Ort der Kunst im öffentlichen Raum beim Qingshui Land Art Festival",
+    "image_caption_zh": "公共藝術的觀看現場",
+    "image_caption_en": "The viewing field of public art",
+    "image_caption_de": "Das Sichtfeld der öffentlichen Kunst"
+  },
+  "w-20km": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMtVD-s4OIiJb70X4DlIEYL9VptJC_OKHfg_IAsN6x2PUa5hOkmTlvpwcLjN13TkUEaI9pM7fQSmhu6FeL-8taFdqOAYK12lJh2atC0vA8YG-xVVYrR8BppS0757QwYKJmLs6pzLSJWAeJVAtAXYj5CXjj1PtZMx5zrLbPCSzl4VMwP28QUgcQdECrxnk/s4463/2025.10.03%E4%BF%AE-30.jpg",
+    "image_alt_zh": "清水流域地景中的布幔與土地色彩",
+    "image_alt_en": "Cloth and earth colors in the Qingshui watershed landscape",
+    "image_alt_de": "Stoffbahnen und Erdfarben in der Landschaft von Qingshui",
+    "image_caption_zh": "觀看速度",
+    "image_caption_en": "The speed of looking",
+    "image_caption_de": "Die Geschwindigkeit des Sehens"
+  },
+  "w-manifesto": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeJi88PL6QCw3IQid0-9IuLtrbxUsIztnq9qyOa1-6UIyKIDmxOYBKHJdwRcFtFS_hUzJpnDt8PPKFrnPU9iqpSzuqV8haVCWQ_rOo3CTiL3hMXAeErCvxcP3qqrBwAD5iYFClBdhyphenhyphenYd6YeYzAKFPlKJzL67fSaCqxOIwwRBAY-yl3ig5axToAFrgB1Q0/s4557/2025.10.03%E4%BF%AE-13.jpg",
+    "image_alt_zh": "土地、布幔與地景的創作現場",
+    "image_alt_en": "A making site of land, cloth and landscape",
+    "image_alt_de": "Ein Arbeitsort aus Erde, Stoff und Landschaft",
+    "image_caption_zh": "土地 · 文化 · 敘事",
+    "image_caption_en": "Land · Culture · Narrative",
+    "image_caption_de": "Land · Kultur · Erzählung"
+  },
+  "w-germany": {
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFv_pf56jfT_Gvc8cowrzn66md5brQYdg0D0e6nMqVjOG3TjZpj6taT5ZiketDlXFQhSe06KVa8KGcfYCELW_ugZpLq4J2KCWz3YZZDlEifmnx05II4xWtBT3su169jOSvGjVgkaldpqE/s1600/Altrathaus-12-1.jpg",
+    "image_alt_zh": "德國公共空間中的城市觀察",
+    "image_alt_en": "Urban observation in a German public space",
+    "image_alt_de": "Stadtbeobachtung im deutschen öffentlichen Raum",
+    "image_caption_zh": "德國駐地記錄",
+    "image_caption_en": "Germany residency",
+    "image_caption_de": "Aufenthalt in Deutschland"
+  }
+};
+WRITINGS.forEach((writing) => {
+  Object.assign(writing, RAUM_WRITING_IMAGES[writing.id] || {});
+});
+/* RAUM_WRITING_IMAGE_DATA_END */
+
+
+/* RAUM_WRITING_REMOVE_BUS_GESCHMACK_START */
+for (let index = WRITINGS.length - 1; index >= 0; index -= 1) {
+  const writing = WRITINGS[index];
+  if (
+    writing.id === 'w-bus-geschmacke-2015-update' ||
+    writing.href === 'https://genius912.blogspot.com/2015/07/bus-geschmacke.html'
+  ) {
+    WRITINGS.splice(index, 1);
+  }
+}
+/* RAUM_WRITING_REMOVE_BUS_GESCHMACK_END */
+
+
+/* RAUM_WRITING_SOURCE_STRICT_START */
+const RAUM_WRITING_SOURCE_STRICT = {
+  "w-land-narrative-01": {
+    "href": "https://genius912.blogspot.com/2026/06/blog-post.html",
+    "title_zh": "無人的市場，與自己的對話",
+    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEhYEqJDoBol1gIqGCTbdy_pPqetg5ygAdfY8QipgAv8rd6OR4ugH236BY0aoDesBQM_ztbzBFSzWsWdwUKD93At_d9i4eggFQFPo8M_8JYdlLCJRj28TLygSb0ABeoeQT4Qv-tCFjksiGV5ns353CTgEDXUse-Tdbim-DFjaAY1wnY9NHl3TeSdJYKZ=s1600"
+  },
+  "w-land-narrative-02": {
+    "href": "https://genius912.blogspot.com/2026/06/archaologie-einer-seelenlosen-stadt.html",
+    "title_zh": "一座無魂城市的考古學",
+    "title_en": "Archaeology of a soulless city",
+    "title_de": "Archäologie einer seelenlosen Stadt",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUI-HsqEPaKgG5WDu0Gaf_jKCTv5goWYjrv6wzJn1lKbFDd3A4gCN1030RzSasrmN5NUAJZcx2KMY2T7RcHSMWP5YHQv9DRUEfeRipnnxqFZ1mU5tqTiAEiNJqIf01uK2Zgcatxk5f2Es/s1600/Altrathaus-11.jpg"
+  },
+  "w-land-narrative-03": {
+    "href": "https://genius912.blogspot.com/2026/06/blog-post_20.html",
+    "title_zh": "公共空間的美感經驗",
+    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QCARXhpZgAATU0AKgAAAAgAAwExAAIAAAAHAAAAMgE7AAIAAAAHAAAAOodpAAQAAAABAAAAQgAAAABHb29nbGUAAFBpY2FzYQAAAASQAAAHAAAABDAyMjCgAQADAAAAAQABAACgAgAEAAAAAQAAAaSgAwAEAAAAAQAAATsAAAAA/+0AUlBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAaHAFaAAMbJUccAgAAAgACHAJQAAZQaWNhc2E4QklNBCUAAAAAABDISMx5x3Rm5mvjBjfQ2Wp6/8AAEQgBOwGkAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMAExMTExMTIBMTIC0gICAtPS0tLS09TT09PT09TV1NTU1NTU1dXV1dXV1dXXBwcHBwcIODg4ODk5OTk5OTk5OTk//bAEMBFxgYJSMlQCMjQJloVWiZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmf/dAAQAG//aAAwDAQACEQMRAD8A7GsbUYEidL1VBw3zj1BrZqrepvtZF/2c/lzSnsNFOCOKa4k2E+Wo4AJxWmqIoworJ0YfuXP+1j8q2KimtLgxBxwadSdeKQHsasRWu22W0p/2DVXRmzbMp5Kt3+gqTUfmiWEdZGApIlFnetH0SYAr9RWb+K40adQzn5NvrUrMFGTVOMm4kJ/hFTUl9lbsa7kw8xlGw7VHTjNJbTNIXSQYdDg46H3qxWch26qwH8UQJ/A4rRKxKJ7+Fp7Yqn3lIZfqKfDKs0ayL0YZ+h7irNVHtmDGS3baW5Kn7pPr7Gqt1Gn0JjnBI69qgtxMse65bLHkjsPagfazxtX65/8ArVVcTy3AgL8AZfb/ACzSba6FqxKzPM5WP8T2H/1/arcUaxIEX/8AXTlVUAVRgCh3EaM7ZwoJOPaqjGxLfYbLLFChklYKoGSTWTIJ7nNzMAsUeGiAPJPXccfyqjFaDWZPtdwjIm49T95ewHpjA5+tbV5titfKQYBAUAdu1VLRCOH1u7kurr5gQg+7nv71i13GsWSzWOUHzQjI+g61w1TDYTR1mgamABYTn/rmf6f4V0dy0fllJTgNxXmIJUhlOCOQa6iO7m1HZzkkbcfzrOs7LQ6MNDnlvaxvRwW+wywj7vOR7VXurdrqdBLg27Jj3DZ/wq0s1pYRCN3Ax+ZNQrewTwyLDldoyM8ce1TayuTKXNPc4/UdLn09ieWiPRh2+tWtF1UWJaG5P7o8gjnB/wDr11MsrMrLKF2YOc+nvXArFFcXn2eF9sbPhSffpVp3IlGx2Q1G1nc/ZG3MykhTkHI5pItSndBujBc8cH+lEOk28BWVRiVB1XIBP05pYIx9qOOB94fjUXs2SNjtTI7Lc7d7cnOefpyKvQ232dAsKrgHI2nH86pajdCECJOXBBPsKu2N7HcgDOHHUVTpPluTzpuxehuldvKkBST0PGfpVTVLKS5EckX3kPJ749quzRpKmyQZFVkW4t/lZ98Z6FuSPYms7uJot7osQqyKqO24jgnpmpf4/wAajAmHIQH6N/8AWprxzyffIRT1C8k/j2qxFMnzrt5Qcqo2D3Pep6srEyAImAB2xTij+x/CmtBMpmkPLA+9TTHy9uQCScADvSNlR86Ae4qZu6aBaElFKpDKCKdgUoyurlmXqf8Ax7fjinxLtVV9AKNTKCBQRnLCnJyisO4FJfEJlraMVE64qYEd+tRSc1ZC3KxRTMCwyHGw/wBKtR20oX93KR7EZqu4JQ469vrVh7xIbYznnpgepNZqynr1KlfoNlt0IzezZX04Vf8A69CvYn5YWXPAwPamW9uW/wBIuvnlbnnovsBVxo43GGUEe4rbXoTbuU2QRyqwGAeD9e1WMVXlhkRCIfmX+4f6GnW84niDDhuhHoayTcZ+91KtoTYPYUYb0FPHAxS1uSf/0OxqG4/1En+6f5VKDkZqtetttn9xilN2TGZ+jODHKno38xWzWHaxGxulD/dnUc/7XpW3UwVlYGLSHmioJ51jXHc0Skoq7EV9yNc+bIfljGB9TU8s0Lx/v0bZ1yRwP6ikt7faPMk5c8/SrPByrd6mCdtSmVViWOJpnbzAOV5yMdqmtk2xAnq3J/GstSEd9PXOA4IB/unnitunHVikLVFSTfv6LGP1NXqq243SzS+p2j8KrqiUW6KQdKWqAjlkWGNpn4VQSfwri7bxCsUzllDK5yTnBqfxJdyCQWysVXbkgd8+tcmIlCgt0Pepe5aPQU12wfHzEZrF1vWpVfyLKQGNl5K9cntXLSQkEBcAHvVhFCoyr9QT3p3Cx0cN/dQ2IubVv9GtyFIfG5yTz06da3blWu4DMoPyAMB79TXNcpCcHHcwra1ErGaTByfSrktsnlttUZx9P5VLaAGBSvcVdEZIz2qN1qaqKRVeCG9t2icEbh8w7j3FYVv4cMcgkkm+62RgdgeK6YxHqDgjoRSo5wRIOR1x0qbuOhE49RdtUFBRhJ1wxX8M1bmu4IELMwJ7AdTUEMsSx43BieT75qXa+pCKWoaeZXM0PU9R61zjs0WSCVcHGMV2sMhcbWUqR2bqR61DLY29xKsjjJHX3+tawrNx5WDpxvzrci06+kuIlW4BVv4Sejfj61u4Bjw3QiqkkSOnlkceg7fSpYj5aiKY7v7rHv7H3qXZ7AvMbG5hk8lzlW+6f6Va6n6VRudrQn+8vI/Co0SCRRIE+9z1IqYKzsN9zToOOKzZcza4WxasHXQ56f4VlfaY0bGYjKq46dqn2bGubVg5PpWzcQxmJXH+4fzrxu6qcXqfwrx8H2jz+UvxX+deXUYOKBrLhT+7uR7UH+A//AF1fYX+e5/lWfLDJt3pz7mvqDnsvCUMevSq3+yXv5e+Qf9ac/ftUvqw/lTTcQSxvUw3m11DrK/QH/AFaKJkLkzDwexziq9qlwS8N1kV5B7Hk/rUj5Lnccj3pUV1mbzJFOl2ktnE7Am1zWfcLnjA6D8a2rsXzOhbvHO7bQB1wcD6c1bywX4tpNVxjJKYVlY/x8fwrImu7i4fZPtjCCT91Dg/QVLTUTmxmxq7hXvLu2SMZtOuR91WGOx9aq4IyPMS+vJ5NNt7GV4yD6dK02tB50dOR6f5U6UxRcx2btuz/AMdVn7zIDjOaoy8OmFYRtHpU0oXbvKZ9KxDXLtHTH8q03iVmCm9R8rnoa5I3zH8qkaTdjrSrGcg8Cnyanaw+Zp3cZpQc9aKaM5If/9XDM0m3Jx+k61OIpXx1NTk6sT6ZqOVRtUZWI5H6VE2KVxcHYf1qzoycZ6VMZ3IRh12j35/wrZUPnK59Rzj+Y/zqCK0W51Qxkby1eUYP8KzJILUCYy3OB1q+92CbtsmX06ntUvn8GQwwdyqe/171h4tS1KJcq6R5p+U1YgsNpxnJ5qDUpz8w6c1m3Fi79qh4z2zTqahawhyx5B+Vmz1Y+9V5XnXbuKnOSWOeHkO+Y9qgeVFpLTqM95D5q4wPSs+fQwsdTNXoYFQn1GKg/AinrnrURb5pM/uctkH9KlnkR0fseYcVUpW1leRoZKWwPY8fwpjzRq8buQ5/maw6wGrHLXdk3TeMphnPrn09f0rRvhvBvZjEFu9lkxySI6jO05+yH0HavUoLT4tSjB9xRtPJAzJ3e3Psv9KSoyfR1Mo/nLjk4P/AK0/H+VU/EOJEP2j1d2q2tv4j2qg5G2x9On9aZ52cjivkk3D3AqVOQdvSoI2H8ahjtVrLq8io+lW5U1JzS5qMcVIBxzTeafQUGtAD2p3BHFHkK2NgClo5xSYoNCAkGp5q/fZx0wMr15xTd8Onxj/APWY/wD195XQmGlOrPKksvA4JI4NYVw4J2dpI5yOvHWuBkK9PTNTIVBwynOSB2zWntS0rNBS2ctLa81IFcrMO2Npxxmu43bSf+Nbj5SPyrnu+8Q5s1zIwVGR6LnpXoNxAM8ljuxGpAPQUix+6bEk+h46+tBi8xkrQutEg3Zznrx1NV5vmt47e7e15bWXEUsR2o2R6YNX76yyw88xElwFIZDzge1Z8GucVe1SguFBByegqOSWeeQ5JJH1qMyxiEcbVcA56e9VaGa5VSVFVCgkkZqMJeR7B/LnqKetLLI+MtEZGcZFPosyKx7b1p5WUxqrJ+XXcPp78VcEMBLnfnqKeM7eowKLpWlrA+ZzSWzuNvYgIHI9q1YY7cfOizPBOB3B/KqLYXZxtIoZUYfAJ9OlK5uWkJYFF2/lPWqO3YmJKsVxx+dJcx9sfxOfwoLcm2qMnhtwQRk/yxVrw+/dV8i+94I9h7Vdgee6qevWuP8AE0NlqQHzQh1OW9DXozNqwkUayFTgEAjHI6n2x5pqJsijhiG9eBx35BqPLP5sijivbfxF7y99Cv3f6Cooomca4xdQNsBHagNJJpF5IxU4U5FTb3aO4YjIbsOhBrJyMmvc54TgjjYZxppzkinVgqhGcD8arDp6f4fln0fXms+XXp9e9Xk1yJnt3UJNg9+DT4yzOQOg96jbOsDuMk1DlSrs5E2jn6c/lWiT8o8xehzVyQ3k5wTlj+dNkIDFpP/2Q== "
+  },
+  "w-hallo-servus-2026": {
+    "href": "https://genius912.blogspot.com/2026/06/hallo-servus.html",
+    "title_zh": "Hallo! Servus!",
+    "title_en": "Hallo! Servus!",
+    "title_de": "Hallo! Servus!",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc_3-YtqTQ-xv8tBAVCeyrrMR_x4nfDbGpyFaNqP1yirE3rl2oK1Z5CBRghS1GRYctH7832-fBcYMFDgMPlI0bjKDr4LGdnJsoLRmcodf3Thy804VZ0orslzMlxPs7zMnw806Yj8PYOUg/s1600/Hallo!%2BServus%2B!%2B%2B2012.10.03.jpg"
+  },
+  "w-subbus-european-action": {
+    "href": "https://genius912.blogspot.com/2026/06/subbus.html",
+    "title_zh": "SUBBUS",
+    "title_en": "SUBBUS",
+    "title_de": "SUBBUS",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA_30cWd-HvldCmT5GLGtUCLVSjyxln8aEsossr0C62TuhsstwB3Uml9lwkwAaO1fc4bfxSXSqL-tD827j-cgqOlcBJ1qZIAJJpCipnEdBnqoHS_ngHw9jdznilxEyL1EB-YmXyHKHLNw/s1600/DSC01236.JPG"
+  }
+};
+const RAUM_WRITING_IMAGE_KEYS = [
+  'image',
+  'images',
+  'image_alt_zh',
+  'image_alt_en',
+  'image_alt_de',
+  'image_caption_zh',
+  'image_caption_en',
+  'image_caption_de'
+];
+WRITINGS.forEach((writing) => {
+  const source = RAUM_WRITING_SOURCE_STRICT[writing.id];
+  RAUM_WRITING_IMAGE_KEYS.forEach((key) => delete writing[key]);
+  if (!source) return;
+  Object.assign(writing, source);
+  writing.image_alt_zh = source.title_zh || source.title_en || source.title_de || writing.title_zh;
+  writing.image_alt_en = source.title_en || source.title_zh || source.title_de || writing.title_en;
+  writing.image_alt_de = source.title_de || source.title_zh || source.title_en || writing.title_de;
+  writing.image_caption_zh = source.title_zh || writing.title_zh;
+  writing.image_caption_en = source.title_en || writing.title_en;
+  writing.image_caption_de = source.title_de || writing.title_de;
+});
+/* RAUM_WRITING_SOURCE_STRICT_END */
+
+/* RAUM_WRITING_UPDATES_20260623_START */
+const RAUM_WRITING_UPDATES_20260623 = [
+  {
+    "id": "w-blue-night-20260622",
+    "year": "2026",
+    "month": "06",
+    "title_zh": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "title_en": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "title_de": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "note_zh": "作品：《自由的界線》（Die Grenzen der Freiheit）",
+    "note_en": "作品：《自由的界線》（Die Grenzen der Freiheit）",
+    "note_de": "作品：《自由的界線》（Die Grenzen der Freiheit）",
+    "essay_zh": [
+      "紐倫堡藍夜藝術節",
+      "作品：《自由的界線》（Die Grenzen der Freiheit）",
+      "紐倫堡藍夜藝術節 2015。獲 N-Ergie 民眾藝術獎。",
+      "2015 年，德國紐倫堡藍夜藝術節（Die Blaue Nacht）以「自由」（Freiheit）為題。我用一百五十座工程圍欄與三百盞警示燈，在舊市政廳的內庭裡築起一座可以移動的迷宮，讓觀眾在彼此讓路與互相阻擋之間，親手碰到自由的邊界。這篇文章記錄那一夜，也記錄一座城市如何在一個晚上，把平時用來封鎖人的工具，暫時交還到市民手裡。",
+      "一、午夜的內庭",
+      "舊市政廳（Altes Rathaus）的內庭，那一晚被工程圍欄填滿。",
+      "這些圍欄沒有封路，也沒有禁止進入，它們把整座庭院翻轉成一條沒有固定答案的通道。鍍鋅的鐵網一節接著一節，三百盞橘紅色的警示燈在地面與欄架上明滅。觀眾從入口走進來，要自己找到出口。圍欄是活動的，可以推、可以挪，於是真正有趣的事情開始發生。一個人替自己推開一條路，同一個動作，往往就擋住了旁邊另一個人的去向。有人皺眉，有人退讓，有人乾脆停下來，等對面的陌生人先過。",
+      "這是一場參與。觀眾走進作品裡面，成為它的一部分，沒有停在外面欣賞。自由的界線這個抽象的命題，在那個內庭裡被翻譯成一件很具體的事，就是你想往前走的時候，得先看一眼別人。",
+      "我把這件作品叫做《自由的界線》（Die Grenzen der Freiheit）。它的材料，全部來自城市平時用來規範人、引導人、阻擋人的那套基礎設施。",
+      "二、藍夜：一座城市短暫的例外狀態",
+      "要理解這件作品，得先理解它被放進去的那個夜晚。",
+      "紐倫堡藍夜從 2000 年開始，每年五月的第一個星期六舉行，從晚上七點一路到隔天清晨五點。一整個夜晚，這座城市進入一種短暫的例外狀態。平時各有開放時間、各有門禁規矩的公共空間，市政廳、圖書館、城堡、博物館、甚至停車場，在這一夜被串連起來，向所有人敞開。三百多個表演團體與樂團散布在城裡的各個角落同時展演。今年湧進了十三萬五千人。",
+      "這是一座城市對自己的一次重新設定。日常的紐倫堡是有秩序的，什麼時間哪裡可以進、哪裡不可以進，都寫得清清楚楚。藍夜把這套秩序暫時鬆開，讓人可以在午夜走進原本進不去的地方。例外因此成了藍夜真正的主題，而所有的例外，都建立在平時那套不被注意的規範之上。",
+      "藝術裝置的展示時間其實更短。它們在晚上七點亮起，凌晨一點以前就要收掉，之後城市才把夜晚交給音樂與人群，繼續走到天亮。一場看似徹夜的狂歡，內部其實有非常精密的時間刻度。這個刻度，後面我會再回來談，因為它直接決定了一件公共藝術作品能不能成立。",
+      "「自由」放在這個脈絡裡，就不只是一個漂亮的哲學詞。它是在問，當一座城市願意暫時放鬆它對空間的控制，市民會怎麼使用這份多出來的自由。他們會更體貼，還是更各自為政。藍夜把這個問題丟給整座城市，而我想用一件作品，把這個問題濃縮進一個庭院。",
+      "三、一件用秩序的工具寫成的作品",
+      "我選的材料，是工程圍欄與警示燈。",
+      "這個選擇是整件作品的核心。工程圍欄（Absperrschranke）是城市裡最沉默、也最常見的東西。它出現在施工現場、出現在改道的路口、出現在所有「這裡暫時不能走」的地方。它的功能就是劃界，告訴你的身體可以到哪裡為止。警示燈也是同一套語言，橘紅色的閃光意味著注意、繞道、止步。這些物件平時隱形，因為我們太習慣服從它們。",
+      "把這套劃界的工具從街頭搬進舊市政廳的內庭，事情就翻轉了。",
+      "第一層翻轉，是場所。舊市政廳是市政權力的所在地，是這座城市制定規則、執行秩序的象徵中心。我在權力的庭院裡，用權力自己的封鎖工具，蓋了一座讓人迷路的迷宮。控制的符號被搬到控制的源頭，彼此對照。",
+      "第二層翻轉，是功能。在街頭，圍欄是固定的，它替你決定路線，你只能服從。在我的作品裡，圍欄是可以移動的。決定權被交還給觀眾，每個人都能替自己開路。可是這份被交還的自由立刻撞上一個現實，你的每一次移動都在改寫別人的處境。自由一旦變得可以移動，責任就跟著浮現。",
+      "這就是這件作品想說的話。它讓觀眾親身演練一個古老的命題，自由要領受某些限制，才能真正換得。我的自由，也許並不等於你的自由。自由屬於個人，卻不以自我為中心，它同時牽涉到對他者的衡量。這些句子寫在牆上是抽象的，走進那座圍欄的迷宮，它們就變成你腳下每一步要面對的選擇。衝突，或者禮讓（Konflikt oder Höflichkeit），這兩個德文字是我給作品下的註腳，也是觀眾在內庭裡真正要做的決定。",
+      "四、身體成為媒介：一場公共空間的協商",
+      "從城市研究（Stadtforschung）的角度看，這件作品最值得記錄的，是它如何把公共空間的政治轉成可以用身體感受的東西。",
+      "公共空間從來不是中立的。它是各種規則、權力與利益層層疊上去的結果，只是這些層次平時藏得很好，好到我們以為街道、廣場、庭院本來就「自然」是那個樣子。圍欄、警示燈、開放時間、門禁，都是這套隱形治理的一部分。我們每天穿過它，卻很少停下來想，是誰決定了這條路只能這樣走。",
+      "《自由的界線》做的事，是把這套隱形治理推到台前，逼觀眾用身體去碰它。",
+      "當你在那座迷宮裡替自己推開一道圍欄，你就在一瞬間扮演了那個平時隱形的決策者。你劃出了一條界線。你也立刻嘗到劃界的代價，因為對面的人正被你擋住。在街頭，劃界的是市政府、是工程單位、是某個你看不見的權力。在內庭裡，劃界的是你，是每一個普通的觀眾。作品把治理的權力下放到每一具身體上，再讓這些身體在同一個空間裡彼此碰撞、協商、妥協。",
+      "這是一種很安靜的政治教育。它沒有口號，沒有控訴。它只是讓你在找出口的過程裡，無可迴避地意識到，你的自由是有邊界的，而那道邊界往往就是另一個人。人的自由是有限的，這份有限源自生命本身的有限，也源自人的行動彼此交纏、相互牽動的處境。對自由的渴望，常常要等到我們親身撞上具體的束縛，才會真正被喚醒。先經歷了限制，人才會明確地想要跨越它。那座內庭，就是一個讓人撞上限制的地方。",
+      "五、從歐洲的開放，到重新升起的圍籬",
+      "這件作品的時間點，讓「界線」這個主題有了更尖銳的政治回聲。",
+      "歐洲共同體成立以來，國與國之間的邊界逐漸模糊，公約國的公民得以自由移動。那是一整個世代習以為常的自由，跨過一條線，從一個國家走進另一個國家，幾乎不需要停下腳步。我用可以推開的圍欄演練這份自由的時候，腦中想的就是這個歐洲。",
+      "然而就在作品展出後不久，2016 年，難民議題浮上檯面，被拆掉的邊界管制又一一重新升起。那些一度模糊的線，重新變得清晰、堅硬。我作品裡那些可以移動的圍欄，在現實世界裡有了不肯移動的版本。於是這件作品問出一個它在 2015 年還只是隱約感覺到、卻很快就被現實證實的問題。在自身利益的權衡之下，保護自我，是否始終是人們的第一順位。當外面的世界開始重新築牆，內庭裡那場關於讓路與阻擋的小小演練，就不再只是哲學遊戲。它預演了一整個歐洲接下來要面對的難題，自由的開放與邊界的回返，從來都是同一枚硬幣的兩面。一座城市願意在藍夜裡敞開自己，和一個大陸開始重新封閉自己，這兩件事發生在同一段時間，本身就是一種沉重的對照。",
+      "六、把一件作品放進廣場，需要動用整座城市",
+      "報導到這裡，得轉一個角度，去看那些觀眾在午夜的內庭裡看不見的東西。一件公共藝術作品要能站在城市的廣場上，背後是一整套制度、預算與協調的機器在運轉。這也是城市研究真正關心的層面，一座城市究竟如何生產一場臨時的公共藝術事件。",
+      "藍夜的民眾藝術獎（Blaue Nacht Publikumspreis）是一場公開徵件的競圖案，每年大約在十月到十二月之間舉行。一百六十到一百八十件提案投進來，評審團從中選出十二件，作為當年公共空間的藝術展示。設置的地點由市政府每年挑選，不一定固定，可能是市政廳、圖書館、停車場、城堡內部、博物館，也可能由藝術家自己尋找與發掘提案。",
+      "被選上的十二件作品，每件能拿到三千歐元的補助。這筆錢同時也是天花板，連同書面報告書在內，整件作品的總預算不能超過三千歐元。**三千歐元的上限，本身就是一個值得玩味的城市治理設計。**它逼著每一位藝術家在極有限的資源裡，去回應一個公共尺度的命題。我那座由一百五十座圍欄構成的迷宮，之所以選擇現成的工程物件，這個預算結構也是原因之一。城市用一個樸素的數字，篩選出懂得借力、懂得就地取材的作品。",
+      "制度的另一面是支援。市政府內部有一個專門的辦公室負責這個項目，計劃領導（Projektleitung）是 Christel Passmann 女士。",
+      "得獎的藝術家拿到的，不只是資金。政府會幫忙尋找技術資源的團隊作為協助。以我的情況，光是材料廠商的洽談、場地的施工，到與公部門之間的協調，都有專屬的協案專員從旁幫忙。一件作品要在權力的庭院裡落地，需要的不只是創意，還需要一整條看不見的行政與技術的鏈條。",
+      "最後是時間。前面提過藍夜精密的時間刻度，這個刻度在布展階段最為嚴酷。整個布展時間，大致只有星期五到星期六晚上七點以前。除非基地條件特殊、可以封閉施工，否則一切都得配合每個公共空間平時的開放時間。你不能因為要裝一件作品，就把一座還在對外開放的市政廳關起來。城市的日常秩序，永遠優先於藝術的臨時介入。一百五十座圍欄、三百盞燈，要在這樣一個被切得很碎的窗口裡，全部到位、調試完成。這件談論限制的作品，從生產的第一刻起，就被城市真實的限制牢牢框住。這一段，是我想特別留給其他創作者的紀錄。我們太容易只談作品的概念，卻很少誠實地寫下，把一個概念放進公共空間，要動用多少不屬於藝術本身的力量。",
+      "七、民眾票選的迴圈",
+      "藍夜的夜晚，最後會把判斷權交給人群。",
+      "當晚的活動，由參觀的民眾在這十二件藝術作品中，選出自己最喜歡的一件。最高票的作品，由紐倫堡電力公司（N-Ergie）提供五千歐元的獎金。十幾萬人走過這座城市的各個空間，用自己的腳與自己的票，決定哪一件作品最打動他們。",
+      "那一年，《自由的界線》拿到了這個民眾藝術獎。",
+      "在十二件競逐的作品裡，這件由一百五十座圍欄與三百盞警示燈構成的裝置，以百分之十七的得票勝出。這件作品來自一位當時正在紐倫堡求學的台灣藝術家。N-Ergie 在 2015 年五月把這座五千歐元的獎頒給了《自由的界線》。",
+      "這個結果本身，藏著一個漂亮的迴圈。一件談論市民如何在公共空間裡彼此協商的作品，最後由市民用最民主的方式，投票把它選了出來。觀眾在內庭裡親身演練了讓路與阻擋，走出來之後，又用選票替這場演練做了集體的回應。作品的主題與作品的命運，在這裡接成了一個圓。公共藝術最理想的狀態，就是讓公眾不只是觀看者，而是作品意義的共同完成者。那一夜的票數，是十三萬五千人替「自由的界線」這個命題，留下的一份集體簽名。",
+      "八、界線之內的自由",
+      "收掉圍欄之後，舊市政廳的內庭恢復成它平時的樣子。那座迷宮只存在了一個晚上，從七點到凌晨一點，短得幾乎像沒發生過。",
+      "可是它留下了一個我至今仍在思考的提醒。我們習慣把自由想成沒有邊界的狀態，想成可以無限往前。那一夜的內庭給出的答案剛好相反。自由是在界線之內才成立的東西。沒有那些圍欄，就沒有需要協商的通道，也就沒有讓路這個動作裡的溫度。界線不是自由的反面，界線是自由得以被經驗的條件。",
+      "對一座城市來說，這個道理同樣成立。紐倫堡藍夜之所以動人，是因為它在一整年嚴密的秩序之上，挪出一個夜晚的例外。例外的珍貴，正來自平日的規範。一座城市願意在一個晚上，把封鎖的工具交還給市民，讓他們親手去推、去挪、去面對彼此，這份信任，比任何關於自由的口號都更接近自由本身。",
+      "我用城市的圍欄，蓋了一座城市的作品，再由城市的市民，把它選了出來。從頭到尾，這件作品都在城市的界線之內生成、展示、完成。它談的是界線，它也活在界線裡。對我而言，這正是公共藝術最誠實的位置，站在權力與市民之間，站在限制與自由之間，用一件可以移動的圍欄，讓所有走過的人，重新感覺到那條平時看不見的線。"
+    ],
+    "essay_en": [
+      "紐倫堡藍夜藝術節",
+      "作品：《自由的界線》（Die Grenzen der Freiheit）",
+      "紐倫堡藍夜藝術節 2015。獲 N-Ergie 民眾藝術獎。",
+      "2015 年，德國紐倫堡藍夜藝術節（Die Blaue Nacht）以「自由」（Freiheit）為題。我用一百五十座工程圍欄與三百盞警示燈，在舊市政廳的內庭裡築起一座可以移動的迷宮，讓觀眾在彼此讓路與互相阻擋之間，親手碰到自由的邊界。這篇文章記錄那一夜，也記錄一座城市如何在一個晚上，把平時用來封鎖人的工具，暫時交還到市民手裡。",
+      "一、午夜的內庭",
+      "舊市政廳（Altes Rathaus）的內庭，那一晚被工程圍欄填滿。",
+      "這些圍欄沒有封路，也沒有禁止進入，它們把整座庭院翻轉成一條沒有固定答案的通道。鍍鋅的鐵網一節接著一節，三百盞橘紅色的警示燈在地面與欄架上明滅。觀眾從入口走進來，要自己找到出口。圍欄是活動的，可以推、可以挪，於是真正有趣的事情開始發生。一個人替自己推開一條路，同一個動作，往往就擋住了旁邊另一個人的去向。有人皺眉，有人退讓，有人乾脆停下來，等對面的陌生人先過。",
+      "這是一場參與。觀眾走進作品裡面，成為它的一部分，沒有停在外面欣賞。自由的界線這個抽象的命題，在那個內庭裡被翻譯成一件很具體的事，就是你想往前走的時候，得先看一眼別人。",
+      "我把這件作品叫做《自由的界線》（Die Grenzen der Freiheit）。它的材料，全部來自城市平時用來規範人、引導人、阻擋人的那套基礎設施。",
+      "二、藍夜：一座城市短暫的例外狀態",
+      "要理解這件作品，得先理解它被放進去的那個夜晚。",
+      "紐倫堡藍夜從 2000 年開始，每年五月的第一個星期六舉行，從晚上七點一路到隔天清晨五點。一整個夜晚，這座城市進入一種短暫的例外狀態。平時各有開放時間、各有門禁規矩的公共空間，市政廳、圖書館、城堡、博物館、甚至停車場，在這一夜被串連起來，向所有人敞開。三百多個表演團體與樂團散布在城裡的各個角落同時展演。今年湧進了十三萬五千人。",
+      "這是一座城市對自己的一次重新設定。日常的紐倫堡是有秩序的，什麼時間哪裡可以進、哪裡不可以進，都寫得清清楚楚。藍夜把這套秩序暫時鬆開，讓人可以在午夜走進原本進不去的地方。例外因此成了藍夜真正的主題，而所有的例外，都建立在平時那套不被注意的規範之上。",
+      "藝術裝置的展示時間其實更短。它們在晚上七點亮起，凌晨一點以前就要收掉，之後城市才把夜晚交給音樂與人群，繼續走到天亮。一場看似徹夜的狂歡，內部其實有非常精密的時間刻度。這個刻度，後面我會再回來談，因為它直接決定了一件公共藝術作品能不能成立。",
+      "「自由」放在這個脈絡裡，就不只是一個漂亮的哲學詞。它是在問，當一座城市願意暫時放鬆它對空間的控制，市民會怎麼使用這份多出來的自由。他們會更體貼，還是更各自為政。藍夜把這個問題丟給整座城市，而我想用一件作品，把這個問題濃縮進一個庭院。",
+      "三、一件用秩序的工具寫成的作品",
+      "我選的材料，是工程圍欄與警示燈。",
+      "這個選擇是整件作品的核心。工程圍欄（Absperrschranke）是城市裡最沉默、也最常見的東西。它出現在施工現場、出現在改道的路口、出現在所有「這裡暫時不能走」的地方。它的功能就是劃界，告訴你的身體可以到哪裡為止。警示燈也是同一套語言，橘紅色的閃光意味著注意、繞道、止步。這些物件平時隱形，因為我們太習慣服從它們。",
+      "把這套劃界的工具從街頭搬進舊市政廳的內庭，事情就翻轉了。",
+      "第一層翻轉，是場所。舊市政廳是市政權力的所在地，是這座城市制定規則、執行秩序的象徵中心。我在權力的庭院裡，用權力自己的封鎖工具，蓋了一座讓人迷路的迷宮。控制的符號被搬到控制的源頭，彼此對照。",
+      "第二層翻轉，是功能。在街頭，圍欄是固定的，它替你決定路線，你只能服從。在我的作品裡，圍欄是可以移動的。決定權被交還給觀眾，每個人都能替自己開路。可是這份被交還的自由立刻撞上一個現實，你的每一次移動都在改寫別人的處境。自由一旦變得可以移動，責任就跟著浮現。",
+      "這就是這件作品想說的話。它讓觀眾親身演練一個古老的命題，自由要領受某些限制，才能真正換得。我的自由，也許並不等於你的自由。自由屬於個人，卻不以自我為中心，它同時牽涉到對他者的衡量。這些句子寫在牆上是抽象的，走進那座圍欄的迷宮，它們就變成你腳下每一步要面對的選擇。衝突，或者禮讓（Konflikt oder Höflichkeit），這兩個德文字是我給作品下的註腳，也是觀眾在內庭裡真正要做的決定。",
+      "四、身體成為媒介：一場公共空間的協商",
+      "從城市研究（Stadtforschung）的角度看，這件作品最值得記錄的，是它如何把公共空間的政治轉成可以用身體感受的東西。",
+      "公共空間從來不是中立的。它是各種規則、權力與利益層層疊上去的結果，只是這些層次平時藏得很好，好到我們以為街道、廣場、庭院本來就「自然」是那個樣子。圍欄、警示燈、開放時間、門禁，都是這套隱形治理的一部分。我們每天穿過它，卻很少停下來想，是誰決定了這條路只能這樣走。",
+      "《自由的界線》做的事，是把這套隱形治理推到台前，逼觀眾用身體去碰它。",
+      "當你在那座迷宮裡替自己推開一道圍欄，你就在一瞬間扮演了那個平時隱形的決策者。你劃出了一條界線。你也立刻嘗到劃界的代價，因為對面的人正被你擋住。在街頭，劃界的是市政府、是工程單位、是某個你看不見的權力。在內庭裡，劃界的是你，是每一個普通的觀眾。作品把治理的權力下放到每一具身體上，再讓這些身體在同一個空間裡彼此碰撞、協商、妥協。",
+      "這是一種很安靜的政治教育。它沒有口號，沒有控訴。它只是讓你在找出口的過程裡，無可迴避地意識到，你的自由是有邊界的，而那道邊界往往就是另一個人。人的自由是有限的，這份有限源自生命本身的有限，也源自人的行動彼此交纏、相互牽動的處境。對自由的渴望，常常要等到我們親身撞上具體的束縛，才會真正被喚醒。先經歷了限制，人才會明確地想要跨越它。那座內庭，就是一個讓人撞上限制的地方。",
+      "五、從歐洲的開放，到重新升起的圍籬",
+      "這件作品的時間點，讓「界線」這個主題有了更尖銳的政治回聲。",
+      "歐洲共同體成立以來，國與國之間的邊界逐漸模糊，公約國的公民得以自由移動。那是一整個世代習以為常的自由，跨過一條線，從一個國家走進另一個國家，幾乎不需要停下腳步。我用可以推開的圍欄演練這份自由的時候，腦中想的就是這個歐洲。",
+      "然而就在作品展出後不久，2016 年，難民議題浮上檯面，被拆掉的邊界管制又一一重新升起。那些一度模糊的線，重新變得清晰、堅硬。我作品裡那些可以移動的圍欄，在現實世界裡有了不肯移動的版本。於是這件作品問出一個它在 2015 年還只是隱約感覺到、卻很快就被現實證實的問題。在自身利益的權衡之下，保護自我，是否始終是人們的第一順位。當外面的世界開始重新築牆，內庭裡那場關於讓路與阻擋的小小演練，就不再只是哲學遊戲。它預演了一整個歐洲接下來要面對的難題，自由的開放與邊界的回返，從來都是同一枚硬幣的兩面。一座城市願意在藍夜裡敞開自己，和一個大陸開始重新封閉自己，這兩件事發生在同一段時間，本身就是一種沉重的對照。",
+      "六、把一件作品放進廣場，需要動用整座城市",
+      "報導到這裡，得轉一個角度，去看那些觀眾在午夜的內庭裡看不見的東西。一件公共藝術作品要能站在城市的廣場上，背後是一整套制度、預算與協調的機器在運轉。這也是城市研究真正關心的層面，一座城市究竟如何生產一場臨時的公共藝術事件。",
+      "藍夜的民眾藝術獎（Blaue Nacht Publikumspreis）是一場公開徵件的競圖案，每年大約在十月到十二月之間舉行。一百六十到一百八十件提案投進來，評審團從中選出十二件，作為當年公共空間的藝術展示。設置的地點由市政府每年挑選，不一定固定，可能是市政廳、圖書館、停車場、城堡內部、博物館，也可能由藝術家自己尋找與發掘提案。",
+      "被選上的十二件作品，每件能拿到三千歐元的補助。這筆錢同時也是天花板，連同書面報告書在內，整件作品的總預算不能超過三千歐元。**三千歐元的上限，本身就是一個值得玩味的城市治理設計。**它逼著每一位藝術家在極有限的資源裡，去回應一個公共尺度的命題。我那座由一百五十座圍欄構成的迷宮，之所以選擇現成的工程物件，這個預算結構也是原因之一。城市用一個樸素的數字，篩選出懂得借力、懂得就地取材的作品。",
+      "制度的另一面是支援。市政府內部有一個專門的辦公室負責這個項目，計劃領導（Projektleitung）是 Christel Passmann 女士。",
+      "得獎的藝術家拿到的，不只是資金。政府會幫忙尋找技術資源的團隊作為協助。以我的情況，光是材料廠商的洽談、場地的施工，到與公部門之間的協調，都有專屬的協案專員從旁幫忙。一件作品要在權力的庭院裡落地，需要的不只是創意，還需要一整條看不見的行政與技術的鏈條。",
+      "最後是時間。前面提過藍夜精密的時間刻度，這個刻度在布展階段最為嚴酷。整個布展時間，大致只有星期五到星期六晚上七點以前。除非基地條件特殊、可以封閉施工，否則一切都得配合每個公共空間平時的開放時間。你不能因為要裝一件作品，就把一座還在對外開放的市政廳關起來。城市的日常秩序，永遠優先於藝術的臨時介入。一百五十座圍欄、三百盞燈，要在這樣一個被切得很碎的窗口裡，全部到位、調試完成。這件談論限制的作品，從生產的第一刻起，就被城市真實的限制牢牢框住。這一段，是我想特別留給其他創作者的紀錄。我們太容易只談作品的概念，卻很少誠實地寫下，把一個概念放進公共空間，要動用多少不屬於藝術本身的力量。",
+      "七、民眾票選的迴圈",
+      "藍夜的夜晚，最後會把判斷權交給人群。",
+      "當晚的活動，由參觀的民眾在這十二件藝術作品中，選出自己最喜歡的一件。最高票的作品，由紐倫堡電力公司（N-Ergie）提供五千歐元的獎金。十幾萬人走過這座城市的各個空間，用自己的腳與自己的票，決定哪一件作品最打動他們。",
+      "那一年，《自由的界線》拿到了這個民眾藝術獎。",
+      "在十二件競逐的作品裡，這件由一百五十座圍欄與三百盞警示燈構成的裝置，以百分之十七的得票勝出。這件作品來自一位當時正在紐倫堡求學的台灣藝術家。N-Ergie 在 2015 年五月把這座五千歐元的獎頒給了《自由的界線》。",
+      "這個結果本身，藏著一個漂亮的迴圈。一件談論市民如何在公共空間裡彼此協商的作品，最後由市民用最民主的方式，投票把它選了出來。觀眾在內庭裡親身演練了讓路與阻擋，走出來之後，又用選票替這場演練做了集體的回應。作品的主題與作品的命運，在這裡接成了一個圓。公共藝術最理想的狀態，就是讓公眾不只是觀看者，而是作品意義的共同完成者。那一夜的票數，是十三萬五千人替「自由的界線」這個命題，留下的一份集體簽名。",
+      "八、界線之內的自由",
+      "收掉圍欄之後，舊市政廳的內庭恢復成它平時的樣子。那座迷宮只存在了一個晚上，從七點到凌晨一點，短得幾乎像沒發生過。",
+      "可是它留下了一個我至今仍在思考的提醒。我們習慣把自由想成沒有邊界的狀態，想成可以無限往前。那一夜的內庭給出的答案剛好相反。自由是在界線之內才成立的東西。沒有那些圍欄，就沒有需要協商的通道，也就沒有讓路這個動作裡的溫度。界線不是自由的反面，界線是自由得以被經驗的條件。",
+      "對一座城市來說，這個道理同樣成立。紐倫堡藍夜之所以動人，是因為它在一整年嚴密的秩序之上，挪出一個夜晚的例外。例外的珍貴，正來自平日的規範。一座城市願意在一個晚上，把封鎖的工具交還給市民，讓他們親手去推、去挪、去面對彼此，這份信任，比任何關於自由的口號都更接近自由本身。",
+      "我用城市的圍欄，蓋了一座城市的作品，再由城市的市民，把它選了出來。從頭到尾，這件作品都在城市的界線之內生成、展示、完成。它談的是界線，它也活在界線裡。對我而言，這正是公共藝術最誠實的位置，站在權力與市民之間，站在限制與自由之間，用一件可以移動的圍欄，讓所有走過的人，重新感覺到那條平時看不見的線。"
+    ],
+    "essay_de": [
+      "紐倫堡藍夜藝術節",
+      "作品：《自由的界線》（Die Grenzen der Freiheit）",
+      "紐倫堡藍夜藝術節 2015。獲 N-Ergie 民眾藝術獎。",
+      "2015 年，德國紐倫堡藍夜藝術節（Die Blaue Nacht）以「自由」（Freiheit）為題。我用一百五十座工程圍欄與三百盞警示燈，在舊市政廳的內庭裡築起一座可以移動的迷宮，讓觀眾在彼此讓路與互相阻擋之間，親手碰到自由的邊界。這篇文章記錄那一夜，也記錄一座城市如何在一個晚上，把平時用來封鎖人的工具，暫時交還到市民手裡。",
+      "一、午夜的內庭",
+      "舊市政廳（Altes Rathaus）的內庭，那一晚被工程圍欄填滿。",
+      "這些圍欄沒有封路，也沒有禁止進入，它們把整座庭院翻轉成一條沒有固定答案的通道。鍍鋅的鐵網一節接著一節，三百盞橘紅色的警示燈在地面與欄架上明滅。觀眾從入口走進來，要自己找到出口。圍欄是活動的，可以推、可以挪，於是真正有趣的事情開始發生。一個人替自己推開一條路，同一個動作，往往就擋住了旁邊另一個人的去向。有人皺眉，有人退讓，有人乾脆停下來，等對面的陌生人先過。",
+      "這是一場參與。觀眾走進作品裡面，成為它的一部分，沒有停在外面欣賞。自由的界線這個抽象的命題，在那個內庭裡被翻譯成一件很具體的事，就是你想往前走的時候，得先看一眼別人。",
+      "我把這件作品叫做《自由的界線》（Die Grenzen der Freiheit）。它的材料，全部來自城市平時用來規範人、引導人、阻擋人的那套基礎設施。",
+      "二、藍夜：一座城市短暫的例外狀態",
+      "要理解這件作品，得先理解它被放進去的那個夜晚。",
+      "紐倫堡藍夜從 2000 年開始，每年五月的第一個星期六舉行，從晚上七點一路到隔天清晨五點。一整個夜晚，這座城市進入一種短暫的例外狀態。平時各有開放時間、各有門禁規矩的公共空間，市政廳、圖書館、城堡、博物館、甚至停車場，在這一夜被串連起來，向所有人敞開。三百多個表演團體與樂團散布在城裡的各個角落同時展演。今年湧進了十三萬五千人。",
+      "這是一座城市對自己的一次重新設定。日常的紐倫堡是有秩序的，什麼時間哪裡可以進、哪裡不可以進，都寫得清清楚楚。藍夜把這套秩序暫時鬆開，讓人可以在午夜走進原本進不去的地方。例外因此成了藍夜真正的主題，而所有的例外，都建立在平時那套不被注意的規範之上。",
+      "藝術裝置的展示時間其實更短。它們在晚上七點亮起，凌晨一點以前就要收掉，之後城市才把夜晚交給音樂與人群，繼續走到天亮。一場看似徹夜的狂歡，內部其實有非常精密的時間刻度。這個刻度，後面我會再回來談，因為它直接決定了一件公共藝術作品能不能成立。",
+      "「自由」放在這個脈絡裡，就不只是一個漂亮的哲學詞。它是在問，當一座城市願意暫時放鬆它對空間的控制，市民會怎麼使用這份多出來的自由。他們會更體貼，還是更各自為政。藍夜把這個問題丟給整座城市，而我想用一件作品，把這個問題濃縮進一個庭院。",
+      "三、一件用秩序的工具寫成的作品",
+      "我選的材料，是工程圍欄與警示燈。",
+      "這個選擇是整件作品的核心。工程圍欄（Absperrschranke）是城市裡最沉默、也最常見的東西。它出現在施工現場、出現在改道的路口、出現在所有「這裡暫時不能走」的地方。它的功能就是劃界，告訴你的身體可以到哪裡為止。警示燈也是同一套語言，橘紅色的閃光意味著注意、繞道、止步。這些物件平時隱形，因為我們太習慣服從它們。",
+      "把這套劃界的工具從街頭搬進舊市政廳的內庭，事情就翻轉了。",
+      "第一層翻轉，是場所。舊市政廳是市政權力的所在地，是這座城市制定規則、執行秩序的象徵中心。我在權力的庭院裡，用權力自己的封鎖工具，蓋了一座讓人迷路的迷宮。控制的符號被搬到控制的源頭，彼此對照。",
+      "第二層翻轉，是功能。在街頭，圍欄是固定的，它替你決定路線，你只能服從。在我的作品裡，圍欄是可以移動的。決定權被交還給觀眾，每個人都能替自己開路。可是這份被交還的自由立刻撞上一個現實，你的每一次移動都在改寫別人的處境。自由一旦變得可以移動，責任就跟著浮現。",
+      "這就是這件作品想說的話。它讓觀眾親身演練一個古老的命題，自由要領受某些限制，才能真正換得。我的自由，也許並不等於你的自由。自由屬於個人，卻不以自我為中心，它同時牽涉到對他者的衡量。這些句子寫在牆上是抽象的，走進那座圍欄的迷宮，它們就變成你腳下每一步要面對的選擇。衝突，或者禮讓（Konflikt oder Höflichkeit），這兩個德文字是我給作品下的註腳，也是觀眾在內庭裡真正要做的決定。",
+      "四、身體成為媒介：一場公共空間的協商",
+      "從城市研究（Stadtforschung）的角度看，這件作品最值得記錄的，是它如何把公共空間的政治轉成可以用身體感受的東西。",
+      "公共空間從來不是中立的。它是各種規則、權力與利益層層疊上去的結果，只是這些層次平時藏得很好，好到我們以為街道、廣場、庭院本來就「自然」是那個樣子。圍欄、警示燈、開放時間、門禁，都是這套隱形治理的一部分。我們每天穿過它，卻很少停下來想，是誰決定了這條路只能這樣走。",
+      "《自由的界線》做的事，是把這套隱形治理推到台前，逼觀眾用身體去碰它。",
+      "當你在那座迷宮裡替自己推開一道圍欄，你就在一瞬間扮演了那個平時隱形的決策者。你劃出了一條界線。你也立刻嘗到劃界的代價，因為對面的人正被你擋住。在街頭，劃界的是市政府、是工程單位、是某個你看不見的權力。在內庭裡，劃界的是你，是每一個普通的觀眾。作品把治理的權力下放到每一具身體上，再讓這些身體在同一個空間裡彼此碰撞、協商、妥協。",
+      "這是一種很安靜的政治教育。它沒有口號，沒有控訴。它只是讓你在找出口的過程裡，無可迴避地意識到，你的自由是有邊界的，而那道邊界往往就是另一個人。人的自由是有限的，這份有限源自生命本身的有限，也源自人的行動彼此交纏、相互牽動的處境。對自由的渴望，常常要等到我們親身撞上具體的束縛，才會真正被喚醒。先經歷了限制，人才會明確地想要跨越它。那座內庭，就是一個讓人撞上限制的地方。",
+      "五、從歐洲的開放，到重新升起的圍籬",
+      "這件作品的時間點，讓「界線」這個主題有了更尖銳的政治回聲。",
+      "歐洲共同體成立以來，國與國之間的邊界逐漸模糊，公約國的公民得以自由移動。那是一整個世代習以為常的自由，跨過一條線，從一個國家走進另一個國家，幾乎不需要停下腳步。我用可以推開的圍欄演練這份自由的時候，腦中想的就是這個歐洲。",
+      "然而就在作品展出後不久，2016 年，難民議題浮上檯面，被拆掉的邊界管制又一一重新升起。那些一度模糊的線，重新變得清晰、堅硬。我作品裡那些可以移動的圍欄，在現實世界裡有了不肯移動的版本。於是這件作品問出一個它在 2015 年還只是隱約感覺到、卻很快就被現實證實的問題。在自身利益的權衡之下，保護自我，是否始終是人們的第一順位。當外面的世界開始重新築牆，內庭裡那場關於讓路與阻擋的小小演練，就不再只是哲學遊戲。它預演了一整個歐洲接下來要面對的難題，自由的開放與邊界的回返，從來都是同一枚硬幣的兩面。一座城市願意在藍夜裡敞開自己，和一個大陸開始重新封閉自己，這兩件事發生在同一段時間，本身就是一種沉重的對照。",
+      "六、把一件作品放進廣場，需要動用整座城市",
+      "報導到這裡，得轉一個角度，去看那些觀眾在午夜的內庭裡看不見的東西。一件公共藝術作品要能站在城市的廣場上，背後是一整套制度、預算與協調的機器在運轉。這也是城市研究真正關心的層面，一座城市究竟如何生產一場臨時的公共藝術事件。",
+      "藍夜的民眾藝術獎（Blaue Nacht Publikumspreis）是一場公開徵件的競圖案，每年大約在十月到十二月之間舉行。一百六十到一百八十件提案投進來，評審團從中選出十二件，作為當年公共空間的藝術展示。設置的地點由市政府每年挑選，不一定固定，可能是市政廳、圖書館、停車場、城堡內部、博物館，也可能由藝術家自己尋找與發掘提案。",
+      "被選上的十二件作品，每件能拿到三千歐元的補助。這筆錢同時也是天花板，連同書面報告書在內，整件作品的總預算不能超過三千歐元。**三千歐元的上限，本身就是一個值得玩味的城市治理設計。**它逼著每一位藝術家在極有限的資源裡，去回應一個公共尺度的命題。我那座由一百五十座圍欄構成的迷宮，之所以選擇現成的工程物件，這個預算結構也是原因之一。城市用一個樸素的數字，篩選出懂得借力、懂得就地取材的作品。",
+      "制度的另一面是支援。市政府內部有一個專門的辦公室負責這個項目，計劃領導（Projektleitung）是 Christel Passmann 女士。",
+      "得獎的藝術家拿到的，不只是資金。政府會幫忙尋找技術資源的團隊作為協助。以我的情況，光是材料廠商的洽談、場地的施工，到與公部門之間的協調，都有專屬的協案專員從旁幫忙。一件作品要在權力的庭院裡落地，需要的不只是創意，還需要一整條看不見的行政與技術的鏈條。",
+      "最後是時間。前面提過藍夜精密的時間刻度，這個刻度在布展階段最為嚴酷。整個布展時間，大致只有星期五到星期六晚上七點以前。除非基地條件特殊、可以封閉施工，否則一切都得配合每個公共空間平時的開放時間。你不能因為要裝一件作品，就把一座還在對外開放的市政廳關起來。城市的日常秩序，永遠優先於藝術的臨時介入。一百五十座圍欄、三百盞燈，要在這樣一個被切得很碎的窗口裡，全部到位、調試完成。這件談論限制的作品，從生產的第一刻起，就被城市真實的限制牢牢框住。這一段，是我想特別留給其他創作者的紀錄。我們太容易只談作品的概念，卻很少誠實地寫下，把一個概念放進公共空間，要動用多少不屬於藝術本身的力量。",
+      "七、民眾票選的迴圈",
+      "藍夜的夜晚，最後會把判斷權交給人群。",
+      "當晚的活動，由參觀的民眾在這十二件藝術作品中，選出自己最喜歡的一件。最高票的作品，由紐倫堡電力公司（N-Ergie）提供五千歐元的獎金。十幾萬人走過這座城市的各個空間，用自己的腳與自己的票，決定哪一件作品最打動他們。",
+      "那一年，《自由的界線》拿到了這個民眾藝術獎。",
+      "在十二件競逐的作品裡，這件由一百五十座圍欄與三百盞警示燈構成的裝置，以百分之十七的得票勝出。這件作品來自一位當時正在紐倫堡求學的台灣藝術家。N-Ergie 在 2015 年五月把這座五千歐元的獎頒給了《自由的界線》。",
+      "這個結果本身，藏著一個漂亮的迴圈。一件談論市民如何在公共空間裡彼此協商的作品，最後由市民用最民主的方式，投票把它選了出來。觀眾在內庭裡親身演練了讓路與阻擋，走出來之後，又用選票替這場演練做了集體的回應。作品的主題與作品的命運，在這裡接成了一個圓。公共藝術最理想的狀態，就是讓公眾不只是觀看者，而是作品意義的共同完成者。那一夜的票數，是十三萬五千人替「自由的界線」這個命題，留下的一份集體簽名。",
+      "八、界線之內的自由",
+      "收掉圍欄之後，舊市政廳的內庭恢復成它平時的樣子。那座迷宮只存在了一個晚上，從七點到凌晨一點，短得幾乎像沒發生過。",
+      "可是它留下了一個我至今仍在思考的提醒。我們習慣把自由想成沒有邊界的狀態，想成可以無限往前。那一夜的內庭給出的答案剛好相反。自由是在界線之內才成立的東西。沒有那些圍欄，就沒有需要協商的通道，也就沒有讓路這個動作裡的溫度。界線不是自由的反面，界線是自由得以被經驗的條件。",
+      "對一座城市來說，這個道理同樣成立。紐倫堡藍夜之所以動人，是因為它在一整年嚴密的秩序之上，挪出一個夜晚的例外。例外的珍貴，正來自平日的規範。一座城市願意在一個晚上，把封鎖的工具交還給市民，讓他們親手去推、去挪、去面對彼此，這份信任，比任何關於自由的口號都更接近自由本身。",
+      "我用城市的圍欄，蓋了一座城市的作品，再由城市的市民，把它選了出來。從頭到尾，這件作品都在城市的界線之內生成、展示、完成。它談的是界線，它也活在界線裡。對我而言，這正是公共藝術最誠實的位置，站在權力與市民之間，站在限制與自由之間，用一件可以移動的圍欄，讓所有走過的人，重新感覺到那條平時看不見的線。"
+    ],
+    "href": "https://genius912.blogspot.com/2026/06/blog-post_22.html",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwcO7R2Jv7N_bjPVt2GflurNyJrmFcTAgLEOph5SKOXQPE5ZclSI0ubP7LAqhW3UT3MY9Yf3CwlJmvLVDUCemStCVlkl0E-4-zCLrX26ncoCgGpfPqZ9vu52Q-AOxjjRu1t2IHsfqbva2ydlZE-2hiJaWaNs9uJmnB688Kmqpz-IlTYZic2PpqhNkH4zY/w640-h480/%E8%87%AA%E7%94%B1%E7%9A%84%E7%95%8C%E7%B7%9A.JPG",
+    "images": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwcO7R2Jv7N_bjPVt2GflurNyJrmFcTAgLEOph5SKOXQPE5ZclSI0ubP7LAqhW3UT3MY9Yf3CwlJmvLVDUCemStCVlkl0E-4-zCLrX26ncoCgGpfPqZ9vu52Q-AOxjjRu1t2IHsfqbva2ydlZE-2hiJaWaNs9uJmnB688Kmqpz-IlTYZic2PpqhNkH4zY/w640-h480/%E8%87%AA%E7%94%B1%E7%9A%84%E7%95%8C%E7%B7%9A.JPG"
+    ],
+    "image_alt_zh": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "image_alt_en": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "image_alt_de": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "image_caption_zh": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "image_caption_en": "土地．文化敘事（六）紐倫堡藍夜藝術節",
+    "image_caption_de": "土地．文化敘事（六）紐倫堡藍夜藝術節"
+  },
+  {
+    "id": "w-writing-start-201702",
+    "year": "2017",
+    "month": "02",
+    "title_zh": "起點",
+    "title_en": "起點",
+    "title_de": "起點",
+    "note_zh": "開始決定空間書寫時心裡並沒有太清晰的輪廓去描述關切於哪些空間議題，或是對於這些議題並沒有太強烈感受或是提出一個清晰觀點。2014年是一個書寫計畫起點，我想在過去紊亂的思緒裡找到線索。回台灣後陸續整理這些時日的經歷驗證，重新回望這塊土地發生的一切故事。",
+    "note_en": "開始決定空間書寫時心裡並沒有太清晰的輪廓去描述關切於哪些空間議題，或是對於這些議題並沒有太強烈感受或是提出一個清晰觀點。2014年是一個書寫計畫起點，我想在過去紊亂的思緒裡找到線索。回台灣後陸續整理這些時日的經歷驗證，重新回望這塊土地發生的一切故事。",
+    "note_de": "開始決定空間書寫時心裡並沒有太清晰的輪廓去描述關切於哪些空間議題，或是對於這些議題並沒有太強烈感受或是提出一個清晰觀點。2014年是一個書寫計畫起點，我想在過去紊亂的思緒裡找到線索。回台灣後陸續整理這些時日的經歷驗證，重新回望這塊土地發生的一切故事。",
+    "essay_zh": [
+      "起點",
+      "開始決定空間書寫時心裡並沒有太清晰的輪廓去描述關切於哪些空間議題，或是對於這些議題並沒有太強烈感受或是提出一個清晰觀點。2014年是一個書寫計畫起點，我想在過去紊亂的思緒裡找到線索。回台灣後陸續整理這些時日的經歷驗證，重新回望這塊土地發生的一切故事。",
+      "文章是為了紀念和給我過去做一個註解，走過許多城市對照彼此間些許雷同之處，這是在德國求學時間，在不同城市間移動身份上也只能說是短暫的過客，這些場景為我留下怎樣的生命註解。我對自己家鄉這塊土地有些許陌生在他鄉拼湊過去的記憶，回過來我能為台灣這塊土地提供出合種有趣的訊息或願景。",
+      "與空間對話",
+      "回想當時的情境，用自我觀點或他者的觀點做一個類比，時空交錯間虛實故事舞台存在，在此安插些心裡的幻想和期待。從歷史性、都市生活片段、城市的設施、空間建築等等議題；或從一些平凡事物中找到特殊的意義，生活習慣、空間個性、民眾價值觀、文化具象等做論述，相對著也必須要有足夠的文獻作為佐證。不用學術和一些艱深的用語使人理解，以主題分類和記憶的拼湊後建構出後續的主體內容。每個章節或許會有先關性的連結，些許章節做為城市研究歸類，或是一種理想性的願景最為想像。",
+      "卡爾維諾-看不見的城市是我不斷拜讀的好著作，虛構的故事裡體現城市中最微小但也很宏觀的城市視野。生活的小事都能夠以擬人化後能夠在腦海裡建構出一個清晰的舞台背景。用人的角度看城市，用城市的角度看人。人與空間到都市之間的聯繫。人有其個性那麼都市是否也能感受其強烈的個性呢？人塑造都市後，都市也塑造了人的性格。我也期待在書寫微小的事物上拼湊出場所精神，拼湊歷史圖像彼此間有何種關聯性。"
+    ],
+    "essay_en": [
+      "起點",
+      "開始決定空間書寫時心裡並沒有太清晰的輪廓去描述關切於哪些空間議題，或是對於這些議題並沒有太強烈感受或是提出一個清晰觀點。2014年是一個書寫計畫起點，我想在過去紊亂的思緒裡找到線索。回台灣後陸續整理這些時日的經歷驗證，重新回望這塊土地發生的一切故事。",
+      "文章是為了紀念和給我過去做一個註解，走過許多城市對照彼此間些許雷同之處，這是在德國求學時間，在不同城市間移動身份上也只能說是短暫的過客，這些場景為我留下怎樣的生命註解。我對自己家鄉這塊土地有些許陌生在他鄉拼湊過去的記憶，回過來我能為台灣這塊土地提供出合種有趣的訊息或願景。",
+      "與空間對話",
+      "回想當時的情境，用自我觀點或他者的觀點做一個類比，時空交錯間虛實故事舞台存在，在此安插些心裡的幻想和期待。從歷史性、都市生活片段、城市的設施、空間建築等等議題；或從一些平凡事物中找到特殊的意義，生活習慣、空間個性、民眾價值觀、文化具象等做論述，相對著也必須要有足夠的文獻作為佐證。不用學術和一些艱深的用語使人理解，以主題分類和記憶的拼湊後建構出後續的主體內容。每個章節或許會有先關性的連結，些許章節做為城市研究歸類，或是一種理想性的願景最為想像。",
+      "卡爾維諾-看不見的城市是我不斷拜讀的好著作，虛構的故事裡體現城市中最微小但也很宏觀的城市視野。生活的小事都能夠以擬人化後能夠在腦海裡建構出一個清晰的舞台背景。用人的角度看城市，用城市的角度看人。人與空間到都市之間的聯繫。人有其個性那麼都市是否也能感受其強烈的個性呢？人塑造都市後，都市也塑造了人的性格。我也期待在書寫微小的事物上拼湊出場所精神，拼湊歷史圖像彼此間有何種關聯性。"
+    ],
+    "essay_de": [
+      "起點",
+      "開始決定空間書寫時心裡並沒有太清晰的輪廓去描述關切於哪些空間議題，或是對於這些議題並沒有太強烈感受或是提出一個清晰觀點。2014年是一個書寫計畫起點，我想在過去紊亂的思緒裡找到線索。回台灣後陸續整理這些時日的經歷驗證，重新回望這塊土地發生的一切故事。",
+      "文章是為了紀念和給我過去做一個註解，走過許多城市對照彼此間些許雷同之處，這是在德國求學時間，在不同城市間移動身份上也只能說是短暫的過客，這些場景為我留下怎樣的生命註解。我對自己家鄉這塊土地有些許陌生在他鄉拼湊過去的記憶，回過來我能為台灣這塊土地提供出合種有趣的訊息或願景。",
+      "與空間對話",
+      "回想當時的情境，用自我觀點或他者的觀點做一個類比，時空交錯間虛實故事舞台存在，在此安插些心裡的幻想和期待。從歷史性、都市生活片段、城市的設施、空間建築等等議題；或從一些平凡事物中找到特殊的意義，生活習慣、空間個性、民眾價值觀、文化具象等做論述，相對著也必須要有足夠的文獻作為佐證。不用學術和一些艱深的用語使人理解，以主題分類和記憶的拼湊後建構出後續的主體內容。每個章節或許會有先關性的連結，些許章節做為城市研究歸類，或是一種理想性的願景最為想像。",
+      "卡爾維諾-看不見的城市是我不斷拜讀的好著作，虛構的故事裡體現城市中最微小但也很宏觀的城市視野。生活的小事都能夠以擬人化後能夠在腦海裡建構出一個清晰的舞台背景。用人的角度看城市，用城市的角度看人。人與空間到都市之間的聯繫。人有其個性那麼都市是否也能感受其強烈的個性呢？人塑造都市後，都市也塑造了人的性格。我也期待在書寫微小的事物上拼湊出場所精神，拼湊歷史圖像彼此間有何種關聯性。"
+    ],
+    "href": "https://genius912.blogspot.com/2017/02/blog-post.html",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirekmFUdWS3KMnbA5YN5RHJUiPT-hfordu-qtWfOAXsSo9FuGcCH4sae67OzA0koeCIZepWXx8Xnk9nX5iWHzQNrUCQzp__ooMsAl1NbMFc6SKuq4c6zOdo4WiPfEdYFA_9Xk6TOMHB-aB5815PpvwKv1xZkBj5Ce6yJer8G1UxcSmKa0PYS8JqKdsiuU/w640-h360/blog%E5%B0%81%E9%9D%A2.jpg",
+    "images": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirekmFUdWS3KMnbA5YN5RHJUiPT-hfordu-qtWfOAXsSo9FuGcCH4sae67OzA0koeCIZepWXx8Xnk9nX5iWHzQNrUCQzp__ooMsAl1NbMFc6SKuq4c6zOdo4WiPfEdYFA_9Xk6TOMHB-aB5815PpvwKv1xZkBj5Ce6yJer8G1UxcSmKa0PYS8JqKdsiuU/w640-h360/blog%E5%B0%81%E9%9D%A2.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOQkXXWfgv97DV1dPwqLnSi3Sf1mFpRB3WtG5_end14vUfpZTmphusV4T_6o0ITYJ4w1DZgtu6Qd6-8ZgiV5N3fwLsbvwcrbsOdkuBNa7TMlWF1NjKV9HtwPRfhB2tzb-UxpbrK1JHO9YAIj5C31obzu4PLikkRNZF9nx9CCDAXNknnuUlSVRH30hHXks/w640-h360/%E8%97%9D%E8%A1%93%E8%88%87%E9%96%8B%E6%94%BE%E7%A9%BA%E9%96%93%E5%AF%A6%E9%A9%97%E5%AE%A4-9.png"
+    ],
+    "image_alt_zh": "起點",
+    "image_alt_en": "起點",
+    "image_alt_de": "起點",
+    "image_caption_zh": "起點",
+    "image_caption_en": "起點",
+    "image_caption_de": "起點"
+  },
+  {
+    "id": "w-hallo-servus-2026",
+    "year": "2026",
+    "month": "06",
+    "title_zh": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "title_en": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "title_de": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "note_zh": "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+    "note_en": "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+    "note_de": "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+    "essay_zh": [
+      "Hallo! Servus!",
+      "以物易物．街道的人情與城市秩序",
+      "1. 計畫以一聲問候，開啟城市觀察",
+      "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+      "命題：在不同的制度與文化裡，街頭買賣如何形塑都市的節奏與社會關係？以物易物，能否重置我們對價值與信任的想像？",
+      "2. 研究背景與比較觀察｜台灣、約翰尼斯堡、德國",
+      "台灣的街販以機動與彈性見長，用手推車、發財車或機車取代店面。法規與稽查不斷，但低租金與高靈活度回應了真實的生活需求，一句寒暄就拉近了交易的距離。",
+      "約翰尼斯堡的街販多是來自其他非洲國家的移工，長時間守在人行道與廣場上謀生。他們以勞動換取最基本的生計，展現了都市邊緣群體的經濟韌性。",
+      "德國的街販受營業時間與空間管理規範約束，多半固定、合規，機動性低，秩序分明。週末店鋪打烊，反而為街販留出了服務的縫隙。",
+      "三地構成一道光譜：從台灣的高機動、弱合法性，到德國的高秩序、低機動；約翰尼斯堡站在光譜之外，標示出移動群體的生存策略。這些差異映照的，是制度、經濟與公共空間文化交疊出的層理。",
+      "3. 為何「流動」？｜一種被迫的選擇，一聲城市需求的回響",
+      "景氣低迷時，許多人轉向小本流動生意，把租金與固定成本壓到最低。即使要面對稽查與罰單，他們仍選擇上路。手推車、貨車與機車成了店面的替身，更貼近街道、貼近人群，也更能接住零碎的市場需求。",
+      "策展立場：流動攤販從來不是單一的問題。它是城市治理、稅制公平、公共衛生、交通安全與生存權之間的一場多方拉扯。它的存在，是都市真實需求的回音。",
+      "4. 以物易物與價值觀｜不等價的交換與「心理價值」",
+      "把以物易物當成一種方法學。不必等價。 交換建立在彼此的需求與互信之上。價值從來不只由價格決定，還包括記憶、文化意義，以及關係本身。",
+      "信任為底。 貨幣是高效率的交易工具，卻不是唯一選項。當金融信任動搖，例如金融危機時，以物易物就成為一種可以被重新思考的生活方式。",
+      "數位延伸。 網路上出現各種交換平台，說明非貨幣價值正在新的社會基礎設施裡被重新召喚。",
+      "策展詮釋：我們不美化以物易物，也不否定貨幣。我們做的，是把「交換」還原成社會關係的生成與談判。在這裡，價值可以被說出來、被分享，也被共同定義。",
+      "5. 行動方法論｜公共空間裡的接觸、對話、交換、回饋",
+      "我用一個可移動的攤位作為行動載具，走進街道與人流，依序完成五個動作。",
+      "接觸。 用一句日常問候開場，放低對話的門檻。",
+      "對話。 攤上擺著來自台灣的日用品、食品、書籍與文化小物，讓每一件東西都開口說話。",
+      "交換。 以物易物，不標價，邀請對方拿出願意交換的物件，或一個承諾。",
+      "待客。 以台灣的「奉茶」作為待客之道，化開陌生。",
+      "回饋。 收集回答與觀察筆記，核心的提問是：「你知道台灣在哪裡嗎？」「你怎麼看待交換經濟？」",
+      "觀眾的身分隨之翻轉：從被觀看的人，變成參與者、共同作者，以及價值共同體的一員。",
+      "6. 載具與視覺語言｜改造嬰兒車、步行節奏與客家花布",
+      "為何是嬰兒車？ 在歐洲城市，推著嬰兒車散步是再尋常不過的畫面。它形象親和、步調緩慢、容易停下來，讓行動者在主動與被動之間取得一層自然的掩護，也製造出可以駐足的時刻。它的視覺辨識度很高。",
+      "為何不是腳踏車？ 自行車正好相反。它代表更快的穿越、更強的目的性，不利於對話發生，也留不住人。",
+      "材質與文化。 車身覆上客家花布，讓傳統圖騰包裹一件西方的工業製品。東方意象與西方日常器物並置，當下就形成跨文化的視覺衝突，也成為吸引人靠近的點。它同時兼顧機動與運輸，呼應流動攤販的本質。",
+      "7. 為何在德國進行？｜秩序中的縫隙，慢行中的相遇",
+      "德國城市有完整的公共空間系統，以及以步行為主的節奏，提供了慢速交流的現場條件。週末店鋪休息的制度，又留出了服務的空缺。臨時街售在這裡屬於法律灰區，因此本計畫把自己定位為一場行動測試。它不為營利，只為了藝術性地試探制度、日常與人情三者之間的關係。",
+      "8. 城市與公共空間的再閱讀｜從攤販看見制度與歸屬",
+      "攤販是我們認識一座城市的第一印象來源。它讓開放空間不再抽象，變成居民可以自由活動、停留與交流的地方。",
+      "固定攤販靠時間與地點建立認同；移動攤販在法律與空間的縫隙中求生，收入更不穩定。",
+      "無論在發展中或已開發國家，公共空間都是社會過程的產物。規範、階級與文化想像，全都透過「能不能擺攤」「可以停在哪裡」這些細節，被具體地定了下來。",
+      "卡爾維諾提醒我們，攤上的物件常常為了別的東西而發光：優雅、權力、博學、奢侈。它的價值不在自身，而在它所象徵的一切。這正是本計畫想讓觀眾親身體會的價值轉譯。",
+      "9. 展覽呈現與檔案建置",
+      "現場：改造後的嬰兒車裝置、待客的茶水、可供交換的台灣物件，以及一面交易與對話的記錄牆。",
+      "檔案：互動筆記，包含交換清單、故事片段與觀眾語錄；影像紀錄，涵蓋行動路徑、停留點與對話片段；制度對照，整理台灣、約翰尼斯堡與德國的街販規則摘要。",
+      "10. 預期影響與評估指標",
+      "文化理解：觀眾對台灣文化的辨識度與興趣是否提升，以問卷與回饋卡量化。",
+      "信任實驗：不標價的交換成功率、談判時長、重複互動的比例。",
+      "公共性討論：觀眾對街販與公共空間管理的看法是否改變，是否提出針對地方制度的建設性意見。",
+      "美學收穫：用嬰兒車、花布與街道的設計語言，喚起人們對「秩序之中的人情」的感知。",
+      "11. 結論｜把價格關掉，讓關係發聲",
+      "以物易物不是要回到過去。它把價值的錨，從價格移向關係。在問候、遞茶與交換的慢速時刻裡，城市露出了它的心跳。它不只有規則，還有人情；不只有效率，還有等待。這就是我們想和觀眾一起經歷的事：在秩序之中，重新發明信任。"
+    ],
+    "essay_en": [
+      "Hallo! Servus!",
+      "以物易物．街道的人情與城市秩序",
+      "1. 計畫以一聲問候，開啟城市觀察",
+      "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+      "命題：在不同的制度與文化裡，街頭買賣如何形塑都市的節奏與社會關係？以物易物，能否重置我們對價值與信任的想像？",
+      "2. 研究背景與比較觀察｜台灣、約翰尼斯堡、德國",
+      "台灣的街販以機動與彈性見長，用手推車、發財車或機車取代店面。法規與稽查不斷，但低租金與高靈活度回應了真實的生活需求，一句寒暄就拉近了交易的距離。",
+      "約翰尼斯堡的街販多是來自其他非洲國家的移工，長時間守在人行道與廣場上謀生。他們以勞動換取最基本的生計，展現了都市邊緣群體的經濟韌性。",
+      "德國的街販受營業時間與空間管理規範約束，多半固定、合規，機動性低，秩序分明。週末店鋪打烊，反而為街販留出了服務的縫隙。",
+      "三地構成一道光譜：從台灣的高機動、弱合法性，到德國的高秩序、低機動；約翰尼斯堡站在光譜之外，標示出移動群體的生存策略。這些差異映照的，是制度、經濟與公共空間文化交疊出的層理。",
+      "3. 為何「流動」？｜一種被迫的選擇，一聲城市需求的回響",
+      "景氣低迷時，許多人轉向小本流動生意，把租金與固定成本壓到最低。即使要面對稽查與罰單，他們仍選擇上路。手推車、貨車與機車成了店面的替身，更貼近街道、貼近人群，也更能接住零碎的市場需求。",
+      "策展立場：流動攤販從來不是單一的問題。它是城市治理、稅制公平、公共衛生、交通安全與生存權之間的一場多方拉扯。它的存在，是都市真實需求的回音。",
+      "4. 以物易物與價值觀｜不等價的交換與「心理價值」",
+      "把以物易物當成一種方法學。不必等價。 交換建立在彼此的需求與互信之上。價值從來不只由價格決定，還包括記憶、文化意義，以及關係本身。",
+      "信任為底。 貨幣是高效率的交易工具，卻不是唯一選項。當金融信任動搖，例如金融危機時，以物易物就成為一種可以被重新思考的生活方式。",
+      "數位延伸。 網路上出現各種交換平台，說明非貨幣價值正在新的社會基礎設施裡被重新召喚。",
+      "策展詮釋：我們不美化以物易物，也不否定貨幣。我們做的，是把「交換」還原成社會關係的生成與談判。在這裡，價值可以被說出來、被分享，也被共同定義。",
+      "5. 行動方法論｜公共空間裡的接觸、對話、交換、回饋",
+      "我用一個可移動的攤位作為行動載具，走進街道與人流，依序完成五個動作。",
+      "接觸。 用一句日常問候開場，放低對話的門檻。",
+      "對話。 攤上擺著來自台灣的日用品、食品、書籍與文化小物，讓每一件東西都開口說話。",
+      "交換。 以物易物，不標價，邀請對方拿出願意交換的物件，或一個承諾。",
+      "待客。 以台灣的「奉茶」作為待客之道，化開陌生。",
+      "回饋。 收集回答與觀察筆記，核心的提問是：「你知道台灣在哪裡嗎？」「你怎麼看待交換經濟？」",
+      "觀眾的身分隨之翻轉：從被觀看的人，變成參與者、共同作者，以及價值共同體的一員。",
+      "6. 載具與視覺語言｜改造嬰兒車、步行節奏與客家花布",
+      "為何是嬰兒車？ 在歐洲城市，推著嬰兒車散步是再尋常不過的畫面。它形象親和、步調緩慢、容易停下來，讓行動者在主動與被動之間取得一層自然的掩護，也製造出可以駐足的時刻。它的視覺辨識度很高。",
+      "為何不是腳踏車？ 自行車正好相反。它代表更快的穿越、更強的目的性，不利於對話發生，也留不住人。",
+      "材質與文化。 車身覆上客家花布，讓傳統圖騰包裹一件西方的工業製品。東方意象與西方日常器物並置，當下就形成跨文化的視覺衝突，也成為吸引人靠近的點。它同時兼顧機動與運輸，呼應流動攤販的本質。",
+      "7. 為何在德國進行？｜秩序中的縫隙，慢行中的相遇",
+      "德國城市有完整的公共空間系統，以及以步行為主的節奏，提供了慢速交流的現場條件。週末店鋪休息的制度，又留出了服務的空缺。臨時街售在這裡屬於法律灰區，因此本計畫把自己定位為一場行動測試。它不為營利，只為了藝術性地試探制度、日常與人情三者之間的關係。",
+      "8. 城市與公共空間的再閱讀｜從攤販看見制度與歸屬",
+      "攤販是我們認識一座城市的第一印象來源。它讓開放空間不再抽象，變成居民可以自由活動、停留與交流的地方。",
+      "固定攤販靠時間與地點建立認同；移動攤販在法律與空間的縫隙中求生，收入更不穩定。",
+      "無論在發展中或已開發國家，公共空間都是社會過程的產物。規範、階級與文化想像，全都透過「能不能擺攤」「可以停在哪裡」這些細節，被具體地定了下來。",
+      "卡爾維諾提醒我們，攤上的物件常常為了別的東西而發光：優雅、權力、博學、奢侈。它的價值不在自身，而在它所象徵的一切。這正是本計畫想讓觀眾親身體會的價值轉譯。",
+      "9. 展覽呈現與檔案建置",
+      "現場：改造後的嬰兒車裝置、待客的茶水、可供交換的台灣物件，以及一面交易與對話的記錄牆。",
+      "檔案：互動筆記，包含交換清單、故事片段與觀眾語錄；影像紀錄，涵蓋行動路徑、停留點與對話片段；制度對照，整理台灣、約翰尼斯堡與德國的街販規則摘要。",
+      "10. 預期影響與評估指標",
+      "文化理解：觀眾對台灣文化的辨識度與興趣是否提升，以問卷與回饋卡量化。",
+      "信任實驗：不標價的交換成功率、談判時長、重複互動的比例。",
+      "公共性討論：觀眾對街販與公共空間管理的看法是否改變，是否提出針對地方制度的建設性意見。",
+      "美學收穫：用嬰兒車、花布與街道的設計語言，喚起人們對「秩序之中的人情」的感知。",
+      "11. 結論｜把價格關掉，讓關係發聲",
+      "以物易物不是要回到過去。它把價值的錨，從價格移向關係。在問候、遞茶與交換的慢速時刻裡，城市露出了它的心跳。它不只有規則，還有人情；不只有效率，還有等待。這就是我們想和觀眾一起經歷的事：在秩序之中，重新發明信任。"
+    ],
+    "essay_de": [
+      "Hallo! Servus!",
+      "以物易物．街道的人情與城市秩序",
+      "1. 計畫以一聲問候，開啟城市觀察",
+      "從一句問候「Hallo! Servus!」開始。一句最日常的招呼，就能發動一場觀察：城市如何被看見、被觸碰、被理解。旅人最先記住的，往往是街頭攤販。一段短暫的對話，就能交換大量在地資訊。由街販、行人、空間構成的微小場景，是切入都市活力最好的一刀。",
+      "命題：在不同的制度與文化裡，街頭買賣如何形塑都市的節奏與社會關係？以物易物，能否重置我們對價值與信任的想像？",
+      "2. 研究背景與比較觀察｜台灣、約翰尼斯堡、德國",
+      "台灣的街販以機動與彈性見長，用手推車、發財車或機車取代店面。法規與稽查不斷，但低租金與高靈活度回應了真實的生活需求，一句寒暄就拉近了交易的距離。",
+      "約翰尼斯堡的街販多是來自其他非洲國家的移工，長時間守在人行道與廣場上謀生。他們以勞動換取最基本的生計，展現了都市邊緣群體的經濟韌性。",
+      "德國的街販受營業時間與空間管理規範約束，多半固定、合規，機動性低，秩序分明。週末店鋪打烊，反而為街販留出了服務的縫隙。",
+      "三地構成一道光譜：從台灣的高機動、弱合法性，到德國的高秩序、低機動；約翰尼斯堡站在光譜之外，標示出移動群體的生存策略。這些差異映照的，是制度、經濟與公共空間文化交疊出的層理。",
+      "3. 為何「流動」？｜一種被迫的選擇，一聲城市需求的回響",
+      "景氣低迷時，許多人轉向小本流動生意，把租金與固定成本壓到最低。即使要面對稽查與罰單，他們仍選擇上路。手推車、貨車與機車成了店面的替身，更貼近街道、貼近人群，也更能接住零碎的市場需求。",
+      "策展立場：流動攤販從來不是單一的問題。它是城市治理、稅制公平、公共衛生、交通安全與生存權之間的一場多方拉扯。它的存在，是都市真實需求的回音。",
+      "4. 以物易物與價值觀｜不等價的交換與「心理價值」",
+      "把以物易物當成一種方法學。不必等價。 交換建立在彼此的需求與互信之上。價值從來不只由價格決定，還包括記憶、文化意義，以及關係本身。",
+      "信任為底。 貨幣是高效率的交易工具，卻不是唯一選項。當金融信任動搖，例如金融危機時，以物易物就成為一種可以被重新思考的生活方式。",
+      "數位延伸。 網路上出現各種交換平台，說明非貨幣價值正在新的社會基礎設施裡被重新召喚。",
+      "策展詮釋：我們不美化以物易物，也不否定貨幣。我們做的，是把「交換」還原成社會關係的生成與談判。在這裡，價值可以被說出來、被分享，也被共同定義。",
+      "5. 行動方法論｜公共空間裡的接觸、對話、交換、回饋",
+      "我用一個可移動的攤位作為行動載具，走進街道與人流，依序完成五個動作。",
+      "接觸。 用一句日常問候開場，放低對話的門檻。",
+      "對話。 攤上擺著來自台灣的日用品、食品、書籍與文化小物，讓每一件東西都開口說話。",
+      "交換。 以物易物，不標價，邀請對方拿出願意交換的物件，或一個承諾。",
+      "待客。 以台灣的「奉茶」作為待客之道，化開陌生。",
+      "回饋。 收集回答與觀察筆記，核心的提問是：「你知道台灣在哪裡嗎？」「你怎麼看待交換經濟？」",
+      "觀眾的身分隨之翻轉：從被觀看的人，變成參與者、共同作者，以及價值共同體的一員。",
+      "6. 載具與視覺語言｜改造嬰兒車、步行節奏與客家花布",
+      "為何是嬰兒車？ 在歐洲城市，推著嬰兒車散步是再尋常不過的畫面。它形象親和、步調緩慢、容易停下來，讓行動者在主動與被動之間取得一層自然的掩護，也製造出可以駐足的時刻。它的視覺辨識度很高。",
+      "為何不是腳踏車？ 自行車正好相反。它代表更快的穿越、更強的目的性，不利於對話發生，也留不住人。",
+      "材質與文化。 車身覆上客家花布，讓傳統圖騰包裹一件西方的工業製品。東方意象與西方日常器物並置，當下就形成跨文化的視覺衝突，也成為吸引人靠近的點。它同時兼顧機動與運輸，呼應流動攤販的本質。",
+      "7. 為何在德國進行？｜秩序中的縫隙，慢行中的相遇",
+      "德國城市有完整的公共空間系統，以及以步行為主的節奏，提供了慢速交流的現場條件。週末店鋪休息的制度，又留出了服務的空缺。臨時街售在這裡屬於法律灰區，因此本計畫把自己定位為一場行動測試。它不為營利，只為了藝術性地試探制度、日常與人情三者之間的關係。",
+      "8. 城市與公共空間的再閱讀｜從攤販看見制度與歸屬",
+      "攤販是我們認識一座城市的第一印象來源。它讓開放空間不再抽象，變成居民可以自由活動、停留與交流的地方。",
+      "固定攤販靠時間與地點建立認同；移動攤販在法律與空間的縫隙中求生，收入更不穩定。",
+      "無論在發展中或已開發國家，公共空間都是社會過程的產物。規範、階級與文化想像，全都透過「能不能擺攤」「可以停在哪裡」這些細節，被具體地定了下來。",
+      "卡爾維諾提醒我們，攤上的物件常常為了別的東西而發光：優雅、權力、博學、奢侈。它的價值不在自身，而在它所象徵的一切。這正是本計畫想讓觀眾親身體會的價值轉譯。",
+      "9. 展覽呈現與檔案建置",
+      "現場：改造後的嬰兒車裝置、待客的茶水、可供交換的台灣物件，以及一面交易與對話的記錄牆。",
+      "檔案：互動筆記，包含交換清單、故事片段與觀眾語錄；影像紀錄，涵蓋行動路徑、停留點與對話片段；制度對照，整理台灣、約翰尼斯堡與德國的街販規則摘要。",
+      "10. 預期影響與評估指標",
+      "文化理解：觀眾對台灣文化的辨識度與興趣是否提升，以問卷與回饋卡量化。",
+      "信任實驗：不標價的交換成功率、談判時長、重複互動的比例。",
+      "公共性討論：觀眾對街販與公共空間管理的看法是否改變，是否提出針對地方制度的建設性意見。",
+      "美學收穫：用嬰兒車、花布與街道的設計語言，喚起人們對「秩序之中的人情」的感知。",
+      "11. 結論｜把價格關掉，讓關係發聲",
+      "以物易物不是要回到過去。它把價值的錨，從價格移向關係。在問候、遞茶與交換的慢速時刻裡，城市露出了它的心跳。它不只有規則，還有人情；不只有效率，還有等待。這就是我們想和觀眾一起經歷的事：在秩序之中，重新發明信任。"
+    ],
+    "href": "https://genius912.blogspot.com/2026/06/hallo-servus.html",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv9ppwUTlte3FuZSoodff7KZjfy95OEikgFoUMkDx-JcmmjPW9hYIrWGGcMO_-4ZMckI_LRil0EeeZ6cccwa9Ppv1c6rtWDypIMmzUJarOsUMAm4yzgVClFxFDcunT9IT4kf8S1YRBd0iTbB8WD-p5L3e6jtZMc8L9k6lau_JO0lGqIs6PQv-DbjxbFbw/w640-h452/Hallo!%20Servus-01.jpg",
+    "images": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv9ppwUTlte3FuZSoodff7KZjfy95OEikgFoUMkDx-JcmmjPW9hYIrWGGcMO_-4ZMckI_LRil0EeeZ6cccwa9Ppv1c6rtWDypIMmzUJarOsUMAm4yzgVClFxFDcunT9IT4kf8S1YRBd0iTbB8WD-p5L3e6jtZMc8L9k6lau_JO0lGqIs6PQv-DbjxbFbw/w640-h452/Hallo!%20Servus-01.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1SPf4iEWz5MgSdgd9pEscA99GgGjjbLDei_W_g_h19o13-AIs8HGtnqa_UrPf6ICDXZsq8py1NExIvmS1u8am_tV-H4jzP9dMroMRgh2lGrDYxyRE0v-jF2nFAWHlWQoRsEOiNRBX9WMQsIyuxcDrAe3_GyqYd6mcHX_1xbv4vsUAQjGpkTgHrEVBqvU/w640-h424/Hallo!%20Servus-02.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeBUdFy97OYgXvZGJM6WQ3I6gDjZOFtfuqHHfaHXV9F7CX0_HMncUy6z8rPsvpiY0vZ4cq6NEi-xY6VBQ9KkQrlRfbJq0dTTKejA20_4eKamDW_raOeDa6zXxNU-Kz7OZzx0jI1-FXoMAOWIS2el0OfD-l973uO1l5X1OrVpsZCxSLBllUDtVMMNZ5UPo/w640-h480/Hallo!%20Servus-03.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirqtZhLpuUrLG79xWVE3LpPtl9GCj0STCvxoNPuTC5qg5S1p8j4FeiFc2X3kXXMIt6Fji5PN955OrFGanMUZG-G2HJi-SDO0HtloktX3PH7BqT5S-aQYzJSD5EJ4heSqQtT7hHwabjshzGq1JmONtMExQ8_CdiLWJVeKygIfKI3608jkdrkWEWPC3nUrI/w640-h480/Hallo!%20Servus-04.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh4KmozdhN6B9fkGCgmVg14XzNy9GR45a-lwbYlun6qW2_OYFtROq0-9FgM9SGj9mbY56sn3DGFbeNumMcM6Xo6RZAGOJ_HQkfZ695u0NGryDWVFOW_AHVTEr8GCRr5RpYGtXN49-loCjHqUzgyRLIgP7N0n3wCAVk-TAN5538qc7OOejY9xxrG4KcbM0/w640-h426/Hallo!%20Servus-05.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCCtzreWEy3DftlkoBSTXDs89nPloNz4O18Fyqy58-RLqL2JbzEQfBZEGalejizofG9eQap7Mg4iNgQTNqtLb6_4Jqj4ghuMbB3FtLwc4tsFW1y9544JUDOuiyp4x5DSoZSC_mV5bWBk6Y33MtP6SYgaohx8GW8P_FIqOxjgrAVKz3tFHy7F9xvFTP5cg/w640-h480/Hallo!%20Servus-06.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijAQnBe85DHPyWRmKO01NEjna3jZhA6cXBHouCQEoIs5pZmYpqqbxpFnXrrDpWMCMe2fgKok_-bu3AThmKF8z-yl2PCXPtCGdEHLa9A-zYZDhuO32mKFu0irpH0L-iDFT2yT3yu9UDCKadapWg-iQeCZyg42N_kTWnP3eyHw02eiC7gqfGKDaL68ffX6c/w640-h494/Hallo!%20Servus-07.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJpPlOmb3YtShuuMxW-LKUyQhyphenhyphen2DmfjWEBVnzFJv5giBOXQsq3x8PqAG3GbQ8ULfYxKJHI7fTNEdWvtQi8aYhsGY23KTdhJ1uiKfvEhrwj0uccPIN1rOXxX_i8Q5TnZ3BBcWBlCjMMayNuQKQDeRyu9bM7tmakynkeThvoP5PoiSSMj3DeWfF-xZkorTM/w640-h480/Hallo!%20Servus-08.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivMdbx19JuVgdWSB48x5fTBsggLel-E0GLUMpSCtZSa0lWfXecw1w17C6iHS31zkEDJafjXbDPmbmxVp-Zep7pqZC3ljsR4m3zioEodCSnpk0tkzSOuQRNIBbB9htPBTc1ITQzRZaTpnwNjVVMVfyezgDUGjL96HXCrAlnSkkdCq_vsQ4jKmYTah_bZ_E/w640-h480/Hallo!%20Servus-09.JPG"
+    ],
+    "image_alt_zh": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "image_alt_en": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "image_alt_de": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "image_caption_zh": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "image_caption_en": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+    "image_caption_de": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序"
+  },
+  {
+    "id": "w-subbus-european-action",
+    "year": "2026",
+    "month": "06",
+    "title_zh": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "title_en": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "title_de": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "note_zh": "SUBBUS 歐洲行動策展計畫藝術需要什麼規則。不需要。我們能打破它嗎。能。最初我構思一輛充滿可能性的巴士。飲食與衝突，潔淨與混亂。一種新的生活方式在巴士裡誕生。為了這次行動，我邀請朋友到巴士裡辦一場早餐派對。",
+    "note_en": "SUBBUS 歐洲行動策展計畫藝術需要什麼規則。不需要。我們能打破它嗎。能。最初我構思一輛充滿可能性的巴士。飲食與衝突，潔淨與混亂。一種新的生活方式在巴士裡誕生。為了這次行動，我邀請朋友到巴士裡辦一場早餐派對。",
+    "note_de": "SUBBUS 歐洲行動策展計畫藝術需要什麼規則。不需要。我們能打破它嗎。能。最初我構思一輛充滿可能性的巴士。飲食與衝突，潔淨與混亂。一種新的生活方式在巴士裡誕生。為了這次行動，我邀請朋友到巴士裡辦一場早餐派對。",
+    "essay_zh": [
+      "巴士做為藝術媒介",
+      "SUBBUS 歐洲行動策展計畫藝術需要什麼規則。不需要。我們能打破它嗎。能。最初我構思一輛充滿可能性的巴士。飲食與衝突，潔淨與混亂。一種新的生活方式在巴士裡誕生。為了這次行動，我邀請朋友到巴士裡辦一場早餐派對。",
+      "展覽時間:2014–2015 計畫地點:德國及歐洲多座城市巡迴行動 類型:　行為藝術、空間轉譯、跨文化策展實踐一、策展起點：重新定義公車的文化空間2014年的德國策展課程裡，SUBBUS 計畫從身體經驗展開。每位參與者提出自己對公車的詮釋與可能性。我從台灣擁擠公車的生活記憶切入，對照德國公共運輸嚴禁飲食的文化規訓，把公車視為一個移動中的文化交叉點。年展期間我策劃了一件行為藝術，《公車三明治計畫》。靈感來自我們這個中間世代。我們像三明治的夾層，承受上層傳統與下層變革的雙重擠壓，在縫隙裡尋找新的語彙與身體策略。",
+      "二、展覽媒介：一輛行動巴士SUBBUS 是一個可被多重轉譯的策展平台。這台巴士承載人與物，也承載行動的知識、辯論的空間與策展實驗。在沒有明確共識的前提下，我們用集體創作完成購車、改裝、命題到公共參與的每個階段。空間在過程中持續生成，也在各地與觀眾、城市、市民展開對話。",
+      "三、空間再定義：公共與私密的轉換經過討論與實作，這輛巴士成為可彈性轉換的空間。白天它是研究室、會議室或藝術講座場域，夜晚成為露營空間、行動展間，甚至一座臨時的城市俱樂部。我們追問空間如何開放，公共性又在什麼條件下產生，並在各地駐點與市民建立直接對話。",
+      "四、藝術行動的目標：建立交流平台計畫期間，我們巡迴歐洲多座城市，與在地博物館、藝術協會合作，也進入社群空間與社會邊緣區域。SUBBUS 成為藝術與公共空間對話的平台，用跨文化視角重新檢視移動性、身體性與空間之間的交涉。",
+      "五、設計挑戰與實踐思維改裝計畫受到經費與時間的雙重限制。我們必須在完全清空空間與導入專業設計之間取得平衡。這是一場價值與功能的協商，也是一道技術難題。最終我們找到一個兼具機能與精神的方案，讓這座移動的展場真正回應群體使用的多樣與藝術行動的彈性。",
+      "六、沒有標準答案的旅程SUBBUS 是一段未完的實驗，一場無法預設的策展旅程。它證明藝術能存在於沒有白牆的空間，策展能發生在移動的對話與辯證裡。這台巴士是一個不斷生成的空間敘事體。",
+      "SUBBUS｜Kuratorisches Projekt, Europäische Aktion Welche Regeln braucht die Kunst? Keine. Können wir sie auch brechen? Ja. Am Anfang überlege ich mir den Bus der Möglichkeiten. Essen und Konflikt, Sauberkeit und Verwirrung. Im Bus entsteht ein neuer Lebensstil. Für die Aktion lade ich Freunde zu einer Frühstücksparty in den Bus ein.Ausstellungszeit　2014–2015 Künstler　Ying Cheng Huang Ort　Wanderaktion durch mehrere Städte in Deutschland und Europa Form　Performancekunst, Raumübersetzung, transkulturelle kuratorische Praxis1. Ausgangspunkt: Den Bus als kulturellen Raum neu denkenIm Rahmen eines kuratorischen Seminars in Deutschland entwickelte sich 2014 das Projekt SUBBUS aus körperlicher Erfahrung. Jede teilnehmende Person stellte ihre eigene Deutung des Busses und dessen Möglichkeiten vor. Ich ging von der Erinnerung an überfüllte Busse in Taiwan aus und stellte sie dem Verbot von Essen und Trinken im deutschen Nahverkehr gegenüber. So verstand ich den Bus als einen kulturellen Kreuzungspunkt in Bewegung.Während der Jahresausstellung kuratierte ich eine Performance, das Bus-Sandwich-Projekt. Die Idee entstammt unserer mittleren Generation. Wir gleichen der Mittelschicht eines Sandwichs, eingeklemmt zwischen der Tradition von oben und dem Wandel von unten, auf der Suche nach einer neuen Sprache und einer körperlichen Strategie in den Zwischenräumen.2. Medium der Ausstellung: ein fahrender BusSUBBUS ist eine kuratorische Plattform, die sich vielfach übersetzen lässt. Dieser Bus trägt Menschen und Dinge, ebenso das Wissen der Aktion, den Raum der Debatte und das kuratorische Experiment.Ohne klaren Konsens vollzogen wir in kollektiver Arbeit jeden Schritt, vom Kauf des Busses über den Umbau und die Themenstellung bis zur öffentlichen Teilhabe. Der Raum entstand fortlaufend im Prozess und trat an verschiedenen Orten in Dialog mit Publikum, Stadt und Bürgern.3. Neudefinition des Raums: Wechsel zwischen öffentlich und privatNach Diskussion und praktischer Arbeit wurde der Bus zu einem flexibel wandelbaren Raum. Tagsüber Forschungsraum, Besprechungsraum oder Ort für Kunstvorträge, nachts Campingraum, fahrender Ausstellungsraum oder ein temporärer Stadtclub.Wir fragten, wie ein Raum sich öffnet und unter welchen Bedingungen Öffentlichkeit entsteht, und bauten an jedem Standort einen direkten Dialog mit den Bürgern auf.4. Ziel der künstlerischen Aktion: eine Plattform des AustauschsWährend des Projekts bereisten wir mehrere europäische Städte, arbeiteten mit lokalen Museen und Kunstvereinen zusammen und gingen ebenso in soziale Räume und gesellschaftliche Randzonen. SUBBUS wurde zu einer Plattform für den Dialog zwischen Kunst und öffentlichem Raum und befragte aus transkultureller Sicht das Verhältnis von Mobilität, Körperlichkeit und Raum neu.5. Gestalterische Herausforderung und praktisches DenkenDer Umbau stand unter der doppelten Begrenzung von Budget und Zeit. Wir mussten ein Gleichgewicht finden zwischen der völligen Leerung des Raums und dem Einsatz professioneller Gestaltung. Das war eine Verhandlung von Wert und Funktion und zugleich eine technische Aufgabe.Am Ende fanden wir eine Lösung, die Funktion und Geist verbindet und diesen fahrenden Ausstellungsort der Vielfalt kollektiver Nutzung und der Beweglichkeit künstlerischer Aktion gerecht werden lässt.6. Eine Reise ohne festgelegte AntwortSUBBUS ist ein unvollendetes Experiment, eine kuratorische Reise ohne Vorgabe. Es zeigt, dass Kunst in einem Raum ohne weiße Wände bestehen kann und dass Kuratieren im fahrenden Dialog und in der Dialektik geschehen kann. Dieser Bus ist ein sich fortwährend bildender Erzählraum."
+    ],
+    "essay_en": [
+      "巴士做為藝術媒介",
+      "SUBBUS 歐洲行動策展計畫藝術需要什麼規則。不需要。我們能打破它嗎。能。最初我構思一輛充滿可能性的巴士。飲食與衝突，潔淨與混亂。一種新的生活方式在巴士裡誕生。為了這次行動，我邀請朋友到巴士裡辦一場早餐派對。",
+      "展覽時間:2014–2015 計畫地點:德國及歐洲多座城市巡迴行動 類型:　行為藝術、空間轉譯、跨文化策展實踐一、策展起點：重新定義公車的文化空間2014年的德國策展課程裡，SUBBUS 計畫從身體經驗展開。每位參與者提出自己對公車的詮釋與可能性。我從台灣擁擠公車的生活記憶切入，對照德國公共運輸嚴禁飲食的文化規訓，把公車視為一個移動中的文化交叉點。年展期間我策劃了一件行為藝術，《公車三明治計畫》。靈感來自我們這個中間世代。我們像三明治的夾層，承受上層傳統與下層變革的雙重擠壓，在縫隙裡尋找新的語彙與身體策略。",
+      "二、展覽媒介：一輛行動巴士SUBBUS 是一個可被多重轉譯的策展平台。這台巴士承載人與物，也承載行動的知識、辯論的空間與策展實驗。在沒有明確共識的前提下，我們用集體創作完成購車、改裝、命題到公共參與的每個階段。空間在過程中持續生成，也在各地與觀眾、城市、市民展開對話。",
+      "三、空間再定義：公共與私密的轉換經過討論與實作，這輛巴士成為可彈性轉換的空間。白天它是研究室、會議室或藝術講座場域，夜晚成為露營空間、行動展間，甚至一座臨時的城市俱樂部。我們追問空間如何開放，公共性又在什麼條件下產生，並在各地駐點與市民建立直接對話。",
+      "四、藝術行動的目標：建立交流平台計畫期間，我們巡迴歐洲多座城市，與在地博物館、藝術協會合作，也進入社群空間與社會邊緣區域。SUBBUS 成為藝術與公共空間對話的平台，用跨文化視角重新檢視移動性、身體性與空間之間的交涉。",
+      "五、設計挑戰與實踐思維改裝計畫受到經費與時間的雙重限制。我們必須在完全清空空間與導入專業設計之間取得平衡。這是一場價值與功能的協商，也是一道技術難題。最終我們找到一個兼具機能與精神的方案，讓這座移動的展場真正回應群體使用的多樣與藝術行動的彈性。",
+      "六、沒有標準答案的旅程SUBBUS 是一段未完的實驗，一場無法預設的策展旅程。它證明藝術能存在於沒有白牆的空間，策展能發生在移動的對話與辯證裡。這台巴士是一個不斷生成的空間敘事體。",
+      "SUBBUS｜Kuratorisches Projekt, Europäische Aktion Welche Regeln braucht die Kunst? Keine. Können wir sie auch brechen? Ja. Am Anfang überlege ich mir den Bus der Möglichkeiten. Essen und Konflikt, Sauberkeit und Verwirrung. Im Bus entsteht ein neuer Lebensstil. Für die Aktion lade ich Freunde zu einer Frühstücksparty in den Bus ein.Ausstellungszeit　2014–2015 Künstler　Ying Cheng Huang Ort　Wanderaktion durch mehrere Städte in Deutschland und Europa Form　Performancekunst, Raumübersetzung, transkulturelle kuratorische Praxis1. Ausgangspunkt: Den Bus als kulturellen Raum neu denkenIm Rahmen eines kuratorischen Seminars in Deutschland entwickelte sich 2014 das Projekt SUBBUS aus körperlicher Erfahrung. Jede teilnehmende Person stellte ihre eigene Deutung des Busses und dessen Möglichkeiten vor. Ich ging von der Erinnerung an überfüllte Busse in Taiwan aus und stellte sie dem Verbot von Essen und Trinken im deutschen Nahverkehr gegenüber. So verstand ich den Bus als einen kulturellen Kreuzungspunkt in Bewegung.Während der Jahresausstellung kuratierte ich eine Performance, das Bus-Sandwich-Projekt. Die Idee entstammt unserer mittleren Generation. Wir gleichen der Mittelschicht eines Sandwichs, eingeklemmt zwischen der Tradition von oben und dem Wandel von unten, auf der Suche nach einer neuen Sprache und einer körperlichen Strategie in den Zwischenräumen.2. Medium der Ausstellung: ein fahrender BusSUBBUS ist eine kuratorische Plattform, die sich vielfach übersetzen lässt. Dieser Bus trägt Menschen und Dinge, ebenso das Wissen der Aktion, den Raum der Debatte und das kuratorische Experiment.Ohne klaren Konsens vollzogen wir in kollektiver Arbeit jeden Schritt, vom Kauf des Busses über den Umbau und die Themenstellung bis zur öffentlichen Teilhabe. Der Raum entstand fortlaufend im Prozess und trat an verschiedenen Orten in Dialog mit Publikum, Stadt und Bürgern.3. Neudefinition des Raums: Wechsel zwischen öffentlich und privatNach Diskussion und praktischer Arbeit wurde der Bus zu einem flexibel wandelbaren Raum. Tagsüber Forschungsraum, Besprechungsraum oder Ort für Kunstvorträge, nachts Campingraum, fahrender Ausstellungsraum oder ein temporärer Stadtclub.Wir fragten, wie ein Raum sich öffnet und unter welchen Bedingungen Öffentlichkeit entsteht, und bauten an jedem Standort einen direkten Dialog mit den Bürgern auf.4. Ziel der künstlerischen Aktion: eine Plattform des AustauschsWährend des Projekts bereisten wir mehrere europäische Städte, arbeiteten mit lokalen Museen und Kunstvereinen zusammen und gingen ebenso in soziale Räume und gesellschaftliche Randzonen. SUBBUS wurde zu einer Plattform für den Dialog zwischen Kunst und öffentlichem Raum und befragte aus transkultureller Sicht das Verhältnis von Mobilität, Körperlichkeit und Raum neu.5. Gestalterische Herausforderung und praktisches DenkenDer Umbau stand unter der doppelten Begrenzung von Budget und Zeit. Wir mussten ein Gleichgewicht finden zwischen der völligen Leerung des Raums und dem Einsatz professioneller Gestaltung. Das war eine Verhandlung von Wert und Funktion und zugleich eine technische Aufgabe.Am Ende fanden wir eine Lösung, die Funktion und Geist verbindet und diesen fahrenden Ausstellungsort der Vielfalt kollektiver Nutzung und der Beweglichkeit künstlerischer Aktion gerecht werden lässt.6. Eine Reise ohne festgelegte AntwortSUBBUS ist ein unvollendetes Experiment, eine kuratorische Reise ohne Vorgabe. Es zeigt, dass Kunst in einem Raum ohne weiße Wände bestehen kann und dass Kuratieren im fahrenden Dialog und in der Dialektik geschehen kann. Dieser Bus ist ein sich fortwährend bildender Erzählraum."
+    ],
+    "essay_de": [
+      "巴士做為藝術媒介",
+      "SUBBUS 歐洲行動策展計畫藝術需要什麼規則。不需要。我們能打破它嗎。能。最初我構思一輛充滿可能性的巴士。飲食與衝突，潔淨與混亂。一種新的生活方式在巴士裡誕生。為了這次行動，我邀請朋友到巴士裡辦一場早餐派對。",
+      "展覽時間:2014–2015 計畫地點:德國及歐洲多座城市巡迴行動 類型:　行為藝術、空間轉譯、跨文化策展實踐一、策展起點：重新定義公車的文化空間2014年的德國策展課程裡，SUBBUS 計畫從身體經驗展開。每位參與者提出自己對公車的詮釋與可能性。我從台灣擁擠公車的生活記憶切入，對照德國公共運輸嚴禁飲食的文化規訓，把公車視為一個移動中的文化交叉點。年展期間我策劃了一件行為藝術，《公車三明治計畫》。靈感來自我們這個中間世代。我們像三明治的夾層，承受上層傳統與下層變革的雙重擠壓，在縫隙裡尋找新的語彙與身體策略。",
+      "二、展覽媒介：一輛行動巴士SUBBUS 是一個可被多重轉譯的策展平台。這台巴士承載人與物，也承載行動的知識、辯論的空間與策展實驗。在沒有明確共識的前提下，我們用集體創作完成購車、改裝、命題到公共參與的每個階段。空間在過程中持續生成，也在各地與觀眾、城市、市民展開對話。",
+      "三、空間再定義：公共與私密的轉換經過討論與實作，這輛巴士成為可彈性轉換的空間。白天它是研究室、會議室或藝術講座場域，夜晚成為露營空間、行動展間，甚至一座臨時的城市俱樂部。我們追問空間如何開放，公共性又在什麼條件下產生，並在各地駐點與市民建立直接對話。",
+      "四、藝術行動的目標：建立交流平台計畫期間，我們巡迴歐洲多座城市，與在地博物館、藝術協會合作，也進入社群空間與社會邊緣區域。SUBBUS 成為藝術與公共空間對話的平台，用跨文化視角重新檢視移動性、身體性與空間之間的交涉。",
+      "五、設計挑戰與實踐思維改裝計畫受到經費與時間的雙重限制。我們必須在完全清空空間與導入專業設計之間取得平衡。這是一場價值與功能的協商，也是一道技術難題。最終我們找到一個兼具機能與精神的方案，讓這座移動的展場真正回應群體使用的多樣與藝術行動的彈性。",
+      "六、沒有標準答案的旅程SUBBUS 是一段未完的實驗，一場無法預設的策展旅程。它證明藝術能存在於沒有白牆的空間，策展能發生在移動的對話與辯證裡。這台巴士是一個不斷生成的空間敘事體。",
+      "SUBBUS｜Kuratorisches Projekt, Europäische Aktion Welche Regeln braucht die Kunst? Keine. Können wir sie auch brechen? Ja. Am Anfang überlege ich mir den Bus der Möglichkeiten. Essen und Konflikt, Sauberkeit und Verwirrung. Im Bus entsteht ein neuer Lebensstil. Für die Aktion lade ich Freunde zu einer Frühstücksparty in den Bus ein.Ausstellungszeit　2014–2015 Künstler　Ying Cheng Huang Ort　Wanderaktion durch mehrere Städte in Deutschland und Europa Form　Performancekunst, Raumübersetzung, transkulturelle kuratorische Praxis1. Ausgangspunkt: Den Bus als kulturellen Raum neu denkenIm Rahmen eines kuratorischen Seminars in Deutschland entwickelte sich 2014 das Projekt SUBBUS aus körperlicher Erfahrung. Jede teilnehmende Person stellte ihre eigene Deutung des Busses und dessen Möglichkeiten vor. Ich ging von der Erinnerung an überfüllte Busse in Taiwan aus und stellte sie dem Verbot von Essen und Trinken im deutschen Nahverkehr gegenüber. So verstand ich den Bus als einen kulturellen Kreuzungspunkt in Bewegung.Während der Jahresausstellung kuratierte ich eine Performance, das Bus-Sandwich-Projekt. Die Idee entstammt unserer mittleren Generation. Wir gleichen der Mittelschicht eines Sandwichs, eingeklemmt zwischen der Tradition von oben und dem Wandel von unten, auf der Suche nach einer neuen Sprache und einer körperlichen Strategie in den Zwischenräumen.2. Medium der Ausstellung: ein fahrender BusSUBBUS ist eine kuratorische Plattform, die sich vielfach übersetzen lässt. Dieser Bus trägt Menschen und Dinge, ebenso das Wissen der Aktion, den Raum der Debatte und das kuratorische Experiment.Ohne klaren Konsens vollzogen wir in kollektiver Arbeit jeden Schritt, vom Kauf des Busses über den Umbau und die Themenstellung bis zur öffentlichen Teilhabe. Der Raum entstand fortlaufend im Prozess und trat an verschiedenen Orten in Dialog mit Publikum, Stadt und Bürgern.3. Neudefinition des Raums: Wechsel zwischen öffentlich und privatNach Diskussion und praktischer Arbeit wurde der Bus zu einem flexibel wandelbaren Raum. Tagsüber Forschungsraum, Besprechungsraum oder Ort für Kunstvorträge, nachts Campingraum, fahrender Ausstellungsraum oder ein temporärer Stadtclub.Wir fragten, wie ein Raum sich öffnet und unter welchen Bedingungen Öffentlichkeit entsteht, und bauten an jedem Standort einen direkten Dialog mit den Bürgern auf.4. Ziel der künstlerischen Aktion: eine Plattform des AustauschsWährend des Projekts bereisten wir mehrere europäische Städte, arbeiteten mit lokalen Museen und Kunstvereinen zusammen und gingen ebenso in soziale Räume und gesellschaftliche Randzonen. SUBBUS wurde zu einer Plattform für den Dialog zwischen Kunst und öffentlichem Raum und befragte aus transkultureller Sicht das Verhältnis von Mobilität, Körperlichkeit und Raum neu.5. Gestalterische Herausforderung und praktisches DenkenDer Umbau stand unter der doppelten Begrenzung von Budget und Zeit. Wir mussten ein Gleichgewicht finden zwischen der völligen Leerung des Raums und dem Einsatz professioneller Gestaltung. Das war eine Verhandlung von Wert und Funktion und zugleich eine technische Aufgabe.Am Ende fanden wir eine Lösung, die Funktion und Geist verbindet und diesen fahrenden Ausstellungsort der Vielfalt kollektiver Nutzung und der Beweglichkeit künstlerischer Aktion gerecht werden lässt.6. Eine Reise ohne festgelegte AntwortSUBBUS ist ein unvollendetes Experiment, eine kuratorische Reise ohne Vorgabe. Es zeigt, dass Kunst in einem Raum ohne weiße Wände bestehen kann und dass Kuratieren im fahrenden Dialog und in der Dialektik geschehen kann. Dieser Bus ist ein sich fortwährend bildender Erzählraum."
+    ],
+    "href": "https://genius912.blogspot.com/2026/06/subbus.html",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIdfydYun2DwkKpJZcTIpBJyAJ70lbNjzWt6pdEJAvKURiW2W828hQXDjO-lyeeW8p8sp93DDI-yRoL7PPDLcFiUYB4-dje53K3E3-uLUM6ELl1gkN6Dgh03W9kqYLkAyWmARtIC9dRbds7XKB5V6BOoFZ5f0DfAYrjekdZBISN_czNj9LCrsIb5gvHKQ/w640-h392/subbus01.jpg",
+    "images": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIdfydYun2DwkKpJZcTIpBJyAJ70lbNjzWt6pdEJAvKURiW2W828hQXDjO-lyeeW8p8sp93DDI-yRoL7PPDLcFiUYB4-dje53K3E3-uLUM6ELl1gkN6Dgh03W9kqYLkAyWmARtIC9dRbds7XKB5V6BOoFZ5f0DfAYrjekdZBISN_czNj9LCrsIb5gvHKQ/w640-h392/subbus01.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwrwtJzk3OZw9VCC6rWiibaeJhd3aCqbK5najkPVlHNsVSU-8ADeJ7iiNtb1hkpQfHUUOkv3K0wG-UMbFW3V_FfYhgQadfZ67H0NkXGoMNgMiMZHMUB3gEJgrGoknoPYP5cD5pVLENNJHy4Go2uZgTjP7kT109yPeziqtyNvB3VQXCaZQQGXon9SrDw1E/w640-h360/subbus02.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA6YPQY7mDQwAm3fa5CnKVanReSb-3ail2qTm_3u64mUVNCTexmhR0KSSI-041hyphenhyphenhxyMEnfzvJ2NVdytkOFevN21LBWQUlgOIPp2SO8D4oeM4Xh7GHJj71fC1cTXdiNlil49c4FIH-3-kqDOpNeaF0nASGWLq6VyBtRZAiYzkU_qNJz9DLx1t7lLlquxM/w640-h480/subbus03.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh5WxyrwfGmGyDEc6Xeiw6U3mZYMmeR7GqQjwzhPzeBKvyvNbKMGs7JGe8iDT62vKJQb-lt4M5IV0HCqcdCm3FXXYs-NSSJWXmduef3Ey09CwijzOZKfkMTdJWbtoq0Pb2E7HMUuiVrm8bpiCkxv1dEKh6pwgt7a5MtaGkMAcScXe9jxygGfw82TEaxKk/w640-h480/subbus04.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS5DK8HWcY-xHAex0nLOS1me3BvUs4FVXa1riZoWzu-44_BABn1JplRTM-Hb7WZ21fnKXo2GZ_95RmU7ntotVtQbvgJHG-7NGkDiMuszN_kdzpxy_mP0Z0N4r4F5BEI9famNC3_aQeOeTGtRMsAnaJ5P-0M_W6UR4t7K2FuKhe_rzW04OfmHPjSQ9gnXE/w640-h480/subbus05.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsMzj-gOSWdqB6r2c8C26225-jUZN-2eZElJeS5KJvOTmNMkIvLSnwDPCKzyroNlCbP2IX-T06r-v-DBLJ9152wrxwaSjzkZJ0eTxiM2y8N9ZbBp0ASAtW_9LaZ5Zh7aJxxEV_JmWOVf-K6rtS2rMKpy7AblV0haf_bY7rw3Iw2aJJgR2C-jCde-67Q9E/w640-h480/subbus06.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD6ym6XPr4S8Qz_FYQ21NXBZv5YKZC-cJwlO45MibcPv2_zCZxwDl2P6SaqLO6s5weo3HiCzwONTonb2HEbBsYG06VG-tdK-Opu6BlnkAyMmcqg5qyE7kqFWO7nPyu9SZB48Z59QIlauLkJIGwCV4ed_UlbBt91_rJqWeJOjlnP672KX_KrxVaG3wqgUU/w640-h480/subbus07.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFZuzDtMEMlh1JQiRnJE1beXyS-b7S23YqPtOKmAFrz7V2ZhKgycRpgFT7SIq-Ex1pQQUsuAkBvjWkVd_PMUl4mfBsekkm0laPARD9gh-LTCIajLhKtRQ9qmn1vT-EHLm8_D0cpCWTxTWirOL0vyHbNyh9PxqsNrA2KIFrfNVCxplKyL-ATypjQ_cVCN0/w640-h480/subbus08.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYhx5aZo9-0aIWFH15UsleB5exIWvaisxZf9gFYHmASdFeHCpM3ChY-wA1mS6CVFp_0cegU0w8hyaPPxhJ08PYxKDtvDdCX2bBv2h9iOJ2IiZ3M-9AEN6EZfgzL4V3YZM-a6SfawZVUqvulJ6bgfL01CctgPTRJk6D4K3VuABus8OAiq1k4GjkmLFaufU/w640-h480/subbus09.jpg"
+    ],
+    "image_alt_zh": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "image_alt_en": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "image_alt_de": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "image_caption_zh": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "image_caption_en": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+    "image_caption_de": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫"
+  }
+];
+const RAUM_LAND_NARRATIVE_TITLES = {
+  "w-land-narrative-01": "土地．文化敘事（一）無人的市場，與自己的對話",
+  "w-land-narrative-02": "土地．文化敘事（二）一座無魂城市的考古學",
+  "w-land-narrative-03": "土地．文化敘事（三）公共空間的美感經驗",
+  "w-hallo-servus-2026": "土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序",
+  "w-subbus-european-action": "土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫",
+  "w-blue-night-20260622": "土地．文化敘事（六）紐倫堡藍夜藝術節"
+};
+const RAUM_WRITING_UPDATE_IDS = new Set(RAUM_WRITING_UPDATES_20260623.map((item) => item.id));
+for (let index = WRITINGS.length - 1; index >= 0; index -= 1) {
+  const writing = WRITINGS[index];
+  if (
+    Array.isArray(writing) ||
+    RAUM_WRITING_UPDATE_IDS.has(writing.id) ||
+    RAUM_WRITING_UPDATES_20260623.some((item) => item.href === writing.href) ||
+    writing.href === 'https://genius912.blogspot.com/2015/07/bus-geschmacke.html'
+  ) {
+    WRITINGS.splice(index, 1);
+  }
+}
+WRITINGS.unshift(...RAUM_WRITING_UPDATES_20260623);
+WRITINGS.forEach((writing) => {
+  const title = RAUM_LAND_NARRATIVE_TITLES[writing.id];
+  if (!title) return;
+  writing.title_zh = title;
+  writing.title_en = title;
+  writing.title_de = title;
+  writing.image_alt_zh = title;
+  writing.image_alt_en = title;
+  writing.image_alt_de = title;
+  writing.image_caption_zh = title;
+  writing.image_caption_en = title;
+  writing.image_caption_de = title;
+});
+window.WRITINGS = WRITINGS;
+/* RAUM_WRITING_UPDATES_20260623_END */
 
 const LINKS = [
   { label: 'Blog', sub: '「旅行」越來越是換個地方看書', href: 'https://genius912.blogspot.com/' },
@@ -7728,8 +8791,8 @@ const DETAILS = {
       {
         title_zh: 'BUS GESCHMACKE — 味覺',
         title_en: 'Bus Geschmacke — taste',
-        body_zh: '20% 苦 · 20% 酸 · 30% 辣 · 30% 甜。一塊由多種味道調配的巧克力，作為整個 SUBBUS 計畫的「總結甜點」，於紐倫堡美術學院（AdBK）年展展出，2015 年 7 月。每一種味道都應該不同 — 一如每一段旅程。',
-        body_en: '20% bitter · 20% sour · 30% spicy · 30% sweet. A chocolate blended from many flavours, conceived as the “dessert” that sums up the whole SUBBUS project — shown at the AdBK Nürnberg annual exhibition, July 2015. Every taste should differ — as every journey does.',
+        body_zh: '以巧克力作為 SUBBUS 的味覺總結：苦味來自規則與限制，酸味來自文化摩擦，辣味來自行動中的衝突與刺激，甜味則來自相遇、分享與短暫的共同生活。每一種味道都保留差異，不被調和成單一口感，正如公共空間中的人群。',
+        body_en: 'Chocolate becomes the tasting summary of SUBBUS: bitterness comes from rules and limits, sourness from cultural friction, spiciness from conflict and stimulation within action, and sweetness from encounter, sharing and brief collective life. Each taste keeps its difference rather than being blended into one smooth flavour, like people in public space.',
       },
       {
         title_zh: '行動展場',
@@ -7959,7 +9022,7 @@ const PROJECT_LOCALE = {
     ],
     chapters: [
       { title_de: 'Bus-Sandwich', body_de: 'Eine Performance über unsere mittlere Generation: wie die Mitte eines Sandwichs zwischen Tradition und Veränderung gepresst und auf der Suche nach einer neuen Sprache und körperlichen Strategie.' },
-      { title_de: 'Bus Geschmacke', body_de: '20 Prozent bitter, 20 Prozent sauer, 30 Prozent scharf, 30 Prozent süß. Eine Schokolade aus vielen Geschmäckern wurde zum Dessert des Projekts und im Juli 2015 bei der Jahresausstellung der AdBK Nürnberg gezeigt.' },
+      { title_de: 'Bus Geschmacke', body_de: 'Schokolade wird zur geschmacklichen Zusammenfassung von SUBBUS: Bitterkeit verweist auf Regeln und Grenzen, Säure auf kulturelle Reibung, Schärfe auf Konflikt und Reiz, Süße auf Begegnung, Teilen und kurzes gemeinsames Leben. Jeder Geschmack behält seine Differenz, wie Menschen im öffentlichen Raum.' },
       { title_de: 'Mobiler Veranstaltungsort', body_de: 'Ein wandelbarer Bus: tagsüber Forschung, Besprechung und Vortrag; nachts Camping, mobile Ausstellung oder Stadtclub. Die Balance zwischen vollständiger Leere und professioneller Gestaltung wurde zur Verhandlung von Wert und Funktion.' },
       { title_de: 'Europäische Tour', body_de: 'Das Projekt reiste durch mehrere europäische Städte, arbeitete mit Museen und Kunstvereinen und besuchte Gemeinschaftsräume und gesellschaftliche Ränder. Mobilität, Körper und Raum wurden aus interkultureller Perspektive neu verhandelt.' },
     ],
@@ -9728,6 +10791,7 @@ function WritingSection({ lang, motion }) {
           const title = window.tr(lang, w, 'title');
           const altTitle = lang === 'en' ? w.title_zh : w.title_en;
           const note = window.tr(lang, w, 'note');
+          const image = w.image || (w.images && w.images[0]);
           const open = () => {
             window.dispatchEvent(new CustomEvent('rp:open-detail', { detail: { writing: w } }));
           };
@@ -9740,6 +10804,11 @@ function WritingSection({ lang, motion }) {
                 data-cursor={window.pick(lang, '閱讀', 'read', 'lesen')}
               >
                 <span className="w-date">{w.year}.{w.month}</span>
+                {image && (
+                  <figure className="w-media" aria-hidden="true">
+                    <img src={image} alt="" loading="lazy" />
+                  </figure>
+                )}
                 <div className="w-body">
                   <h3 className="w-title">
                     {title}
@@ -10436,6 +11505,9 @@ function WritingDetail({ writing, lang, onClose }) {
   const altTitle = lang === 'en' ? writing.title_zh : writing.title_en;
   const essay = (writing['essay_' + lang] || writing.essay_en || writing.essay_zh) || [window.tr(lang, writing, 'note')];
   const dateStr = writing.month ? `${writing.year}.${writing.month}` : writing.year;
+  const image = writing.image || (writing.images && writing.images[0]);
+  const imageAlt = window.tr(lang, writing, 'image_alt') || title;
+  const imageCaption = window.tr(lang, writing, 'image_caption') || c.writing_label;
 
   return (
     <div
@@ -10472,6 +11544,15 @@ function WritingDetail({ writing, lang, onClose }) {
       </section>
 
       <section className="rp-writing-detail-body">
+        {image && (
+          <figure className="rp-writing-figure">
+            <img src={image} alt={imageAlt} loading="lazy" />
+            <figcaption>
+              <span>{dateStr}</span>
+              <em>{imageCaption}</em>
+            </figcaption>
+          </figure>
+        )}
         <article className="rp-detail-essay">
           {essay.map((p, i) => (
             <p key={i} className={i === 0 ? 'lead' : ''}>{p}</p>
