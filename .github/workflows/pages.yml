@@ -68,6 +68,9 @@ jobs:
       - name: Trim writing image sources
         run: node .github/scripts/trim-writing-images-20260623.mjs
 
+      - name: Update Calameo portfolio link
+        run: node .github/scripts/update-calameo-link-20260623.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
