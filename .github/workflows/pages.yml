@@ -65,6 +65,9 @@ jobs:
       - name: Inject writing updates 20260623
         run: node .github/scripts/inject-writing-updates-20260623.mjs
 
+      - name: Translate SUBBUS writing article
+        run: node .github/scripts/translate-subbus-20260624.mjs
+
       - name: Trim writing image sources
         run: node .github/scripts/trim-writing-images-20260623.mjs
 
