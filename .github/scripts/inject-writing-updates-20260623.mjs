@@ -20,6 +20,13 @@ const sources = [
     title: '起點',
   },
   {
+    id: 'w-hallo-servus-2026',
+    href: 'https://genius912.blogspot.com/2026/06/hallo-servus.html',
+    year: '2026',
+    month: '06',
+    title: '土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序',
+  },
+  {
     id: 'w-subbus-european-action',
     href: 'https://genius912.blogspot.com/2026/06/subbus.html',
     year: '2026',
@@ -32,6 +39,7 @@ const landNarrativeTitles = {
   'w-land-narrative-01': '土地．文化敘事（一）無人的市場，與自己的對話',
   'w-land-narrative-02': '土地．文化敘事（二）一座無魂城市的考古學',
   'w-land-narrative-03': '土地．文化敘事（三）公共空間的美感經驗',
+  'w-hallo-servus-2026': '土地．文化敘事（四）Hallo! Servus! 以物易物．街道的人情與城市秩序',
   'w-subbus-european-action': '土地．文化敘事（五）巴士做為藝術媒介 SUBBUS 歐洲行動策展計畫',
   'w-blue-night-20260622': '土地．文化敘事（六）紐倫堡藍夜藝術節',
 };
