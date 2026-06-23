@@ -191,7 +191,15 @@ ${end}
 }
 
 let html = removeMarkedBlock(readFileSync(file, 'utf8'));
-const articles = await Promise.all(sources.map(fetchArticle));
+const articleResults = await Promise.all(sources.map(async (source) => {
+  try {
+    return await fetchArticle(source);
+  } catch (error) {
+    console.warn(`Article update skipped: ${source.href} (${error.message})`);
+    return null;
+  }
+}));
+const articles = articleResults.filter(Boolean);
 const block = buildBlock(articles);
 
 if (html.includes('const LINKS = [')) {
