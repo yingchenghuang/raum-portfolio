@@ -28,6 +28,13 @@ const sources = [
   },
 ];
 
+const landNarrativeTitles = {
+  'w-land-narrative-01': '土地．文化敘事（一）無人的市場，與自己的對話',
+  'w-land-narrative-02': '土地．文化敘事（二）一座無魂城市的考古學',
+  'w-land-narrative-03': '土地．文化敘事（三）公共空間的美感經驗',
+  'w-blue-night-20260622': '土地．文化敘事（六）紐倫堡藍夜藝術節',
+};
+
 function removeMarkedBlock(html) {
   let output = html;
   while (output.includes(start)) {
@@ -142,6 +149,7 @@ function buildBlock(articles) {
   return `
 ${start}
 const RAUM_WRITING_UPDATES_20260623 = ${JSON.stringify(articles, null, 2)};
+const RAUM_LAND_NARRATIVE_TITLES = ${JSON.stringify(landNarrativeTitles, null, 2)};
 const RAUM_WRITING_UPDATE_IDS = new Set(RAUM_WRITING_UPDATES_20260623.map((item) => item.id));
 for (let index = WRITINGS.length - 1; index >= 0; index -= 1) {
   const writing = WRITINGS[index];
@@ -155,6 +163,19 @@ for (let index = WRITINGS.length - 1; index >= 0; index -= 1) {
   }
 }
 WRITINGS.unshift(...RAUM_WRITING_UPDATES_20260623);
+WRITINGS.forEach((writing) => {
+  const title = RAUM_LAND_NARRATIVE_TITLES[writing.id];
+  if (!title) return;
+  writing.title_zh = title;
+  writing.title_en = title;
+  writing.title_de = title;
+  writing.image_alt_zh = title;
+  writing.image_alt_en = title;
+  writing.image_alt_de = title;
+  writing.image_caption_zh = title;
+  writing.image_caption_en = title;
+  writing.image_caption_de = title;
+});
 window.WRITINGS = WRITINGS;
 ${end}
 `;
