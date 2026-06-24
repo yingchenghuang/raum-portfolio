@@ -83,6 +83,9 @@ jobs:
       - name: Set public space image without overriding thumbnails
         run: node .github/scripts/fix-public-space-image-dsc06519-20260623.mjs
 
+      - name: Force land narrative seven article
+        run: node .github/scripts/force-land-narrative-07-20260624.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
