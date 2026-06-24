@@ -65,6 +65,9 @@ jobs:
       - name: Inject writing updates 20260623
         run: node .github/scripts/inject-writing-updates-20260623.mjs
 
+      - name: Add land narrative seven article
+        run: node .github/scripts/add-land-narrative-07-20260624.mjs
+
       - name: Translate SUBBUS writing article
         run: node .github/scripts/translate-subbus-20260624.mjs
 
