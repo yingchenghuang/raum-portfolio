@@ -5572,6 +5572,8 @@ html[lang="zh-Hant"] body .rp-about-lead {
 
 
 
+
+
 /* RAUM_WRITING_IMAGE_LAYOUT_START */
 .rp-writing-inner {
   grid-template-columns: 112px clamp(112px, 13vw, 176px) minmax(0, 1fr) 32px !important;
@@ -7749,6 +7751,22 @@ const WRITINGS = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RAUM_WRITING_IMAGE_DATA_START */
 const RAUM_WRITING_IMAGES = {
   "w-hallo-servus-2026": {
@@ -8809,8 +8827,7 @@ window.WRITINGS = WRITINGS;
 
   if (existingIndex >= 0) {
     const existing = WRITINGS[existingIndex];
-    const existingZh = Array.isArray(existing.essay_zh) ? existing.essay_zh.join('
-') : '';
+    const existingZh = Array.isArray(existing.essay_zh) ? existing.essay_zh.join(String.fromCharCode(10)) : '';
     const zhLooksOriginal = existingZh.includes('森林裡的列車') && existingZh.includes('為自己書寫');
     const merged = {
       ...existing,
