@@ -86,6 +86,9 @@ jobs:
       - name: Force land narrative seven article
         run: node .github/scripts/force-land-narrative-07-20260624.mjs
 
+      - name: Repair land narrative seven syntax
+        run: node .github/scripts/repair-land-narrative-07-syntax-20260624.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
