@@ -1,0 +1,1 @@
+Trigger latest writing article translation deploy on 2026-06-25.
