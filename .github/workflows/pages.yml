@@ -97,6 +97,35 @@ jobs:
 
       - name: Persist generated index
         run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+          start = '/* RAUM_REMOVE_GRID_TOGGLE_20260626_START */'
+          end = '/* RAUM_REMOVE_GRID_TOGGLE_20260626_END */'
+          html = re.sub(r'\n?\s*' + re.escape(start) + r'[\s\S]*?' + re.escape(end) + r'\s*', '\n', html)
+          html = re.sub(r"\n\s*<button\s+className=\{\s*'rp-grid-toggle '\s*\+\s*\(grid \? 'on' : ''\)\s*\}[\s\S]*?</button>", '', html)
+          html = html.replace('{grid && <GridOverlay />}', '{false && <GridOverlay />}')
+          css = f'''
+            {start}
+            .rp-grid-toggle,
+            button[aria-label*="grid" i],
+            button[aria-label*="版面格線"],
+            button[aria-label*="Raster" i] {{
+              display: none !important;
+            }}
+            .rp-grid-overlay {{
+              display: none !important;
+            }}
+            {end}
+          '''
+          if '</style>' in html:
+            html = html.replace('</style>', css + '\n</style>', 1)
+          path.write_text(html, encoding='utf-8')
+          PY
+
           if git diff --quiet -- index.html; then
             echo "index.html unchanged"
           else
