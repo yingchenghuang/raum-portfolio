@@ -92,6 +92,9 @@ jobs:
       - name: Repair land narrative seven syntax
         run: node .github/scripts/repair-land-narrative-07-syntax-20260624.mjs
 
+      - name: Remove grid toggle
+        run: node .github/scripts/remove-grid-toggle-20260626.mjs
+
       - name: Persist generated index
         run: |
           if git diff --quiet -- index.html; then
