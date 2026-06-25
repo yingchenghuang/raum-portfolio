@@ -14,9 +14,25 @@ const source = {
   title_de: 'Stadt, Land und kulturelle Erzählungen VIII: Vom Abwasserkanal zur Kunststraße - EMSCHERKUNST und zwanzig Jahre Stadttransformation an der Emscher',
 };
 
-const translations = {
-  // Body translations are filled after the first fetch confirms the exact Blogger text.
-};
+function loadTranslations() {
+  try {
+    const text = readFileSync('.github/scripts/translate-latest-writing-article-20260625.mjs', 'utf8');
+    const match = text.match(/const patch = ([\s\S]*?);\n\nfunction removeMarkedBlock/);
+    if (!match) return {};
+    const patch = Function(`"use strict"; return (${match[1]});`)();
+    return {
+      note_en: patch.note_en,
+      note_de: patch.note_de,
+      essay_en: patch.essay_en,
+      essay_de: patch.essay_de,
+    };
+  } catch (error) {
+    console.warn(`Latest writing translations unavailable: ${error.message}`);
+    return {};
+  }
+}
+
+const translations = loadTranslations();
 
 function removeMarkedBlock(html) {
   let output = html;
