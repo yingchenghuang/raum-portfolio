@@ -77,6 +77,9 @@ jobs:
       - name: Sync latest writing article
         run: node .github/scripts/sync-latest-writing-article-20260625.mjs
 
+      - name: Translate latest writing article
+        run: node .github/scripts/translate-latest-writing-article-20260625.mjs
+
       - name: Trim writing image sources
         run: node .github/scripts/trim-writing-images-20260623.mjs
 
