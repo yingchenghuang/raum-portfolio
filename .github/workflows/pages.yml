@@ -77,9 +77,6 @@ jobs:
       - name: Sync latest writing article
         run: node .github/scripts/sync-latest-writing-article-20260625.mjs
 
-      - name: Sync QUIVID writing article
-        run: node .github/scripts/sync-quivid-writing-20260626.mjs
-
       - name: Trim writing image sources
         run: node .github/scripts/trim-writing-images-20260623.mjs
 
@@ -94,6 +91,9 @@ jobs:
 
       - name: Repair land narrative seven syntax
         run: node .github/scripts/repair-land-narrative-07-syntax-20260624.mjs
+
+      - name: Sync QUIVID writing article
+        run: node .github/scripts/sync-quivid-writing-20260626.mjs
 
       - name: Remove grid toggle
         run: node .github/scripts/remove-grid-toggle-20260626.mjs
