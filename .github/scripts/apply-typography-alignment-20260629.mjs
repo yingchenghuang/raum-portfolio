@@ -11,13 +11,32 @@ html = html.replace(blockPattern, '\n');
 const css = `
 ${start}
 :root {
-  --rp-reading-measure: min(100%, 76ch);
+  --rp-reading-measure: min(100%, 92ch);
+  --rp-golden-left: 38.2%;
+  --rp-golden-right: 61.8%;
+  --rp-golden-gap: clamp(40px, 5vw, 112px);
 }
 
-.rp-writing-detail-body,
 .rp-detail-body,
+.rp-writing-detail-body {
+  max-width: none !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  grid-template-columns: minmax(280px, var(--rp-golden-left)) minmax(0, var(--rp-golden-right)) !important;
+  column-gap: var(--rp-golden-gap) !important;
+  align-items: start;
+}
+
+.rp-detail-body > *,
+.rp-writing-detail-body > * {
+  min-width: 0;
+}
+
 .rp-detail-essay,
 .rp-detail-ch-body,
+.rp-writing-detail-body p,
+.rp-writing-detail-body article,
+.rp-writing-detail-body .rp-detail-essay,
 .rp-about-body,
 .rp-about-lead,
 .rp-studio-body,
@@ -42,8 +61,22 @@ ${start}
   max-width: var(--rp-reading-measure);
 }
 
+.rp-detail-essay,
+.rp-detail-chapters,
+.rp-writing-detail-body > :not(.rp-writing-figure):not(figure):not(img) {
+  justify-self: stretch;
+  width: 100%;
+}
+
+.rp-writing-figure,
+.rp-detail-fig,
+.rp-detail-gallery,
+.rp-detail-hero,
+.rp-detail-plate {
+  max-width: 100%;
+}
+
 .rp-writing-detail-body p,
-.rp-detail-body p,
 .rp-detail-essay p,
 .rp-detail-ch-body p,
 .rp-about-body p,
@@ -89,7 +122,6 @@ ${start}
 .rp-writing-row .rp-obj-body,
 .rp-writing-row p,
 .rp-writing-detail p,
-.rp-writing-detail-body,
 .rp-writing-detail-body p {
   letter-spacing: 0.01em;
   word-spacing: 0.02em;
@@ -97,23 +129,25 @@ ${start}
 
 html[lang^="zh"] .rp-writing-detail-body,
 html[lang^="zh"] .rp-writing-detail-body p,
-html[lang^="zh"] .rp-detail-body,
-html[lang^="zh"] .rp-detail-body p,
 html[lang^="zh"] .rp-detail-essay,
-html[lang^="zh"] .rp-detail-essay p {
+html[lang^="zh"] .rp-detail-essay p,
+html[lang^="zh"] .rp-detail-ch-body,
+html[lang^="zh"] .rp-detail-ch-body p {
   text-justify: inter-ideograph;
   line-break: strict;
   letter-spacing: 0.015em;
 }
 
-html[lang^="en"] .rp-writing-detail-body,
 html[lang^="en"] .rp-writing-detail-body p,
-html[lang^="de"] .rp-writing-detail-body,
 html[lang^="de"] .rp-writing-detail-body p,
-html[lang^="en"] .rp-detail-body,
-html[lang^="en"] .rp-detail-body p,
-html[lang^="de"] .rp-detail-body,
-html[lang^="de"] .rp-detail-body p {
+html[lang^="en"] .rp-detail-essay,
+html[lang^="en"] .rp-detail-essay p,
+html[lang^="de"] .rp-detail-essay,
+html[lang^="de"] .rp-detail-essay p,
+html[lang^="en"] .rp-detail-ch-body,
+html[lang^="en"] .rp-detail-ch-body p,
+html[lang^="de"] .rp-detail-ch-body,
+html[lang^="de"] .rp-detail-ch-body p {
   text-justify: auto;
   letter-spacing: 0;
   word-spacing: 0.04em;
@@ -138,11 +172,41 @@ html[lang^="de"] .rp-detail-body p {
   -webkit-hyphens: manual;
 }
 
-@media (max-width: 760px) {
-  .rp-writing-detail-body,
+@media (min-width: 1200px) {
   .rp-detail-body,
+  .rp-writing-detail-body {
+    padding-left: clamp(56px, 4vw, 92px) !important;
+    padding-right: clamp(72px, 8vw, 168px) !important;
+  }
+
   .rp-detail-essay,
   .rp-detail-ch-body,
+  .rp-writing-detail-body p,
+  .rp-writing-detail-body article {
+    max-width: min(100%, 980px);
+  }
+}
+
+@media (max-width: 980px) {
+  .rp-detail-body,
+  .rp-writing-detail-body {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .rp-writing-detail-body,
+  .rp-detail-body {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .rp-writing-detail-body p,
+  .rp-detail-essay,
+  .rp-detail-essay p,
+  .rp-detail-ch-body,
+  .rp-detail-ch-body p,
   .rp-about-body,
   .rp-about-lead,
   .rp-studio-body,
