@@ -101,6 +101,9 @@ jobs:
       - name: Sync Doku-Zentrum writing article
         run: node .github/scripts/sync-doku-zentrum-writing-20260628.mjs
 
+      - name: Sync corrected Doku-Zentrum wording
+        run: node .github/scripts/fix-doku-zentrum-text-20260628.mjs
+
       - name: Remove grid toggle
         run: node .github/scripts/remove-grid-toggle-20260626.mjs
 
