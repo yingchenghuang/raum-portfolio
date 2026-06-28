@@ -11,10 +11,10 @@ html = html.replace(blockPattern, '\n');
 const css = `
 ${start}
 :root {
-  --rp-reading-measure: min(100%, 92ch);
-  --rp-golden-left: 38.2%;
-  --rp-golden-right: 61.8%;
-  --rp-golden-gap: clamp(40px, 5vw, 112px);
+  --rp-reading-measure: min(100%, 1120px);
+  --rp-golden-left: 36%;
+  --rp-golden-right: 64%;
+  --rp-golden-gap: clamp(36px, 4.2vw, 96px);
 }
 
 .rp-detail-body,
@@ -22,21 +22,41 @@ ${start}
   max-width: none !important;
   width: 100% !important;
   box-sizing: border-box;
+  display: grid !important;
   grid-template-columns: minmax(280px, var(--rp-golden-left)) minmax(0, var(--rp-golden-right)) !important;
   column-gap: var(--rp-golden-gap) !important;
   align-items: start;
 }
 
 .rp-detail-body > *,
-.rp-writing-detail-body > * {
-  min-width: 0;
+.rp-writing-detail-body > *,
+.rp-detail-chapters,
+.rp-detail-ch-body,
+.rp-detail-essay,
+.rp-writing-detail,
+.rp-writing-detail-body article,
+.rp-writing-detail-body section,
+.rp-writing-detail-body div:not(.rp-writing-figure):not(.rp-detail-fig):not(.rp-detail-gallery):not(.rp-detail-hero):not(.rp-detail-plate) {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+.rp-detail-body > :nth-child(2),
+.rp-writing-detail-body > :nth-child(2),
+.rp-detail-essay,
+.rp-detail-chapters,
+.rp-detail-ch-body {
+  justify-self: stretch !important;
+  grid-column: auto !important;
 }
 
 .rp-detail-essay,
 .rp-detail-ch-body,
 .rp-writing-detail-body p,
 .rp-writing-detail-body article,
-.rp-writing-detail-body .rp-detail-essay,
+.rp-writing-detail-body section,
 .rp-about-body,
 .rp-about-lead,
 .rp-studio-body,
@@ -58,22 +78,9 @@ ${start}
   overflow-wrap: break-word;
   word-break: normal;
   line-break: strict;
-  max-width: var(--rp-reading-measure);
-}
-
-.rp-detail-essay,
-.rp-detail-chapters,
-.rp-writing-detail-body > :not(.rp-writing-figure):not(figure):not(img) {
-  justify-self: stretch;
-  width: 100%;
-}
-
-.rp-writing-figure,
-.rp-detail-fig,
-.rp-detail-gallery,
-.rp-detail-hero,
-.rp-detail-plate {
-  max-width: 100%;
+  max-width: var(--rp-reading-measure) !important;
+  writing-mode: horizontal-tb !important;
+  white-space: normal !important;
 }
 
 .rp-writing-detail-body p,
@@ -89,6 +96,8 @@ ${start}
 .rp-obj-detail p,
 .rp-archive-detail p,
 .rp-footer-body p {
+  width: 100% !important;
+  max-width: var(--rp-reading-measure) !important;
   text-align: justify;
   text-align-last: left;
   text-justify: inter-character;
@@ -97,6 +106,8 @@ ${start}
   overflow-wrap: break-word;
   word-break: normal;
   line-break: strict;
+  writing-mode: horizontal-tb !important;
+  white-space: normal !important;
 }
 
 .rp-writing-row,
@@ -153,6 +164,14 @@ html[lang^="de"] .rp-detail-ch-body p {
   word-spacing: 0.04em;
 }
 
+.rp-writing-figure,
+.rp-detail-fig,
+.rp-detail-gallery,
+.rp-detail-hero,
+.rp-detail-plate {
+  max-width: 100% !important;
+}
+
 .rp-nav,
 .rp-header,
 .rp-lang-toggle,
@@ -175,15 +194,16 @@ html[lang^="de"] .rp-detail-ch-body p {
 @media (min-width: 1200px) {
   .rp-detail-body,
   .rp-writing-detail-body {
-    padding-left: clamp(56px, 4vw, 92px) !important;
-    padding-right: clamp(72px, 8vw, 168px) !important;
+    padding-left: clamp(48px, 3.5vw, 84px) !important;
+    padding-right: clamp(56px, 5vw, 120px) !important;
   }
 
   .rp-detail-essay,
   .rp-detail-ch-body,
   .rp-writing-detail-body p,
-  .rp-writing-detail-body article {
-    max-width: min(100%, 980px);
+  .rp-writing-detail-body article,
+  .rp-writing-detail-body section {
+    max-width: min(100%, 1120px) !important;
   }
 }
 
@@ -219,7 +239,7 @@ html[lang^="de"] .rp-detail-ch-body p {
   .rp-obj-detail,
   .rp-archive-detail,
   .rp-footer-body {
-    max-width: 100%;
+    max-width: 100% !important;
     text-align: justify;
     text-justify: inter-character;
     overflow-wrap: anywhere;
