@@ -98,6 +98,9 @@ jobs:
       - name: Sync Nuremberg forest writing article
         run: node .github/scripts/sync-nuremberg-forest-writing-20260628.mjs
 
+      - name: Sync Doku-Zentrum writing article
+        run: node .github/scripts/sync-doku-zentrum-writing-20260628.mjs
+
       - name: Remove grid toggle
         run: node .github/scripts/remove-grid-toggle-20260626.mjs
 
