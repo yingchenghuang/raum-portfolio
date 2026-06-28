@@ -104,6 +104,9 @@ jobs:
       - name: Sync corrected Doku-Zentrum wording
         run: node .github/scripts/fix-doku-zentrum-text-20260628.mjs
 
+      - name: Apply typography alignment
+        run: node .github/scripts/apply-typography-alignment-20260629.mjs
+
       - name: Remove grid toggle
         run: node .github/scripts/remove-grid-toggle-20260626.mjs
 
