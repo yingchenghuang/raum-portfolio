@@ -24,3 +24,5 @@ for (const [from, to] of replacements) {
 
 writeFileSync(file, html, 'utf8');
 console.log('Synced corrected Doku-Zentrum wording.');
+
+await import('./sync-human-rights-road-writing-20260629.mjs');
