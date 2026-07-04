@@ -112,7 +112,7 @@ jobs:
       - name: Remove grid toggle
         run: node .github/scripts/remove-grid-toggle-20260626.mjs
 
-      - name: Persist generated index
+      - name: Finalize generated index
         run: |
           python3 <<'PY'
           from pathlib import Path
@@ -142,16 +142,6 @@ jobs:
             html = html.replace('</style>', css + '\n</style>', 1)
           path.write_text(html, encoding='utf-8')
           PY
-
-          if git diff --quiet -- index.html; then
-            echo "index.html unchanged"
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add index.html
-            git commit -m "Update generated portfolio index"
-            git push
-          fi
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
