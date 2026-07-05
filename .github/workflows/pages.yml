@@ -106,6 +106,9 @@ jobs:
       - name: Sync corrected Doku-Zentrum wording
         run: node .github/scripts/fix-doku-zentrum-text-20260628.mjs
 
+      - name: Sync Luitpoldhain writing article
+        run: node .github/scripts/sync-luitpoldhain-writing-20260705.mjs
+
       - name: Apply typography alignment
         run: node .github/scripts/apply-typography-alignment-20260629.mjs
 
