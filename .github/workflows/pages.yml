@@ -109,6 +109,9 @@ jobs:
       - name: Sync Luitpoldhain writing article
         run: node .github/scripts/sync-luitpoldhain-writing-20260705.mjs
 
+      - name: Use clearer Luitpoldhain image
+        run: node .github/scripts/fix-luitpoldhain-main-image-20260705.mjs
+
       - name: Apply typography alignment
         run: node .github/scripts/apply-typography-alignment-20260629.mjs
 
