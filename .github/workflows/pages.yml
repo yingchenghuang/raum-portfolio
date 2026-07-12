@@ -112,6 +112,9 @@ jobs:
       - name: Use clearer Luitpoldhain image
         run: node .github/scripts/fix-luitpoldhain-main-image-20260705.mjs
 
+      - name: Sync Neues Museum writing article
+        run: node .github/scripts/sync-neues-museum-writing-20260712.mjs
+
       - name: Apply typography alignment
         run: node .github/scripts/apply-typography-alignment-20260629.mjs
 
