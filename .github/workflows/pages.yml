@@ -115,6 +115,9 @@ jobs:
       - name: Sync Neues Museum writing article
         run: node .github/scripts/sync-neues-museum-writing-20260712.mjs
 
+      - name: Use requested Neues Museum image
+        run: node .github/scripts/fix-neues-museum-main-image-20260712.mjs
+
       - name: Apply typography alignment
         run: node .github/scripts/apply-typography-alignment-20260629.mjs
 
