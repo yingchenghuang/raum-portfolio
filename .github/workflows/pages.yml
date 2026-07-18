@@ -118,6 +118,9 @@ jobs:
       - name: Use requested Neues Museum image
         run: node .github/scripts/fix-neues-museum-main-image-20260712.mjs
 
+      - name: Sync Staatstheater writing article
+        run: node .github/scripts/sync-staatstheater-writing-20260718.mjs
+
       - name: Apply typography alignment
         run: node .github/scripts/apply-typography-alignment-20260629.mjs
 
