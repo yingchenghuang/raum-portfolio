@@ -124,6 +124,9 @@ jobs:
       - name: Sync Five Hundred Suns work
         run: node .github/scripts/sync-five-hundred-suns-work-20260730.mjs
 
+      - name: Use requested Five Hundred Suns cover
+        run: node .github/scripts/fix-five-hundred-suns-cover-20260730.mjs
+
       - name: Apply typography alignment
         run: node .github/scripts/apply-typography-alignment-20260629.mjs
 
