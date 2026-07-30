@@ -4,7 +4,7 @@ const file = 'index.html';
 const start = '/* RAUM_FIVE_HUNDRED_SUNS_COVER_20260730_START */';
 const end = '/* RAUM_FIVE_HUNDRED_SUNS_COVER_20260730_END */';
 const projectId = 'five-hundred-suns';
-const requestedCover = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj73I7OAU-oISKFn1zMYB8XDAQgwxz8Y-jcNCSH2Bxgp7-bjQUkCbZX8AbtNNmpFvO1B5LWfC7-IwbzXfaSO_NiL9K62_Iiy2dQB3cWW6sO2jOifY8CD0763X-4HHg1ESX13Ak4o7_FJ21ntdH7C7fB6MNdymIk6r1NNYOYyvQqGn6jlulQVCpGtV6zzfI/w640-h360/Das-Gewicht-von-fuenfhundert-Sonnen-3.jpg';
+const requestedCover = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj73I7OAU-oISKFn1zMYB8XDAQgwxz8Y-jcNCSH2Bxgp7-bjQUkCbZX8AbtNNmpFvO1B5LWfC7-IwbzXfaSO_NiL9K62_Iiy2dQB3cWW6sO2jOifY8CD0763X-4HHg1ESX13Ak4o7_FJ21ntdH7C7fB6MNdymIk6r1NNYOYyvQqGn6jlulQVCpGtV6zzfI/s1000/Das-Gewicht-von-fuenfhundert-Sonnen-3.jpg';
 
 function removeMarkedBlock(html) {
   const startIndex = html.indexOf(start);
@@ -21,6 +21,10 @@ ${start}
   const requestedCover = ${JSON.stringify(requestedCover)};
   const project = window.PROJECTS.find((item) => item.id === ${JSON.stringify(projectId)});
   if (!project) throw new Error('Five Hundred Suns project not found.');
+  project.images = project.images.map((src) => src
+    .replace('/w640-h412/', '/s1000/')
+    .replace('/w640-h360/', '/s1000/')
+  );
   project.images = [requestedCover, ...project.images.filter((src) => src !== requestedCover)];
 }
 ${end}
