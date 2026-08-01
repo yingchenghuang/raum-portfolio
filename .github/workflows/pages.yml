@@ -121,6 +121,9 @@ jobs:
       - name: Sync Staatstheater writing article
         run: node .github/scripts/sync-staatstheater-writing-20260718.mjs
 
+      - name: Sync Iseo Floating Piers writing article
+        run: node .github/scripts/sync-iseo-floating-piers-writing-20260801.mjs
+
       - name: Sync Five Hundred Suns work
         run: node .github/scripts/sync-five-hundred-suns-work-20260730.mjs
 
