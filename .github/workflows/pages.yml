@@ -127,6 +127,9 @@ jobs:
       - name: Sync Dresden writing article
         run: node .github/scripts/sync-dresden-writing-20260802.mjs
 
+      - name: Sync City Time writing article
+        run: node .github/scripts/sync-city-time-writing-20260803.mjs
+
       - name: Sync Five Hundred Suns work
         run: node .github/scripts/sync-five-hundred-suns-work-20260730.mjs
 
