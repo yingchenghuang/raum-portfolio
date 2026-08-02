@@ -130,6 +130,9 @@ jobs:
       - name: Sync City Time writing article
         run: node .github/scripts/sync-city-time-writing-20260803.mjs
 
+      - name: Use requested City Time image
+        run: node .github/scripts/fix-city-time-main-image-20260803.mjs
+
       - name: Sync Five Hundred Suns work
         run: node .github/scripts/sync-five-hundred-suns-work-20260730.mjs
 
