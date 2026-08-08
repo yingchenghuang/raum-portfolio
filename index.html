@@ -10924,14 +10924,16 @@ const OBJECTS = [
 ];
 
 /* RAUM_BLOGGER_ORDER_20260808_START */
-['w-nordlingen-memory-20260805','w-munich-kunstareal-20260807'].forEach((id) => {
-  const index = WRITINGS.findIndex((writing) => writing.id === id);
-  if (index >= 0) WRITINGS.splice(index, 1);
-});
-const latestPost19 = RAUM_BLOGGER_POST_19;
-const latestPost20 = RAUM_BLOGGER_POST_20;
-WRITINGS.unshift(latestPost20, latestPost19);
-window.WRITINGS = WRITINGS;
+{
+  const latestPost20 = WRITINGS.find((writing) => writing.id === 'w-munich-kunstareal-20260807');
+  const latestPost19 = WRITINGS.find((writing) => writing.id === 'w-nordlingen-memory-20260805');
+  ['w-munich-kunstareal-20260807', 'w-nordlingen-memory-20260805'].forEach((id) => {
+    const index = WRITINGS.findIndex((writing) => writing.id === id);
+    if (index >= 0) WRITINGS.splice(index, 1);
+  });
+  if (latestPost20 && latestPost19) WRITINGS.unshift(latestPost20, latestPost19);
+  window.WRITINGS = WRITINGS;
+}
 /* RAUM_BLOGGER_ORDER_20260808_END */
 Object.assign(window, { COPY, PROJECTS, ARCHIVE, WRITINGS, LINKS, OBJECTS });
 
