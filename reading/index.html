@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="黃英誠的個人閱讀書齋，整理 1,066 本書與 13 個閱讀分類。">
+  <title>閱讀書齋｜RAUM+ Reading Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;1,400&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到頂端"><span></span>RAUM+ / READING ARCHIVE</a>
+    <nav aria-label="主要導覽">
+      <a href="#library"><b>01</b> 書庫</a>
+      <a href="#path"><b>02</b> 閱讀路徑</a>
+      <a href="#about"><b>03</b> 關於</a>
+    </nav>
+    <a class="portfolio-link" href="../">作品集 ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="signature" aria-hidden="true"><strong>空間</strong><span>RAUM+</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow">黃英誠的閱讀書齋 / Eason Huang’s Reading Archive</p>
+        <h1 id="hero-title">閱讀書齋</h1>
+        <p class="lead">把閱讀變成一座可探索的知識建築。</p>
+        <p class="count"><strong id="totalCount">1,066</strong> BOOKS <i>/</i> <strong>13</strong> CATEGORIES</p>
+      </div>
+    </section>
+
+    <section id="library" class="library" aria-labelledby="library-title">
+      <h2 id="library-title" class="sr-only">書庫</h2>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜尋書名、作者、編號" autocomplete="off"><kbd>/</kbd></label>
+      <div id="categoryFilters" class="filters" aria-label="書籍分類"></div>
+      <p id="resultStatus" class="result-status" aria-live="polite"></p>
+
+      <div class="shelf-stage">
+        <article id="selectedBook" class="selected-book" aria-live="polite"></article>
+        <div id="bookShelf" class="book-shelf" aria-label="可選擇的書架"></div>
+      </div>
+      <div class="shelf-note"><span>← 拖曳瀏覽</span><span>選一本書，展開閱讀筆記 →</span></div>
+    </section>
+
+    <section class="index-grid">
+      <div class="latest">
+        <header class="section-heading"><h2>LATEST ADDITIONS <small>最新加入</small></h2><button id="showAll">VIEW ALL →</button></header>
+        <div id="latestList" class="latest-list"></div>
+      </div>
+      <div id="path" class="path-panel">
+        <header class="section-heading"><h2>READING PATH <small>閱讀路徑</small></h2><span>EXPLORE BY CATEGORY</span></header>
+        <div id="pathViz" class="path-viz" aria-label="與目前選書相關的閱讀路徑"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">ABOUT THE ARCHIVE</p>
+      <h2>閱讀不是收藏答案，<br>而是建立自己的座標。</h2>
+      <div>
+        <p>這座書齋整理自 Notion「備忘錄 2.書｜完整整理」，讓原本的書單成為可以搜尋、連結與漫遊的個人知識索引。</p>
+        <a href="https://app.notion.com/p/39c34a20271a81f5a1aee116c65a64bb" target="_blank" rel="noreferrer">開啟 Notion 總目錄 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 EASON HUANG</span><span>BUILT WITH RAUM+</span></footer>
+</body>
+</html>

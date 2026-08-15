@@ -1,0 +1,11 @@
+# RAUM+ Reading Archive
+
+黃英誠的個人閱讀網站，整理自 Notion「備忘錄 2.書｜完整整理」。
+
+- 1,066 本書、13 個分類
+- 書名、作者與編號搜尋
+- 分類篩選、互動書架與閱讀路徑
+- 每本書直接連回 Notion 完整筆記
+- 純靜態 HTML / CSS / JavaScript，可由 GitHub Pages 直接託管
+
+本機預覽：在專案根目錄執行 `python3 -m http.server 4173`，開啟 `/reading/`。
