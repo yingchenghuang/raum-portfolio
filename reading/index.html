@@ -15,9 +15,10 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="回到頂端"><span></span>RAUM+ / READING ARCHIVE</a>
     <nav aria-label="主要導覽">
-      <a href="#library"><b>01</b> 書庫</a>
-      <a href="#path"><b>02</b> 閱讀路徑</a>
-      <a href="#about"><b>03</b> 關於</a>
+      <a href="#library"><b>01</b> 書架</a>
+      <a href="#all-books"><b>02</b> 所有書單</a>
+      <a href="#path"><b>03</b> 閱讀路徑</a>
+      <a href="#about"><b>04</b> 關於</a>
     </nav>
     <a class="portfolio-link" href="../">作品集 ↗</a>
   </header>
@@ -44,6 +45,23 @@
         <div id="bookShelf" class="book-shelf" aria-label="可選擇的書架"></div>
       </div>
       <div class="shelf-note"><span>← 拖曳瀏覽</span><span>選一本書，展開閱讀筆記 →</span></div>
+    </section>
+
+    <section id="all-books" class="all-books" aria-labelledby="all-books-title">
+      <header class="catalog-heading">
+        <div>
+          <p class="eyebrow">COMPLETE LIBRARY / 完整書庫</p>
+          <h2 id="all-books-title">所有書單</h2>
+        </div>
+        <p><strong id="catalogCount">1,066</strong> BOOKS<br>每本書都有獨立的站內閱讀連結</p>
+      </header>
+      <div class="catalog-tools">
+        <label class="catalog-search"><span aria-hidden="true">⌕</span><input id="catalogSearchInput" type="search" placeholder="搜尋所有書名、作者、編號" autocomplete="off"></label>
+        <label class="catalog-select"><span>分類</span><select id="catalogCategory" aria-label="依分類篩選完整書庫"></select></label>
+      </div>
+      <div class="catalog-columns" aria-hidden="true"><span>NO. / COVER</span><span>書名 / 作者</span><span>分類</span><span>完整頁面</span></div>
+      <div id="allBooksList" class="all-books-list"></div>
+      <button id="loadMoreBooks" class="load-more" type="button">顯示更多書籍 ↓</button>
     </section>
 
     <section class="index-grid">
