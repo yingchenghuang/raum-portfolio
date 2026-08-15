@@ -4,7 +4,7 @@ const categories = [
   ['reading','溝通表達'],['health','健康生活'],['society','社會科學'],['misc','旅行紀實'],['invest','投資金融']
 ];
 
-const state = { books: [], filtered: [], category: 'all', query: '', selected: null };
+const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null };
 const $ = (selector) => document.querySelector(selector);
 
 async function loadBooks(){
@@ -14,6 +14,8 @@ async function loadBooks(){
     return (await response.json()).map(book => ({...book, category:key, categoryLabel:label}));
   }));
   state.books = groups.flat().sort((a,b) => Number(a.n)-Number(b.n));
+  const coverResponse = await fetch('data/covers.json');
+  if(coverResponse.ok) state.covers = await coverResponse.json();
   state.selected = state.books.at(-1);
   $('#totalCount').textContent = state.books.length.toLocaleString('en-US');
   renderFilters();
@@ -44,11 +46,12 @@ function applyFilters(){
 }
 
 function renderShelf(){
-  const source = state.filtered.slice(-24).reverse();
-  $('#bookShelf').innerHTML = source.length ? source.map(book =>
-    `<button class="spine ${book.n===state.selected?.n?'active':''}" data-book="${book.n}" title="${escapeHtml(book.t)}">${escapeHtml(book.t)}<small>${escapeHtml(book.a || '作者待補')}</small></button>`
-  ).join('') : '<p>沒有符合條件的書。</p>';
+  const booksWithCovers = state.filtered.filter(book => state.covers[book.n]);
+  const source = (booksWithCovers.length ? booksWithCovers : state.filtered).slice(-14).reverse();
   if(source.length && !source.some(b => b.n===state.selected?.n)) state.selected = source[0];
+  $('#bookShelf').innerHTML = source.length ? source.map(book =>
+    `<button class="book-3d ${book.n===state.selected?.n?'active':''}" data-book="${book.n}" title="${escapeHtml(book.t)} — ${escapeHtml(book.a || '作者待補')}"><span class="book-object"><span class="book-front"><span class="cover-fallback"><b>${escapeHtml(book.t)}</b><small>${escapeHtml(book.a || 'RAUM+ ARCHIVE')}</small></span>${state.covers[book.n]?`<img src="${escapeHtml(state.covers[book.n])}" alt="《${escapeHtml(book.t)}》真實書封" loading="lazy">`:''}</span></span><span class="book-caption">NO. ${book.n}</span></button>`
+  ).join('') : '<p>沒有符合條件的書。</p>';
   renderSelected();
 }
 
@@ -64,7 +67,7 @@ function selectBook(number){
   if(!book) return;
   state.selected = book;
   renderSelected();
-  document.querySelectorAll('.spine').forEach(el => el.classList.toggle('active',el.dataset.book===number));
+  document.querySelectorAll('.book-3d').forEach(el => el.classList.toggle('active',el.dataset.book===number));
 }
 
 function renderLatest(){
@@ -156,6 +159,7 @@ function renderEmbed(url){
 
 $('#searchInput').addEventListener('input', event => { state.query=event.target.value; applyFilters(); });
 document.addEventListener('click', event => { const book=event.target.closest('[data-book]'); if(book) selectBook(book.dataset.book); const note=event.target.closest('[data-read-note]'); if(note) openNote(note.dataset.readNote); });
+document.addEventListener('error',event=>{ if(event.target.matches?.('.book-front img')) event.target.remove(); },true);
 document.addEventListener('keydown', event => { if(event.key==='/' && document.activeElement!==$('#searchInput')){ event.preventDefault(); $('#searchInput').focus(); } });
 $('#showAll').addEventListener('click', () => { state.category='all'; state.query=''; $('#searchInput').value=''; document.querySelectorAll('.filter').forEach((el,i)=>el.classList.toggle('active',i===0)); applyFilters(); $('#library').scrollIntoView(); });
 $('#closeNote').addEventListener('click',()=>$('#noteDialog').close());
