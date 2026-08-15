@@ -38,7 +38,7 @@ function applyFilters(){
   const q = state.query.trim().toLocaleLowerCase('zh-Hant');
   state.filtered = state.books.filter(book => (state.category === 'all' || book.category === state.category) &&
     (!q || `${book.n} ${book.t} ${book.a}`.toLocaleLowerCase('zh-Hant').includes(q)));
-  $('#resultStatus').textContent = q || state.category !== 'all' ? `FOUND ${state.filtered.length} BOOKS` : 'CURATED PERSONAL LIBRARY — UPDATED FROM NOTION';
+  $('#resultStatus').textContent = q || state.category !== 'all' ? `FOUND ${state.filtered.length} BOOKS` : 'CURATED PERSONAL LIBRARY — COMPLETE ON-SITE ARCHIVE';
   renderShelf();
   renderLatest();
 }
@@ -55,8 +55,7 @@ function renderShelf(){
 function renderSelected(){
   const book = state.selected;
   if(!book){ $('#selectedBook').innerHTML = '<p>請調整搜尋條件。</p>'; return; }
-  const notion = `https://app.notion.com/p/${book.u}`;
-  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><a href="${notion}" target="_blank" rel="noreferrer">開啟完整筆記 ↗</a>${book.y?`<a href="${book.y}" target="_blank" rel="noreferrer">相關影片 ↗</a>`:''}</div>`;
+  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">站內閱讀完整筆記 →</button>${book.y?`<a href="${book.y}" target="_blank" rel="noreferrer">相關影片 ↗</a>`:''}</div>`;
   renderPath();
 }
 
@@ -92,9 +91,74 @@ function line([x1,y1],[x2,y2]){
 
 function escapeHtml(value=''){ return value.replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char])); }
 
+const noteCache = new Map();
+function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
+async function openNote(number){
+  const book=state.books.find(item=>item.n===number);
+  if(!book) return;
+  $('#noteNumber').textContent=`NO. ${book.n} / ${book.categoryLabel}`;
+  $('#noteTitle').textContent=book.t;
+  $('#noteContent').innerHTML='<p class="note-loading">正在載入完整筆記…</p>';
+  $('#noteDialog').showModal();
+  try{
+    const bucket=String(noteBucket(book.u)).padStart(3,'0');
+    if(!noteCache.has(bucket)){
+      const response=await fetch(`notes/chunk-${bucket}.json`);
+      if(!response.ok) throw new Error('筆記資料尚未同步');
+      noteCache.set(bucket,await response.json());
+    }
+    let page=noteCache.get(bucket)[book.u];
+    if(!page){
+      const repairKey=`repair-${bucket}`;
+      if(!noteCache.has(repairKey)){
+        const response=await fetch(`notes/repair-${bucket}.json`);
+        noteCache.set(repairKey,response.ok?await response.json():{});
+      }
+      page=noteCache.get(repairKey)[book.u];
+    }
+    if(!page) throw new Error('找不到這本書的筆記');
+    $('#noteContent').innerHTML=renderMarkdown(extractBook(page,book.n));
+  }catch(error){ $('#noteContent').innerHTML=`<p class="note-error">${escapeHtml(error.message)}</p>`; }
+}
+function extractBook(markdown,number){
+  const marker=new RegExp(`^#\\s+${number}｜`,'m');
+  const match=marker.exec(markdown);
+  if(!match) return markdown;
+  const rest=markdown.slice(match.index);
+  const next=/^#\s+\d{4}｜/m.exec(rest.slice(match[0].length));
+  return next?rest.slice(0,match[0].length+next.index):rest;
+}
+function renderMarkdown(markdown){
+  const safe=escapeHtml(markdown).replace(/\\([:$])/g,'$1');
+  const inline=text=>text.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a href="$2" target="_blank" rel="noreferrer">$1 ↗</a>');
+  const lines=safe.split('\n'); let html='',inList=false;
+  for(const raw of lines){ const line=raw.trim();
+    const image=line.match(/^!\[([^\]]*)\]\((https?:\/\/[^)]+)\)$/);
+    const embed=line.match(/^&lt;embed src=&quot;(https?:\/\/[^&]+)&quot;&gt;(?:&lt;\/embed&gt;)?$/);
+    if(image){ if(inList){html+='</ul>';inList=false;} html+=`<figure><img src="${image[2]}" alt="${image[1]}" loading="lazy"><figcaption>${image[1]}</figcaption></figure>`; }
+    else if(embed){ if(inList){html+='</ul>';inList=false;} html+=renderEmbed(embed[1]); }
+    else if(/^#{1,4}\s/.test(line)){ if(inList){html+='</ul>';inList=false;} const level=Math.min(4,(line.match(/^#+/)||[''])[0].length); html+=`<h${level}>${inline(line.replace(/^#+\s*/,''))}</h${level}>`; }
+    else if(/^[-*]\s+/.test(line)){ if(!inList){html+='<ul>';inList=true;} html+=`<li>${inline(line.replace(/^[-*]\s+/,''))}</li>`; }
+    else if(line==='---'){ if(inList){html+='</ul>';inList=false;} html+='<hr>'; }
+    else if(line){ if(inList){html+='</ul>';inList=false;} html+=`<p>${inline(line)}</p>`; }
+  }
+  return html+(inList?'</ul>':'');
+}
+function renderEmbed(url){
+  try{
+    const parsed=new URL(url); let id='';
+    if(parsed.hostname.includes('youtu.be')) id=parsed.pathname.slice(1);
+    if(parsed.hostname.includes('youtube.com')) id=parsed.searchParams.get('v')||parsed.pathname.split('/').filter(Boolean).at(-1)||'';
+    if(id && /^[\w-]{6,}$/.test(id)) return `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube 影片" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><a class="media-link" href="${url}" target="_blank" rel="noreferrer">在 YouTube 開啟 ↗</a>`;
+    return `<p><a href="${url}" target="_blank" rel="noreferrer">開啟相關資料 ↗</a></p>`;
+  }catch{return '';}
+}
+
 $('#searchInput').addEventListener('input', event => { state.query=event.target.value; applyFilters(); });
-document.addEventListener('click', event => { const book=event.target.closest('[data-book]'); if(book) selectBook(book.dataset.book); });
+document.addEventListener('click', event => { const book=event.target.closest('[data-book]'); if(book) selectBook(book.dataset.book); const note=event.target.closest('[data-read-note]'); if(note) openNote(note.dataset.readNote); });
 document.addEventListener('keydown', event => { if(event.key==='/' && document.activeElement!==$('#searchInput')){ event.preventDefault(); $('#searchInput').focus(); } });
 $('#showAll').addEventListener('click', () => { state.category='all'; state.query=''; $('#searchInput').value=''; document.querySelectorAll('.filter').forEach((el,i)=>el.classList.toggle('active',i===0)); applyFilters(); $('#library').scrollIntoView(); });
+$('#closeNote').addEventListener('click',()=>$('#noteDialog').close());
+$('#noteDialog').addEventListener('click',event=>{ if(event.target===$('#noteDialog')) $('#noteDialog').close(); });
 
 loadBooks().catch(error => { $('#resultStatus').textContent=`資料載入失敗：${error.message}`; console.error(error); });
