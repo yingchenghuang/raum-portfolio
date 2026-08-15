@@ -4,7 +4,7 @@ const categories = [
   ['reading','溝通表達'],['health','健康生活'],['society','社會科學'],['misc','旅行紀實'],['invest','投資金融']
 ];
 
-const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null };
+const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
 
 async function loadBooks(){
@@ -19,7 +19,12 @@ async function loadBooks(){
   state.selected = state.books.at(-1);
   $('#totalCount').textContent = state.books.length.toLocaleString('en-US');
   renderFilters();
+  renderCatalogControls();
   applyFilters();
+}
+
+function renderCatalogControls(){
+  $('#catalogCategory').innerHTML = [['all','全部分類'],...categories].map(([key,label]) => `<option value="${key}">${label}</option>`).join('');
 }
 
 function renderFilters(){
@@ -30,9 +35,7 @@ function renderFilters(){
   $('#categoryFilters').addEventListener('click', event => {
     const button = event.target.closest('[data-category]');
     if(!button) return;
-    state.category = button.dataset.category;
-    document.querySelectorAll('.filter').forEach(el => el.classList.toggle('active',el===button));
-    applyFilters();
+    updateCategory(button.dataset.category);
   });
 }
 
@@ -41,8 +44,23 @@ function applyFilters(){
   state.filtered = state.books.filter(book => (state.category === 'all' || book.category === state.category) &&
     (!q || `${book.n} ${book.t} ${book.a}`.toLocaleLowerCase('zh-Hant').includes(q)));
   $('#resultStatus').textContent = q || state.category !== 'all' ? `FOUND ${state.filtered.length} BOOKS` : 'CURATED PERSONAL LIBRARY — COMPLETE ON-SITE ARCHIVE';
+  $('#catalogCount').textContent = state.filtered.length.toLocaleString('en-US');
   renderShelf();
   renderLatest();
+  renderAllBooks();
+}
+
+function renderAllBooks(){
+  const visible = state.filtered.slice().reverse().slice(0,state.visibleCount);
+  $('#allBooksList').innerHTML = visible.length ? visible.map(book => `<article class="catalog-row">
+    <a class="catalog-cover" href="book.html?id=${encodeURIComponent(book.n)}" aria-label="閱讀《${escapeHtml(book.t)}》完整筆記">${state.covers[book.n]?`<img src="${escapeHtml(state.covers[book.n])}" alt="" loading="lazy">`:''}<span>${book.n}</span></a>
+    <a class="catalog-title" href="book.html?id=${encodeURIComponent(book.n)}"><strong>${escapeHtml(book.t)}</strong><small>${escapeHtml(book.a || '作者待補')}</small></a>
+    <span class="catalog-category">${escapeHtml(book.categoryLabel)}</span>
+    <a class="catalog-open" href="book.html?id=${encodeURIComponent(book.n)}">閱讀完整頁面 ↗</a>
+  </article>`).join('') : '<p class="catalog-empty">沒有符合條件的書。</p>';
+  const more = state.visibleCount < state.filtered.length;
+  $('#loadMoreBooks').hidden = !more;
+  if(more) $('#loadMoreBooks').textContent = `顯示更多書籍（尚有 ${state.filtered.length-state.visibleCount} 本）↓`;
 }
 
 function renderShelf(){
@@ -58,7 +76,7 @@ function renderShelf(){
 function renderSelected(){
   const book = state.selected;
   if(!book){ $('#selectedBook').innerHTML = '<p>請調整搜尋條件。</p>'; return; }
-  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">站內閱讀完整筆記 →</button>${book.y?`<a href="${book.y}" target="_blank" rel="noreferrer">相關影片 ↗</a>`:''}</div>`;
+  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.y?`<a href="${book.y}" target="_blank" rel="noreferrer">相關影片 ↗</a>`:''}</div>`;
   renderPath();
 }
 
@@ -157,11 +175,25 @@ function renderEmbed(url){
   }catch{return '';}
 }
 
-$('#searchInput').addEventListener('input', event => { state.query=event.target.value; applyFilters(); });
+function updateQuery(value){
+  state.query=value; state.visibleCount=60;
+  $('#searchInput').value=value; $('#catalogSearchInput').value=value;
+  applyFilters();
+}
+function updateCategory(value){
+  state.category=value; state.visibleCount=60;
+  $('#catalogCategory').value=value;
+  document.querySelectorAll('.filter').forEach(el => el.classList.toggle('active',el.dataset.category===value));
+  applyFilters();
+}
+$('#searchInput').addEventListener('input', event => updateQuery(event.target.value));
+$('#catalogSearchInput').addEventListener('input', event => updateQuery(event.target.value));
+$('#catalogCategory').addEventListener('change', event => updateCategory(event.target.value));
 document.addEventListener('click', event => { const book=event.target.closest('[data-book]'); if(book) selectBook(book.dataset.book); const note=event.target.closest('[data-read-note]'); if(note) openNote(note.dataset.readNote); });
 document.addEventListener('error',event=>{ if(event.target.matches?.('.book-front img')) event.target.remove(); },true);
 document.addEventListener('keydown', event => { if(event.key==='/' && document.activeElement!==$('#searchInput')){ event.preventDefault(); $('#searchInput').focus(); } });
-$('#showAll').addEventListener('click', () => { state.category='all'; state.query=''; $('#searchInput').value=''; document.querySelectorAll('.filter').forEach((el,i)=>el.classList.toggle('active',i===0)); applyFilters(); $('#library').scrollIntoView(); });
+$('#showAll').addEventListener('click', () => { updateCategory('all'); updateQuery(''); $('#all-books').scrollIntoView(); });
+$('#loadMoreBooks').addEventListener('click',()=>{ state.visibleCount+=60; renderAllBooks(); });
 $('#closeNote').addEventListener('click',()=>$('#noteDialog').close());
 $('#noteDialog').addEventListener('click',event=>{ if(event.target===$('#noteDialog')) $('#noteDialog').close(); });
 
