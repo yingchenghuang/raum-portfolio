@@ -150,7 +150,7 @@ function extractBook(markdown,number){
   return next?rest.slice(0,match[0].length+next.index):rest;
 }
 function renderMarkdown(markdown){
-  const safe=escapeHtml(markdown).replace(/\\([:$])/g,'$1');
+  const safe=escapeHtml(markdown).replace(/寶貝[，,]?/g,'').replace(/\\([:$])/g,'$1');
   const inline=text=>text.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a href="$2" target="_blank" rel="noreferrer">$1 ↗</a>');
   const lines=safe.split('\n'); let html='',inList=false;
   for(const raw of lines){ const line=raw.trim();
