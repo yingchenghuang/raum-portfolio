@@ -45,3 +45,8 @@
 /* Supplied RAUM+ laboratory logo */
 .signature{display:block}
 .signature-logo{display:block;width:clamp(142px,12vw,184px);height:auto;object-fit:contain}
+
+/* Bidirectional RAUM+ site links */
+footer{gap:24px;align-items:center}
+footer a{color:var(--blue);border-bottom:1px solid currentColor}
+@media(max-width:600px){footer{flex-wrap:wrap}footer a{order:3;width:100%;padding-top:6px}}

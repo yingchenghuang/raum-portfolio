@@ -6132,6 +6132,31 @@ html[lang="zh-Hant"] body .rp-about-lead {
 }
 /* RAUM_WRITING_IMAGE_LAYOUT_END */
 
+/* RAUM_READING_ARCHIVE_LINK_START */
+.rp-reading-archive-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 14px;
+  padding: 10px 0 8px;
+  border-bottom: 1px solid currentColor;
+  color: var(--accent);
+  font: 600 11px/1.2 var(--font-mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.rp-reading-archive-link:hover span:last-child { transform: translateX(4px); }
+.rp-reading-archive-link span:last-child { transition: transform .2s ease; }
+@media (max-width: 700px) {
+  .rp-reading-archive-link {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 0;
+  }
+}
+/* RAUM_READING_ARCHIVE_LINK_END */
+
 </style>
 </head>
 <body>
@@ -6149,7 +6174,7 @@ html[lang="zh-Hant"] body .rp-about-lead {
 
 const COPY = {
   zh: {
-    nav: { works: '作品', about: '關於', writing: '書寫', objects: '物誌', studio: '實驗室', contact: '聯絡' },
+    nav: { works: '作品', about: '關於', writing: '書寫', reading: '閱讀書齋', objects: '物誌', studio: '實驗室', contact: '聯絡' },
     tagline_a: '藝術與開放',
     tagline_b: '空間實驗室',
     sub_tagline: 'Kunst und öffentlicher Raum Labor',
@@ -6194,7 +6219,7 @@ const COPY = {
     cursor_drag: '拖動',
   },
   en: {
-    nav: { works: 'Works', about: 'About', writing: 'Writing', objects: 'Objects', studio: 'Studio', contact: 'Contact' },
+    nav: { works: 'Works', about: 'About', writing: 'Writing', reading: 'Reading', objects: 'Objects', studio: 'Studio', contact: 'Contact' },
     tagline_a: 'Art &',
     tagline_b: 'Open Space Lab',
     sub_tagline: 'Kunst und öffentlicher Raum Labor',
@@ -6240,7 +6265,7 @@ const COPY = {
     cursor_drag: 'drag',
   },
   de: {
-    nav: { works: 'Werke', about: 'Über', writing: 'Texte', objects: 'Objekte', studio: 'Studio', contact: 'Kontakt' },
+    nav: { works: 'Werke', about: 'Über', writing: 'Texte', reading: 'Lesearchiv', objects: 'Objekte', studio: 'Studio', contact: 'Kontakt' },
     tagline_a: 'Kunst &',
     tagline_b: 'Öffentlicher Raum',
     sub_tagline: 'Kunst und öffentlicher Raum Labor',
@@ -13368,16 +13393,20 @@ function Header({ lang, onLang, motion, grid, onGrid }) {
             <span className="nav-num">03</span>
             <span>{c.nav.writing}</span>
           </a>
-          <a href="#objects" data-cursor={c.nav.objects}>
+          <a href="reading/" data-cursor={c.nav.reading}>
             <span className="nav-num">04</span>
+            <span>{c.nav.reading}</span>
+          </a>
+          <a href="#objects" data-cursor={c.nav.objects}>
+            <span className="nav-num">05</span>
             <span>{c.nav.objects}</span>
           </a>
           <a href="#studio" data-cursor={c.nav.studio}>
-            <span className="nav-num">05</span>
+            <span className="nav-num">06</span>
             <span>{c.nav.studio}</span>
           </a>
           <a href="#contact" data-cursor={c.nav.contact}>
-            <span className="nav-num">06</span>
+            <span className="nav-num">07</span>
             <span>{c.nav.contact}</span>
           </a>
         </nav>
@@ -13815,6 +13844,10 @@ function WritingSection({ lang, motion }) {
         <div className="head-r">
           <div className="head-count">{String(WRITINGS.length).padStart(2, '0')} {window.pick(lang, '篇', 'notes', 'Texte')}</div>
           <div className="head-sub">{c.writing_sub}</div>
+          <a className="rp-reading-archive-link" href="reading/" data-cursor={c.nav.reading}>
+            <span>{window.pick(lang, '進入閱讀書齋', 'Enter Reading Archive', 'Zum Lesearchiv')}</span>
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
       <ul className="rp-writing-list">
