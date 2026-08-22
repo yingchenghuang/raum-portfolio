@@ -5,7 +5,7 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20260823-3';
+const DATA_VERSION = '20260823-4';
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
 async function loadBookPage(){
@@ -22,8 +22,8 @@ async function loadBookPage(){
   document.querySelector('meta[name="description"]').content=`《${book.t}》完整閱讀筆記，作者：${book.a||'作者待補'}。`;
   $('#bookPage').innerHTML=`<section class="book-page-hero">
     <div class="book-page-cover">${covers[book.n]?`<img src="${escapeHtml(covers[book.n])}" alt="《${escapeHtml(book.t)}》書封">`:`<span>NO COVER<br>NO. ${book.n}</span>`}</div>
-    <div class="book-page-meta"><span class="num">NO. ${book.n} / COMPLETE NOTE</span><h1>${escapeHtml(book.t)}</h1><p class="author">${escapeHtml(book.a||'作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-page-actions"><button id="copyLink" type="button">複製本頁連結</button>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">YouTube ↗</a>`:''}</div></div>
-  </section><article class="book-page-note"><p class="book-page-note-heading">FULL READING NOTE / 完整閱讀筆記</p><div id="fullNote" class="note-content"><p class="note-loading">正在載入完整筆記…</p></div></article>`;
+    <div class="book-page-meta"><span class="num">NO. ${book.n} / COMPLETE NOTE</span><h1>${escapeHtml(book.t)}</h1><p class="author">${escapeHtml(book.a||'作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-page-actions"><button id="copyLink" type="button">複製本頁連結</button>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${book.ys==='playlist'?'我的書摘影片':'搜尋相關影片'} ↗</a>`:''}</div></div>
+  </section>${renderFeaturedVideo(book)}<article class="book-page-note"><p class="book-page-note-heading">FULL READING NOTE / 完整閱讀筆記</p><div id="fullNote" class="note-content"><p class="note-loading">正在載入完整筆記…</p></div></article>`;
   $('#copyLink').addEventListener('click',copyPageLink);
   await loadNote(book);
 }
@@ -77,6 +77,12 @@ function renderEmbed(url){
     if(id&&/^[\w-]{6,}$/.test(id)) return `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube 影片" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><a class="media-link" href="${url}" target="_blank" rel="noreferrer">在 YouTube 開啟 ↗</a>`;
     return `<p><a href="${url}" target="_blank" rel="noreferrer">開啟相關資料 ↗</a></p>`;
   }catch{return '';}
+}
+
+function renderFeaturedVideo(book){
+  if(!book.y) return '';
+  if(book.ys!=='playlist') return `<section class="book-page-video book-page-video-search"><p class="book-page-video-label">YOUTUBE / 相關書摘</p><h2>尚未在我的播放清單找到精確影片</h2><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">以「${escapeHtml(book.t)}＋書摘」廣泛搜尋 YouTube ↗</a></section>`;
+  return `<section class="book-page-video"><p class="book-page-video-label">RAUM+ / 我的書摘影片</p>${renderEmbed(book.y)}</section>`;
 }
 
 loadBookPage().catch(error=>{ $('#bookPage').innerHTML=`<p class="book-page-error">${escapeHtml(error.message)}<br><br><a href="./#all-books">← 返回所有書單</a></p>`; console.error(error); });

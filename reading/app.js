@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20260823-3';
+const DATA_VERSION = '20260823-4';
 
 async function loadBooks(){
   const groups = await Promise.all(categories.map(async ([key,label]) => {
@@ -77,7 +77,7 @@ function renderShelf(){
 function renderSelected(){
   const book = state.selected;
   if(!book){ $('#selectedBook').innerHTML = '<p>請調整搜尋條件。</p>'; return; }
-  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.y?`<a href="${book.y}" target="_blank" rel="noreferrer">相關影片 ↗</a>`:''}</div>`;
+  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${book.ys==='playlist'?'我的書摘影片':'搜尋相關影片'} ↗</a>`:''}</div>`;
   renderPath();
 }
 
@@ -139,7 +139,7 @@ async function openNote(number){
       page=noteCache.get(repairKey)[book.u];
     }
     if(!page) throw new Error('找不到這本書的筆記');
-    $('#noteContent').innerHTML=renderMarkdown(extractBook(page,book.n));
+    $('#noteContent').innerHTML=renderFeaturedVideo(book)+renderMarkdown(extractBook(page,book.n));
   }catch(error){ $('#noteContent').innerHTML=`<p class="note-error">${escapeHtml(error.message)}</p>`; }
 }
 function extractBook(markdown,number){
@@ -178,6 +178,11 @@ function renderEmbed(url){
     if(id && /^[\w-]{6,}$/.test(id)) return `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube 影片" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><a class="media-link" href="${url}" target="_blank" rel="noreferrer">在 YouTube 開啟 ↗</a>`;
     return `<p><a href="${url}" target="_blank" rel="noreferrer">開啟相關資料 ↗</a></p>`;
   }catch{return '';}
+}
+function renderFeaturedVideo(book){
+  if(!book.y) return '';
+  if(book.ys!=='playlist') return `<section class="note-video-search"><p>尚未在我的播放清單找到精確影片。</p><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">以「${escapeHtml(book.t)}＋書摘」廣泛搜尋 YouTube ↗</a></section>`;
+  return `<section class="note-featured-video"><p class="note-video-label">RAUM+ / 我的書摘影片</p>${renderEmbed(book.y)}</section>`;
 }
 
 function updateQuery(value){

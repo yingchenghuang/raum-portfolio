@@ -32,6 +32,19 @@
 @media(max-width:800px){.all-books{margin-top:75px}.catalog-heading{grid-template-columns:1fr;margin-bottom:30px}.catalog-heading>p{justify-self:start}.catalog-tools{grid-template-columns:1fr}.catalog-search{border-right:0;border-bottom:1px solid}.catalog-select{height:58px}.catalog-columns{display:none}.catalog-row{grid-template-columns:82px 1fr auto;gap:14px;padding:18px 0}.catalog-cover{gap:8px}.catalog-cover img{width:39px;height:58px}.catalog-title strong{font-size:16px}.catalog-category{display:none}.catalog-open{font-size:0}.catalog-open:after{content:"↗";font-size:18px}.book-page-hero{grid-template-columns:1fr}.book-page-cover{min-height:340px;border-right:0;border-bottom:1px solid;padding:45px 20px}.book-page-cover img{width:auto;height:250px}.book-page-meta{min-height:430px;padding:45px 5vw}.book-page-meta h1{font-size:48px}.book-page-meta .category{margin-top:60px}.book-page-note{padding:55px 20px 90px}}
 .book-actions{flex-wrap:wrap}
 
+/* Playlist-first YouTube presentation */
+.book-page-video{max-width:1280px;margin:0 auto;padding:72px 32px 42px}
+.book-page-video .video{margin:18px 0 10px;box-shadow:0 20px 48px rgba(0,0,0,.16)}
+.book-page-video-label,.note-video-label{font:10px var(--mono);letter-spacing:.05em;color:var(--blue);border-bottom:1px solid;padding-bottom:16px}
+.book-page-video-search{max-width:780px;padding-bottom:10px}
+.book-page-video-search h2{font:700 clamp(24px,3vw,42px)/1.25 var(--serif);margin:28px 0 20px}
+.book-page-video-search a,.note-video-search a{display:inline-block;color:var(--blue);border-bottom:1px solid;padding-bottom:5px;font:11px var(--mono)}
+.note-featured-video{margin:0 0 52px}
+.note-featured-video .video{margin-top:18px}
+.note-video-search{margin:0 0 52px;padding:25px;border:1px solid var(--line);font-family:var(--sans)}
+.note-video-search p{margin-top:0}
+@media(max-width:800px){.book-page-video{padding:44px 20px 25px}.book-page-video-search{padding-bottom:5px}}
+
 /* Full-bleed cover presentation */
 .shelf-stage{min-height:500px;border-bottom:1px solid var(--ink);box-shadow:none}
 .book-shelf{gap:28px;padding:48px 38px 24px}
