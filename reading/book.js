@@ -5,7 +5,7 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20260823-4';
+const DATA_VERSION = '20260823-5';
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
 async function loadBookPage(){
