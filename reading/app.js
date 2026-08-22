@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20260823-2';
+const DATA_VERSION = '20260823-3';
 
 async function loadBooks(){
   const groups = await Promise.all(categories.map(async ([key,label]) => {
@@ -153,6 +153,7 @@ function extractBook(markdown,number){
 function renderMarkdown(markdown){
   const safe=escapeHtml(markdown).replace(/寶貝[，,]?/g,'').replace(/\\([:$])/g,'$1');
   const inline=text=>text.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a href="$2" target="_blank" rel="noreferrer">$1 ↗</a>');
+  const linkBookReferences=text=>text.replace(/(\d{4})｜/g,'<a class="book-ref" href="book.html?id=$1" aria-label="開啟第 $1 本書">$1｜</a>');
   const lines=safe.split('\n'); let html='',inList=false;
   for(const raw of lines){ const line=raw.trim();
     if(/^(?:[-*]\s+)?(?:\*\*)?(?:來源|字數|最後整理|資料狀態|資料識別碼)[：:]/.test(line)) continue;
@@ -163,7 +164,7 @@ function renderMarkdown(markdown){
     if(image){ if(inList){html+='</ul>';inList=false;} html+=`<figure><img src="${image[2]}" alt="${image[1]}" loading="lazy"><figcaption>${image[1]}</figcaption></figure>`; }
     else if(embed){ if(inList){html+='</ul>';inList=false;} html+=renderEmbed(embed[1]); }
     else if(/^#{1,4}\s/.test(line)){ if(inList){html+='</ul>';inList=false;} const level=Math.min(4,(line.match(/^#+/)||[''])[0].length); html+=`<h${level}>${inline(line.replace(/^#+\s*/,''))}</h${level}>`; }
-    else if(/^[-*]\s+/.test(line)){ if(!inList){html+='<ul>';inList=true;} html+=`<li>${inline(line.replace(/^[-*]\s+/,''))}</li>`; }
+    else if(/^[-*]\s+/.test(line)){ if(!inList){html+='<ul>';inList=true;} const content=inline(line.replace(/^[-*]\s+/,'')); const isBookRelation=/^[-*]\s+\*\*(?:同作者|相關書目)：\*\*/.test(line); html+=`<li>${isBookRelation?linkBookReferences(content):content}</li>`; }
     else if(line==='---'){ if(inList){html+='</ul>';inList=false;} html+='<hr>'; }
     else if(line){ if(inList){html+='</ul>';inList=false;} html+=`<p>${inline(line)}</p>`; }
   }
