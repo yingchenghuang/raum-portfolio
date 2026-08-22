@@ -5,7 +5,7 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20260823-1';
+const DATA_VERSION = '20260823-2';
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
 async function loadBookPage(){
@@ -57,6 +57,7 @@ function renderMarkdown(markdown){
   for(const raw of lines){ const line=raw.trim();
     if(/^(?:[-*]\s+)?(?:\*\*)?(?:來源|字數|最後整理|資料狀態|資料識別碼)[：:]/.test(line)) continue;
     if(/^(?:&lt;empty-block\s*\/?&gt;|-|#{1,6}|(?:#{1,6}\s+)?Normal People)$/i.test(line)) continue;
+    if(/^!\[(?:原書書封|原書封面)/.test(line)) continue;
     const image=line.match(/^!\[([^\]]*)\]\((https?:\/\/[^)]+)\)$/);
     const embed=line.match(/^&lt;embed src=&quot;(https?:\/\/[^&]+)&quot;&gt;(?:&lt;\/embed&gt;)?$/);
     if(image){ if(inList){html+='</ul>';inList=false;} html+=`<figure><img src="${image[2]}" alt="${image[1]}" loading="lazy"><figcaption>${image[1]}</figcaption></figure>`; }
