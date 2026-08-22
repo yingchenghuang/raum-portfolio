@@ -6,15 +6,16 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
+const DATA_VERSION = '20260823-1';
 
 async function loadBooks(){
   const groups = await Promise.all(categories.map(async ([key,label]) => {
-    const response = await fetch(`data/${key}.json`);
+    const response = await fetch(`data/${key}.json?v=${DATA_VERSION}`);
     if(!response.ok) throw new Error(`無法讀取 ${key}.json`);
     return (await response.json()).map(book => ({...book, category:key, categoryLabel:label}));
   }));
   state.books = groups.flat().sort((a,b) => Number(a.n)-Number(b.n));
-  const coverResponse = await fetch('data/covers.json');
+  const coverResponse = await fetch(`data/covers.json?v=${DATA_VERSION}`);
   if(coverResponse.ok) state.covers = await coverResponse.json();
   state.selected = state.books.at(-1);
   $('#totalCount').textContent = state.books.length.toLocaleString('en-US');
@@ -124,7 +125,7 @@ async function openNote(number){
   try{
     const bucket=String(noteBucket(book.u)).padStart(3,'0');
     if(!noteCache.has(bucket)){
-      const response=await fetch(`notes/chunk-${bucket}.json`);
+      const response=await fetch(`notes/chunk-${bucket}.json?v=${DATA_VERSION}`);
       if(!response.ok) throw new Error('筆記資料尚未同步');
       noteCache.set(bucket,await response.json());
     }
@@ -132,7 +133,7 @@ async function openNote(number){
     if(!page){
       const repairKey=`repair-${bucket}`;
       if(!noteCache.has(repairKey)){
-        const response=await fetch(`notes/repair-${bucket}.json`);
+        const response=await fetch(`notes/repair-${bucket}.json?v=${DATA_VERSION}`);
         noteCache.set(repairKey,response.ok?await response.json():{});
       }
       page=noteCache.get(repairKey)[book.u];

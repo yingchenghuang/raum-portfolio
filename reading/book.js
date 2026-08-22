@@ -5,17 +5,18 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+const DATA_VERSION = '20260823-1';
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
 async function loadBookPage(){
   const number=new URLSearchParams(location.search).get('id');
   const groups=await Promise.all(categories.map(async ([key,label])=>{
-    const response=await fetch(`data/${key}.json`); if(!response.ok) throw new Error('無法讀取書庫資料');
+    const response=await fetch(`data/${key}.json?v=${DATA_VERSION}`); if(!response.ok) throw new Error('無法讀取書庫資料');
     return (await response.json()).map(book=>({...book,category:key,categoryLabel:label}));
   }));
   const book=groups.flat().find(item=>item.n===number);
   if(!book) throw new Error('找不到這本書，請返回所有書單重新選擇。');
-  const coversResponse=await fetch('data/covers.json');
+  const coversResponse=await fetch(`data/covers.json?v=${DATA_VERSION}`);
   const covers=coversResponse.ok?await coversResponse.json():{};
   document.title=`${book.t}｜RAUM+ Reading Archive`;
   document.querySelector('meta[name="description"]').content=`《${book.t}》完整閱讀筆記，作者：${book.a||'作者待補'}。`;
@@ -34,10 +35,10 @@ async function copyPageLink(){
 
 async function loadNote(book){
   const bucket=String(noteBucket(book.u)).padStart(3,'0');
-  const response=await fetch(`notes/chunk-${bucket}.json`);
+  const response=await fetch(`notes/chunk-${bucket}.json?v=${DATA_VERSION}`);
   if(!response.ok) throw new Error('筆記資料尚未同步');
   let page=(await response.json())[book.u];
-  if(!page){ const repair=await fetch(`notes/repair-${bucket}.json`); if(repair.ok) page=(await repair.json())[book.u]; }
+  if(!page){ const repair=await fetch(`notes/repair-${bucket}.json?v=${DATA_VERSION}`); if(repair.ok) page=(await repair.json())[book.u]; }
   if(!page) throw new Error('找不到這本書的筆記');
   $('#fullNote').innerHTML=renderMarkdown(extractBook(page,book.n));
 }
