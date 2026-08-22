@@ -3895,6 +3895,132 @@ html body .rp-about-lead {
 }
 
 /* Motion system */
+.rp-film-entry {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  overflow: hidden;
+  background: #1b2a3a;
+  color: #fff;
+  isolation: isolate;
+  cursor: pointer;
+}
+
+.rp-film-entry-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.rp-film-entry-chrome {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: clamp(20px, 3.75vw, 58px);
+  pointer-events: none;
+}
+
+.rp-film-entry-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, .58);
+  font: 500 9px/1 var(--font-body);
+  letter-spacing: .16em;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+.rp-film-entry-logo {
+  align-self: center;
+  justify-self: center;
+  margin-left: -.08em;
+  font-family: var(--font-display);
+  font-size: clamp(76px, 17vw, 280px);
+  font-weight: 400;
+  line-height: .8;
+  letter-spacing: -.08em;
+  color: #fff;
+  text-shadow: 0 8px 45px rgba(0, 0, 0, .38);
+  animation: rp-film-logo-in 1.15s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.rp-film-entry-logo span { color: var(--paper); }
+
+.rp-film-entry-action {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, .58);
+  font: 500 9px/1 var(--font-body);
+  letter-spacing: .16em;
+  pointer-events: none;
+}
+
+.rp-film-entry-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(18px, 2.5vw, 38px);
+  pointer-events: auto;
+}
+
+.rp-film-entry-enter-label {
+  padding: 12px 0 10px;
+  font: 600 11px/1 var(--font-body);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  border-bottom: 2px solid currentColor;
+  pointer-events: none;
+}
+
+.rp-film-entry-sound {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 12px 0 10px;
+  background: transparent;
+  color: inherit;
+  font: 600 11px/1 var(--font-body);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, .58);
+}
+
+.rp-film-entry-sound:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 6px;
+}
+
+@keyframes rp-film-logo-in {
+  from { opacity: 0; transform: translateY(20%) scale(.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 560px) {
+  .rp-film-entry-meta span:last-child,
+  .rp-film-entry-action > span { display: none; }
+  .rp-film-entry-action { justify-content: flex-end; }
+  .rp-film-entry-controls { width: 100%; justify-content: space-between; }
+  .rp-film-entry-sound,
+  .rp-film-entry-enter-label { font-size: 9px; letter-spacing: .12em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rp-film-entry-video { display: none; }
+  .rp-film-entry-logo { animation: none; }
+}
+
 .rp-intro-loader {
   position: fixed;
   inset: 0;
@@ -11058,9 +11184,8 @@ const latestPost20 = WRITINGS.find((writing) => writing.id === 'w-munich-kunstar
       'Manche Zeit sollte dazu dienen, Dinge zu vollenden.',
       'Manche Zeit sollte uns einfach in der Welt sein lassen.'
     ],
-    image: 'assets/rostock-astronomical-clock.jpg',
+    image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7U8nLWj7D-EnIY6LrAiVIPjmWVLEw_hWIZK1tgsCCtJJdIeqGco9gHbDBqdpf2pQ4aXeGH0AX57Jgo9UbeWq56epSFdSUkml-g177MA25hwZFVKPd8-G7fIfOjT7awGYECjVuhj-XLGd_oJbu1_3_PH1Jo80tzhcpuSMGD5-mDLyWBnOnYstkALNTZSU/s4896/DSC09943.JPG',
     images: [
-      'assets/rostock-astronomical-clock.jpg',
       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj04NsS5PBG_TV61XE8_ij19dDVv9gErLNhDkae5VabltRnKCinuiIeLHtaX29TVSKgOLXh31GyY38IreMbNff5aYkHeSCeAVhKtup9IixxTlwPOh8c_aaeOXvejwmseT7hTJvlrvcrHskCO1M_ocZjTo8zzqmRJ_1rGKS0hyst0FtM7ZrbVmFH8WDBkNY/s8192/rostock.jpg',
       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvtPcILjLfhAWp36zCy-DXQjjirhk9JtjaZYIgr-1VxStxG4QDxZ4IHTl1caIjMIZbs6ZcT-k2M5xTDQ0DZtUKIrlpIgtsCl-Ut-5oVyvl1VkDp6XUqbWlk5z6YLeMmLUtAD12nBdJhuQOIfwJZ-a0PDGwANN53J5ZHqi6dmjzLnqd-ZO9-tgfGO99ZBg/s3648/R0041713.JPG',
       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsBHHN5M_c8ldS3N3TQF-ZLIq7uOqJj6_ZH40fYqeh6XoYGzvC3J0YOUg87UR0kV1Gb7XpIJKtwIJsibzhGO8YBG29cycoaLCj2IVguoFawuToIrRmhRI88Vl2FaWdTh_UYPZdRv2lZOc8XA9k6SXSKA9Qk0nkehA0IwxwZ027vq6ArHJiaNQQfFTnfs/s3648/R0041707.JPG',
@@ -11086,6 +11211,147 @@ const latestPost20 = WRITINGS.find((writing) => writing.id === 'w-munich-kunstar
   window.WRITINGS = WRITINGS;
 }
 /* RAUM_BLOGGER_ROSTOCK_20260819_END */
+/* RAUM_BLOGGER_TREMPELMARKT_20260821_START */
+{
+  const article = {
+  "id": "w-nuremberg-trempelmarkt-20260821",
+  "year": "2026",
+  "month": "08",
+  "title_zh": "城市・土地・文化敘事（二十二） 暫時的主人，紐倫堡跳蚤市場",
+  "title_en": "City, Land and Cultural Narratives XXII: Temporary Owners at Nuremberg’s Flea Market",
+  "title_de": "Stadt, Land und kulturelle Erzählungen XXII: Vorübergehende Besitzer auf dem Nürnberger Trempelmarkt",
+  "note_zh": "從紐倫堡延續四百多年的 Trempelmarkt 出發，思考物件、記憶、成長與所有權：人或許從來不是物的主人，只是它們生命路徑上的暫時同行者。",
+  "note_en": "Beginning with Nuremberg’s centuries-old Trempelmarkt, this essay reflects on objects, memory, growing up and ownership: perhaps people are never the owners of things, only temporary companions along their paths.",
+  "note_de": "Ausgehend vom jahrhundertealten Nürnberger Trempelmarkt denkt der Text über Dinge, Erinnerung, Erwachsenwerden und Eigentum nach: Vielleicht sind Menschen niemals die Besitzer der Dinge, sondern nur vorübergehende Begleiter auf ihrem Weg.",
+  "essay_zh": [
+    "德國規模最大的歷史老城區跳蚤市場，一年兩次，春末與秋初，Nürnberger Trempelmarkt 進入老城。我記得的是秋天那次。市場沒有清楚的邊界。廣場、街道、市政廳周邊、教堂前、橋邊，桌子和紙箱沿著老城一路展開。平常收在私人住宅裡的東西，那幾天全部被搬到公共空間。書、玩具、食器、家具、版畫、衣服、首飾，還有很多已經看不出用途的小東西。",
+    "第一次走進去，我把它理解成尋寶。自己走進的是一個已經運作了幾百年的城市習慣。Trempelmarkt 的雛形可以追到十六世紀。當時的紐倫堡人在市政廳附近，把家裡不再需要的東西拿出來賣。名字據說跟法蘭克方言的 trempala 有關，意思接近一小塊可以擺東西的地方。幾百年前它可能真的就只是一小塊地方。有人把一件舊器皿放下，有人經過，看一眼，問價，拿起來，帶回家。",
+    "幾百年後我做了一模一樣的事。城市完全不同了，東西也不同了，動作沒變。一個人放下，另一個人拿起。",
+    "紐倫堡本來就是靠交易長出來的城市。中世紀以來它是神聖羅馬帝國的手工業與商業重鎮，貨物、工匠、商人、旅人長期穿越這裡。今天這個規模的 Trempelmarkt 從 1971 年開始，最初大約一百個私人攤位，兩年後變成一千八百多個。八〇年代之後固定成一年兩次的節奏，一直到現在。所以每隔半年，私人生活裡累積下來的東西，就重新被搬回老城一次。",
+    "我當時感覺是城市的活力。有時候也會覺得那是財力的顯現，一個社會要累積夠多的物質，才會有這麼大規模的二手流動。但再想下去，這座市場真正在處理的是另一件事。",
+    "一件多數人不願意承認的事：人對物的擁有，從一開始就有期限。",
+    "有些東西沒有壞，功能正常，形體跟買來那天一樣。只是某一天你看著它，覺得它已經不適合現在的自己。可能是氣場變了，可能是不再喜歡了，也可能生活已經走到下一個階段。於是它被帶到市場，放在桌上，等下一個人。這個動作看起來很輕，其實不輕。它等於承認我們對一件東西的所有權，比較接近保管，只是沒有人告訴我們保管期是多久。",
+    "我在 Trempelmarkt 買過不少東西。書籍、版畫、食器、掛件，還有一些當時很喜歡的小物，一件一件從紐倫堡帶回台灣。",
+    "現在回頭看，買下它們除了喜歡，還有另一種心情。我知道自己有一天會離開這座城市，所以想留下什麼。像旅人知道一段生活會結束，本能想帶走幾件證據，證明自己在這裡活過。那些東西後來擺在台中的工作室。有一段時間看見它們，我確實會想起紐倫堡的秋天。",
+    "只是記憶靠物件延續，也有保存期限。離開一座城市之後，物件帶來的情緒會慢慢遞減。第一年它還帶著很強的地方感，幾年後成為收藏，十年後有些已經進了儲物箱。物件沒變，變的是我。",
+    "有些東西放在紐倫堡的空間裡很自然，帶回台灣就開始顯得突兀。這是物件的水土不服。同一張版畫掛在德國公寓的白牆上，跟十年後掛在台中工作室，已經是兩件事。空間換了，光線換了，生活換了，看它的人也換了。",
+    "所以旅途中收藏的東西，真正收藏下來的是當時的心境。物件只是暫時替我們保存那段心境的容器。等到那段情緒可以獨立存在於記憶裡，容器的任務也差不多結束了。",
+    "我有意識到，我不是那些東西的主人。我只是它們路過我的那段時間。",
+    "不過這麼多年過去，我對 Trempelmarkt 最深的記憶不是自己買過什麼。是孩子。",
+    "市場裡有專門留給孩子的區域。他們把陪自己長大的玩具、繪本、衣服帶來，擺在自己的小攤位上。自己定價，自己介紹，自己跟陌生人說話。父母在旁邊，但主導交易的是孩子。",
+    "一個孩子可能在那裡第一次理解：東西有價格，價格可以討論，自己的東西可以交換也可以賣，賣掉的錢可以換成另一件想要的東西。這是很直接的財商教育。",
+    "但它教的更多。孩子同時學會了放手。他開始知道，有些東西曾經非常喜歡，也會有一天不再需要；而自己不再需要的玩具，對另一個孩子仍然可能很重要。價值沒有消失，只是轉移了。",
+    "他們大概每年都會來。小時候賣玩具，大一點賣繪本，再過幾年換成衣服或遊戲。孩子長大，不再需要的東西一件一件退出他的生活。成長這件事，透過物件的離開被看見。一個孩子在那張小桌子後面學會的，是他這輩子都只會是暫時的主人。",
+    "十六世紀的人這樣做，十九世紀的人這樣做，1971 年重新開始的市場這樣做，我在紐倫堡的那幾年這樣做，今天的孩子還在這樣做。城市變了，貨幣變了，商品變了，生活方式變了。把自己擁有過的東西帶到公共空間、等下一個願意接手的人，這件事沒有變。",
+    "那是交易，是交換，也是告別。或者說，是一次能量轉換。一件東西從一個人的生命退出，進入另一個人的生命。跳蚤市場交換的從來不只是價格，它交換的是物件剩下來的時間。",
+    "現在那些從紐倫堡帶回來的東西，有些還在工作室，有些收進了箱子。什麼時候會再拿出來，我不知道。也許有一天我會把其中幾件交給下一個人。",
+    "如果真的發生，那會很有意思。當年某個德國人把它帶到 Trempelmarkt，我遇見它，把它從紐倫堡帶到台灣，它陪我十幾年，然後又被另一個人帶走。它就這樣離開我的故事，進入別人的生活。",
+    "我以為是我暫時擁有那些東西。可是把時間拉長來看，一張十九世紀的版畫已經經過好幾雙手，還會再經過好幾雙。它比擁有過它的每一個人都活得久。在那條線上，穩定的是物，流動的是人。",
+    "我不是它的暫時主人。我是它路過的其中一個人。",
+    "四百多年來，這座城市一直在重複同一件事。有人放下，有人接手，有人離開，有人重新開始。我只是參與過其中一小段。",
+    "多年以後我已經記不得每件東西當時花了多少錢。但我還記得那個秋天，記得老城裡密密麻麻的攤位，記得孩子坐在自己最喜歡過的玩具前面，記得陌生人拿起一件東西，端詳，問價，然後決定要帶走還是放回去。也記得那些安靜等著下一個主人的物件。",
+    "我們真正保存下來的，是曾經願意把一段生命寄放在一件東西上的那段時間。而物件會帶著那段時間，繼續走下去。",
+    "有人放下。",
+    "有人接手。",
+    "有人離開。",
+    "有人重新開始。",
+    "而我，也只是曾經參與過其中一小段。",
+    "或許收藏真正保存下來的，是我們曾經願意把某一段生命，暫時寄放在一件物品上的那段時間。"
+  ],
+  "essay_en": [
+    "Germany’s largest flea market in a historic old town takes over Nuremberg twice a year, in late spring and early autumn. I remember the autumn edition. The market has no clear boundary. Tables and cardboard boxes spread through squares and streets, around the town hall, in front of churches and beside bridges. Things normally kept inside private homes are moved into public space for those few days: books, toys, tableware, furniture, prints, clothes, jewellery and many small objects whose purpose is no longer obvious.",
+    "The first time I entered, I understood it as a treasure hunt. What I had actually entered was an urban custom that had operated for centuries. The earliest form of the Trempelmarkt can be traced to the sixteenth century, when people in Nuremberg sold things they no longer needed near the town hall. Its name is said to be connected to the Franconian dialect word trempala, meaning something like a small place where objects can be laid out. Centuries ago, it may really have been no more than that: someone put down an old vessel; someone else passed, looked, asked the price, picked it up and took it home.",
+    "Centuries later, I did exactly the same thing. The city was completely different, and so were the objects, but the action had not changed. One person puts something down; another picks it up.",
+    "Nuremberg is a city that grew through trade. Since the Middle Ages it has been a centre of craft and commerce in the Holy Roman Empire, crossed over time by goods, artisans, merchants and travellers. The Trempelmarkt in its present scale began in 1971 with about one hundred private stalls; two years later there were more than 1,800. Since the 1980s, it has settled into a twice-yearly rhythm that continues today. Every six months, the things accumulated in private lives are carried back into the old town.",
+    "At the time, I experienced it as the vitality of the city. Sometimes it also seemed like a display of wealth: a society must accumulate enough material goods before second-hand circulation can reach this scale. But if one thinks further, the market is really dealing with something else.",
+    "It deals with something most people are reluctant to admit: from the beginning, our possession of objects has an expiry date.",
+    "Some things are not broken. They still work, and their form is the same as on the day they were bought. Yet one day you look at them and feel they no longer suit who you are now. Perhaps the atmosphere has changed, perhaps you no longer like them, or perhaps life has moved into another stage. So they are taken to the market, placed on a table and left to wait for the next person. The gesture looks light, but it is not. It acknowledges that our ownership of an object is closer to custodianship; no one has told us how long that custody will last.",
+    "I bought many things at the Trempelmarkt: books, prints, tableware, ornaments and small objects I liked at the time, carrying them one by one from Nuremberg back to Taiwan.",
+    "Looking back, I bought them not only because I liked them, but also because of another feeling. I knew I would one day leave the city, so I wanted to keep something. Like a traveller who knows a period of life will end, I instinctively wanted to take away a few pieces of evidence that I had lived there. The objects later stood in my studio in Taichung. For a time, seeing them really did bring back autumn in Nuremberg.",
+    "But memory extended through objects also has a shelf life. After leaving a city, the emotion carried by its objects slowly diminishes. In the first year they still hold a strong sense of place; after several years they become a collection; after ten years some have entered storage boxes. The objects have not changed. I have.",
+    "Some things felt entirely natural in a Nuremberg interior but began to look out of place in Taiwan. Objects, too, can fail to acclimatise. The same print on the white wall of a German apartment and, ten years later, in a Taichung studio are two different things. The space has changed, the light has changed, life has changed, and the person looking has changed as well.",
+    "What travel collections truly preserve, then, is the state of mind we had at the time. Objects are only temporary containers that hold that state for us. Once the emotion can exist independently in memory, the container’s task is almost complete.",
+    "I came to understand that I was not the owner of those things. I was merely the period of time through which they passed.",
+    "After all these years, however, my strongest memory of the Trempelmarkt is not what I bought. It is the children.",
+    "The market includes an area reserved for children. They bring the toys, picture books and clothes that accompanied their early years and arrange them at their own small stalls. They set the prices, introduce the items and speak to strangers themselves. Their parents are nearby, but the children lead the transactions.",
+    "A child may understand for the first time that things have prices, that prices can be discussed, that personal belongings can be exchanged or sold, and that money from a sale can become something else they want. It is direct financial education.",
+    "But it teaches more than that. Children also learn to let go. They begin to understand that something once deeply loved may one day no longer be needed, while a toy they no longer need may still matter greatly to another child. Value has not disappeared; it has moved.",
+    "They probably return every year. When small, they sell toys; later, picture books; a few years after that, clothes or games. As the child grows, unneeded things leave their life one by one. Growth becomes visible through the departure of objects. What a child learns behind that small table is that throughout life they will only ever be a temporary owner.",
+    "People did this in the sixteenth century and in the nineteenth. The market restarted in 1971 and did it again. I did it during my years in Nuremberg, and children still do it today. The city, currency, goods and ways of life have changed. What has not changed is bringing things once owned into public space and waiting for someone willing to take them on.",
+    "It is trade, exchange and farewell. Or perhaps it is a transformation of energy. An object leaves one person’s life and enters another’s. What a flea market exchanges is never only price; it exchanges the time an object still has left.",
+    "Some of the things I brought back from Nuremberg are still in the studio; others have gone into boxes. I do not know when they will come out again. Perhaps one day I will pass some of them to the next person.",
+    "If that happens, it will be interesting. Years ago, someone in Germany brought an object to the Trempelmarkt. I encountered it and carried it from Nuremberg to Taiwan. It stayed with me for more than a decade, and then someone else took it away. It would leave my story and enter another person’s life.",
+    "I thought I temporarily possessed those things. But viewed across a longer span of time, a nineteenth-century print has already passed through many pairs of hands and will pass through many more. It will outlive every person who has owned it. Along that line, the object is stable and the people are in motion.",
+    "I am not its temporary owner. I am one of the people it passes through.",
+    "For more than four hundred years, this city has repeated the same action. Someone puts something down, someone takes it on, someone leaves, and someone begins again. I participated in only a small part of it.",
+    "Many years later, I no longer remember what each object cost. But I remember that autumn, the densely packed stalls in the old town, the children sitting before the toys they had once loved most, and strangers picking up an object, examining it, asking the price and deciding whether to take it or put it back. I also remember the objects waiting quietly for their next owners.",
+    "What we truly preserve is the time in which we were willing to entrust part of our lives to an object. The object carries that time and continues onward.",
+    "Someone puts something down.",
+    "Someone takes it on.",
+    "Someone leaves.",
+    "Someone begins again.",
+    "And I, too, only participated in a small part of it.",
+    "Perhaps what a collection truly preserves is the time in which we were willing to entrust a part of our lives, temporarily, to an object."
+  ],
+  "essay_de": [
+    "Zweimal im Jahr, im späten Frühjahr und im frühen Herbst, zieht Deutschlands größter Flohmarkt in einer historischen Altstadt in die Nürnberger Altstadt ein. Ich erinnere mich an den Herbsttermin. Der Markt hat keine klare Grenze. Auf Plätzen und Straßen, rund um das Rathaus, vor Kirchen und an den Brücken ziehen sich Tische und Kartons durch die Altstadt. Dinge, die sonst in privaten Wohnungen verwahrt werden, gelangen für einige Tage in den öffentlichen Raum: Bücher, Spielzeug, Geschirr, Möbel, Druckgrafik, Kleidung, Schmuck und viele kleine Gegenstände, deren Zweck kaum noch zu erkennen ist.",
+    "Als ich zum ersten Mal hineinging, verstand ich ihn als Schatzsuche. Tatsächlich betrat ich eine städtische Gewohnheit, die seit Jahrhunderten funktioniert. Die Vorform des Trempelmarkts lässt sich bis ins 16. Jahrhundert zurückverfolgen. Damals verkauften Nürnbergerinnen und Nürnberger in der Nähe des Rathauses Dinge, die sie zu Hause nicht mehr brauchten. Der Name soll mit dem fränkischen Dialektwort trempala zusammenhängen, ungefähr einer kleinen Fläche, auf der man etwas auslegen kann. Vor Jahrhunderten war es vielleicht wirklich nicht mehr als das: Jemand stellte ein altes Gefäß ab; jemand kam vorbei, sah es an, fragte nach dem Preis, nahm es auf und trug es nach Hause.",
+    "Jahrhunderte später tat ich genau dasselbe. Die Stadt war vollkommen anders, die Dinge ebenfalls, doch die Handlung blieb gleich. Ein Mensch legt etwas ab, ein anderer nimmt es auf.",
+    "Nürnberg ist durch Handel gewachsen. Seit dem Mittelalter war die Stadt ein Zentrum von Handwerk und Handel im Heiligen Römischen Reich; Waren, Handwerker, Kaufleute und Reisende durchquerten sie über lange Zeit. Der Trempelmarkt in seiner heutigen Größenordnung begann 1971 mit etwa hundert privaten Ständen. Zwei Jahre später waren es bereits mehr als 1.800. Seit den 1980er Jahren folgt er dem bis heute bestehenden Rhythmus von zwei Terminen pro Jahr. Alle sechs Monate werden die im privaten Leben angesammelten Dinge wieder in die Altstadt getragen.",
+    "Damals empfand ich darin vor allem die Lebendigkeit der Stadt. Manchmal erschien der Markt mir auch als Ausdruck von Wohlstand: Eine Gesellschaft muss genügend materielle Dinge ansammeln, damit ein Kreislauf aus zweiter Hand dieses Ausmaß erreicht. Doch bei längerem Nachdenken verhandelt der Markt eigentlich etwas anderes.",
+    "Er verhandelt etwas, das die meisten Menschen nur ungern zugeben: Unser Besitz an Dingen ist von Anfang an befristet.",
+    "Manche Dinge sind nicht kaputt. Sie funktionieren und sehen noch so aus wie am Tag ihres Kaufs. Doch eines Tages betrachtet man sie und spürt, dass sie nicht mehr zum gegenwärtigen Selbst passen. Vielleicht hat sich die Atmosphäre verändert, vielleicht gefallen sie einem nicht mehr, vielleicht ist das Leben in eine neue Phase eingetreten. Dann kommen sie auf den Markt, werden auf einen Tisch gelegt und warten auf den nächsten Menschen. Diese Geste wirkt leicht, ist es aber nicht. Sie bedeutet anzuerkennen, dass unser Eigentum an einem Gegenstand eher einer Verwahrung gleicht; nur hat uns niemand gesagt, wie lange diese Verwahrungszeit dauert.",
+    "Auf dem Trempelmarkt kaufte ich viele Dinge: Bücher, Drucke, Geschirr, Anhänger und kleine Gegenstände, die mir damals gefielen. Stück für Stück brachte ich sie von Nürnberg nach Taiwan.",
+    "Rückblickend kaufte ich sie nicht nur, weil sie mir gefielen. Es gab noch ein anderes Gefühl. Ich wusste, dass ich die Stadt eines Tages verlassen würde, und wollte deshalb etwas bewahren. Wie ein Reisender, der weiß, dass ein Lebensabschnitt endet, wollte ich instinktiv einige Beweise mitnehmen, dass ich dort gelebt hatte. Später standen diese Dinge in meinem Atelier in Taichung. Eine Zeit lang erinnerten sie mich tatsächlich an den Nürnberger Herbst.",
+    "Doch auch Erinnerung, die durch Dinge weitergetragen wird, hat eine Haltbarkeit. Nach dem Verlassen einer Stadt nimmt das Gefühl, das ihre Gegenstände vermitteln, langsam ab. Im ersten Jahr tragen sie noch einen starken Ortsbezug; nach einigen Jahren werden sie zur Sammlung; nach zehn Jahren liegen manche bereits in Aufbewahrungskisten. Die Dinge sind gleich geblieben. Ich habe mich verändert.",
+    "Manche Dinge wirkten in einem Nürnberger Raum selbstverständlich und in Taiwan plötzlich fremd. Auch Gegenstände können unter Anpassungsschwierigkeiten leiden. Derselbe Druck an der weißen Wand einer deutschen Wohnung und zehn Jahre später im Atelier in Taichung sind zwei verschiedene Dinge. Der Raum ist ein anderer, das Licht ist ein anderes, das Leben ist ein anderes, und auch der betrachtende Mensch hat sich verändert.",
+    "Was wir auf Reisen sammeln, bewahrt daher vor allem unsere damalige Gemütslage. Gegenstände sind nur vorübergehende Behälter, die diesen Zustand für uns aufbewahren. Sobald das Gefühl eigenständig in der Erinnerung bestehen kann, ist die Aufgabe des Behälters nahezu beendet.",
+    "Mir wurde bewusst, dass ich nicht der Besitzer dieser Dinge war. Ich war nur die Zeitspanne, durch die sie hindurchgingen.",
+    "Nach all den Jahren ist meine stärkste Erinnerung an den Trempelmarkt jedoch nicht das, was ich kaufte. Es sind die Kinder.",
+    "Auf dem Markt gibt es einen eigenen Bereich für Kinder. Sie bringen Spielzeug, Bilderbücher und Kleidung mit, die sie beim Aufwachsen begleitet haben, und legen alles an ihren kleinen Ständen aus. Sie bestimmen die Preise, erklären die Dinge und sprechen selbst mit Fremden. Die Eltern sind in der Nähe, aber die Kinder führen die Geschäfte.",
+    "Ein Kind versteht dort vielleicht zum ersten Mal, dass Dinge einen Preis haben, dass dieser Preis verhandelbar ist, dass eigene Sachen getauscht oder verkauft werden können und dass sich das eingenommene Geld in etwas anderes Gewünschtes verwandeln lässt. Das ist eine sehr unmittelbare finanzielle Bildung.",
+    "Doch der Markt lehrt noch mehr. Die Kinder lernen zugleich loszulassen. Sie begreifen, dass etwas, das sie einmal sehr geliebt haben, eines Tages nicht mehr gebraucht wird, während das nicht mehr benötigte Spielzeug für ein anderes Kind weiterhin wichtig sein kann. Der Wert ist nicht verschwunden; er hat nur den Ort gewechselt.",
+    "Wahrscheinlich kommen sie jedes Jahr wieder. Als kleine Kinder verkaufen sie Spielzeug, später Bilderbücher und einige Jahre danach Kleidung oder Spiele. Während das Kind wächst, verlassen die nicht mehr benötigten Dinge Stück für Stück sein Leben. Wachstum wird durch das Fortgehen der Gegenstände sichtbar. Hinter diesem kleinen Tisch lernt ein Kind, dass es sein ganzes Leben lang nur vorübergehender Besitzer sein wird.",
+    "Menschen taten dies im 16. und im 19. Jahrhundert. Der 1971 neu begonnene Markt tat es wieder. Ich tat es während meiner Jahre in Nürnberg, und die Kinder tun es bis heute. Stadt, Währung, Waren und Lebensweisen haben sich verändert. Unverändert ist, einst besessene Dinge in den öffentlichen Raum zu bringen und auf jemanden zu warten, der sie übernehmen möchte.",
+    "Es ist Handel, Tausch und Abschied. Oder vielleicht eine Umwandlung von Energie. Ein Gegenstand verlässt das Leben eines Menschen und tritt in das eines anderen ein. Auf dem Flohmarkt wird niemals nur ein Preis getauscht; getauscht wird die verbleibende Zeit eines Gegenstands.",
+    "Einige der Dinge, die ich aus Nürnberg mitgebracht habe, sind noch im Atelier, andere liegen in Kisten. Wann ich sie wieder herausholen werde, weiß ich nicht. Vielleicht werde ich eines Tages einige davon an den nächsten Menschen weitergeben.",
+    "Wenn das geschieht, wäre es interessant. Irgendwann brachte jemand in Deutschland den Gegenstand zum Trempelmarkt. Ich begegnete ihm und trug ihn von Nürnberg nach Taiwan. Er begleitete mich mehr als zehn Jahre, dann nahm ihn ein anderer Mensch mit. So würde er meine Geschichte verlassen und in das Leben eines anderen eintreten.",
+    "Ich dachte, ich besäße diese Dinge vorübergehend. Doch über einen längeren Zeitraum betrachtet ist eine Druckgrafik aus dem 19. Jahrhundert bereits durch viele Hände gegangen und wird noch durch viele weitere gehen. Sie lebt länger als jeder Mensch, der sie je besessen hat. Auf dieser Linie ist das Ding beständig, während die Menschen in Bewegung sind.",
+    "Ich bin nicht sein vorübergehender Besitzer. Ich bin einer der Menschen, durch die es hindurchgeht.",
+    "Seit mehr als vierhundert Jahren wiederholt diese Stadt dieselbe Handlung. Jemand legt etwas ab, jemand übernimmt es, jemand geht, jemand beginnt neu. Ich habe nur an einem kleinen Abschnitt davon teilgenommen.",
+    "Viele Jahre später weiß ich nicht mehr, wie viel die einzelnen Dinge damals kosteten. Doch ich erinnere mich an diesen Herbst, an die dicht gedrängten Stände in der Altstadt, an die Kinder vor den einst geliebten Spielsachen und an Fremde, die einen Gegenstand aufnahmen, betrachteten, nach dem Preis fragten und entschieden, ob sie ihn mitnehmen oder zurücklegen. Ich erinnere mich auch an die Dinge, die still auf ihren nächsten Besitzer warteten.",
+    "Was wir wirklich bewahren, ist die Zeit, in der wir bereit waren, einen Teil unseres Lebens einem Gegenstand anzuvertrauen. Der Gegenstand trägt diese Zeit weiter und setzt seinen Weg fort.",
+    "Jemand legt etwas ab.",
+    "Jemand übernimmt es.",
+    "Jemand geht.",
+    "Jemand beginnt neu.",
+    "Und auch ich habe nur an einem kleinen Abschnitt davon teilgenommen.",
+    "Vielleicht bewahrt eine Sammlung in Wahrheit jene Zeit, in der wir bereit waren, einen Teil unseres Lebens vorübergehend einem Gegenstand anzuvertrauen."
+  ],
+  "href": "https://genius912.blogspot.com/2026/08/blog-post_21.html",
+  "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3cLYrXLkTkQr2sEHDJtetTE_cWKrK65NjAnwUQHGdfnLYe2nijWGl08QaH-zWauth-Doatfri5HMgrxdEiyoX8CakQYE-XxLPUDY1K5FVX-l_D_OHCG88WpZyYnOuD6mc2hobMtfCWAMjWfaCvfeiodFSV_-6KQseDYiootEOefJKrf7EO66DKYFU8ds/s0/%E7%B4%90%E5%80%AB%E5%A0%A1%E8%B7%B3%E8%9A%A4%E5%B8%82%E5%A0%B4.png",
+  "images": [
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3cLYrXLkTkQr2sEHDJtetTE_cWKrK65NjAnwUQHGdfnLYe2nijWGl08QaH-zWauth-Doatfri5HMgrxdEiyoX8CakQYE-XxLPUDY1K5FVX-l_D_OHCG88WpZyYnOuD6mc2hobMtfCWAMjWfaCvfeiodFSV_-6KQseDYiootEOefJKrf7EO66DKYFU8ds/s0/%E7%B4%90%E5%80%AB%E5%A0%A1%E8%B7%B3%E8%9A%A4%E5%B8%82%E5%A0%B4.png",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkW2i4JHkGTGuuTWtDuh3w6XtdxGWUjqV5lP2AWpzThqWpELsIdUf9KS8v8shjwA8QQnX54mtwiGa5s32_c8eA0Y6uaP4Mr3zVKYEqToqgn1Ld01awaP8T-0lq3OIKemRD6G1N_ht94KVIiIQBCjGvdfsuLZj9JBNwKSYkbznpqCSnYu62yEFrvfIO1XA/s4912/DSC07028.JPG",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5cXEYzA9yJlC-4tcteygQQB24R-2Pz8_rD4Hv9PU__AoMygps1Yv8mnWE9XWdwkgNcJ7k3IgGSM5HHxzXNS4Va7oILF3qF9hRTtqRKHfmfkjHRZv4q-3fu33E1LXs-Xdz-l_v_kI2apNvuzA2u5-Qu-BKDDwCB6qyAo6wguq-67LYIikZ7G6ueyiO5ek/s4896/DSC00205.JPG",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixuDQzhWel2ujJRxZGM_x0Sxjk7pTwmyPRJlR5MUnYaFBEOFlAz_7vHZs8exfoWszNgT_SnOIPzdhBXj3cYRbrN9Czbl2poYpwv61UW5ENiMdww3VcRVnYpLuBLB8eZwwlz75Gb0DqC0Q6G7_KLmvbjxSeCNeY41n4ZTY3cLGRWEjWEOGjBrcpO9qKW9U/s4912/DSC07021.JPG",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirmXsPj4DvbyNr6bdxkU8NHCuU6dIFSIB4FllsCag19pt7-j4rheocVM3lg7qPfFYmuHb4Hi_MRWx6vRruhcPUCuhC_yfKViwKBwE1_UeOFplbOxw4TVY8R0ZTHThY1-YSS-QUWCHRuAHvDGbGrF5tZu11g6L1WqZqeVRF7JGBmOs5BE6AePMHInnABO4/s4912/DSC07023.JPG"
+  ],
+  "image_alt_zh": "紐倫堡 Trempelmarkt 跳蚤市場與流轉中的舊物",
+  "image_alt_en": "Nuremberg Trempelmarkt flea market and second-hand objects changing hands",
+  "image_alt_de": "Nürnberger Trempelmarkt und weitergegebene gebrauchte Gegenstände"
+};
+
+  for (let index = WRITINGS.length - 1; index >= 0; index -= 1) {
+    const writing = WRITINGS[index];
+    if (writing.id === article.id || writing.href === article.href || writing.title_zh === article.title_zh) {
+      WRITINGS.splice(index, 1);
+    }
+  }
+  WRITINGS.unshift(article);
+  window.WRITINGS = WRITINGS;
+}
+/* RAUM_BLOGGER_TREMPELMARKT_20260821_END */
 Object.assign(window, { COPY, PROJECTS, ARCHIVE, WRITINGS, LINKS, OBJECTS });
 
 </script>
@@ -14710,7 +14976,7 @@ Object.assign(window, { ObjectsSection, ObjectDetail });
 </script>
   <script type="text/babel" data-inline="src/main.jsx">
 // Main App — wires header, sections, cursor, and project details together.
-const { useState, useEffect } = React;
+const { useState, useEffect, useRef } = React;
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "type": "mix",
@@ -14727,7 +14993,40 @@ function App() {
     return window.LANGS.includes(requested) ? requested : window.LANGS.includes(saved) ? saved : 'zh';
   });
   const [detail, setDetail] = useState(null); // { id } (rich) or { entry } (minimal)
+  const [showEntrance, setShowEntrance] = useState(true);
+  const [entranceMuted, setEntranceMuted] = useState(true);
+  const entranceVideoRef = useRef(null);
   const scrollP = window.useScrollProgress();
+
+  const toggleEntranceSound = async () => {
+    const video = entranceVideoRef.current;
+    if (!video) return;
+    const shouldEnable = video.muted;
+    video.muted = !shouldEnable;
+    setEntranceMuted(!shouldEnable);
+    if (shouldEnable) {
+      try {
+        await video.play();
+      } catch (error) {
+        video.muted = true;
+        setEntranceMuted(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (!showEntrance) return undefined;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onEntranceKey = (event) => {
+      if (event.key === 'Enter' || event.key === 'Escape') setShowEntrance(false);
+    };
+    window.addEventListener('keydown', onEntranceKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onEntranceKey);
+    };
+  }, [showEntrance]);
 
   // Listen for open-detail events from work rows / archive
   useEffect(() => {
@@ -14774,14 +15073,53 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className="rp-intro-loader" aria-hidden="true">
-        <div className="rp-loader-meta">
-          <span>RAUM+ / PORTFOLIO</span>
-          <span>TAICHUNG — TAIWAN</span>
-        </div>
-        <div className="rp-loader-mark">RAUM<span>+</span></div>
-        <div className="rp-loader-progress"><span /></div>
-      </div>
+      {showEntrance && (
+        <section
+          className="rp-film-entry"
+          aria-label={window.pick(lang, '點擊畫面進入 RAUM+ 網站', 'Click anywhere to enter the RAUM+ website', 'Zum Öffnen der RAUM+ Website auf den Bildschirm klicken')}
+          onClick={() => setShowEntrance(false)}
+        >
+          <video
+            ref={entranceVideoRef}
+            className="rp-film-entry-video"
+            src="assets/raum-background-film.mp4"
+            autoPlay
+            loop
+            muted={entranceMuted}
+            playsInline
+            preload="auto"
+            aria-label={window.pick(lang, 'RAUM+ 流域地誌入口影片', 'RAUM+ Watershed entrance film', 'RAUM+ Einführungsfilm Flusslandschaft')}
+          />
+          <div className="rp-film-entry-chrome">
+            <div className="rp-film-entry-meta" aria-hidden="true">
+              <span>RAUM+ / PORTFOLIO</span>
+              <span>TAICHUNG — TAIWAN</span>
+            </div>
+            <div className="rp-film-entry-logo" aria-label="RAUM+">RAUM<span>+</span></div>
+            <div className="rp-film-entry-action">
+              <span>ART · LANDSCAPE · PUBLIC SPACE</span>
+              <div className="rp-film-entry-controls">
+                <button
+                  type="button"
+                  className="rp-film-entry-sound"
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    toggleEntranceSound();
+                  }}
+                  aria-pressed={!entranceMuted}
+                >
+                  {entranceMuted
+                    ? window.pick(lang, '開啟音樂', 'Sound on', 'Musik an')
+                    : window.pick(lang, '關閉音樂', 'Sound off', 'Musik aus')}
+                </button>
+                <span className="rp-film-entry-enter-label">
+                  {window.pick(lang, '點擊畫面進入', 'Click to enter', 'Zum Öffnen klicken')} →
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <window.CustomCursor intensity={t.motion} />
 
