@@ -6197,7 +6197,7 @@ html[lang="zh-Hant"] body .rp-about-lead {
 
 const COPY = {
   zh: {
-    nav: { works: '作品', about: '關於', writing: '書寫', reading: '閱讀書齋', curator: '策展思維', objects: '物誌', studio: '實驗室', contact: '聯絡' },
+    nav: { works: '作品', about: '關於', writing: '書寫', reading: '閱讀書齋', curator: '策展思維', public_art: '公共藝術', objects: '物誌', studio: '實驗室', contact: '聯絡' },
     tagline_a: '藝術與開放',
     tagline_b: '空間實驗室',
     sub_tagline: 'Kunst und öffentlicher Raum Labor',
@@ -6242,7 +6242,7 @@ const COPY = {
     cursor_drag: '拖動',
   },
   en: {
-    nav: { works: 'Works', about: 'About', writing: 'Writing', reading: 'Reading', curator: 'Curatorial', objects: 'Objects', studio: 'Studio', contact: 'Contact' },
+    nav: { works: 'Works', about: 'About', writing: 'Writing', reading: 'Reading', curator: 'Curatorial', public_art: 'Public Art', objects: 'Objects', studio: 'Studio', contact: 'Contact' },
     tagline_a: 'Art &',
     tagline_b: 'Open Space Lab',
     sub_tagline: 'Kunst und öffentlicher Raum Labor',
@@ -6288,7 +6288,7 @@ const COPY = {
     cursor_drag: 'drag',
   },
   de: {
-    nav: { works: 'Werke', about: 'Über', writing: 'Texte', reading: 'Lesearchiv', curator: 'Kuratieren', objects: 'Objekte', studio: 'Studio', contact: 'Kontakt' },
+    nav: { works: 'Werke', about: 'Über', writing: 'Texte', reading: 'Lesearchiv', curator: 'Kuratieren', public_art: 'Kunstarchiv', objects: 'Objekte', studio: 'Studio', contact: 'Kontakt' },
     tagline_a: 'Kunst &',
     tagline_b: 'Öffentlicher Raum',
     sub_tagline: 'Kunst und öffentlicher Raum Labor',
@@ -10935,6 +10935,7 @@ window.WRITINGS = WRITINGS;
 const LINKS = [
   { label: 'Blog', sub: '「旅行」越來越是換個地方看書', href: 'https://genius912.blogspot.com/' },
   { label: 'Curator OS', sub: '策展思維 / Curatorial Thinking', href: 'https://yingchenghuang.github.io/curator-os/' },
+  { label: 'Public Art Archive', sub: '公共藝術檔案 / Global Index', href: 'https://yingchenghuang.github.io/desktop-tutorial/' },
   { label: 'Facebook', sub: '藝術與開放空間實驗室', href: 'https://www.facebook.com/labor.offentlicherraum.5' },
   { label: 'Instagram', sub: 'Labor Öffentlicherraum / @offentlicherraum', href: 'https://www.instagram.com/offentlicherraum/' },
   { label: 'Threads', sub: '策展筆記 / @offentlicherraum', href: 'https://www.threads.com/@offentlicherraum' },
@@ -13425,16 +13426,20 @@ function Header({ lang, onLang, motion, grid, onGrid }) {
             <span className="nav-num">05</span>
             <span>{c.nav.curator}</span>
           </a>
-          <a href="#objects" data-cursor={c.nav.objects}>
+          <a href="https://yingchenghuang.github.io/desktop-tutorial/" target="_blank" rel="noreferrer" data-cursor={c.nav.public_art}>
             <span className="nav-num">06</span>
+            <span>{c.nav.public_art}</span>
+          </a>
+          <a href="#objects" data-cursor={c.nav.objects}>
+            <span className="nav-num">07</span>
             <span>{c.nav.objects}</span>
           </a>
           <a href="#studio" data-cursor={c.nav.studio}>
-            <span className="nav-num">07</span>
+            <span className="nav-num">08</span>
             <span>{c.nav.studio}</span>
           </a>
           <a href="#contact" data-cursor={c.nav.contact}>
-            <span className="nav-num">08</span>
+            <span className="nav-num">09</span>
             <span>{c.nav.contact}</span>
           </a>
         </nav>
