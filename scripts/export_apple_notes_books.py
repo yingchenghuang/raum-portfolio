@@ -67,6 +67,8 @@ def main() -> None:
     parser.add_argument("database", type=Path)
     parser.add_argument("--folder", default="2.書")
     parser.add_argument("--created-after", default="2001-01-01 00:00:00")
+    parser.add_argument("--note-pk", type=int)
+    parser.add_argument("--metadata-only", action="store_true")
     args = parser.parse_args()
 
     connection = sqlite3.connect(f"file:{args.database}?mode=ro", uri=True)
@@ -92,6 +94,9 @@ def main() -> None:
         (folder["Z_PK"], APPLE_EPOCH, args.created_after),
     ).fetchall()
 
+    if args.note_pk is not None:
+        rows = [row for row in rows if row["note_pk"] == args.note_pk]
+
     records = []
     for row in rows:
         urls = [
@@ -114,7 +119,7 @@ def main() -> None:
                     "SELECT datetime(? + ?, 'unixepoch', 'localtime')",
                     (row["modified"], APPLE_EPOCH),
                 ).fetchone()[0],
-                "body": decode_note(row["payload"]),
+                "body": "" if args.metadata_only else decode_note(row["payload"]),
                 "urls": urls,
             }
         )

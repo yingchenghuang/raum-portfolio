@@ -70,6 +70,7 @@ def main() -> None:
             "a": book["author"],
             "u": book["notion_id"],
             "y": book["youtube"],
+            "ys": book.get("ys", "search"),
         }
         group = groups[book["category_key"]]
         existing = next((item for item in group if item["n"] == record["n"]), None)
@@ -94,7 +95,9 @@ def main() -> None:
             raise SystemExit(f"Existing book not found: {update['number']}")
         found["t"] = update["title"]
         found["a"] = update["author"]
+        found["u"] = update.get("notion_id", found["u"])
         found["y"] = update["youtube"]
+        found["ys"] = update.get("ys", found.get("ys", "search"))
         covers[found["n"]] = update["cover"]
         changed_notes.add(upsert_note(found["u"], update["markdown"]))
 
