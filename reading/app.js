@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20260902-1';
+const DATA_VERSION = '20260902-2';
 
 async function loadBooks(){
   const groups = await Promise.all(categories.map(async ([key,label]) => {
