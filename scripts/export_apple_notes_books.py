@@ -67,6 +67,7 @@ def main() -> None:
     parser.add_argument("database", type=Path)
     parser.add_argument("--folder", default="2.書")
     parser.add_argument("--created-after", default="2001-01-01 00:00:00")
+    parser.add_argument("--modified-after")
     parser.add_argument("--note-pk", type=int)
     parser.add_argument("--metadata-only", action="store_true")
     args = parser.parse_args()
@@ -80,18 +81,20 @@ def main() -> None:
     if not folder:
         raise SystemExit(f"Folder not found: {args.folder}")
 
+    date_column = "n.ZMODIFICATIONDATE1" if args.modified_after else "n.ZCREATIONDATE3"
+    date_cutoff = args.modified_after or args.created_after
     rows = connection.execute(
-        """
+        f"""
         SELECT n.Z_PK AS note_pk, n.ZTITLE1 AS title, n.ZIDENTIFIER AS identifier,
                n.ZCREATIONDATE3 AS created, n.ZMODIFICATIONDATE1 AS modified,
                d.ZDATA AS payload
         FROM ZICCLOUDSYNCINGOBJECT n
         JOIN ZICNOTEDATA d ON d.Z_PK=n.ZNOTEDATA
         WHERE n.Z_ENT=11 AND n.ZFOLDER=?
-          AND datetime(n.ZCREATIONDATE3 + ?, 'unixepoch', 'localtime') > ?
+          AND datetime({date_column} + ?, 'unixepoch', 'localtime') > ?
         ORDER BY n.ZCREATIONDATE3, n.Z_PK
         """,
-        (folder["Z_PK"], APPLE_EPOCH, args.created_after),
+        (folder["Z_PK"], APPLE_EPOCH, date_cutoff),
     ).fetchall()
 
     if args.note_pk is not None:
