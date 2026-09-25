@@ -12,8 +12,14 @@
     "t": "30堂帶來幸福的思辨課",
     "a": "理察‧保羅",
     "u": "39c34a20271a81378ab8ca8ac3631450",
-    "y": "https://www.youtube.com/watch?v=NAlw4Pqr-aU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=NAlw4Pqr-aU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "NAlw4Pqr-aU",
+        "title": "30堂帶來幸福的思辨課"
+      }
+    ]
   },
   {
     "n": "0041",
@@ -28,8 +34,14 @@
     "t": "一億美元報價",
     "a": "Alex Hormozi",
     "u": "39c34a20271a8191a4bbefa5698fdefc",
-    "y": "https://www.youtube.com/watch?v=tXcWlv1Ks0I&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=tXcWlv1Ks0I",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "tXcWlv1Ks0I",
+        "title": "一億美元報價 / 100M Offers"
+      }
+    ]
   },
   {
     "n": "0057",
@@ -68,48 +80,92 @@
     "t": "不要相信你所想的一切",
     "a": "Joseph Nguyen",
     "u": "39c34a20271a8168b4a8ce8284b8f5b8",
-    "y": "https://www.youtube.com/watch?v=YOBYYlrjQ9M&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=YOBYYlrjQ9M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YOBYYlrjQ9M",
+        "title": "不要相信你所想的一切 / Don’t Believe Everything You Think"
+      },
+      {
+        "id": "Gz3wIqVbLrI",
+        "title": "不要相信你所想的一切 / Don't Believe Everything You Think Why Your Thinking Is The Beginning End Of Suffering"
+      }
+    ]
   },
   {
     "n": "0092",
     "t": "世界並不仁慈，但也不會虧待你",
     "a": "史考特·蓋洛威",
     "u": "39c34a20271a8170b8ccd19c0c6a963a",
-    "y": "https://www.youtube.com/watch?v=hiSMmU3L1_0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=hiSMmU3L1_0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "hiSMmU3L1_0",
+        "title": "世界並不仁慈，但也不會虧待你 / The Algebra of Happiness: Notes on the Pursuit of Success, Love, and Meaning"
+      }
+    ]
   },
   {
     "n": "0097",
     "t": "中年之路：人格的第二次成型",
     "a": "詹姆斯·霍利斯",
     "u": "39c34a20271a81feb5a0ff88d7062be2",
-    "y": "https://www.youtube.com/watch?v=AsBDbnc4_ns&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=AsBDbnc4_ns",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "AsBDbnc4_ns",
+        "title": "中年之路：人格的第二次成型 / The Middle Passage: From Misery to Meaning in Midlife"
+      }
+    ]
   },
   {
     "n": "0113",
     "t": "人性的優點",
     "a": "戴爾·卡內基",
     "u": "39c34a20271a814e9ffaf48fa7b7984e",
-    "y": "https://www.youtube.com/watch?v=c_17jjyKxeY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=c_17jjyKxeY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "c_17jjyKxeY",
+        "title": "人性的優點 / How to Stop Worrying and Start Living"
+      },
+      {
+        "id": "rXdWj2j9Bn0",
+        "title": "人性的優點：當你懂得欣賞別人，你才真正高人一等 / How to Stop Worrying and Start Living"
+      }
+    ]
   },
   {
     "n": "0114",
     "t": "人性的弱點",
     "a": "戴爾·卡耐基",
     "u": "39c34a20271a8165958aeebc8991f2ab",
-    "y": "https://www.youtube.com/watch?v=FWKBM5jqrqI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=FWKBM5jqrqI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "FWKBM5jqrqI",
+        "title": "人性的弱點 / How to Win Friends and Influence People"
+      }
+    ]
   },
   {
     "n": "0130",
     "t": "人生就是賽局：透視人性、預測行為的科學",
     "a": "費雪",
     "u": "39c34a20271a8136b870e485e4defdad",
-    "y": "https://www.youtube.com/watch?v=UCfRoyP4Q_0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=UCfRoyP4Q_0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "UCfRoyP4Q_0",
+        "title": "人生就是賽局：透視人性、預測行為的科學 / Rock, Paper, Scissors: Game Theory in Everyday Life"
+      }
+    ]
   },
   {
     "n": "0132",
@@ -124,48 +180,84 @@
     "t": "人鼠之間",
     "a": "史坦貝克",
     "u": "39c34a20271a8107bdc2ce81495b6242",
-    "y": "https://www.youtube.com/watch?v=GrlTAECpYqE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=GrlTAECpYqE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "GrlTAECpYqE",
+        "title": "人鼠之間 / Of Mice and Men"
+      }
+    ]
   },
   {
     "n": "0158",
     "t": "他人的力量：如何尋求受益一生的人際關係",
     "a": "克勞德博士",
     "u": "39c34a20271a810885b7f54e957c0bf0",
-    "y": "https://www.youtube.com/watch?v=vDBpUXpaeEU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=vDBpUXpaeEU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "vDBpUXpaeEU",
+        "title": "他人的力量：如何尋求受益一生的人際關係 /  The Power of the Other:"
+      }
+    ]
   },
   {
     "n": "0183",
     "t": "你的幸福曲線：35歲以後必須了解的三大人生策略",
     "a": "喬納森·勞赫",
     "u": "39c34a20271a81a891ffcdb65a8e8906",
-    "y": "https://www.youtube.com/watch?v=wNuovN8guJc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=wNuovN8guJc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "wNuovN8guJc",
+        "title": "你的幸福曲線：35歲以後必須了解的三大人生策略 / The Happiness Curve"
+      }
+    ]
   },
   {
     "n": "0187",
     "t": "信任與啟發",
     "a": "史蒂芬·柯維",
     "u": "39c34a20271a81929265e05d5a1aba17",
-    "y": "https://www.youtube.com/watch?v=svN94E8FLpQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=svN94E8FLpQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "svN94E8FLpQ",
+        "title": "信任與啟發 / Trust & Inspire"
+      }
+    ]
   },
   {
     "n": "0188",
     "t": "信任邊際：伯克希爾·哈撒韋的商業原則",
     "a": "勞倫斯·A.坎寧安",
     "u": "39c34a20271a8108b918f5b9fb1f5998",
-    "y": "https://www.youtube.com/watch?v=jKx0N7n7QN0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=jKx0N7n7QN0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "jKx0N7n7QN0",
+        "title": "信任邊際：伯克希爾·哈撒韋的商業原則 / MARGIN OF TRUST: THE BERKSHIRE BUSINESS MODEL"
+      }
+    ]
   },
   {
     "n": "0199",
     "t": "停止你的精神內耗：先完成，再完美",
     "a": "劉軒",
     "u": "39c34a20271a818aa1a9c82e55a72f5c",
-    "y": "https://www.youtube.com/watch?v=DVeKpg5kpC4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=DVeKpg5kpC4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "DVeKpg5kpC4",
+        "title": "停止你的精神內耗：先完成，再完美"
+      }
+    ]
   },
   {
     "n": "0255",
@@ -188,24 +280,42 @@
     "t": "十三邀：我們時代的頭腦與心靈",
     "a": "許知遠",
     "u": "39c34a20271a815e9648e66d453e65a2",
-    "y": "https://www.youtube.com/watch?v=poH9Gl4ua-0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=poH9Gl4ua-0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "poH9Gl4ua-0",
+        "title": "十三邀：我們時代的頭腦與心靈"
+      }
+    ]
   },
   {
     "n": "0271",
     "t": "原力心態",
     "a": "弗雷德里克．佛特",
     "u": "39c34a20271a81a2a59cccab9042a6ed",
-    "y": "https://www.youtube.com/watch?v=N2TAj20lTuc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=N2TAj20lTuc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "N2TAj20lTuc",
+        "title": "原力心態 / WHAT'S NEXT IS NOW: How to Live Future Ready"
+      }
+    ]
   },
   {
     "n": "0272",
     "t": "原力效應：3步驟改變你的世界",
     "a": "愛瑞克",
     "u": "39c34a20271a810da0d4c06c2d369ab4",
-    "y": "https://www.youtube.com/results?search_query=%E5%8E%9F%E5%8A%9B%E6%95%88%E6%87%89%EF%BC%9A3%E6%AD%A5%E9%A9%9F%E6%94%B9%E8%AE%8A%E4%BD%A0%E7%9A%84%E4%B8%96%E7%95%8C+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=auyVSy1nmwc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "auyVSy1nmwc",
+        "title": "原力效應"
+      }
+    ]
   },
   {
     "n": "0273",
@@ -220,8 +330,14 @@
     "t": "受益一生的哈佛情商課",
     "a": "唐華山",
     "u": "39c34a20271a81b4abdfcb14e59d36d9",
-    "y": "https://www.youtube.com/watch?v=xUDF9n_hn3Y&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=xUDF9n_hn3Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "xUDF9n_hn3Y",
+        "title": "受益一生的哈佛情商課"
+      }
+    ]
   },
   {
     "n": "0291",
@@ -244,16 +360,28 @@
     "t": "品格：履歷表與追悼文的抉擇",
     "a": "大衛．布魯克斯",
     "u": "39c34a20271a817f9363f8d2df844e26",
-    "y": "https://www.youtube.com/watch?v=cCb4d0Y5clo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=cCb4d0Y5clo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "cCb4d0Y5clo",
+        "title": "品格：履歷表與追悼文的抉擇 / The Road to Character"
+      }
+    ]
   },
   {
     "n": "0308",
     "t": "哈佛最神奇的24堂心理課",
     "a": "楊輝",
     "u": "39c34a20271a813787b6e70230ad608c",
-    "y": "https://www.youtube.com/watch?v=GKCZGI30CgM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=GKCZGI30CgM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "GKCZGI30CgM",
+        "title": "哈佛最神奇的24堂心理課"
+      }
+    ]
   },
   {
     "n": "0328",
@@ -276,16 +404,28 @@
     "t": "孤獨消費論",
     "a": "三浦展",
     "u": "39c34a20271a810dae73e445e92df5c2",
-    "y": "https://www.youtube.com/watch?v=BNo7KHXgtWE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=BNo7KHXgtWE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "BNo7KHXgtWE",
+        "title": "孤獨消費論"
+      }
+    ]
   },
   {
     "n": "0404",
     "t": "專一力原則",
     "a": "芙拉‧札克",
     "u": "39c34a20271a81f698abd0f04f8addd2",
-    "y": "https://www.youtube.com/watch?v=x_RDaOGD2ZU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=x_RDaOGD2ZU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "x_RDaOGD2ZU",
+        "title": "專⼀⼒原則 / Singletasking: Get More Done-One Thing at a Time"
+      }
+    ]
   },
   {
     "n": "0407",
@@ -308,32 +448,56 @@
     "t": "幸福的科學：過好人生的七堂課",
     "a": "布魯斯·胡德",
     "u": "39c34a20271a8145bfedd396ed189dbe",
-    "y": "https://www.youtube.com/watch?v=IV9YtdeZ_cQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=IV9YtdeZ_cQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "IV9YtdeZ_cQ",
+        "title": "幸福的科學：過好人生的七堂課 / The Science of Happiness: Seven Lessons for Living Well"
+      }
+    ]
   },
   {
     "n": "0427",
     "t": "幸福的陷阱",
     "a": "Russ Harris",
     "u": "39c34a20271a819baa6ecbf9dbec8378",
-    "y": "https://www.youtube.com/watch?v=mTuUI4mXOcY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=mTuUI4mXOcY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "mTuUI4mXOcY",
+        "title": "幸福的陷阱 / The Happiness Trap 2nd Edition: Stop Struggling, Start Living"
+      }
+    ]
   },
   {
     "n": "0429",
     "t": "幸福超越完美",
     "a": "泰勒·本-沙哈爾",
     "u": "39c34a20271a81d89a19c0ac134ba80e",
-    "y": "https://www.youtube.com/watch?v=MS3UKJdPZxQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=MS3UKJdPZxQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "MS3UKJdPZxQ",
+        "title": "幸福超越完美 / Pursuit of Perfect"
+      }
+    ]
   },
   {
     "n": "0435",
     "t": "建構你想要的生活",
     "a": "亞瑟·布魯克斯、歐普拉",
     "u": "39c34a20271a8119b67cfc52667d5867",
-    "y": "https://www.youtube.com/watch?v=BDbh7RLPCgo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=BDbh7RLPCgo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "BDbh7RLPCgo",
+        "title": "建構你想要的生活：獲得幸福的藝術與科學 / Build the Life You Want: The Art and Science of Getting Happier"
+      }
+    ]
   },
   {
     "n": "0436",
@@ -348,16 +512,28 @@
     "t": "從容心態",
     "a": "艾希莉．威蘭斯",
     "u": "39c34a20271a816ea709e847eb06db65",
-    "y": "https://www.youtube.com/results?search_query=%E5%BE%9E%E5%AE%B9%E5%BF%83%E6%85%8B+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=YWXQTovIZd8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YWXQTovIZd8",
+        "title": "從容心態：不焦慮，不窮忙，8個習慣從小處改變，人生每個階段都零匱乏感 / Time Smart: How to Reclaim Your Time & Live A Happier Life"
+      }
+    ]
   },
   {
     "n": "0455",
     "t": "心態致勝：全新成功心理學",
     "a": "卡蘿．杜維克",
     "u": "39c34a20271a814797a1fbdcffc26f63",
-    "y": "https://www.youtube.com/watch?v=Lt3wpy9fJsc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Lt3wpy9fJsc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Lt3wpy9fJsc",
+        "title": "心態致勝：全新成功心理學 / Mindset：The New Psychology of Success"
+      }
+    ]
   },
   {
     "n": "0456",
@@ -372,32 +548,56 @@
     "t": "心理摩擦力：為何人們抗拒改變?",
     "a": "大衛．尚塔爾",
     "u": "39c34a20271a8192a8efe2c4908a7a2c",
-    "y": "https://www.youtube.com/watch?v=KaPtg0-GluA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=KaPtg0-GluA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "KaPtg0-GluA",
+        "title": "心理摩擦力：為何人們抗拒改變？不是你不努力，是你不懂人性阻力 / The Human Element: Overcoming the Resistance That Awaits New Ideas"
+      }
+    ]
   },
   {
     "n": "0458",
     "t": "心理界限",
     "a": "楊嘉玲",
     "u": "39c34a20271a8112aa62f59bbb416174",
-    "y": "https://www.youtube.com/watch?v=3vCYSXG4Klg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3vCYSXG4Klg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3vCYSXG4Klg",
+        "title": "心理界限"
+      }
+    ]
   },
   {
     "n": "0460",
     "t": "快思慢想",
     "a": "丹尼爾·康納曼",
     "u": "39c34a20271a81bdb813e25ee49519a6",
-    "y": "https://www.youtube.com/watch?v=RJgAPAbF-6Y&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=RJgAPAbF-6Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "RJgAPAbF-6Y",
+        "title": "快思慢想 / Thinking, Fast and Slow"
+      }
+    ]
   },
   {
     "n": "0465",
     "t": "思維變現",
     "a": "海倫·奧德斯基",
     "u": "39c34a20271a8167a8e1f15fef7eee86",
-    "y": "https://www.youtube.com/watch?v=2U542RH_SgY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2U542RH_SgY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2U542RH_SgY",
+        "title": "思維變現 / Stop Anxiety From Stopping You"
+      }
+    ]
   },
   {
     "n": "0467",
@@ -428,56 +628,102 @@
     "t": "我們住在焦慮星球",
     "a": "麥特‧海格",
     "u": "39c34a20271a8126a1caf3abed3dd3ee",
-    "y": "https://www.youtube.com/watch?v=8yzkOFG_wSQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=8yzkOFG_wSQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "8yzkOFG_wSQ",
+        "title": "我們住在焦慮星球"
+      }
+    ]
   },
   {
     "n": "0500",
     "t": "我決定，生活裡只留下對的人",
     "a": "楊嘉玲",
     "u": "39c34a20271a812ea62dd1e3096da0cc",
-    "y": "https://www.youtube.com/watch?v=OsHqaevYwmA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=OsHqaevYwmA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "OsHqaevYwmA",
+        "title": "我決定，生活裡只留下對的人"
+      }
+    ]
   },
   {
     "n": "0501",
     "t": "我的快樂生活提案：過得還不錯的一年",
     "a": "葛瑞琴·魯賓",
     "u": "39c34a20271a81b48ef1c2c7c7972a31",
-    "y": "https://www.youtube.com/watch?v=0nWjRNmeD2g&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=0nWjRNmeD2g",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "0nWjRNmeD2g",
+        "title": "我的快樂生活提案 過得還不錯的一年 / The Happiness Project"
+      }
+    ]
   },
   {
     "n": "0517",
     "t": "掌控注意力：打敗分心與焦慮",
     "a": "露西·喬·帕拉迪諾",
     "u": "39c34a20271a81b9b94fd3ecbda230d7",
-    "y": "https://www.youtube.com/watch?v=tPn1STcZ7m8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=tPn1STcZ7m8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "tPn1STcZ7m8",
+        "title": "掌控注意力：打敗分心與焦慮 / Find Your Focus Zone: An Effective New Plan to Defeat Distraction and Overload"
+      },
+      {
+        "id": "7r5HLmT4akg",
+        "title": "掌控注意力——打敗分心與焦慮 / Find Your Focus Zone：An Effective New Plan to Defeat Distracting and Overload"
+      }
+    ]
   },
   {
     "n": "0523",
     "t": "擁抱停頓：焦慮世代，用自己的節奏實現自我",
     "a": "陳法憲等",
     "u": "39c34a20271a8140a192f759fbbf4931",
-    "y": "https://www.youtube.com/watch?v=bwGfwnEu3eI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=bwGfwnEu3eI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "bwGfwnEu3eI",
+        "title": "擁抱停頓：焦慮世代，用自己的節奏，實現自我"
+      }
+    ]
   },
   {
     "n": "0524",
     "t": "擁抱未知",
     "a": "Simone Stolzoff",
     "u": "39c34a20271a8140a192f759fbbf4931",
-    "y": "https://www.youtube.com/watch?v=cXFkXU15uNc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=cXFkXU15uNc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "cXFkXU15uNc",
+        "title": "擁抱未知  /How to Not Know"
+      }
+    ]
   },
   {
     "n": "0525",
     "t": "擁有越少，越幸福",
     "a": "約書亞．貝克爾",
     "u": "39c34a20271a8140a192f759fbbf4931",
-    "y": "https://www.youtube.com/watch?v=7wbMx8dP9Wc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=7wbMx8dP9Wc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "7wbMx8dP9Wc",
+        "title": "擁有越少，越幸福：擺脫物質束縛，讓人生煥然一新的極簡之道"
+      }
+    ]
   },
   {
     "n": "0527",
@@ -508,16 +754,28 @@
     "t": "柏林：一座城市的肖像",
     "a": "Rory MacLean",
     "u": "39c34a20271a81e48acfff483d0ac5d6",
-    "y": "https://www.youtube.com/watch?v=4_Do7OeY75U&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=4_Do7OeY75U",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "4_Do7OeY75U",
+        "title": "柏林：一座城市的肖像 /  Berlin: Portrait of a City Through the Centuries"
+      }
+    ]
   },
   {
     "n": "0603",
     "t": "極限銷：4招贏得信任",
     "a": "謝文憲",
     "u": "39c34a20271a815ab692cd52bf73ec56",
-    "y": "https://www.youtube.com/watch?v=8LaBPJVtEpo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=8LaBPJVtEpo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "8LaBPJVtEpo",
+        "title": "極限銷：4招贏得信任，不要想著賣東西，就能締造無限商機"
+      }
+    ]
   },
   {
     "n": "0615",
@@ -548,16 +806,28 @@
     "t": "深度關係：從建立信任到彼此成就",
     "a": "",
     "u": "39c34a20271a814f8d45f50fcf7977f1",
-    "y": "https://www.youtube.com/watch?v=UFBfmUzSoCk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=UFBfmUzSoCk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "UFBfmUzSoCk",
+        "title": "深度關係：從建立信任到彼此成就 / Connect: Building Exceptional Relationships with Family, Friends and Colleagues"
+      }
+    ]
   },
   {
     "n": "0662",
     "t": "渺小一生",
     "a": "柳原漢雅",
     "u": "39c34a20271a81d6808cd6dedeb668a1",
-    "y": "https://www.youtube.com/watch?v=1oDy1LMc5Kk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1oDy1LMc5Kk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1oDy1LMc5Kk",
+        "title": "渺小一生 / A Little Life"
+      }
+    ]
   },
   {
     "n": "0664",
@@ -580,8 +850,14 @@
     "t": "獨角獸習慣：1%珍稀人才的做事之道",
     "a": "William Vanderbloemen",
     "u": "39c34a20271a810b9731cdd7f0ab4074",
-    "y": "https://www.youtube.com/watch?v=b3NN9NOR1PA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=b3NN9NOR1PA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "b3NN9NOR1PA",
+        "title": "獨角獸習慣：1%珍稀人才的做事之道 / Be the Unicorn"
+      }
+    ]
   },
   {
     "n": "0736",
@@ -604,8 +880,14 @@
     "t": "立下界限",
     "a": "蘇絢慧",
     "u": "39c34a20271a8106a2cee0cf29d3c7a8",
-    "y": "https://www.youtube.com/watch?v=7oT4uL9TpR0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=7oT4uL9TpR0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "7oT4uL9TpR0",
+        "title": "立下界限"
+      }
+    ]
   },
   {
     "n": "0756",
@@ -620,24 +902,42 @@
     "t": "第二座山",
     "a": "大衛·布魯克斯",
     "u": "39c34a20271a814b9002d170b713a8b8",
-    "y": "https://www.youtube.com/watch?v=ojHL4grvCsk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ojHL4grvCsk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ojHL4grvCsk",
+        "title": "第二座山 / The Second Mountain: The Quest for a Moral Life"
+      }
+    ]
   },
   {
     "n": "0763",
     "t": "第五項修練",
     "a": "彼得·聖吉",
     "u": "39c34a20271a810dba94f61ddd7ab849",
-    "y": "https://www.youtube.com/watch?v=1ayTBxZ7x5M&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1ayTBxZ7x5M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1ayTBxZ7x5M",
+        "title": "第五項修練 / The Fifth Discipline"
+      }
+    ]
   },
   {
     "n": "0768",
     "t": "管他的：愈在意愈不開心!",
     "a": "馬克・曼森",
     "u": "39c34a20271a81b592e7c48928c7f6a6",
-    "y": "https://www.youtube.com/watch?v=Kjk0hxkj-sI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Kjk0hxkj-sI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Kjk0hxkj-sI",
+        "title": "管他的：愈在意愈不開心 / The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life"
+      }
+    ]
   },
   {
     "n": "0784",
@@ -652,8 +952,14 @@
     "t": "給予：華頓商學院最啟發人心的一堂課",
     "a": "亞當·格蘭特",
     "u": "39c34a20271a81979de1e52884856049",
-    "y": "https://www.youtube.com/watch?v=Q6uo8zW1l0w&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Q6uo8zW1l0w",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Q6uo8zW1l0w",
+        "title": "給予: 華頓商學院最啟發人心的一堂課 / GIVE AND TAKE: A Revolutionary Approach to Success"
+      }
+    ]
   },
   {
     "n": "0792",
@@ -684,8 +990,14 @@
     "t": "自造幸福",
     "a": "樺澤紫苑",
     "u": "39c34a20271a81f18829dce6691805e8",
-    "y": "https://www.youtube.com/results?search_query=%E8%87%AA%E9%80%A0%E5%B9%B8%E7%A6%8F+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=4NYxEabxjog",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "4NYxEabxjog",
+        "title": "⾃造幸福：暢銷身⼼科醫師作家，教你三步驟具體實現身⼼健 康、關係和諧、財富成功的最佳⼈⽣"
+      }
+    ]
   },
   {
     "n": "0824",
@@ -716,8 +1028,14 @@
     "t": "蜜蜂與遠雷",
     "a": "恩田陸",
     "u": "39c34a20271a81548e34fda9554241e9",
-    "y": "https://www.youtube.com/watch?v=dyBMxDl9g-Y&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=dyBMxDl9g-Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "dyBMxDl9g-Y",
+        "title": "蜜蜂與遠雷"
+      }
+    ]
   },
   {
     "n": "0849",
@@ -748,16 +1066,28 @@
     "t": "財富是認知的變現",
     "a": "舒泰峰",
     "u": "39c34a20271a819fbfa4df550630a6d7",
-    "y": "https://www.youtube.com/watch?v=K31pkIxGjUE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=K31pkIxGjUE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "K31pkIxGjUE",
+        "title": "財富是認知的變現"
+      }
+    ]
   },
   {
     "n": "0910",
     "t": "賺多少才夠：財富與幸福的哲學",
     "a": "艾倫·艾貝",
     "u": "39c34a20271a81d8bdfee38974e78947",
-    "y": "https://www.youtube.com/watch?v=5EaF9ZM5uOU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=5EaF9ZM5uOU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "5EaF9ZM5uOU",
+        "title": "賺多少才夠,財富與幸福的哲學 / How Much Is Enough?"
+      }
+    ]
   },
   {
     "n": "0911",
@@ -772,8 +1102,14 @@
     "t": "超級專案管理",
     "a": "傅以斌",
     "u": "39c34a20271a8158bf29e7f0f42600ab",
-    "y": "https://www.youtube.com/watch?v=wAO7DGLCgsw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=wAO7DGLCgsw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "wAO7DGLCgsw",
+        "title": "超級專案管理：牛津大學教授揭示計畫成敗的法則，教你順利完成任何專案 / How Big Things Get Done"
+      }
+    ]
   },
   {
     "n": "0941",
@@ -788,8 +1124,14 @@
     "t": "這一生，為自己而活",
     "a": "奧里森‧馬登",
     "u": "39c34a20271a815bb588c8750a9c8c47",
-    "y": "https://www.youtube.com/watch?v=SIrQdOOOWfs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=SIrQdOOOWfs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "SIrQdOOOWfs",
+        "title": "這一生，為自己而活 / The Joy of Living: The Secret of Finding and Keeping Happiness in Your Life"
+      }
+    ]
   },
   {
     "n": "0949",
@@ -812,8 +1154,14 @@
     "t": "重塑幸福",
     "a": "馬克·曼森",
     "u": "39c34a20271a81a4a63ff5edbbaa1b10",
-    "y": "https://www.youtube.com/watch?v=kJP2IfSTH6w&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=kJP2IfSTH6w",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "kJP2IfSTH6w",
+        "title": "重塑幸福 / The Subtle Art of Not Giving a F*ck"
+      }
+    ]
   },
   {
     "n": "0983",
@@ -844,16 +1192,28 @@
     "t": "關鍵七秒，決定你的價值",
     "a": "凱薩琳．莫洛伊",
     "u": "39c34a20271a8152b41bea0524a651e2",
-    "y": "https://www.youtube.com/watch?v=94aTXX82bgM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=94aTXX82bgM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "94aTXX82bgM",
+        "title": "關鍵七秒，決定你的價值 / The Million Dollar Handshake"
+      }
+    ]
   },
   {
     "n": "1020",
     "t": "顧好自己就夠了",
     "a": "藤野智哉",
     "u": "39c34a20271a8164980eee329cad657a",
-    "y": "https://www.youtube.com/watch?v=2Vl8p00J404&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2Vl8p00J404",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2Vl8p00J404",
+        "title": "顧好自己就夠了"
+      }
+    ]
   },
   {
     "n": "1028",
@@ -868,16 +1228,28 @@
     "t": "麻省理工深度思考法",
     "a": "平井孝志",
     "u": "39c34a20271a8177b0d2e35cab128826",
-    "y": "https://www.youtube.com/watch?v=oTCbmHxFYig&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=oTCbmHxFYig",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "oTCbmHxFYig",
+        "title": "麻省理工深度思考法：從模型及動力機制來思考現象"
+      }
+    ]
   },
   {
     "n": "1067",
     "t": "誰在操控你的選擇：洞察人性的自由之路",
     "a": "黃啟團",
     "u": "3c434a20271a814397c6f756f7780e0d",
-    "y": "https://www.youtube.com/watch?v=c70_biaJTOA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=c70_biaJTOA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "c70_biaJTOA",
+        "title": "誰在操控你的選擇"
+      }
+    ]
   },
   {
     "n": "1070",
@@ -900,8 +1272,14 @@
     "t": "意念使用手冊：瞬間改變時間和空間的量子習慣",
     "a": "村松大輔",
     "u": "3c434a20271a8145b545f017723d7af0",
-    "y": "https://www.youtube.com/watch?v=yuneTXJKA7c&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=yuneTXJKA7c",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "yuneTXJKA7c",
+        "title": "意念使用手冊: 瞬間改變時間和空間的量子習慣"
+      }
+    ]
   },
   {
     "n": "1080",
@@ -933,30 +1311,54 @@
     "a": "奧利佛・柏克曼（Oliver Burkeman）",
     "u": "3d134a20271a80c18e83fe027cffea24",
     "y": "https://www.youtube.com/watch?v=8jAGk2mG_FU",
-    "ys": "video"
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "8jAGk2mG_FU",
+        "title": "平凡人的28天行動冥想：擁抱有限人生 / Meditations for Mortals"
+      }
+    ]
   },
   {
     "n": "1125",
     "t": "別太把別人當回事：活得心安理得，從容自在的禪練習",
     "a": "枡野俊明",
     "u": "77734a20271a83b7a7ab81bd19901841",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=aWiE-KiUxsM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "aWiE-KiUxsM",
+        "title": "別太把別人當回事"
+      }
+    ]
   },
   {
     "n": "1126",
     "t": "自私的藝術",
     "a": "大衛・西伯里（David Seabury）",
     "u": "f9f34a20271a835aad2e01cdaf42bdfe",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=uVEueeTjM1c",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "uVEueeTjM1c",
+        "title": "自私的藝術"
+      }
+    ]
   },
   {
     "n": "1130",
     "t": "為什麼我們一拍即合：人際同步的新科學",
     "a": "凱特・墨菲（Kate Murphy）",
     "u": "b9134a20271a8386acb9817bbe94bec4",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=YshOv_gZ278",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YshOv_gZ278",
+        "title": "為什麼我們一拍即合：人際同步的新科學 / Why We Click: The Emerging Science of Interpersonal Synchrony"
+      }
+    ]
   }
 ]
