@@ -20,32 +20,60 @@
     "t": "一生的資本",
     "a": "奧里森·斯威特·馬登",
     "u": "39c34a20271a81b190d9c5d6d54a4c02",
-    "y": "https://www.youtube.com/watch?v=ZYejG3xZcuo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZYejG3xZcuo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZYejG3xZcuo",
+        "title": "一生的資本 / Lifelong Capital"
+      }
+    ]
   },
   {
     "n": "0068",
     "t": "一課經濟學",
     "a": "亨利·赫茲利特",
     "u": "39c34a20271a81ef9e0dc2eda4173cdb",
-    "y": "https://www.youtube.com/watch?v=Gq3RfavFLo4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Gq3RfavFLo4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Gq3RfavFLo4",
+        "title": "一課經濟學 / Economics in One Lesson"
+      }
+    ]
   },
   {
     "n": "0086",
     "t": "不被工作綁住的防彈理財計畫",
     "a": "湯雅·海斯特",
     "u": "39c34a20271a817ea966eee2bf53d00b",
-    "y": "https://www.youtube.com/watch?v=RX69ViHB0WE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=RX69ViHB0WE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "RX69ViHB0WE",
+        "title": "不被工作綁住的防彈理財計畫 / Work Optional"
+      },
+      {
+        "id": "LxaaVu3qP7k",
+        "title": "不被⼯作綁住的防彈理財計畫：告別傳統職場的多型態退休，讓你經濟獨⽴，擁有理想⽣活的選擇權 / Work Optional"
+      }
+    ]
   },
   {
     "n": "0093",
     "t": "世界的邏輯",
     "a": "大衛·哈維",
     "u": "39c34a20271a8197b6b1ee508bfe7067",
-    "y": "https://www.youtube.com/results?search_query=%E4%B8%96%E7%95%8C%E7%9A%84%E9%82%8F%E8%BC%AF+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=-15w0cwWZ9A",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "-15w0cwWZ9A",
+        "title": "世界的邏輯:如何讓我們生活的世界更理性、更可控  /  The Ways of the World"
+      }
+    ]
   },
   {
     "n": "0104",
@@ -68,16 +96,28 @@
     "t": "人生的五種財富：設計你夢想生活的轉變指南",
     "a": "Sahil Bloom",
     "u": "39c34a20271a8147bb4adbabf348164a",
-    "y": "https://www.youtube.com/results?search_query=%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BA%94%E7%A8%AE%E8%B2%A1%E5%AF%8C%EF%BC%9A%E8%A8%AD%E8%A8%88%E4%BD%A0%E5%A4%A2%E6%83%B3%E7%94%9F%E6%B4%BB%E7%9A%84%E8%BD%89%E8%AE%8A%E6%8C%87%E5%8D%97+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=whkJHZgvoNo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "whkJHZgvoNo",
+        "title": "人生的五種財富 / The 5 Types of Wealth: A Transformative Guide to Design Your Dream Life"
+      }
+    ]
   },
   {
     "n": "0177",
     "t": "你是個有錢人：掌握財富思維",
     "a": "Jen Sincero",
     "u": "39c34a20271a8179a3b3d7cfbb63c4b6",
-    "y": "https://www.youtube.com/watch?v=T0KdeG-h5uc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=T0KdeG-h5uc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "T0KdeG-h5uc",
+        "title": "你是個有錢人：掌握財富思維 / You Are a Badass at Making Money: Master the Mindset of Wealth"
+      }
+    ]
   },
   {
     "n": "0217",
@@ -92,8 +132,14 @@
     "t": "動機背後的隱藏邏輯",
     "a": "丹·艾瑞利",
     "u": "39c34a20271a81008d89c64e0429caaa",
-    "y": "https://www.youtube.com/watch?v=pG4yeoWrmDQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=pG4yeoWrmDQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "pG4yeoWrmDQ",
+        "title": "動機背後的隱藏邏輯"
+      }
+    ]
   },
   {
     "n": "0262",
@@ -108,16 +154,28 @@
     "t": "命定之書",
     "a": "愛瑞克",
     "u": "39c34a20271a81878924e058ecd1357c",
-    "y": "https://www.youtube.com/watch?v=WVu23ZIrXqk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=WVu23ZIrXqk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "WVu23ZIrXqk",
+        "title": "命定之書"
+      }
+    ]
   },
   {
     "n": "0306",
     "t": "品格：世間最崇高之物",
     "a": "奧里森·斯威特·馬登",
     "u": "39c34a20271a81de9305cf22bd65166d",
-    "y": "https://www.youtube.com/watch?v=m8JCDx89ISo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=m8JCDx89ISo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "m8JCDx89ISo",
+        "title": "品格：世間最崇高之物 / CHARACTER - The Grandest Thing in the World"
+      }
+    ]
   },
   {
     "n": "0330",
@@ -148,16 +206,28 @@
     "t": "廉價的真相：看穿資本主義生態邏輯的七樣事物",
     "a": "拉傑·帕特爾",
     "u": "39c34a20271a8119b67cfc52667d5867",
-    "y": "https://www.youtube.com/watch?v=ArdV4GpyjbA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ArdV4GpyjbA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ArdV4GpyjbA",
+        "title": "廉價的真相：看穿資本主義生態邏輯的七樣事物"
+      }
+    ]
   },
   {
     "n": "0444",
     "t": "從0開始打造財務自由的致富系統",
     "a": "拉米特·賽希",
     "u": "39c34a20271a81b8b948c8d0d7641a5d",
-    "y": "https://www.youtube.com/watch?v=_eEhXJgsBXc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=_eEhXJgsBXc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "_eEhXJgsBXc",
+        "title": "從0開始打造財務自由的致富系統 / I  Will Teach You to Be Rich"
+      }
+    ]
   },
   {
     "n": "0462",
@@ -172,40 +242,70 @@
     "t": "我簡單豐富的生活提案",
     "a": "澀谷直人",
     "u": "39c34a20271a81b48ef1c2c7c7972a31",
-    "y": "https://www.youtube.com/watch?v=Fa5ZtvwCQAM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Fa5ZtvwCQAM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Fa5ZtvwCQAM",
+        "title": "我簡單豐富的生活提案"
+      }
+    ]
   },
   {
     "n": "0510",
     "t": "投資自我",
     "a": "奧里森·斯威特·馬登",
     "u": "39c34a20271a8193b6a5f1b0ff5e2109",
-    "y": "https://www.youtube.com/results?search_query=%E6%8A%95%E8%B3%87%E8%87%AA%E6%88%91+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=z0XWjHAiH78",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "z0XWjHAiH78",
+        "title": "投資自我：鍛造一生的資本·成就最好的自己 / Self Investment"
+      }
+    ]
   },
   {
     "n": "0548",
     "t": "明日",
     "a": "Cyril Dion",
     "u": "39c34a20271a818abdfcc014de0d3088",
-    "y": "https://www.youtube.com/watch?v=Px4F1FVd9Vk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Px4F1FVd9Vk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Px4F1FVd9Vk",
+        "title": "明日 / Tomorrow"
+      }
+    ]
   },
   {
     "n": "0555",
     "t": "時間都到哪裡去了?",
     "a": "",
     "u": "39c34a20271a81f68101c6abac475f73",
-    "y": "https://www.youtube.com/watch?v=dTavMidnRYo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=dTavMidnRYo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "dTavMidnRYo",
+        "title": "時間都到哪裡去了？ / The Time Cleanse"
+      }
+    ]
   },
   {
     "n": "0563",
     "t": "更富足的活法",
     "a": "羅布·穆爾",
     "u": "39c34a20271a817a8dc4fa9d4a8f6d43",
-    "y": "https://www.youtube.com/watch?v=GmAH1iLQOY0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=GmAH1iLQOY0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "GmAH1iLQOY0",
+        "title": "更富足的活法 / Money Know More,Make More,Give More"
+      }
+    ]
   },
   {
     "n": "0575",
@@ -220,24 +320,42 @@
     "t": "有錢人想的和你不一樣",
     "a": "T. 哈福‧艾克",
     "u": "39c34a20271a81a7b050ed1367ffe61e",
-    "y": "https://www.youtube.com/watch?v=wSasCJvAtMw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=wSasCJvAtMw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "wSasCJvAtMw",
+        "title": "有錢人想的和你不一樣 / Secrets of the Millionaire Mind"
+      }
+    ]
   },
   {
     "n": "0606",
     "t": "模仿欲望",
     "a": "路克·柏吉斯",
     "u": "39c34a20271a81daa6bff675354a6870",
-    "y": "https://www.youtube.com/results?search_query=%E6%A8%A1%E4%BB%BF%E6%AC%B2%E6%9C%9B+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=NQ9AtpIzxfU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "NQ9AtpIzxfU",
+        "title": "模仿欲望：從人性深處理解商業、政治、經濟、社會現象，還有你自己  / Wanting：The Power of Mimetic Desire in Everyday Life"
+      }
+    ]
   },
   {
     "n": "0620",
     "t": "步步為贏：超前部署你的下五步",
     "a": "派翠克·貝特-大衛",
     "u": "39c34a20271a81e4a4ccfb74089dd18c",
-    "y": "https://www.youtube.com/watch?v=n0wOztLnxuU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=n0wOztLnxuU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "n0wOztLnxuU",
+        "title": "步步為贏：超前部署你的下五步，學習億萬富翁企業家的致勝謀略 / Your Next Five Moves: Master the Art of Business Strategy"
+      }
+    ]
   },
   {
     "n": "0642",
@@ -252,16 +370,28 @@
     "t": "猶太商法",
     "a": "藤田田",
     "u": "39c34a20271a8180b616ed280cf2a818",
-    "y": "https://www.youtube.com/watch?v=MfncevQr0_c&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=MfncevQr0_c",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "MfncevQr0_c",
+        "title": "猶太商法"
+      }
+    ]
   },
   {
     "n": "0722",
     "t": "百萬富翁快車道",
     "a": "MJ·德馬科",
     "u": "39c34a20271a810e9d36d24bcd9f0576",
-    "y": "https://www.youtube.com/watch?v=fkdOkaTmjMc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=fkdOkaTmjMc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "fkdOkaTmjMc",
+        "title": "百萬富翁快車道 / The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime"
+      }
+    ]
   },
   {
     "n": "0743",
@@ -276,8 +406,14 @@
     "t": "窮思維、富邏輯──致富之前先自主",
     "a": "吳淡如",
     "u": "39c34a20271a811f8acffc9136b36949",
-    "y": "https://www.youtube.com/watch?v=AChP_ap1qE0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=AChP_ap1qE0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "AChP_ap1qE0",
+        "title": "窮思維、富邏輯──致富之前先自主"
+      }
+    ]
   },
   {
     "n": "0774",
@@ -308,16 +444,32 @@
     "t": "納瓦爾寶典：矽谷傳奇創投家的財富與幸福指南",
     "a": "納瓦爾",
     "u": "39c34a20271a81f1b01af973c650b091",
-    "y": "https://www.youtube.com/results?search_query=%E7%B4%8D%E7%93%A6%E7%88%BE%E5%AF%B6%E5%85%B8%EF%BC%9A%E7%9F%BD%E8%B0%B7%E5%82%B3%E5%A5%87%E5%89%B5%E6%8A%95%E5%AE%B6%E7%9A%84%E8%B2%A1%E5%AF%8C%E8%88%87%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=TlDsZj16APc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "TlDsZj16APc",
+        "title": "納瓦爾寶典 / The Almanack of Naval Ravikant: A Guide to Wealth and Happiness"
+      }
+    ]
   },
   {
     "n": "0819",
     "t": "致富心態：關於財富、貪婪與幸福的20堂理財課",
     "a": "摩根·豪澤爾",
     "u": "39c34a20271a812c8482e6619d072581",
-    "y": "https://www.youtube.com/watch?v=cuLeI_qYTn0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=cuLeI_qYTn0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "cuLeI_qYTn0",
+        "title": "致富心態：關於財富、貪婪與幸福的20堂理財課 / The Psychology of Money：Timeless Lessons on Wealth, Greed, and Happiness"
+      },
+      {
+        "id": "iYjHwTlIZsY",
+        "title": "致富心態：關於財富、貪婪與幸福的20堂理財課 / The Psychology of Money：Timeless Lessons on Wealth, Greed, and Happiness"
+      }
+    ]
   },
   {
     "n": "0848",
@@ -332,8 +484,14 @@
     "t": "要錢還是要生活",
     "a": "維姬·羅賓",
     "u": "39c34a20271a81309d6dd26f2e08df80",
-    "y": "https://www.youtube.com/watch?v=ky_aXk5jJq0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ky_aXk5jJq0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ky_aXk5jJq0",
+        "title": "要錢還是要生活：沒有財務自由，也能提前退休"
+      }
+    ]
   },
   {
     "n": "0874",
@@ -348,8 +506,14 @@
     "t": "變化中的世界秩序",
     "a": "瑞．達利歐",
     "u": "39c34a20271a811b8880dac2823dd995",
-    "y": "https://www.youtube.com/watch?v=sBLhq9Y9WG0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=sBLhq9Y9WG0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "sBLhq9Y9WG0",
+        "title": "變化中的世界秩序 / The Changing World Order"
+      }
+    ]
   },
   {
     "n": "0893",
@@ -364,48 +528,92 @@
     "t": "財務自由，提早過你真正想過的生活",
     "a": "Grant Sabatier",
     "u": "39c34a20271a813f9209e7c464b330e6",
-    "y": "https://www.youtube.com/watch?v=uw-L97y3Z7Q&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=uw-L97y3Z7Q",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "uw-L97y3Z7Q",
+        "title": "財務自由：提早過你真正想過的生活 / FINANCIAL FREEDOM: A Proven Path to All the Money You Will Ever Need"
+      },
+      {
+        "id": "vwXbr7DDxNU",
+        "title": "財務自由，提早過你真正想過的生活 / FINANCIAL FREEDOM: A Proven Path to All the Money You Will Ever Need"
+      }
+    ]
   },
   {
     "n": "0895",
     "t": "財務自由之路",
     "a": "博多·舍費爾",
     "u": "39c34a20271a81178b9ec551bd36bca2",
-    "y": "https://www.youtube.com/watch?v=4AU4FomW2WE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=4AU4FomW2WE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "4AU4FomW2WE",
+        "title": "財務自由之路"
+      }
+    ]
   },
   {
     "n": "0896",
     "t": "財富方程式：擁抱富足、自洽與幸福的人生",
     "a": "斯科特・加洛韋",
     "u": "39c34a20271a819fbfa4df550630a6d7",
-    "y": "https://www.youtube.com/watch?v=jQkN-B0T0QQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=vvdiuJsAozc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "vvdiuJsAozc",
+        "title": "財富方程式 / The Algebra of Wealth: A Simple Formula for Financial Security"
+      },
+      {
+        "id": "jQkN-B0T0QQ",
+        "title": "財富方程式：擁抱富足、自洽與幸福的人生 / The Algebra of Wealth: A Simple Formula for Financial Security"
+      }
+    ]
   },
   {
     "n": "0898",
     "t": "財富的代數：財務安全的簡單公式",
     "a": "Scott Galloway",
     "u": "39c34a20271a819fbfa4df550630a6d7",
-    "y": "https://www.youtube.com/watch?v=WT09GDg95pQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=WT09GDg95pQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "WT09GDg95pQ",
+        "title": "財富的代數：財務安全的簡單公式  / The Algebra of Wealth A Simple Formula for Financial Security"
+      }
+    ]
   },
   {
     "n": "0899",
     "t": "財富的靈魂：金錢與意義的 50 個反思",
     "a": "Daniel Crosby",
     "u": "39c34a20271a819fbfa4df550630a6d7",
-    "y": "https://www.youtube.com/watch?v=_rvW3xc4qKQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=_rvW3xc4qKQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "_rvW3xc4qKQ",
+        "title": "財富的靈魂：金錢與意義的 50 個反思 / The Soul of Wealth: 50 Reflections on Money and Meaning"
+      }
+    ]
   },
   {
     "n": "0900",
     "t": "財富的靈魂：關於金錢與意義的 50 個反思",
     "a": "Daniel Crosby",
     "u": "39c34a20271a819fbfa4df550630a6d7",
-    "y": "https://www.youtube.com/watch?v=kLWbVzZFnbE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=kLWbVzZFnbE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "kLWbVzZFnbE",
+        "title": "財富的靈魂：關於金錢與意義的 50 個反思"
+      }
+    ]
   },
   {
     "n": "0902",
@@ -436,16 +644,28 @@
     "t": "超爆蘋果橘子經濟學",
     "a": "李維特、杜伯納",
     "u": "39c34a20271a81b2bb23d617ab534bc0",
-    "y": "https://www.youtube.com/watch?v=PSClIJLHNf4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=PSClIJLHNf4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PSClIJLHNf4",
+        "title": "超爆蘋果橘子經濟學 / Super Freakonomics"
+      }
+    ]
   },
   {
     "n": "0931",
     "t": "跳著踢踏舞去上班",
     "a": "巴菲特",
     "u": "39c34a20271a8163a5a2e3cfa353325d",
-    "y": "https://www.youtube.com/watch?v=FTBtEL7cxeg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=FTBtEL7cxeg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "FTBtEL7cxeg",
+        "title": "跳著踢踏舞去上班 / Tap Dancing to Work"
+      }
+    ]
   },
   {
     "n": "0979",
@@ -468,16 +688,28 @@
     "t": "關於人生的7項財務思考",
     "a": "",
     "u": "39c34a20271a81228f8af4c777d918f6",
-    "y": "https://www.youtube.com/watch?v=v2yHDr6oNY0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=v2yHDr6oNY0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "v2yHDr6oNY0",
+        "title": "關於人生的7項財務思考"
+      }
+    ]
   },
   {
     "n": "1009",
     "t": "雪球：巴菲特傳",
     "a": "艾莉絲．施洛德",
     "u": "39c34a20271a8105b467facae2af80dd",
-    "y": "https://www.youtube.com/watch?v=Lb-3Y7HPeHM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Lb-3Y7HPeHM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Lb-3Y7HPeHM",
+        "title": "雪球：巴菲特傳 / The Snowball: Warren Buffett and the Business of Life"
+      }
+    ]
   },
   {
     "n": "1060",
@@ -500,15 +732,27 @@
     "t": "會走路的錢",
     "a": "貝版（BayFamily）",
     "u": "3cb34a20271a80a1be14c73bdf6d22e1",
-    "y": "https://www.youtube.com/watch?v=zviblLAIGow&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=zviblLAIGow",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "zviblLAIGow",
+        "title": "會走路的錢"
+      }
+    ]
   },
   {
     "n": "1128",
     "t": "幣安人生：幸運、韌性與保護用戶的回憶錄",
     "a": "趙長鵬（Changpeng Zhao）",
     "u": "0b434a20271a83d1b3e981ddf89f05c8",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=qNwc68aHXgE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qNwc68aHXgE",
+        "title": "幣安人生"
+      }
+    ]
   }
 ]
