@@ -4,8 +4,14 @@
     "t": "1493：哥倫布創造的新世界",
     "a": "查爾斯·C·曼恩",
     "u": "39c34a20271a81378ab8ca8ac3631450",
-    "y": "https://www.youtube.com/watch?v=uAHS3tkjvnE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=uAHS3tkjvnE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "uAHS3tkjvnE",
+        "title": "1493：哥倫布創造的新世界 / 1493 : uncovering the new world Columbus created"
+      }
+    ]
   },
   {
     "n": "0042",
@@ -36,8 +42,14 @@
     "t": "一日浮生",
     "a": "歐文・D. 亞隆",
     "u": "39c34a20271a81fca730c8ed33b0b928",
-    "y": "https://www.youtube.com/watch?v=yIVU51QuvRs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=yIVU51QuvRs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "yIVU51QuvRs",
+        "title": "一日浮生 / Creatures of a Day"
+      }
+    ]
   },
   {
     "n": "0061",
@@ -52,16 +64,28 @@
     "t": "一流的人如何擁有動態穩定力",
     "a": "布萊德．史托伯格",
     "u": "39c34a20271a81b0a731f5578d2fe2ce",
-    "y": "https://www.youtube.com/watch?v=TJhh3QuGNFI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=TJhh3QuGNFI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "TJhh3QuGNFI",
+        "title": "一流的人如何擁有動態穩定力 / Master of Change: How to Excel When Everything Is Changing – Including You"
+      }
+    ]
   },
   {
     "n": "0078",
     "t": "不在乎的勇氣",
     "a": "大嶋信頼",
     "u": "39c34a20271a81a8a191e31f5905f63e",
-    "y": "https://www.youtube.com/watch?v=F2_V7VDfhik&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=F2_V7VDfhik",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "F2_V7VDfhik",
+        "title": "不在乎的勇氣"
+      }
+    ]
   },
   {
     "n": "0079",
@@ -84,8 +108,14 @@
     "t": "世紀末的維也納",
     "a": "卡爾·休斯克",
     "u": "39c34a20271a81cbadfef2ad79ea0088",
-    "y": "https://www.youtube.com/watch?v=_qJEDSkk5l4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=_qJEDSkk5l4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "_qJEDSkk5l4",
+        "title": "世紀末的維也納 / Fin-De-Siecle Vienna: Politics and Culture"
+      }
+    ]
   },
   {
     "n": "0150",
@@ -100,8 +130,14 @@
     "t": "人類群星閃耀時",
     "a": "史蒂芬・茨威格",
     "u": "39c34a20271a818b99b4dae7a266f421",
-    "y": "https://www.youtube.com/watch?v=mvaKIxNNoag&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=mvaKIxNNoag",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "mvaKIxNNoag",
+        "title": "人類群星閃耀時 / Sternstunden der Menschheit"
+      }
+    ]
   },
   {
     "n": "0210",
@@ -196,8 +232,14 @@
     "t": "反脆弱",
     "a": "納西姆·塔雷伯",
     "u": "39c34a20271a819d883fc82892aec23c",
-    "y": "https://www.youtube.com/watch?v=BcpILM9Q9O8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=BcpILM9Q9O8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "BcpILM9Q9O8",
+        "title": "反脆弱 / Antifragile"
+      }
+    ]
   },
   {
     "n": "0296",
@@ -220,8 +262,14 @@
     "t": "圓頂的故事",
     "a": "",
     "u": "39c34a20271a8169a8a3e6337a1439c8",
-    "y": "https://www.youtube.com/watch?v=81qNeEIQ1x4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=81qNeEIQ1x4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "81qNeEIQ1x4",
+        "title": "圓頂的故事 / Brunelleschi’s Dome: The Story of the Great Cathedral in Florence"
+      }
+    ]
   },
   {
     "n": "0339",
@@ -252,8 +300,14 @@
     "t": "如何讓馬飛起來",
     "a": "凱文．艾希頓",
     "u": "39c34a20271a810284cce35b7622a918",
-    "y": "https://www.youtube.com/watch?v=Zt2bkvJCrCQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Zt2bkvJCrCQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Zt2bkvJCrCQ",
+        "title": "如何讓馬飛起來 / How to Fly a Horse: The Secret History of Creation, Invention, and Discovery"
+      }
+    ]
   },
   {
     "n": "0387",
@@ -276,8 +330,14 @@
     "t": "幸運，你可以學會的能力",
     "a": "彼得．霍林斯",
     "u": "39c34a20271a816f9e82c1ea5468fc5b",
-    "y": "https://www.youtube.com/watch?v=3VxUr0Pdv4A&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3VxUr0Pdv4A",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3VxUr0Pdv4A",
+        "title": "幸運，你可以學會的能力 / The Science of Being Lucky"
+      }
+    ]
   },
   {
     "n": "0445",
@@ -300,16 +360,28 @@
     "t": "心念的力量",
     "a": "",
     "u": "39c34a20271a81dba124d58bf2e1899f",
-    "y": "https://www.youtube.com/watch?v=yvqo_7dkra8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=yvqo_7dkra8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "yvqo_7dkra8",
+        "title": "心念的力量"
+      }
+    ]
   },
   {
     "n": "0463",
     "t": "忽必烈的獵豹：八百年來的中國與世界",
     "a": "卜正民",
     "u": "39c34a20271a812ab5beed2a849da0f0",
-    "y": "https://www.youtube.com/results?search_query=%E5%BF%BD%E5%BF%85%E7%83%88%E7%9A%84%E7%8D%B5%E8%B1%B9%EF%BC%9A%E5%85%AB%E7%99%BE%E5%B9%B4%E4%BE%86%E7%9A%84%E4%B8%AD%E5%9C%8B%E8%88%87%E4%B8%96%E7%95%8C+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=i0n7HWlbJ4k",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "i0n7HWlbJ4k",
+        "title": "忽必烈的獵豹"
+      }
+    ]
   },
   {
     "n": "0466",
@@ -332,8 +404,14 @@
     "t": "思辨，從問對問題開始",
     "a": "尼爾．布朗",
     "u": "39c34a20271a812f9c8dff137ee7944f",
-    "y": "https://www.youtube.com/watch?v=0mfGw6_KKRg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=0mfGw6_KKRg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "0mfGw6_KKRg",
+        "title": "思辨，從問對問題開始 / Asking the Right Questions: A Guide to Critical Thinking"
+      }
+    ]
   },
   {
     "n": "0491",
@@ -356,16 +434,32 @@
     "t": "把時間買回來",
     "a": "丹·馬特爾",
     "u": "39c34a20271a814da3a4e76d079c2a5b",
-    "y": "https://www.youtube.com/watch?v=rMR9BUb5eXI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=rMR9BUb5eXI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "rMR9BUb5eXI",
+        "title": "把時間買回來 / Buy Back Your Time"
+      },
+      {
+        "id": "k3ufS7Srqmk",
+        "title": "把時間買回來 / Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire"
+      }
+    ]
   },
   {
     "n": "0511",
     "t": "抱負",
     "a": "Rutger Bregman",
     "u": "39c34a20271a81b9b52fe04a71d7849d",
-    "y": "https://www.youtube.com/watch?v=3FQDnPigsV4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3FQDnPigsV4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3FQDnPigsV4",
+        "title": "抱負 / Moral Ambition: Stop Wasting Your Talent and Start Making a Difference"
+      }
+    ]
   },
   {
     "n": "0512",
@@ -380,16 +474,28 @@
     "t": "掌控的第一法則",
     "a": "麥可·葛文斯",
     "u": "39c34a20271a81a09b14d6e8a9448dbe",
-    "y": "https://www.youtube.com/watch?v=W-BiNgWtxSk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=W-BiNgWtxSk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "W-BiNgWtxSk",
+        "title": "掌控的第一法則：別再擔心別人怎麼看你 / The First Rule of Mastery: Stop Worrying about What People Think of You"
+      }
+    ]
   },
   {
     "n": "0521",
     "t": "摺紙動物園",
     "a": "劉宇昆",
     "u": "39c34a20271a8140a192f759fbbf4931",
-    "y": "https://www.youtube.com/watch?v=YQSZzHQi2e4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=YQSZzHQi2e4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YQSZzHQi2e4",
+        "title": "摺紙動物園"
+      }
+    ]
   },
   {
     "n": "0551",
@@ -404,8 +510,14 @@
     "t": "時間迴旋",
     "a": "羅伯特·查爾斯·威爾森",
     "u": "39c34a20271a812fa8fcc3ce92ad31c7",
-    "y": "https://www.youtube.com/watch?v=3E5ak4j-P9A&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3E5ak4j-P9A",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3E5ak4j-P9A",
+        "title": "時間迴旋 / Spin series"
+      }
+    ]
   },
   {
     "n": "0573",
@@ -452,16 +564,28 @@
     "t": "氣質磁場",
     "a": "奧里森·斯威特·馬登",
     "u": "39c34a20271a818e8c1ace6c535ec1a5",
-    "y": "https://www.youtube.com/watch?v=iJUyHDxOYF8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=iJUyHDxOYF8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "iJUyHDxOYF8",
+        "title": "氣質磁場 / Masterful Personality"
+      }
+    ]
   },
   {
     "n": "0640",
     "t": "沒有藉口：自律的力量",
     "a": "Brian Tracy",
     "u": "39c34a20271a81269f2bee93b5ec0a14",
-    "y": "https://www.youtube.com/watch?v=sGudwnrEV80&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=sGudwnrEV80",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "sGudwnrEV80",
+        "title": "沒有藉口：自律的力量  / No Excuses The Power of Self-Discipline"
+      }
+    ]
   },
   {
     "n": "0663",
@@ -500,24 +624,42 @@
     "t": "當下的力量",
     "a": "艾克哈特·托勒",
     "u": "39c34a20271a818b96bbeb1f51085509",
-    "y": "https://www.youtube.com/watch?v=mK87zlztJKQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=mK87zlztJKQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "mK87zlztJKQ",
+        "title": "當下的力量  / The Power of Now"
+      }
+    ]
   },
   {
     "n": "0717",
     "t": "當和尚遇到鑽石",
     "a": "麥可．羅區格西",
     "u": "39c34a20271a81928c01e2214997c0ec",
-    "y": "https://www.youtube.com/watch?v=gKmoSTF3OTM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gKmoSTF3OTM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gKmoSTF3OTM",
+        "title": "當和尚遇到鑽石 / The Diamond Cutter: The Buddha on Managing Your Business and Your Life"
+      }
+    ]
   },
   {
     "n": "0748",
     "t": "窮人的底層邏輯",
     "a": "",
     "u": "39c34a20271a81ddb085d05e16203597",
-    "y": "https://www.youtube.com/watch?v=f4HpcwrJlU8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=f4HpcwrJlU8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "f4HpcwrJlU8",
+        "title": "窮人的底層邏輯"
+      }
+    ]
   },
   {
     "n": "0752",
@@ -556,8 +698,14 @@
     "t": "維梅爾的帽子",
     "a": "卜正民",
     "u": "39c34a20271a81f092d1d4b2db69f7ce",
-    "y": "https://www.youtube.com/watch?v=qizBNHTTTno&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qizBNHTTTno",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qizBNHTTTno",
+        "title": "維梅爾的帽子：17世纪和全球化世界的黎明 / Vermeer's Hat: The Seventeenth Century and the Dawn of the Global World"
+      }
+    ]
   },
   {
     "n": "0796",
@@ -572,8 +720,14 @@
     "t": "自我升級第一原理",
     "a": "麥可·葛文斯",
     "u": "39c34a20271a8197a982ec4f60983efe",
-    "y": "https://www.youtube.com/results?search_query=%E8%87%AA%E6%88%91%E5%8D%87%E7%B4%9A%E7%AC%AC%E4%B8%80%E5%8E%9F%E7%90%86+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=on5WzpekMCc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "on5WzpekMCc",
+        "title": "自我升級第一原理"
+      }
+    ]
   },
   {
     "n": "0828",
@@ -604,16 +758,28 @@
     "t": "衝突的勇氣",
     "a": "傑森·蓋迪斯",
     "u": "39c34a20271a814c9d8cd1dd38615b99",
-    "y": "https://www.youtube.com/watch?v=8C77i93nE3A&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=8C77i93nE3A",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "8C77i93nE3A",
+        "title": "衝突的勇氣 / Getting to Zero How to Work Through Conflict in Your High-Stakes Relationships"
+      }
+    ]
   },
   {
     "n": "0851",
     "t": "要事第一",
     "a": "史蒂芬·柯維",
     "u": "39c34a20271a815a8ed3f55b4745f9d0",
-    "y": "https://www.youtube.com/watch?v=rLDkOc-BoOU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=rLDkOc-BoOU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "rLDkOc-BoOU",
+        "title": "要事第一 / First Things First"
+      }
+    ]
   },
   {
     "n": "0862",
@@ -668,16 +834,28 @@
     "t": "重新丈量世界",
     "a": "傑默爾．洪特",
     "u": "39c34a20271a8107b7cde7017d0f8c84",
-    "y": "https://www.youtube.com/watch?v=slsNk2tqrUk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=slsNk2tqrUk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "slsNk2tqrUk",
+        "title": "重新丈量世界 / Not to Scale"
+      }
+    ]
   },
   {
     "n": "0982",
     "t": "銀河系搭車客指南",
     "a": "道格拉斯·亞當斯",
     "u": "39c34a20271a81b490befacbae080968",
-    "y": "https://www.youtube.com/watch?v=EbrzjmzSxGc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=EbrzjmzSxGc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "EbrzjmzSxGc",
+        "title": "銀河系搭車客指南 / The Hitchhiker's Guide to the Galaxy"
+      }
+    ]
   },
   {
     "n": "0989",
@@ -716,8 +894,14 @@
     "t": "雲圖",
     "a": "大衛·米契爾",
     "u": "39c34a20271a8105b467facae2af80dd",
-    "y": "https://www.youtube.com/watch?v=VLEiVSAj09M&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=VLEiVSAj09M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "VLEiVSAj09M",
+        "title": "雲圖"
+      }
+    ]
   },
   {
     "n": "1016",
@@ -772,23 +956,41 @@
     "t": "旅行的意義",
     "a": "克雷格・史托迪（Craig Storti）",
     "u": "3c334a20271a80a59c21e861349c222d",
-    "y": "https://www.youtube.com/watch?v=bZtRfhqHFJ0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=bZtRfhqHFJ0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "bZtRfhqHFJ0",
+        "title": "旅行的意義"
+      }
+    ]
   },
   {
     "n": "1103",
     "t": "沿著季風的方向：南亞與東南亞紀行",
     "a": "劉子超",
     "u": "3ce34a20271a819aaf8eccc04baacf48",
-    "y": "https://www.youtube.com/watch?v=r4pm9j5XqZU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=r4pm9j5XqZU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "r4pm9j5XqZU",
+        "title": "沿著季風的方向：南亞與東南亞紀行"
+      }
+    ]
   },
   {
     "n": "1113",
     "t": "失落的衛星：深入中亞大陸的旅程",
     "a": "劉子超",
     "u": "3cb34a20271a801e8ed9f7602c238f25",
-    "y": "https://www.youtube.com/watch?v=XS46h9qB25I&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=XS46h9qB25I",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "XS46h9qB25I",
+        "title": "失落的衛星"
+      }
+    ]
   }
 ]
