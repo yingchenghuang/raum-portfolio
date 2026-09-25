@@ -63,3 +63,5 @@
 footer{gap:24px;align-items:center}
 footer a{color:var(--blue);border-bottom:1px solid currentColor}
 @media(max-width:600px){footer{flex-wrap:wrap}footer a{order:3;width:100%;padding-top:6px}}
+
+.playlist-entry{margin:22px 0 0}.playlist-entry a{display:inline-block;border-bottom:1px solid var(--blue);padding:7px 0;color:var(--blue);font:12px var(--mono)}
