@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20260902-2';
+const DATA_VERSION = '20260926-1';
 
 async function loadBooks(){
   const groups = await Promise.all(categories.map(async ([key,label]) => {
@@ -65,8 +65,7 @@ function renderAllBooks(){
 }
 
 function renderShelf(){
-  const booksWithCovers = state.filtered.filter(book => state.covers[book.n]);
-  const source = (booksWithCovers.length ? booksWithCovers : state.filtered).slice(-14).reverse();
+  const source = state.filtered.slice(-14).reverse();
   if(source.length && !source.some(b => b.n===state.selected?.n)) state.selected = source[0];
   $('#bookShelf').innerHTML = source.length ? source.map(book =>
     `<button class="book-3d ${book.n===state.selected?.n?'active':''}" data-book="${book.n}" title="${escapeHtml(book.t)} — ${escapeHtml(book.a || '作者待補')}"><span class="book-object"><span class="book-front"><span class="cover-fallback"><b>${escapeHtml(book.t)}</b><small>${escapeHtml(book.a || 'RAUM+ ARCHIVE')}</small></span>${state.covers[book.n]?`<img src="${escapeHtml(state.covers[book.n])}" alt="《${escapeHtml(book.t)}》真實書封" loading="lazy">`:''}</span></span><span class="book-caption">NO. ${book.n}</span></button>`
@@ -77,7 +76,7 @@ function renderShelf(){
 function renderSelected(){
   const book = state.selected;
   if(!book){ $('#selectedBook').innerHTML = '<p>請調整搜尋條件。</p>'; return; }
-  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${book.ys==='playlist'?'我的書摘影片':'搜尋相關影片'} ↗</a>`:''}</div>`;
+  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${videoActionLabel(book)} ↗</a>`:''}</div>`;
   renderPath();
 }
 
@@ -115,6 +114,12 @@ function escapeHtml(value=''){ return value.replace(/[&<>'"]/g, char => ({'&':'&
 
 const noteCache = new Map();
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
+let noteUpdatesPromise;
+function loadNoteUpdate(book){
+  if(Number(book.n)<1116 && !['0185','0498'].includes(book.n)) return Promise.resolve(null);
+  noteUpdatesPromise ??= fetch(`notes/updates-20260926.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).catch(() => ({}));
+  return noteUpdatesPromise.then(updates => updates[book.u] || null);
+}
 async function openNote(number){
   const book=state.books.find(item=>item.n===number);
   if(!book) return;
@@ -123,20 +128,23 @@ async function openNote(number){
   $('#noteContent').innerHTML='<p class="note-loading">正在載入完整筆記…</p>';
   $('#noteDialog').showModal();
   try{
-    const bucket=String(noteBucket(book.u)).padStart(3,'0');
-    if(!noteCache.has(bucket)){
-      const response=await fetch(`notes/chunk-${bucket}.json?v=${DATA_VERSION}`);
-      if(!response.ok) throw new Error('筆記資料尚未同步');
-      noteCache.set(bucket,await response.json());
-    }
-    let page=noteCache.get(bucket)[book.u];
+    let page=await loadNoteUpdate(book);
     if(!page){
-      const repairKey=`repair-${bucket}`;
-      if(!noteCache.has(repairKey)){
-        const response=await fetch(`notes/repair-${bucket}.json?v=${DATA_VERSION}`);
-        noteCache.set(repairKey,response.ok?await response.json():{});
+      const bucket=String(noteBucket(book.u)).padStart(3,'0');
+      if(!noteCache.has(bucket)){
+        const response=await fetch(`notes/chunk-${bucket}.json?v=${DATA_VERSION}`);
+        if(!response.ok) throw new Error('筆記資料尚未同步');
+        noteCache.set(bucket,await response.json());
       }
-      page=noteCache.get(repairKey)[book.u];
+      page=noteCache.get(bucket)[book.u];
+      if(!page){
+        const repairKey=`repair-${bucket}`;
+        if(!noteCache.has(repairKey)){
+          const response=await fetch(`notes/repair-${bucket}.json?v=${DATA_VERSION}`);
+          noteCache.set(repairKey,response.ok?await response.json():{});
+        }
+        page=noteCache.get(repairKey)[book.u];
+      }
     }
     if(!page) throw new Error('找不到這本書的筆記');
     $('#noteContent').innerHTML=renderFeaturedVideo(book)+renderMarkdown(extractBook(page,book.n));
@@ -179,10 +187,14 @@ function renderEmbed(url){
     return `<p><a href="${url}" target="_blank" rel="noreferrer">開啟相關資料 ↗</a></p>`;
   }catch{return '';}
 }
+function videoActionLabel(book){
+  return book.ys==='playlist' ? '我的書摘影片' : book.ys==='video' ? '筆記所附影片' : book.ys==='collection' ? '我的書摘播放清單' : '搜尋相關影片';
+}
 function renderFeaturedVideo(book){
   if(!book.y) return '';
-  if(book.ys!=='playlist') return `<section class="note-video-search"><p>尚未在我的播放清單找到精確影片。</p><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">以「${escapeHtml(book.t)}＋書摘」廣泛搜尋 YouTube ↗</a></section>`;
-  return `<section class="note-featured-video"><p class="note-video-label">RAUM+ / 我的書摘影片</p>${renderEmbed(book.y)}</section>`;
+  if(book.ys==='collection') return `<section class="note-video-search"><p>這本書尚無已核對的單本影片。</p><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">瀏覽我的書摘播放清單 ↗</a></section>`;
+  if(book.ys==='search') return `<section class="note-video-search"><p>尚未在我的播放清單找到精確影片。</p><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">以「${escapeHtml(book.t)}＋書摘」廣泛搜尋 YouTube ↗</a></section>`;
+  return `<section class="note-featured-video"><p class="note-video-label">${book.ys==='video'?'讀書筆記所附影片':'RAUM+ / 我的書摘影片'}</p>${renderEmbed(book.y)}</section>`;
 }
 
 function updateQuery(value){
