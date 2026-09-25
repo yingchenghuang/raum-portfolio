@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20260926-2';
+const DATA_VERSION = '20260926-3';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 
 async function loadBooks(){
@@ -195,7 +195,8 @@ function renderFeaturedVideo(book){
   if(!book.y) return '';
   if(book.ys==='collection') return `<section class="note-video-search"><p>這本書尚無已核對的單本影片。</p><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">瀏覽我的書摘播放清單 ↗</a></section>`;
   if(book.ys==='search') return `<section class="note-video-search"><p>尚未在我的播放清單找到精確影片。</p><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">以「${escapeHtml(book.t)}＋書摘」廣泛搜尋 YouTube ↗</a></section>`;
-  return `<section class="note-featured-video"><p class="note-video-label">${book.ys==='video'?'讀書筆記所附影片':'RAUM+ / 我的書摘影片'}</p>${renderEmbed(book.y)}</section>`;
+  const more=(book.videos||[]).slice(1).map(v=>`<a href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer">${escapeHtml(v.title)} ↗</a>`).join('');
+  return `<section class="note-featured-video"><p class="note-video-label">${book.ys==='video'?'讀書筆記所附影片':'RAUM+ / 我的書摘影片'}</p>${renderEmbed(book.y)}${more?`<div class="more-book-videos"><span>更多相關影片</span>${more}</div>`:''}</section>`;
 }
 
 function updateQuery(value){
@@ -220,4 +221,23 @@ $('#loadMoreBooks').addEventListener('click',()=>{ state.visibleCount+=60; rende
 $('#closeNote').addEventListener('click',()=>$('#noteDialog').close());
 $('#noteDialog').addEventListener('click',event=>{ if(event.target===$('#noteDialog')) $('#noteDialog').close(); });
 
-loadBooks().catch(error => { $('#resultStatus').textContent=`資料載入失敗：${error.message}`; console.error(error); });
+
+async function loadVideoCatalog(){
+  const response=await fetch(`data/videos.json?v=${DATA_VERSION}`);
+  if(!response.ok) throw new Error('影片清單暫時無法載入');
+  state.videos=await response.json();
+  state.videoVisibleCount=24;
+  state.videoQuery='';
+  $('#videoSearch').addEventListener('input',event=>{state.videoQuery=event.target.value.trim().toLocaleLowerCase('zh-Hant');state.videoVisibleCount=24;renderVideoCatalog();});
+  $('#loadMoreVideos').addEventListener('click',()=>{state.videoVisibleCount+=24;renderVideoCatalog();});
+  renderVideoCatalog();
+}
+function renderVideoCatalog(){
+  const q=state.videoQuery||'';
+  const filtered=state.videos.filter(v=>!q||`${v.title} ${v.book||''}`.toLocaleLowerCase('zh-Hant').includes(q));
+  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對 YouTube 播放清單`;
+  $('#videoList').innerHTML=filtered.slice(0,state.videoVisibleCount).map(v=>`<article class="video-card"><a class="video-card-image" href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer"><img loading="lazy" src="https://i.ytimg.com/vi/${escapeHtml(v.id)}/hqdefault.jpg" alt="${escapeHtml(v.title)}的影片縮圖"><span aria-hidden="true">▶</span></a><div><h3>${escapeHtml(v.title)}</h3><a href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer">觀看影片 ↗</a>${v.book?`<a href="book.html?id=${escapeHtml(v.book)}">第 ${escapeHtml(v.book)} 本閱讀筆記 ↗</a>`:''}</div></article>`).join('')||'<p>找不到符合的影片。</p>';
+  $('#loadMoreVideos').hidden=filtered.length<=state.videoVisibleCount;
+}
+
+loadBooks().then(()=>loadVideoCatalog().catch(error=>{$('#videoStatus').textContent=error.message;})).catch(error => { $('#resultStatus').textContent=`資料載入失敗：${error.message}`; console.error(error); });
