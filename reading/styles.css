@@ -71,3 +71,21 @@ footer a{color:var(--blue);border-bottom:1px solid currentColor}
 .playlist-heading h2{font:700 clamp(30px,4vw,58px)/1.12 var(--serif);margin:18px 0}.playlist-heading p:last-child{line-height:1.7}
 .playlist-frame{aspect-ratio:16/9;background:#111;box-shadow:0 20px 50px rgba(0,0,0,.15)}.playlist-frame iframe{display:block;width:100%;height:100%;border:0}
 @media(max-width:800px){.playlist-section{grid-template-columns:1fr;padding:48px 20px}}
+
+/* Searchable reading-video archive */
+.video-archive{padding:clamp(48px,7vw,100px) max(24px,calc((100vw - 1280px)/2));border-bottom:1px solid var(--ink)}
+.video-archive .catalog-heading{align-items:end}
+.video-archive .catalog-heading>p{max-width:460px;line-height:1.7}
+.video-search{display:block;margin:38px 0 16px;font:12px var(--mono)}
+.video-search input{display:block;width:100%;max-width:600px;margin-top:10px;padding:14px 16px;border:1px solid var(--ink);background:#fff;color:var(--ink)}
+.video-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:25px 0 38px}
+.video-card{min-width:0;border:1px solid var(--line);background:#fff}
+.video-card-image{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#171717}
+.video-card-image img{display:block;width:100%;height:100%;object-fit:cover}
+.video-card-image span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:rgba(0,0,0,.75);color:#fff}
+.video-card>div{padding:20px}
+.video-card h3{margin:0 0 18px;font:700 18px/1.5 var(--serif)}
+.video-card>div>a,.more-book-videos a{display:inline-block;margin:0 16px 8px 0;border-bottom:1px solid var(--blue);padding-bottom:3px;color:var(--blue);font:11px/1.5 var(--mono)}
+.more-book-videos{padding:18px 0 0}.more-book-videos span{display:block;margin-bottom:12px;font:11px var(--mono)}
+@media(max-width:900px){.video-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.video-archive{padding:48px 20px}.video-list{grid-template-columns:1fr}}
