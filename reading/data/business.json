@@ -12,8 +12,14 @@
     "t": "$100M 財富模型：如何賺錢",
     "a": "Alex Hormozi",
     "u": "39c34a20271a81e5a338f435ca42fb64",
-    "y": "https://www.youtube.com/watch?v=1PP_8A8qwrs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1PP_8A8qwrs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1PP_8A8qwrs",
+        "title": "$100M 財富模型：如何賺錢 / 100M Money Models How To Make Money"
+      }
+    ]
   },
   {
     "n": "0005",
@@ -36,40 +42,74 @@
     "t": "80/20 銷售與行銷",
     "a": "Perry Marshall",
     "u": "39c34a20271a814aa4eac5d43bb04e0f",
-    "y": "https://www.youtube.com/watch?v=zfiPrn5MxpM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=zfiPrn5MxpM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "zfiPrn5MxpM",
+        "title": "80/20 銷售與行銷：如何事半功倍 / The Definitive Guide to Working Less and Making More"
+      }
+    ]
   },
   {
     "n": "0031",
     "t": "BCG企畫思考",
     "a": "田中志",
     "u": "39c34a20271a817cbe10c8bd467e6440",
-    "y": "https://www.youtube.com/watch?v=Zrj-nNwRqT0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=rBrktmPT3-s",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "rBrktmPT3-s",
+        "title": "BCG 企畫思考：最強草案溝通術"
+      },
+      {
+        "id": "Zrj-nNwRqT0",
+        "title": "BCG企畫思考"
+      }
+    ]
   },
   {
     "n": "0033",
     "t": "FBI談判協商術",
     "a": "克里斯·佛斯",
     "u": "39c34a20271a81ccb99dd35da38b22d4",
-    "y": "https://www.youtube.com/watch?v=2X9ql7eRVvU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2X9ql7eRVvU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2X9ql7eRVvU",
+        "title": "FBI談判協商術: 生活是一連串的談判, 跟著首席談判專家創造雙贏協商  / Never Split the Difference"
+      }
+    ]
   },
   {
     "n": "0046",
     "t": "一人公司：失業潮中的高新技術工作者",
     "a": "卡麗·萊恩",
     "u": "39c34a20271a81e28230f06425b33eca",
-    "y": "https://www.youtube.com/results?search_query=%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8%EF%BC%9A%E5%A4%B1%E6%A5%AD%E6%BD%AE%E4%B8%AD%E7%9A%84%E9%AB%98%E6%96%B0%E6%8A%80%E8%A1%93%E5%B7%A5%E4%BD%9C%E8%80%85+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=fHDsV8BCpLQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "fHDsV8BCpLQ",
+        "title": "一人公司 / A Company of One: Insecurity, Independence, and the New World of White-Collar Unemployment"
+      }
+    ]
   },
   {
     "n": "0049",
     "t": "一個週末！打造千萬事業",
     "a": "諾亞．凱根",
     "u": "39c34a20271a81a78534d776a3a99bb1",
-    "y": "https://www.youtube.com/watch?v=oClNZqVeKlc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=oClNZqVeKlc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "oClNZqVeKlc",
+        "title": "一個週末！打造千萬事業 / Million Dollar Weekend"
+      }
+    ]
   },
   {
     "n": "0050",
@@ -84,40 +124,70 @@
     "t": "一億美元級的潛在客戶",
     "a": "Alex Hormozi",
     "u": "39c34a20271a81798e96fae55d9a8810",
-    "y": "https://www.youtube.com/watch?v=bNTAnwDdUjI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=bNTAnwDdUjI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "bNTAnwDdUjI",
+        "title": "一億美元級的潛在客戶 / $100M Leads"
+      }
+    ]
   },
   {
     "n": "0058",
     "t": "一擊奏效的社群行銷術",
     "a": "Gary Vaynerchuk",
     "u": "39c34a20271a81be8ef9c8fc93c70188",
-    "y": "https://www.youtube.com/watch?v=RklXiA9DaRw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=RklXiA9DaRw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "RklXiA9DaRw",
+        "title": "一擊奏效的社群行銷術 / Jab, Jab, Jab, Right Hook"
+      }
+    ]
   },
   {
     "n": "0063",
     "t": "一流的人如何駕馭自我",
     "a": "布萊德．史托伯格",
     "u": "39c34a20271a81b0a731f5578d2fe2ce",
-    "y": "https://www.youtube.com/watch?v=gah81UOVHxo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gah81UOVHxo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gah81UOVHxo",
+        "title": "一流的人如何駕馭自我：管理熱情、引導熱情，激發出我們最好的二面 / The Passion Paradox"
+      }
+    ]
   },
   {
     "n": "0066",
     "t": "一生的旅程：迪士尼CEO的經營哲學",
     "a": "羅伯特·艾格",
     "u": "39c34a20271a81229590f98dc0390c8b",
-    "y": "https://www.youtube.com/results?search_query=%E4%B8%80%E7%94%9F%E7%9A%84%E6%97%85%E7%A8%8B%EF%BC%9A%E8%BF%AA%E5%A3%AB%E5%B0%BCCEO%E7%9A%84%E7%B6%93%E7%87%9F%E5%93%B2%E5%AD%B8+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=w_XG2wU8ogQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "w_XG2wU8ogQ",
+        "title": "一生的旅程 / The Ride of a Lifetime"
+      }
+    ]
   },
   {
     "n": "0071",
     "t": "上癮：讓用戶養成使用習慣的四大產品邏輯",
     "a": "尼爾·埃亞爾",
     "u": "39c34a20271a81fab013d4bae397f198",
-    "y": "https://www.youtube.com/watch?v=aeK5zRNMK7M&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=aeK5zRNMK7M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "aeK5zRNMK7M",
+        "title": "上癮：讓用戶養成使用習慣的四大產品邏輯 / Hooked: How to Build Habit-Forming Products"
+      }
+    ]
   },
   {
     "n": "0077",
@@ -140,80 +210,144 @@
     "t": "主角模式",
     "a": "樊登",
     "u": "39c34a20271a8104b348ed2d1089b7ae",
-    "y": "https://www.youtube.com/watch?v=Kw13tN3sRok&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Kw13tN3sRok",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Kw13tN3sRok",
+        "title": "主角模式"
+      },
+      {
+        "id": "HbjFM3JQMeg",
+        "title": "主角模式"
+      }
+    ]
   },
   {
     "n": "0129",
     "t": "人生就是有限公司",
     "a": "張輝",
     "u": "39c34a20271a81b5b4e5c640e0e266cd",
-    "y": "https://www.youtube.com/watch?v=75a-HaXlmRc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=75a-HaXlmRc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "75a-HaXlmRc",
+        "title": "人生就是有限公司：你的獲利由自己決定"
+      }
+    ]
   },
   {
     "n": "0162",
     "t": "以色列菁英創新奇蹟",
     "a": "傑生‧紀偉哲",
     "u": "39c34a20271a811f9474d8304fb6657f",
-    "y": "https://www.youtube.com/watch?v=ZWyeK3nrkSI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZWyeK3nrkSI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZWyeK3nrkSI",
+        "title": "以色列菁英創新奇蹟"
+      }
+    ]
   },
   {
     "n": "0164",
     "t": "低風險創業：樊登的創業 6 大心法",
     "a": "樊登",
     "u": "39c34a20271a811f9474d8304fb6657f",
-    "y": "https://www.youtube.com/watch?v=49S2qXbRI0o&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=49S2qXbRI0o",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "49S2qXbRI0o",
+        "title": "低風險創業：樊登的創業 6 大心法"
+      }
+    ]
   },
   {
     "n": "0167",
     "t": "佛陀與惡棍",
     "a": "Vishen Lakhiani",
     "u": "39c34a20271a81a8abdcc19e4699737b",
-    "y": "https://www.youtube.com/results?search_query=%E4%BD%9B%E9%99%80%E8%88%87%E6%83%A1%E6%A3%8D+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=pKsxxI_jE7Q",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "pKsxxI_jE7Q",
+        "title": "佛陀與惡棍: 矽谷工程師打造上億身心靈企業的經營心法 The Buddha and the Badass: The Secret Spiritual Art of Succeeding at Work"
+      }
+    ]
   },
   {
     "n": "0176",
     "t": "你想要的任何東西：新企業家的 40 堂課",
     "a": "德瑞克·西弗斯",
     "u": "39c34a20271a81329db1ede61a29c3c0",
-    "y": "https://www.youtube.com/watch?v=gLqp1sQnpeI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gLqp1sQnpeI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gLqp1sQnpeI",
+        "title": "你想要的任何東西：新企業家的 40 堂課 /Anything You Want: 40 Lessons for a New Kind of Entrepreneu"
+      }
+    ]
   },
   {
     "n": "0179",
     "t": "你永遠有更好的選擇",
     "a": "諾姆．華瑟曼",
     "u": "39c34a20271a81b0a412fbea992e4247",
-    "y": "https://www.youtube.com/watch?v=j7R7SI_KxPw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=j7R7SI_KxPw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "j7R7SI_KxPw",
+        "title": "你永遠有更好的選擇 /Life Is a Startup: What Founders Can Teach Us about Making Choices and Managing Change"
+      }
+    ]
   },
   {
     "n": "0195",
     "t": "做自己的人生財務長",
     "a": "道格拉斯．麥考",
     "u": "39c34a20271a81779c59c2b880d7c1f7",
-    "y": "https://www.youtube.com/watch?v=7mrVUPL9yZI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=7mrVUPL9yZI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "7mrVUPL9yZI",
+        "title": "做自己的人生財務長 / Family Inc. Using Business Principles to Maximize Your Familys Wealth"
+      }
+    ]
   },
   {
     "n": "0206",
     "t": "先問，為什麼?：黃金圈理論",
     "a": "賽門．西奈克",
     "u": "39c34a20271a81daa5f4efc94dd30c9e",
-    "y": "https://www.youtube.com/results?search_query=%E5%85%88%E5%95%8F%EF%BC%8C%E7%82%BA%E4%BB%80%E9%BA%BC%3F%EF%BC%9A%E9%BB%83%E9%87%91%E5%9C%88%E7%90%86%E8%AB%96+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=vAXiP-CjMik",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "vAXiP-CjMik",
+        "title": "先問為什麼？"
+      }
+    ]
   },
   {
     "n": "0208",
     "t": "免費：商業的未來",
     "a": "克里斯·安德森",
     "u": "39c34a20271a81daa5f4efc94dd30c9e",
-    "y": "https://www.youtube.com/watch?v=Y7IzEM-0zmk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Y7IzEM-0zmk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Y7IzEM-0zmk",
+        "title": "免費：商業的未來"
+      }
+    ]
   },
   {
     "n": "0214",
@@ -236,24 +370,42 @@
     "t": "判斷力思維",
     "a": "鳥原隆志",
     "u": "39c34a20271a813a9898f86f1fc101ef",
-    "y": "https://www.youtube.com/watch?v=tjNGnJaR9oc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=tjNGnJaR9oc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "tjNGnJaR9oc",
+        "title": "判斷力思維"
+      }
+    ]
   },
   {
     "n": "0230",
     "t": "別做熱愛的事，要做真實的自己",
     "a": "艾希莉．史塔爾",
     "u": "39c34a20271a813a9898f86f1fc101ef",
-    "y": "https://www.youtube.com/watch?v=II6s2seODOI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=II6s2seODOI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "II6s2seODOI",
+        "title": "別做熱愛的事，要做真實的自己  / You Turn: Get Unstuck, Discover Your Direction, and Design Your Dream Career"
+      }
+    ]
   },
   {
     "n": "0247",
     "t": "創業，請從會用人開始",
     "a": "Lisa 楊莉",
     "u": "39c34a20271a81029b49d9a58e92b00d",
-    "y": "https://www.youtube.com/watch?v=88PNAo9-Ysw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=88PNAo9-Ysw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "88PNAo9-Ysw",
+        "title": "創業，請從會用人開始"
+      }
+    ]
   },
   {
     "n": "0251",
@@ -268,16 +420,28 @@
     "t": "努力，但不費力",
     "a": "葛瑞格．麥基昂",
     "u": "39c34a20271a81008d89c64e0429caaa",
-    "y": "https://www.youtube.com/watch?v=oajpuOHHK3g&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=oajpuOHHK3g",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "oajpuOHHK3g",
+        "title": "努力，但不費力 / Effortless Make It Easier to Do What Matters Most"
+      }
+    ]
   },
   {
     "n": "0265",
     "t": "南瓜計畫",
     "a": "麥克·米卡洛維茲",
     "u": "39c34a20271a81f38e65f30bd69b88ef",
-    "y": "https://www.youtube.com/watch?v=piq7xjjbtQ8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=piq7xjjbtQ8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "piq7xjjbtQ8",
+        "title": "南瓜計畫 / The Pumpkin Plan"
+      }
+    ]
   },
   {
     "n": "0266",
@@ -308,8 +472,14 @@
     "t": "品味，從知識開始",
     "a": "水野學",
     "u": "39c34a20271a81a0a7adfb341b3a2f95",
-    "y": "https://www.youtube.com/watch?v=BGNS1O7pJR0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=BGNS1O7pJR0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "BGNS1O7pJR0",
+        "title": "品味，從知識開始"
+      }
+    ]
   },
   {
     "n": "0310",
@@ -348,40 +518,70 @@
     "t": "如何像企業家一樣思考",
     "a": "菲利普·德爾夫斯·布勞頓",
     "u": "39c34a20271a81358222cb10b74bc13b",
-    "y": "https://www.youtube.com/watch?v=5e90PiXvGuA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=5e90PiXvGuA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "5e90PiXvGuA",
+        "title": "如何像企業家一樣思考 / How to Think Like an Entrepreneur"
+      }
+    ]
   },
   {
     "n": "0411",
     "t": "小而美：持續盈利的經營法則",
     "a": "薩希爾·拉文吉亞",
     "u": "39c34a20271a81398adbfa6a4a6ada04",
-    "y": "https://www.youtube.com/watch?v=VZ__gD5XoBA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=VZ__gD5XoBA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "VZ__gD5XoBA",
+        "title": "小而美：持續盈利的經營法則"
+      }
+    ]
   },
   {
     "n": "0416",
     "t": "峰值體驗",
     "a": "汪志謙",
     "u": "39c34a20271a81a09639d641c05dde56",
-    "y": "https://www.youtube.com/watch?v=y5jZpZeSlis&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=y5jZpZeSlis",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "y5jZpZeSlis",
+        "title": "峰值體驗"
+      }
+    ]
   },
   {
     "n": "0433",
     "t": "底層邏輯 1+2",
     "a": "劉潤",
     "u": "39c34a20271a8119b67cfc52667d5867",
-    "y": "https://www.youtube.com/results?search_query=%E5%BA%95%E5%B1%A4%E9%82%8F%E8%BC%AF+1%2B2+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=Z5qPeoabR0Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Z5qPeoabR0Y",
+        "title": "底層邏輯"
+      }
+    ]
   },
   {
     "n": "0443",
     "t": "從0到1",
     "a": "彼得．提爾",
     "u": "39c34a20271a8171a325e6bef8462299",
-    "y": "https://www.youtube.com/watch?v=sLS5KO62OCY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=sLS5KO62OCY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "sLS5KO62OCY",
+        "title": "從0到1 / Innovation from 0 to 1"
+      }
+    ]
   },
   {
     "n": "0446",
@@ -396,16 +596,28 @@
     "t": "思辨賽局：看穿局勢、創造優勢的策略智慧",
     "a": "貝利·奈勒波夫",
     "u": "39c34a20271a81018f5bf03a6f2d2319",
-    "y": "https://www.youtube.com/watch?v=tgX89mng6-M&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=tgX89mng6-M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "tgX89mng6-M",
+        "title": "思辨賽局 ：看穿局勢、創造優勢的策略智慧 / The Art of Strategy A Game Theorist’s Guide to Success in Business and Life"
+      }
+    ]
   },
   {
     "n": "0495",
     "t": "成為領導者",
     "a": "麥肯錫資深合伙人",
     "u": "39c34a20271a818580d8cccff3f2bc11",
-    "y": "https://www.youtube.com/watch?v=PvMHnw0JDE8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=PvMHnw0JDE8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PvMHnw0JDE8",
+        "title": "成為領導者 / The Journey of Leadership"
+      }
+    ]
   },
   {
     "n": "0529",
@@ -420,16 +632,28 @@
     "t": "最佳狀態：超越心流",
     "a": "Daniel Goleman",
     "u": "39c34a20271a81038a23c12e7eb40ccc",
-    "y": "https://www.youtube.com/watch?v=qAqZc9nW4-c&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qAqZc9nW4-c",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qAqZc9nW4-c",
+        "title": "最佳狀態：超越心流，掌握個人持續卓越的情商 / Optimal: How to Sustain Personal and Organizational Excellence Every Day"
+      }
+    ]
   },
   {
     "n": "0571",
     "t": "最後吃，才是真領導",
     "a": "賽門．西奈克",
     "u": "39c34a20271a81d6be3dda74f379cb8b",
-    "y": "https://www.youtube.com/watch?v=PoAAd5Pn-Mg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=PoAAd5Pn-Mg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PoAAd5Pn-Mg",
+        "title": "最後吃，才是真領導 /Leaders Eat Last: Why Some Teams Pull Together and Others Don’t"
+      }
+    ]
   },
   {
     "n": "0577",
@@ -460,48 +684,84 @@
     "t": "極簡主義企業家",
     "a": "Sahil Lavingia",
     "u": "39c34a20271a81baa4b9ed93872245a3",
-    "y": "https://www.youtube.com/watch?v=sNMSeGBQuAw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=sNMSeGBQuAw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "sNMSeGBQuAw",
+        "title": "極簡主義企業家：偉大的創始人如何事半功倍 / The Minimalist Entrepreneur: How Great Founders Do More With Less"
+      }
+    ]
   },
   {
     "n": "0601",
     "t": "極簡創業家：少即是多的創業哲學",
     "a": "Sahil Lavingia",
     "u": "39c34a20271a818c801bfae1ea88748f",
-    "y": "https://www.youtube.com/watch?v=edO8JMI0LjQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=edO8JMI0LjQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "edO8JMI0LjQ",
+        "title": "極簡創業家：少即是多的創業哲學"
+      }
+    ]
   },
   {
     "n": "0604",
     "t": "極限銷售",
     "a": "謝文憲",
     "u": "39c34a20271a81129a2acb576807049e",
-    "y": "https://www.youtube.com/watch?v=6kj3ycZoT2o&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=6kj3ycZoT2o",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "6kj3ycZoT2o",
+        "title": "極限銷售"
+      }
+    ]
   },
   {
     "n": "0609",
     "t": "權力 48 法則",
     "a": "羅伯特·格林",
     "u": "39c34a20271a81daa6bff675354a6870",
-    "y": "https://www.youtube.com/watch?v=4pnSK6EFA0k&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=4pnSK6EFA0k",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "4pnSK6EFA0k",
+        "title": "權力 48 法則 / The 48 Laws of Power"
+      }
+    ]
   },
   {
     "n": "0635",
     "t": "決定未來的10種人",
     "a": "湯姆·凱利",
     "u": "39c34a20271a818e8c1ace6c535ec1a5",
-    "y": "https://www.youtube.com/watch?v=JuHWLLbvXmM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=JuHWLLbvXmM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "JuHWLLbvXmM",
+        "title": "決定未來的10種人 / The Ten Faces of Innovation"
+      }
+    ]
   },
   {
     "n": "0661",
     "t": "清醒思考的策略",
     "a": "羅夫．多貝里",
     "u": "39c34a20271a8180b97af3552e74332d",
-    "y": "https://www.youtube.com/watch?v=YYcnCG-LoLM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=YYcnCG-LoLM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YYcnCG-LoLM",
+        "title": "清醒思考的策略 / Die Kunst des guten Lebens"
+      }
+    ]
   },
   {
     "n": "0687",
@@ -516,64 +776,124 @@
     "t": "用你的不平等優勢創業",
     "a": "Ash Ali",
     "u": "39c34a20271a814582f9edbdb4dcd963",
-    "y": "https://www.youtube.com/watch?v=Jz1MbUJCbwU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Jz1MbUJCbwU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Jz1MbUJCbwU",
+        "title": "用你的不平等優勢創業 / The Unfair Advantage: How You Already Have What It Takes to Succeed"
+      },
+      {
+        "id": "ghc2R0t1KOU",
+        "title": "用你的不平等優勢創業 / The Unfair Advantage: How You Already Have What It Takes to Succeed"
+      }
+    ]
   },
   {
     "n": "0723",
     "t": "百萬美元一人公司",
     "a": "Elaine Pofeldt",
     "u": "39c34a20271a810e9d36d24bcd9f0576",
-    "y": "https://www.youtube.com/watch?v=0NizMdmNU-8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=0NizMdmNU-8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "0NizMdmNU-8",
+        "title": "百萬美元一人公司 / The Million-Dollar, One-Person Business"
+      }
+    ]
   },
   {
     "n": "0742",
     "t": "稻盛和夫經營者的14堂課",
     "a": "稻盛和夫",
     "u": "39c34a20271a81cab2c8fdb89d751ff9",
-    "y": "https://www.youtube.com/watch?v=kQmEVeiX8Ns&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=kQmEVeiX8Ns",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "kQmEVeiX8Ns",
+        "title": "稻盛和夫經營者的14堂課"
+      }
+    ]
   },
   {
     "n": "0746",
     "t": "穿越中年迷霧",
     "a": "詹姆斯·霍利斯",
     "u": "39c34a20271a81858114de3e04b09f39",
-    "y": "https://www.youtube.com/watch?v=gVyfpHJEWp4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gVyfpHJEWp4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gVyfpHJEWp4",
+        "title": "穿越中年迷霧（與借來的塵土共存：關於生活、愛與其他不滿的沉思）/ Living with Borrowed Dust"
+      },
+      {
+        "id": "psZuycmTUYo",
+        "title": "穿越中年迷霧 / Living with Borrowed Dust: Reflections on Life, Love, and Other Grievances"
+      }
+    ]
   },
   {
     "n": "0771",
     "t": "簡單：打破複雜，創造絕對優勢",
     "a": "Ken Segall",
     "u": "39c34a20271a811baa2ce77ec751840a",
-    "y": "https://www.youtube.com/watch?v=hpIEaP6zDls&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=hpIEaP6zDls",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "hpIEaP6zDls",
+        "title": "簡單：打破複雜，創造絕對優勢 / Insanely Simple"
+      }
+    ]
   },
   {
     "n": "0773",
     "t": "簡單思考",
     "a": "森川亮",
     "u": "39c34a20271a811baa2ce77ec751840a",
-    "y": "https://www.youtube.com/watch?v=yb19pRqbn0U&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=yb19pRqbn0U",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "yb19pRqbn0U",
+        "title": "簡單思考"
+      }
+    ]
   },
   {
     "n": "0779",
     "t": "精力管理：管理精力，而非時間",
     "a": "吉姆·洛爾",
     "u": "39c34a20271a812a9e35f90a1b40d937",
-    "y": "https://www.youtube.com/watch?v=JmLBOgtB2Iw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=JmLBOgtB2Iw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "JmLBOgtB2Iw",
+        "title": "精力管理：管理精力，而非時間 / The Power of Full Engagement: managing energy, not time."
+      },
+      {
+        "id": "w2-3CngmZp8",
+        "title": "精力管理 / Managing energy, not time, is the key to high performance and personal renewal"
+      }
+    ]
   },
   {
     "n": "0780",
     "t": "精實創業",
     "a": "Eric Ries",
     "u": "39c34a20271a8111bb40cb6820b83c2f",
-    "y": "https://www.youtube.com/watch?v=FWbSad5ReCI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=FWbSad5ReCI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "FWbSad5ReCI",
+        "title": "精實創業 / The Lean Startup"
+      }
+    ]
   },
   {
     "n": "0781",
@@ -596,8 +916,14 @@
     "t": "老闆，這種設計沒人買!",
     "a": "川島蓉子",
     "u": "39c34a20271a8132a477e7da177283fb",
-    "y": "https://www.youtube.com/watch?v=nMVqF1i1lJc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=nMVqF1i1lJc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "nMVqF1i1lJc",
+        "title": "老闆，這種設計沒人買！"
+      }
+    ]
   },
   {
     "n": "0829",
@@ -612,16 +938,28 @@
     "t": "藍海策略",
     "a": "W. Chan Kim",
     "u": "39c34a20271a81c08178e9ba91705c8b",
-    "y": "https://www.youtube.com/watch?v=YmAuQDgSgJI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=YmAuQDgSgJI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YmAuQDgSgJI",
+        "title": "藍海策略 / Blue Ocean Strategy"
+      }
+    ]
   },
   {
     "n": "0845",
     "t": "行為上癮",
     "a": "何聖君",
     "u": "39c34a20271a81548e34fda9554241e9",
-    "y": "https://www.youtube.com/results?search_query=%E8%A1%8C%E7%82%BA%E4%B8%8A%E7%99%AE+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=xQ_L7jMlWW4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "xQ_L7jMlWW4",
+        "title": "行為上癮：從心理學、經濟學、社會學、行銷學的角度，完全解析智能社會下讓你入坑、欲罷不能、難以自拔的決策陷阱損失趨避."
+      }
+    ]
   },
   {
     "n": "0856",
@@ -636,24 +974,46 @@
     "t": "訂閱變現打造10萬潛在客戶",
     "a": "史都．麥克拉倫",
     "u": "39c34a20271a81019163cb11f8641474",
-    "y": "https://www.youtube.com/watch?v=MRyFZsx9E7Q&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=MRyFZsx9E7Q",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "MRyFZsx9E7Q",
+        "title": "訂閱變現打造10萬潛在客戶,讓會員價值飆3倍揭開高轉換率、高續訂率的祕密"
+      }
+    ]
   },
   {
     "n": "0866",
     "t": "設計生意經",
     "a": "基斯·葛蘭特",
     "u": "39c34a20271a818faeb0d5f4258e668f",
-    "y": "https://www.youtube.com/watch?v=PT_nrr9pAfU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=5cLeS9czpDc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "5cLeS9czpDc",
+        "title": "設計生意經"
+      },
+      {
+        "id": "PT_nrr9pAfU",
+        "title": "設計生意經 / The Business of Design"
+      }
+    ]
   },
   {
     "n": "0872",
     "t": "說服自己，就是最聰明的談判力",
     "a": "威廉‧尤瑞",
     "u": "39c34a20271a81b08fd2fd475d487f2e",
-    "y": "https://www.youtube.com/watch?v=srtF0cB4WGs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=srtF0cB4WGs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "srtF0cB4WGs",
+        "title": "說服自己，就是最聰明的談判力 / Getting to Yes with Yourself"
+      }
+    ]
   },
   {
     "n": "0876",
@@ -668,8 +1028,14 @@
     "t": "貝佐斯傳",
     "a": "布萊德．史東",
     "u": "39c34a20271a81fd9bdbc29c3af4d701",
-    "y": "https://www.youtube.com/watch?v=G7tW0LksEIo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=G7tW0LksEIo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "G7tW0LksEIo",
+        "title": "貝佐斯傳 / The Everything Store"
+      }
+    ]
   },
   {
     "n": "0908",
@@ -684,16 +1050,28 @@
     "t": "起床後的黃金1小時",
     "a": "池田千惠",
     "u": "39c34a20271a8180af9fecf0ee77175c",
-    "y": "https://www.youtube.com/watch?v=6GabGHpHXiE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=6GabGHpHXiE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "6GabGHpHXiE",
+        "title": "起床後的黃金1小時"
+      }
+    ]
   },
   {
     "n": "0924",
     "t": "超額預約",
     "a": "Daniel Priestley",
     "u": "39c34a20271a81caa1dcc595a70218fb",
-    "y": "https://www.youtube.com/watch?v=OeRG-TUlqiE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=OeRG-TUlqiE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "OeRG-TUlqiE",
+        "title": "超額預約 / Oversubscribed"
+      }
+    ]
   },
   {
     "n": "0944",
@@ -716,40 +1094,74 @@
     "t": "進退之間：學會留下，也懂得離開",
     "a": "艾蜜莉·P·弗里曼",
     "u": "39c34a20271a8154a802dc0aaf0aed0c",
-    "y": "https://www.youtube.com/watch?v=YFFH_K4Dl4k&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=YFFH_K4Dl4k",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YFFH_K4Dl4k",
+        "title": "進退之間：學會留下，也懂得離開 / How to Walk into a Room"
+      }
+    ]
   },
   {
     "n": "0984",
     "t": "鎖定小眾：市場越窄，獲利越大",
     "a": "克里斯·德雷爾",
     "u": "39c34a20271a81b490befacbae080968",
-    "y": "https://www.youtube.com/watch?v=3OBpIo5VYAA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3OBpIo5VYAA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3OBpIo5VYAA",
+        "title": "鎖定小眾：市場越窄，獲利越大 / Niching Up: The Narrower the Market, the Bigger the Prize"
+      }
+    ]
   },
   {
     "n": "0985",
     "t": "長期主義",
     "a": "傑夫·貝佐斯",
     "u": "39c34a20271a81b490befacbae080968",
-    "y": "https://www.youtube.com/watch?v=W_VTj3ztbK8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=W_VTj3ztbK8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "W_VTj3ztbK8",
+        "title": "長期主義 / Invent & Wander: The Collected Writings of Jeff Bezos"
+      }
+    ]
   },
   {
     "n": "1013",
     "t": "靈魂不歸法律管",
     "a": "黃榮堅",
     "u": "39c34a20271a813b9964cab1f1b3de6c",
-    "y": "https://www.youtube.com/watch?v=pq4Bx_-QMfE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=pq4Bx_-QMfE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "pq4Bx_-QMfE",
+        "title": "靈魂不歸法律管"
+      }
+    ]
   },
   {
     "n": "1027",
     "t": "驅動自己，也激勵別人",
     "a": "史蒂芬・摩菲",
     "u": "39c34a20271a818ab87be256df5062ba",
-    "y": "https://www.youtube.com/watch?v=15TIS6Zcbws&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=15TIS6Zcbws",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "15TIS6Zcbws",
+        "title": "驅動自己，也激勵別人：史丹佛醫學院最熱門的人心領導課"
+      },
+      {
+        "id": "Gn1u4RPFPTk",
+        "title": "驅動自己，也激勵別人：史丹佛醫學院最熱門的人心領導課 / THE WAY OF ULTIMATE LEADERSHIP"
+      }
+    ]
   },
   {
     "n": "1035",
@@ -772,8 +1184,14 @@
     "t": "你的第一本創業指南",
     "a": "邁可・葛伯（Michael E. Gerber）",
     "u": "3c734a20271a801782fccf4f5d894df7",
-    "y": "https://www.youtube.com/watch?v=GXhDnIAxA3w&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=GXhDnIAxA3w",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "GXhDnIAxA3w",
+        "title": "你的第一本創業指南"
+      }
+    ]
   },
   {
     "n": "1120",
