@@ -12,16 +12,28 @@
     "t": "你並不聰明（達克效應）",
     "a": "David McRaney",
     "u": "39c34a20271a81ca9bf8fb4e98ca962b",
-    "y": "https://www.youtube.com/watch?v=2ZtK_f6uAQo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2ZtK_f6uAQo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2ZtK_f6uAQo",
+        "title": "你並不聰明（達克效應）/ You Are Not So Smart"
+      }
+    ]
   },
   {
     "n": "0315",
     "t": "單行道",
     "a": "華特．班雅明",
     "u": "39c34a20271a81b5b087f7cf8653a9eb",
-    "y": "https://www.youtube.com/watch?v=K-ld51DKiGY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=K-ld51DKiGY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "K-ld51DKiGY",
+        "title": "單行道 / Einbahnstraße"
+      }
+    ]
   },
   {
     "n": "0448",
@@ -36,8 +48,14 @@
     "t": "空之境界",
     "a": "奈須蘑菇",
     "u": "39c34a20271a81cab2c8fdb89d751ff9",
-    "y": "https://www.youtube.com/watch?v=JpPKr7S_FPI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=JpPKr7S_FPI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "JpPKr7S_FPI",
+        "title": "空之境界"
+      }
+    ]
   },
   {
     "n": "0821",
@@ -60,24 +78,42 @@
     "t": "韃靼荒漠",
     "a": "迪諾・布札第（Dino Buzzati）",
     "u": "3c834a20271a81a7836edf7c0fa1145a",
-    "y": "https://www.youtube.com/watch?v=80tazMfduhs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=80tazMfduhs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "80tazMfduhs",
+        "title": "韃靼荒漠"
+      }
+    ]
   },
   {
     "n": "1096",
     "t": "荒原狼",
     "a": "赫爾曼・黑塞（Hermann Hesse）",
     "u": "3c734a20271a803f908af7e62a93c15e",
-    "y": "https://www.youtube.com/watch?v=lu30KdbpLbo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=lu30KdbpLbo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "lu30KdbpLbo",
+        "title": "荒原狼"
+      }
+    ]
   },
   {
     "n": "1114",
     "t": "你走慢了我的時間",
     "a": "張西",
     "u": "3ce34a20271a819e9866d240236e98cf",
-    "y": "https://www.youtube.com/watch?v=bRi_eePYESI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=bRi_eePYESI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "bRi_eePYESI",
+        "title": "你走慢了我的時間"
+      }
+    ]
   },
   {
     "n": "1116",
@@ -85,7 +121,13 @@
     "a": "黃麗群",
     "u": "3d034a20271a80e3b6e0c011755c4de1",
     "y": "https://www.youtube.com/watch?v=f9iP6smNwBU",
-    "ys": "video"
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "f9iP6smNwBU",
+        "title": "感覺有點奢侈的事"
+      }
+    ]
   },
   {
     "n": "1122",
@@ -93,6 +135,12 @@
     "a": "米奇・艾爾邦（Mitch Albom）",
     "u": "3d634a20271a812f830ee9b6263e1843",
     "y": "https://www.youtube.com/watch?v=d1TUpPE0GCo",
-    "ys": "video"
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "d1TUpPE0GCo",
+        "title": "你在天堂遇見的五個人"
+      }
+    ]
   }
 ]
