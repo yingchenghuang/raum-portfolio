@@ -5,7 +5,7 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20260926-2';
+const DATA_VERSION = '20260926-3';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
@@ -92,7 +92,8 @@ function renderFeaturedVideo(book){
   if(!book.y) return '';
   if(book.ys==='collection') return `<section class="book-page-video book-page-video-search"><p class="book-page-video-label">YOUTUBE / 我的書摘播放清單</p><h2>此書尚無已核對的單本影片</h2><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">瀏覽播放清單 ↗</a></section>`;
   if(book.ys==='search') return `<section class="book-page-video book-page-video-search"><p class="book-page-video-label">YOUTUBE / 相關書摘</p><h2>尚未在我的播放清單找到精確影片</h2><a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">以「${escapeHtml(book.t)}＋書摘」廣泛搜尋 YouTube ↗</a></section>`;
-  return `<section class="book-page-video"><p class="book-page-video-label">${book.ys==='video'?'讀書筆記所附影片':'RAUM+ / 我的書摘影片'}</p>${renderEmbed(book.y)}</section>`;
+  const more=(book.videos||[]).slice(1).map(v=>`<a href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer">${escapeHtml(v.title)} ↗</a>`).join('');
+  return `<section class="book-page-video"><p class="book-page-video-label">${book.ys==='video'?'讀書筆記所附影片':'RAUM+ / 我的書摘影片'}</p>${renderEmbed(book.y)}${more?`<div class="more-book-videos"><span>更多相關影片</span>${more}</div>`:''}</section>`;
 }
 
 loadBookPage().catch(error=>{ $('#bookPage').innerHTML=`<p class="book-page-error">${escapeHtml(error.message)}<br><br><a href="./#all-books">← 返回所有書單</a></p>`; console.error(error); });
