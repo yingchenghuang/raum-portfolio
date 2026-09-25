@@ -12,16 +12,32 @@
     "t": "2049：未來10000天的可能",
     "a": "凱文·凱利",
     "u": "39c34a20271a81378ab8ca8ac3631450",
-    "y": "https://www.youtube.com/watch?v=czaA6wNHlGM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=czaA6wNHlGM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "czaA6wNHlGM",
+        "title": "2049：未來10000天的可能"
+      }
+    ]
   },
   {
     "n": "0026",
     "t": "AI如何重塑教育：ChatGPT來了!",
     "a": "親子天下團隊",
     "u": "39c34a20271a8150839bd3e379403e32",
-    "y": "https://www.youtube.com/watch?v=H8aVWN0JgDk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=oi5i6leWKEI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "oi5i6leWKEI",
+        "title": "AI如何重塑教育"
+      },
+      {
+        "id": "H8aVWN0JgDk",
+        "title": "AI如何重塑教育：ChatGPT來了！讓孩子活出熱情，啟動真探究的內在學習"
+      }
+    ]
   },
   {
     "n": "0060",
@@ -36,32 +52,56 @@
     "t": "一流的人讀書，都在哪裡畫線",
     "a": "土井英司",
     "u": "39c34a20271a81b0a731f5578d2fe2ce",
-    "y": "https://www.youtube.com/watch?v=fo8irSW3rVw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=fo8irSW3rVw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "fo8irSW3rVw",
+        "title": "一流的人讀書，都在哪裡畫線"
+      }
+    ]
   },
   {
     "n": "0072",
     "t": "上癮式學習：科學的自學成才法",
     "a": "安川康介",
     "u": "39c34a20271a81fa8dbeef7ab560026c",
-    "y": "https://www.youtube.com/watch?v=1RvSNSzlpnU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1RvSNSzlpnU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1RvSNSzlpnU",
+        "title": "上癮式學習：科學的自學成才法"
+      }
+    ]
   },
   {
     "n": "0073",
     "t": "下一步就是現在",
     "a": "弗雷德里克·G·普費爾特",
     "u": "39c34a20271a81ae923cde4cbac98d45",
-    "y": "https://www.youtube.com/watch?v=3TAI9vd-XXY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3TAI9vd-XXY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3TAI9vd-XXY",
+        "title": "下一步就是現在 / Whats Next Is Now How to Live Future Ready"
+      }
+    ]
   },
   {
     "n": "0161",
     "t": "以日為鑒：衰退時代生存指南",
     "a": "Boden",
     "u": "39c34a20271a811f9474d8304fb6657f",
-    "y": "https://www.youtube.com/watch?v=HRwomX1YHgg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=HRwomX1YHgg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "HRwomX1YHgg",
+        "title": "以日為鑒：衰退時代生存指南"
+      }
+    ]
   },
   {
     "n": "0174",
@@ -92,16 +132,28 @@
     "t": "偶然：機會、混沌，以及為何我們所做的一切都重要",
     "a": "Brian Klaas",
     "u": "39c34a20271a818aa1a9c82e55a72f5c",
-    "y": "https://www.youtube.com/watch?v=hzpnzy3nerw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=hzpnzy3nerw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "hzpnzy3nerw",
+        "title": "偶然：機會、混沌，以及為何我們所做的一切都重要  / Fluke: Chance, Chaos, and Why Everything We Do Matters"
+      }
+    ]
   },
   {
     "n": "0205",
     "t": "優秀的綿羊",
     "a": "威廉·德雷謝維奇",
     "u": "39c34a20271a81d98542f14d1e989cb0",
-    "y": "https://www.youtube.com/watch?v=P79mYC-pDpw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=P79mYC-pDpw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "P79mYC-pDpw",
+        "title": "優秀的綿羊 / Excellent Sheep"
+      }
+    ]
   },
   {
     "n": "0219",
@@ -140,8 +192,14 @@
     "t": "劉瀾·學習力 30 講",
     "a": "劉瀾",
     "u": "39c34a20271a81858dbed8b830dfff76",
-    "y": "https://www.youtube.com/results?search_query=%E5%8A%89%E7%80%BE%C2%B7%E5%AD%B8%E7%BF%92%E5%8A%9B+30+%E8%AC%9B+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=2f7U26w5Bi0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2f7U26w5Bi0",
+        "title": "劉瀾·學習力 30 講"
+      }
+    ]
   },
   {
     "n": "0253",
@@ -156,24 +214,42 @@
     "t": "加速式學習技法",
     "a": "彼得·霍林斯",
     "u": "39c34a20271a81858dbed8b830dfff76",
-    "y": "https://www.youtube.com/watch?v=qfkj8hRMxZA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qfkj8hRMxZA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qfkj8hRMxZA",
+        "title": "加速式學習技法 / The Science of Rapid Skill Acquisition"
+      }
+    ]
   },
   {
     "n": "0263",
     "t": "升維閱讀",
     "a": "瑪麗安娜·沃爾夫",
     "u": "39c34a20271a81e095eacca096577a2f",
-    "y": "https://www.youtube.com/watch?v=-9iaeWOS5yw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=-9iaeWOS5yw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "-9iaeWOS5yw",
+        "title": "升維閱讀 / Reader, Come Home: The Reading Brain in a Digital World"
+      }
+    ]
   },
   {
     "n": "0276",
     "t": "反向學習：學習力的五項修煉",
     "a": "劉瀾",
     "u": "39c34a20271a81d5b5a3d8cd7ed83ddf",
-    "y": "https://www.youtube.com/watch?v=hTLWtUKQpVI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=hTLWtUKQpVI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "hTLWtUKQpVI",
+        "title": "反向學習：學習力的五項修煉"
+      }
+    ]
   },
   {
     "n": "0285",
@@ -188,8 +264,14 @@
     "t": "土星之環",
     "a": "W.G.澤巴爾德",
     "u": "39c34a20271a819dab0aefb36785dfad",
-    "y": "https://www.youtube.com/watch?v=0QHqOW3ohK8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=0QHqOW3ohK8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "0QHqOW3ohK8",
+        "title": "土星之環"
+      }
+    ]
   },
   {
     "n": "0341",
@@ -204,8 +286,14 @@
     "t": "奇特的一生",
     "a": "格拉寧",
     "u": "39c34a20271a815cb11ce4954db7e811",
-    "y": "https://www.youtube.com/watch?v=UFYv1nPHB9g&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=UFYv1nPHB9g",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "UFYv1nPHB9g",
+        "title": "奇特的一生"
+      }
+    ]
   },
   {
     "n": "0366",
@@ -236,8 +324,14 @@
     "t": "如何高效學習",
     "a": "史考特·楊",
     "u": "39c34a20271a812cb499d32c7d4dd2f8",
-    "y": "https://www.youtube.com/watch?v=3tAfnv_0fo8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3tAfnv_0fo8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3tAfnv_0fo8",
+        "title": "如何高效學習"
+      }
+    ]
   },
   {
     "n": "0392",
@@ -252,8 +346,14 @@
     "t": "學習究竟是什麼",
     "a": "萬維鋼",
     "u": "39c34a20271a81e082e0d0697480a4c1",
-    "y": "https://www.youtube.com/watch?v=zm1WhQrDSHw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=zm1WhQrDSHw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "zm1WhQrDSHw",
+        "title": "學習究竟是什麼"
+      }
+    ]
   },
   {
     "n": "0396",
@@ -268,8 +368,14 @@
     "t": "實用性閱讀指南",
     "a": "大岩俊之",
     "u": "39c34a20271a8137b85ed86b4d70ce2a",
-    "y": "https://www.youtube.com/watch?v=3XZOntmGx5w&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3XZOntmGx5w",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3XZOntmGx5w",
+        "title": "實用性閱讀指南：把讀到的知識轉化成能力"
+      }
+    ]
   },
   {
     "n": "0421",
@@ -284,24 +390,42 @@
     "t": "形式的起源",
     "a": "克里斯多夫·威廉斯",
     "u": "39c34a20271a81de8f8ec920559f7681",
-    "y": "https://www.youtube.com/watch?v=7Ntcg-mrYGE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=7Ntcg-mrYGE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "7Ntcg-mrYGE",
+        "title": "形式的起源"
+      }
+    ]
   },
   {
     "n": "0451",
     "t": "德國的細節",
     "a": "葉克飛",
     "u": "39c34a20271a81dcb275ee6a7950a444",
-    "y": "https://www.youtube.com/watch?v=Ssd8JrIt4mo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Ssd8JrIt4mo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Ssd8JrIt4mo",
+        "title": "德國的細節"
+      }
+    ]
   },
   {
     "n": "0473",
     "t": "思辨與立場：批判性思維工具",
     "a": "理查德·保羅",
     "u": "39c34a20271a810abe80f094a1720f2d",
-    "y": "https://www.youtube.com/results?search_query=%E6%80%9D%E8%BE%A8%E8%88%87%E7%AB%8B%E5%A0%B4%EF%BC%9A%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%B6%AD%E5%B7%A5%E5%85%B7+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=vK8EnmcIqMM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "vK8EnmcIqMM",
+        "title": "思辨與立場 / Critical Thinking: Tools for Taking Charge of Your Professional and Personal Life"
+      }
+    ]
   },
   {
     "n": "0508",
@@ -316,8 +440,14 @@
     "t": "教出雙閱讀素養",
     "a": "陳明蕾",
     "u": "39c34a20271a8141942bf7143efd03e3",
-    "y": "https://www.youtube.com/watch?v=1t30ZEp064s&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1t30ZEp064s",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1t30ZEp064s",
+        "title": "教出雙閱讀素養"
+      }
+    ]
   },
   {
     "n": "0534",
@@ -332,8 +462,18 @@
     "t": "斜槓時代的高效閱讀法",
     "a": "山口周",
     "u": "39c34a20271a81d983fcecd14ae148fa",
-    "y": "https://www.youtube.com/watch?v=N5YyArGAVyQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=N5YyArGAVyQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "N5YyArGAVyQ",
+        "title": "斜槓時代的高效閱讀法"
+      },
+      {
+        "id": "auRev8fbzEM",
+        "title": "斜槓時代的⾼效閱讀法"
+      }
+    ]
   },
   {
     "n": "0536",
@@ -356,8 +496,14 @@
     "t": "智慧型手機知識碎片化時代的「閱讀力」",
     "a": "佐佐木俊尚",
     "u": "39c34a20271a8112b965da44f429891c",
-    "y": "https://www.youtube.com/watch?v=McU_hE36K5E&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=McU_hE36K5E",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "McU_hE36K5E",
+        "title": "智慧型手機知識碎片化時代的「閱讀力」最新技術大全"
+      }
+    ]
   },
   {
     "n": "0583",
@@ -372,8 +518,14 @@
     "t": "未來最好的學校",
     "a": "羅曼如",
     "u": "39c34a20271a8162a293d3d7a29db5e3",
-    "y": "https://www.youtube.com/watch?v=3xIyNJKMLwU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3xIyNJKMLwU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3xIyNJKMLwU",
+        "title": "未來最好的學校：新世代全才教育與創業訓練"
+      }
+    ]
   },
   {
     "n": "0586",
@@ -388,32 +540,56 @@
     "t": "極簡閱讀",
     "a": "趙周",
     "u": "39c34a20271a814696c3fee09b3c54ee",
-    "y": "https://www.youtube.com/watch?v=z4OMAk_uePs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=z4OMAk_uePs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "z4OMAk_uePs",
+        "title": "極簡閱讀"
+      }
+    ]
   },
   {
     "n": "0655",
     "t": "深度學習的技術",
     "a": "楊大輝",
     "u": "39c34a20271a81b4a7fedfd90c800055",
-    "y": "https://www.youtube.com/watch?v=Qkg2vUCUpMY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Qkg2vUCUpMY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Qkg2vUCUpMY",
+        "title": "深度學習的技術"
+      }
+    ]
   },
   {
     "n": "0667",
     "t": "為什麼要睡覺?",
     "a": "Matthew Walker",
     "u": "39c34a20271a814a95a4d5d6209ea43f",
-    "y": "https://www.youtube.com/watch?v=lrvQktsGe6E&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=lrvQktsGe6E",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "lrvQktsGe6E",
+        "title": "為什麼要睡覺？：睡出健康與學習力、夢出創意的新科學 / Why We Sleep：The New Science of Sleep and Dreams"
+      }
+    ]
   },
   {
     "n": "0668",
     "t": "為未知而教，為未來而學",
     "a": "David Perkins",
     "u": "39c34a20271a818e899bca915c508592",
-    "y": "https://www.youtube.com/watch?v=a4Gtb62hvk4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=a4Gtb62hvk4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "a4Gtb62hvk4",
+        "title": "為未知而教，為未來而學 / Future Wise: Educating Our Children for a Changing World / Making Learning Whole"
+      }
+    ]
   },
   {
     "n": "0674",
@@ -428,48 +604,84 @@
     "t": "無用之用：醞釀之必要，徒然之必要",
     "a": "Nuccio Ordine",
     "u": "39c34a20271a817b8749e87aec411584",
-    "y": "https://www.youtube.com/watch?v=NI11rKeu48Y&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=NI11rKeu48Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "NI11rKeu48Y",
+        "title": "無用之用：醞釀之必要，徒然之必要，歡迎來到無用時代"
+      }
+    ]
   },
   {
     "n": "0691",
     "t": "生兒為人是何苦：出生在世的傷害",
     "a": "大衛·貝納塔",
     "u": "39c34a20271a81948493d5eabfe9a848",
-    "y": "https://www.youtube.com/watch?v=LTHUABMxiBg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=LTHUABMxiBg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "LTHUABMxiBg",
+        "title": "生兒為人是何苦：出生在世的傷害 / Better Never to Have Been: The Harm of Coming into Existence"
+      }
+    ]
   },
   {
     "n": "0696",
     "t": "生命最後的讀書會",
     "a": "威廉‧施瓦爾貝",
     "u": "39c34a20271a81ea934ece20b8601da7",
-    "y": "https://www.youtube.com/watch?v=_b3iLnple7I&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=_b3iLnple7I",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "_b3iLnple7I",
+        "title": "生命最後的讀書會 / The End of Your Life Book Club"
+      }
+    ]
   },
   {
     "n": "0703",
     "t": "生活在極限之內",
     "a": "加勒特·哈丁",
     "u": "39c34a20271a81ccbbb1d2aaa070fa69",
-    "y": "https://www.youtube.com/watch?v=Kky82Qz2XmU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Kky82Qz2XmU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Kky82Qz2XmU",
+        "title": "生活在極限之內 / Living Within Limits: Ecology, Economics, and Population Taboos"
+      }
+    ]
   },
   {
     "n": "0730",
     "t": "看不見的城市",
     "a": "伊塔羅·卡爾維諾",
     "u": "39c34a20271a8105a185f1478e15c107",
-    "y": "https://www.youtube.com/watch?v=lVfOpV1Q0pk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=lVfOpV1Q0pk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "lVfOpV1Q0pk",
+        "title": "看不見的城市 / Invisible Cities"
+      }
+    ]
   },
   {
     "n": "0733",
     "t": "知識不是力量—培養思考力",
     "a": "莊淇銘",
     "u": "39c34a20271a81a29bf8c8fe0197e879",
-    "y": "https://www.youtube.com/watch?v=wbW_DkSoj84&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=wbW_DkSoj84",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "wbW_DkSoj84",
+        "title": "知識不是力量，培養思考力"
+      }
+    ]
   },
   {
     "n": "0734",
@@ -484,16 +696,28 @@
     "t": "第三次沉思：我們仍不了解的宇宙",
     "a": "斯蒂芬·溫伯格",
     "u": "39c34a20271a81b1995ffab9ab916c20",
-    "y": "https://www.youtube.com/watch?v=2n6CJT6OOkI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2n6CJT6OOkI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2n6CJT6OOkI",
+        "title": "第三次沉思：我們仍不了解的宇宙"
+      }
+    ]
   },
   {
     "n": "0786",
     "t": "終身學習：哈佛畢業後的六堂課",
     "a": "",
     "u": "39c34a20271a8194a9bcd2b670f4d64b",
-    "y": "https://www.youtube.com/watch?v=DgM5pBtVEc0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=DgM5pBtVEc0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "DgM5pBtVEc0",
+        "title": "終身學習：哈佛畢業後的六堂課"
+      }
+    ]
   },
   {
     "n": "0807",
@@ -508,8 +732,14 @@
     "t": "解惑：心智模式決定你的一生",
     "a": "E. F. 舒馬赫",
     "u": "39c34a20271a81e69a72e32a39137079",
-    "y": "https://www.youtube.com/watch?v=00cG3rtIn3E&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=00cG3rtIn3E",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "00cG3rtIn3E",
+        "title": "解惑：心智模式決定你的一生 / A Guide for the Perplexed"
+      }
+    ]
   },
   {
     "n": "0879",
@@ -524,8 +754,14 @@
     "t": "讀懂一本書：樊登讀書法",
     "a": "樊登",
     "u": "39c34a20271a8114a50bdf5265b8b411",
-    "y": "https://www.youtube.com/watch?v=ONlZ3ccHQDg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ONlZ3ccHQDg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ONlZ3ccHQDg",
+        "title": "讀懂一本書：樊登讀書法"
+      }
+    ]
   },
   {
     "n": "0918",
@@ -540,32 +776,56 @@
     "t": "超級學習：如何學習得更好更快",
     "a": "Edward D. Hess",
     "u": "39c34a20271a81b2bb23d617ab534bc0",
-    "y": "https://www.youtube.com/watch?v=8oXdAM6-iB4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=8oXdAM6-iB4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "8oXdAM6-iB4",
+        "title": "超級學習：如何學習得更好更快 / Hyper Learning: How to Adapt to the Speed of Change"
+      }
+    ]
   },
   {
     "n": "0925",
     "t": "超高效學習：35個PRO考試秘技",
     "a": "Barbara Oakley",
     "u": "39c34a20271a8167bd65feb042060f01",
-    "y": "https://www.youtube.com/results?search_query=%E8%B6%85%E9%AB%98%E6%95%88%E5%AD%B8%E7%BF%92%EF%BC%9A35%E5%80%8BPRO%E8%80%83%E8%A9%A6%E7%A7%98%E6%8A%80+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=GzFgL3HIYzc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "GzFgL3HIYzc",
+        "title": "超高效學習 / LEARN LIKE A PRO"
+      }
+    ]
   },
   {
     "n": "0936",
     "t": "輸出式閱讀法",
     "a": "尾藤克之",
     "u": "39c34a20271a81a1b49ce56776ace085",
-    "y": "https://www.youtube.com/watch?v=elETChH6TRo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=elETChH6TRo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "elETChH6TRo",
+        "title": "輸出式閱讀法：把學到的知識用起來"
+      }
+    ]
   },
   {
     "n": "0939",
     "t": "逆思維",
     "a": "亞當·格蘭特",
     "u": "39c34a20271a815aa56fcb9abb3636f2",
-    "y": "https://www.youtube.com/watch?v=IZNOwaIqB6w&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=IZNOwaIqB6w",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "IZNOwaIqB6w",
+        "title": "逆思維 / Think Again"
+      }
+    ]
   },
   {
     "n": "0965",
@@ -596,8 +856,14 @@
     "t": "閱讀不息",
     "a": "坂本龍一",
     "u": "39c34a20271a81059a7cc2f0c9829930",
-    "y": "https://www.youtube.com/watch?v=KTLI7M9EOHk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=KTLI7M9EOHk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "KTLI7M9EOHk",
+        "title": "閱讀不息"
+      }
+    ]
   },
   {
     "n": "0994",
@@ -612,24 +878,42 @@
     "t": "閱讀是安靜的自我覺醒",
     "a": "",
     "u": "39c34a20271a8185ad4df82a2d7c24cf",
-    "y": "https://www.youtube.com/watch?v=74nM1l9_sFc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=74nM1l9_sFc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "74nM1l9_sFc",
+        "title": "閱讀是安靜的自我覺醒"
+      }
+    ]
   },
   {
     "n": "0996",
     "t": "閱讀深動力",
     "a": "李崇建",
     "u": "39c34a20271a81228f8af4c777d918f6",
-    "y": "https://www.youtube.com/watch?v=dcHh8J7wWXo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=dcHh8J7wWXo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "dcHh8J7wWXo",
+        "title": "閱讀深動力"
+      }
+    ]
   },
   {
     "n": "0997",
     "t": "閱讀素養：黃國珍的閱讀理解課",
     "a": "黃國珍",
     "u": "39c34a20271a81228f8af4c777d918f6",
-    "y": "https://www.youtube.com/watch?v=9HT3k3Ow6Yw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=9HT3k3Ow6Yw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "9HT3k3Ow6Yw",
+        "title": "閱讀素養：黃國珍的閱讀理解課，從訊息到意義，帶你讀出深度思考力"
+      }
+    ]
   },
   {
     "n": "1040",
@@ -756,8 +1040,14 @@
     "t": "稻盛和夫",
     "a": "稻盛和夫",
     "u": "39c34a20271a8166ac65c6f2516b1123",
-    "y": "https://www.youtube.com/results?search_query=%E7%A8%BB%E7%9B%9B%E5%92%8C%E5%A4%AB+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=PAmZXGHMTz0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PAmZXGHMTz0",
+        "title": "稻盛和夫解答人生"
+      }
+    ]
   },
   {
     "n": "1056",
@@ -788,16 +1078,28 @@
     "t": "麥肯錫精英高效閱讀法",
     "a": "赤羽雄二",
     "u": "3c434a20271a81b98efae4c25e8205a3",
-    "y": "https://www.youtube.com/watch?v=ZD5W3NzmCQE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZD5W3NzmCQE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZD5W3NzmCQE",
+        "title": "麥肯錫精英高效閱讀法"
+      }
+    ]
   },
   {
     "n": "1091",
     "t": "思考上癮",
     "a": "齋藤孝",
     "u": "3c834a20271a81afb115e40ebfd6a390",
-    "y": "https://www.youtube.com/watch?v=Gdu-r4FGzks&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Gdu-r4FGzks",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Gdu-r4FGzks",
+        "title": "思考上癮"
+      }
+    ]
   },
   {
     "n": "1092",
@@ -812,7 +1114,13 @@
     "t": "說服的藝術",
     "a": "傑伊・海因里希斯（Jay Heinrichs）",
     "u": "04f34a20271a83e681530144ebcf52c1",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=HsAkeyznB8k",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "HsAkeyznB8k",
+        "title": "說服的藝術"
+      }
+    ]
   }
 ]
