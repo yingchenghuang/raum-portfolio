@@ -4,8 +4,14 @@
     "t": "10倍成長思維",
     "a": "丹·蘇利文",
     "u": "39c34a20271a81378ab8ca8ac3631450",
-    "y": "https://www.youtube.com/watch?v=u8zBuozTj4A&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=u8zBuozTj4A",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "u8zBuozTj4A",
+        "title": "10倍成長思維：成功者獲得時間、財富、人際圈、目標自由的高效成長法則 / 10X Is Easier Than 2X"
+      }
+    ]
   },
   {
     "n": "0007",
@@ -36,8 +42,14 @@
     "t": "不要擔心2小時和8公里以外的事情",
     "a": "李松濤",
     "u": "39c34a20271a81f38b1cfebfdc8c6049",
-    "y": "https://www.youtube.com/watch?v=dT30GVUK0vk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=dT30GVUK0vk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "dT30GVUK0vk",
+        "title": "不要擔心2小時和8公里以外的事情"
+      }
+    ]
   },
   {
     "n": "0128",
@@ -68,32 +80,68 @@
     "t": "你可以說不：這輩子絕不這樣過",
     "a": "奧里森·馬登",
     "u": "39c34a20271a814bac11c9038078cf56",
-    "y": "https://www.youtube.com/watch?v=LZMsREcKt74&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=LZMsREcKt74",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "LZMsREcKt74",
+        "title": "你可以說不：這輩子絕不這樣過 / How To Succeed Change Your Mind, Change Your Fate"
+      }
+    ]
   },
   {
     "n": "0182",
     "t": "你的工作值得嗎?",
     "a": "Christopher Wong Michaelson",
     "u": "39c34a20271a814d8947ccaef182bd6b",
-    "y": "https://www.youtube.com/watch?v=u4jQGckAjcI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=u4jQGckAjcI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "u4jQGckAjcI",
+        "title": "你的工作值得嗎？如何思考有意義的工作 / Is Your Work Worth It? How to Think About Meaningful Work"
+      },
+      {
+        "id": "fLZlVV4powc",
+        "title": "你的工作值得嗎？如何思考有意義的工作 / Is Your Work Worth It? How to Think About Meaningful Work"
+      },
+      {
+        "id": "zsh5FcwADMk",
+        "title": "你的工作值得嗎？如何思考有意義的工作 / Is Your Work Worth It? How to Think About Meaningful Work"
+      }
+    ]
   },
   {
     "n": "0185",
     "t": "你相信，所以你成功",
     "a": "博恩．崔西",
     "u": "39c34a20271a818cadc4de6bc003f3e8",
-    "y": "https://www.youtube.com/watch?v=efcW95eCY_E&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=u6bXwWdXz5Q",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "u6bXwWdXz5Q",
+        "title": "你相信，所以你成功"
+      },
+      {
+        "id": "efcW95eCY_E",
+        "title": "你相信，所以你成功：全球頂尖的成功學大師教你克服懷疑，重塑人生，釋放潛能 / Believe It to Achieve It"
+      }
+    ]
   },
   {
     "n": "0190",
     "t": "做個大夢",
     "a": "鮑勃·高夫",
     "u": "39c34a20271a814b8f1dcb88b8c4863d",
-    "y": "https://www.youtube.com/watch?v=odMWljN7JWQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=odMWljN7JWQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "odMWljN7JWQ",
+        "title": "做個大夢 / Dream Big"
+      }
+    ]
   },
   {
     "n": "0192",
@@ -108,24 +156,42 @@
     "t": "做對選擇，讓生活變輕盈",
     "a": "麗莎·特克斯特",
     "u": "39c34a20271a81c3b94efff10fea6008",
-    "y": "https://www.youtube.com/watch?v=oV7mhapPnLk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=oV7mhapPnLk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "oV7mhapPnLk",
+        "title": "做對選擇，讓生活變輕盈 / The Best Yes"
+      }
+    ]
   },
   {
     "n": "0196",
     "t": "做自己的工作設計師",
     "a": "博內特、伊萬斯",
     "u": "39c34a20271a818aa1a9c82e55a72f5c",
-    "y": "https://www.youtube.com/watch?v=HQIHQlEkop4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=HQIHQlEkop4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "HQIHQlEkop4",
+        "title": "做自己的工作設計師 / Designing Your New Work Life： How to Thrive and Change and Find Happiness at Work"
+      }
+    ]
   },
   {
     "n": "0202",
     "t": "像創業家一樣思考，像執行長一樣行動",
     "a": "貝芙麗·E·瓊斯",
     "u": "39c34a20271a81188859d8a5c1708507",
-    "y": "https://www.youtube.com/watch?v=brCVOXBS87s&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=brCVOXBS87s",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "brCVOXBS87s",
+        "title": "像創業家一樣思考，像執行長一樣行動 / Think Like an Entrepreneur, Act Like a CEO"
+      }
+    ]
   },
   {
     "n": "0209",
@@ -140,24 +206,42 @@
     "t": "內在提問",
     "a": "佐佐木常夫",
     "u": "39c34a20271a816e9c87d3d804641a5e",
-    "y": "https://www.youtube.com/watch?v=9s5Kgak0aIg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=9s5Kgak0aIg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "9s5Kgak0aIg",
+        "title": "內在提問"
+      }
+    ]
   },
   {
     "n": "0233",
     "t": "別獨自用餐",
     "a": "基思·法拉奇",
     "u": "39c34a20271a817ab2d4f29310c2380a",
-    "y": "https://www.youtube.com/results?search_query=%E5%88%A5%E7%8D%A8%E8%87%AA%E7%94%A8%E9%A4%90+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=a0YJowg5Jgc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "a0YJowg5Jgc",
+        "title": "別獨自用餐：85%的成功來自高效的社交能力"
+      }
+    ]
   },
   {
     "n": "0236",
     "t": "刻意練習",
     "a": "安德斯．艾瑞克森",
     "u": "39c34a20271a8163b3a0f949cd38867d",
-    "y": "https://www.youtube.com/watch?v=ujGngwnjzeg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ujGngwnjzeg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ujGngwnjzeg",
+        "title": "刻意練習 / Peak: Secrets from the New Science of Expertise"
+      }
+    ]
   },
   {
     "n": "0237",
@@ -172,32 +256,60 @@
     "t": "創新的國度——瑞士製造的成功基因",
     "a": "R·詹姆斯·布雷丁",
     "u": "39c34a20271a81118ed1ec2196c8cf07",
-    "y": "https://www.youtube.com/results?search_query=%E5%89%B5%E6%96%B0%E7%9A%84%E5%9C%8B%E5%BA%A6%E2%80%94%E2%80%94%E7%91%9E%E5%A3%AB%E8%A3%BD%E9%80%A0%E7%9A%84%E6%88%90%E5%8A%9F%E5%9F%BA%E5%9B%A0+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=r09XnYvsqYQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "r09XnYvsqYQ",
+        "title": "創新的國度"
+      }
+    ]
   },
   {
     "n": "0248",
     "t": "創造你的未來",
     "a": "博恩·崔西",
     "u": "39c34a20271a81d99537d567b3862e92",
-    "y": "https://www.youtube.com/watch?v=gUuHzbjHjpM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gUuHzbjHjpM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gUuHzbjHjpM",
+        "title": "創造你的未來 / Create Your Own Future: How to Master the 12 Critical Factors of Unlimited Success"
+      },
+      {
+        "id": "eMdSsKNCBmA",
+        "title": "創造你的未來：如何掌握無限成功的12個關鍵要素 / Create Your Own Future: How to Master the 12 Critical Factors of Unlimited"
+      }
+    ]
   },
   {
     "n": "0269",
     "t": "原則：生活和工作",
     "a": "瑞·達利歐",
     "u": "39c34a20271a811db917db14ea58a1f7",
-    "y": "https://www.youtube.com/watch?v=lmgHM5DHDHU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=lmgHM5DHDHU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "lmgHM5DHDHU",
+        "title": "原則：生活和工作 /  Principles: Life and Work"
+      }
+    ]
   },
   {
     "n": "0270",
     "t": "原創者：不墨守成規的世界如何運作",
     "a": "亞當·格蘭特",
     "u": "39c34a20271a811db917db14ea58a1f7",
-    "y": "https://www.youtube.com/watch?v=lU12OAiOsNM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=lU12OAiOsNM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "lU12OAiOsNM",
+        "title": "原創者：不墨守成規的世界如何運作  / ORIGINALS"
+      }
+    ]
   },
   {
     "n": "0281",
@@ -212,8 +324,14 @@
     "t": "取捨法則：選擇與改變的神經科學",
     "a": "艾蜜莉．福克",
     "u": "39c34a20271a81b6aa02e3e4a11493e9",
-    "y": "https://www.youtube.com/watch?v=OGVbjiGGJQY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=OGVbjiGGJQY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "OGVbjiGGJQY",
+        "title": "取捨法則：選擇與改變的神經科學 / What We Value: The Neuroscience of Choice and Change"
+      }
+    ]
   },
   {
     "n": "0284",
@@ -236,16 +354,28 @@
     "t": "吃掉那隻青蛙",
     "a": "博恩·崔西",
     "u": "39c34a20271a814cb1d3c70bbfad0eba",
-    "y": "https://www.youtube.com/watch?v=6mP_OqIsh7k&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=6mP_OqIsh7k",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "6mP_OqIsh7k",
+        "title": "吃掉那隻青蛙：博恩·崔西的高效時間管理法則 / Eat That Frog!"
+      }
+    ]
   },
   {
     "n": "0292",
     "t": "向人生提問的藝術",
     "a": "魯爾夫．杜伯里",
     "u": "39c34a20271a8155ad50f692400594ab",
-    "y": "https://www.youtube.com/watch?v=gtAX26L6kwE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gtAX26L6kwE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gtAX26L6kwE",
+        "title": "向人生提問的藝術"
+      }
+    ]
   },
   {
     "n": "0293",
@@ -268,8 +398,14 @@
     "t": "品味選擇題",
     "a": "湯姆·范德比爾特",
     "u": "39c34a20271a81c7a1a5de4249b0322d",
-    "y": "https://www.youtube.com/watch?v=jV3Fc9L5n2Y&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=jV3Fc9L5n2Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "jV3Fc9L5n2Y",
+        "title": "品味選擇題"
+      }
+    ]
   },
   {
     "n": "0322",
@@ -284,8 +420,14 @@
     "t": "夠好的工作",
     "a": "西蒙．史托佐夫",
     "u": "39c34a20271a81c6aa98c35e4cd40790",
-    "y": "https://www.youtube.com/watch?v=Y-tiYdN-yRQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Y-tiYdN-yRQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Y-tiYdN-yRQ",
+        "title": "夠好的工作 / The Good Enough Job"
+      }
+    ]
   },
   {
     "n": "0342",
@@ -300,8 +442,14 @@
     "t": "大器可以晚成",
     "a": "李奇．卡爾加德",
     "u": "39c34a20271a815ba02aea100744f14e",
-    "y": "https://www.youtube.com/watch?v=J0Na6YMq0o0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=J0Na6YMq0o0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "J0Na6YMq0o0",
+        "title": "大器可以晚成：當世界沉迷年少得志，耐心是你成功的本事 / Late Bloomers"
+      }
+    ]
   },
   {
     "n": "0345",
@@ -316,8 +464,14 @@
     "t": "大格局大思維",
     "a": "大衛·舒瓦茲",
     "u": "39c34a20271a81539e10f11016985baa",
-    "y": "https://www.youtube.com/watch?v=0yoMiphNOn4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=0yoMiphNOn4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "0yoMiphNOn4",
+        "title": "大格局大思維 / The Magic of Thinking Big"
+      }
+    ]
   },
   {
     "n": "0347",
@@ -340,8 +494,14 @@
     "t": "失敗課",
     "a": "周磊",
     "u": "39c34a20271a81eba597e301d7385857",
-    "y": "https://www.youtube.com/watch?v=tkb10RoXqho&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=tkb10RoXqho",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "tkb10RoXqho",
+        "title": "失敗課"
+      }
+    ]
   },
   {
     "n": "0391",
@@ -372,16 +532,28 @@
     "t": "少，但是更好",
     "a": "葛瑞格．麥基昂",
     "u": "39c34a20271a81ba8fd6f477518456f4",
-    "y": "https://www.youtube.com/watch?v=HhLvJ879-qM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=HhLvJ879-qM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "HhLvJ879-qM",
+        "title": "少，但是更好 / Weniger aber besser"
+      }
+    ]
   },
   {
     "n": "0414",
     "t": "少有人走的路",
     "a": "M·斯科特·派克",
     "u": "39c34a20271a81d8b2e9d3a23873cdcb",
-    "y": "https://www.youtube.com/watch?v=13GX7D8DJ64&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=13GX7D8DJ64",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "13GX7D8DJ64",
+        "title": "少有人走的路 / The Road Less Traveled"
+      }
+    ]
   },
   {
     "n": "0418",
@@ -404,8 +576,14 @@
     "t": "平靜的心，專注的大腦",
     "a": "Daniel Goleman",
     "u": "39c34a20271a81cebe6bd55bbc4af061",
-    "y": "https://www.youtube.com/watch?v=4CCA0DwQABE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=4CCA0DwQABE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "4CCA0DwQABE",
+        "title": "平靜的心，專注的大腦 / Altered Traits"
+      }
+    ]
   },
   {
     "n": "0442",
@@ -420,32 +598,56 @@
     "t": "恆毅力：人生成功的究極能力",
     "a": "安琪拉．達克沃斯",
     "u": "39c34a20271a813fac23c36e89dce35a",
-    "y": "https://www.youtube.com/watch?v=mI0o3rEByzw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=mI0o3rEByzw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "mI0o3rEByzw",
+        "title": "恆毅力: 人生成功的究極能力 / Grit: The Power of Passion and Perseverance"
+      }
+    ]
   },
   {
     "n": "0481",
     "t": "愛的8法則",
     "a": "傑．謝帝",
     "u": "39c34a20271a81e8a8e4c7c974995438",
-    "y": "https://www.youtube.com/watch?v=ksnZDaHD9zU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ksnZDaHD9zU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ksnZDaHD9zU",
+        "title": "愛的8法則 / 8 Rules of Love"
+      }
+    ]
   },
   {
     "n": "0483",
     "t": "慢速工作力",
     "a": "卡爾·紐波特",
     "u": "39c34a20271a81d39afbda4490bcf346",
-    "y": "https://www.youtube.com/results?search_query=%E6%85%A2%E9%80%9F%E5%B7%A5%E4%BD%9C%E5%8A%9B+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=1gVBDsTAUTA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1gVBDsTAUTA",
+        "title": "慢速工作力：快時代的慢技術，3大原則擺脫倦怠、鍛造更高成就 / Slow Productivity The Lost Art of Accomplishment Without Burnout"
+      }
+    ]
   },
   {
     "n": "0486",
     "t": "成功，動機與目標",
     "a": "格蘭特·霍爾沃森",
     "u": "39c34a20271a8101b9bec34cd6bc9996",
-    "y": "https://www.youtube.com/watch?v=Z4aby8FUO5s&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Z4aby8FUO5s",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Z4aby8FUO5s",
+        "title": "成功，動機與目標"
+      }
+    ]
   },
   {
     "n": "0487",
@@ -460,16 +662,36 @@
     "t": "成功與運氣：好運與精英社會的神話",
     "a": "羅伯特·弗蘭克",
     "u": "39c34a20271a81a887f7e7090f5f2a63",
-    "y": "https://www.youtube.com/watch?v=D3Vp6EFt5L8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2nkzUMxlZTg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2nkzUMxlZTg",
+        "title": "成功與運氣：好運與精英社會的神話 / Success and Luck: Good Fortune and the Myth of Meritocracy"
+      },
+      {
+        "id": "D3Vp6EFt5L8",
+        "title": "成功與運氣：好運與精英社會的神話"
+      },
+      {
+        "id": "jxfyCGUpcoU",
+        "title": "成功與運氣：好運與精英社會的神話 / Success and Luck: Good Fortune and the Myth of Meritocracy"
+      }
+    ]
   },
   {
     "n": "0490",
     "t": "成就的秘密",
     "a": "奧里森·斯威特·馬登",
     "u": "39c34a20271a81cbb952df911fab6f07",
-    "y": "https://www.youtube.com/watch?v=Kzon4kXBlWw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Kzon4kXBlWw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Kzon4kXBlWw",
+        "title": "成就的秘密 / The Secret of Achievement"
+      }
+    ]
   },
   {
     "n": "0499",
@@ -484,24 +706,42 @@
     "t": "找到你的為什麼",
     "a": "賽門．西奈克",
     "u": "39c34a20271a8130a234d7bc669f8ca6",
-    "y": "https://www.youtube.com/watch?v=TpCkDTRpHcM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=TpCkDTRpHcM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "TpCkDTRpHcM",
+        "title": "找到你的為什麼 / Find Your Why"
+      }
+    ]
   },
   {
     "n": "0515",
     "t": "拖延根除的微自律小習慣",
     "a": "羅利．瓦登",
     "u": "39c34a20271a81b9b52fe04a71d7849d",
-    "y": "https://www.youtube.com/watch?v=Q5_IzsiFK8s&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Q5_IzsiFK8s",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Q5_IzsiFK8s",
+        "title": "拖延根除的微自律小習慣 / Take the Stairs: 7 Steps to Achieving True Success"
+      }
+    ]
   },
   {
     "n": "0516",
     "t": "拼命活在順其自然的瞬間",
     "a": "中野善寿",
     "u": "39c34a20271a81e0a34cc30a2764da29",
-    "y": "https://www.youtube.com/watch?v=ANC2fai-YL4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ANC2fai-YL4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ANC2fai-YL4",
+        "title": "拼命活在順其自然的瞬間"
+      }
+    ]
   },
   {
     "n": "0519",
@@ -516,8 +756,14 @@
     "t": "提問",
     "a": "楊瀾",
     "u": "39c34a20271a8121a5fcdef0aa05e987",
-    "y": "https://www.youtube.com/watch?v=Idhc3OHNTwg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Idhc3OHNTwg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Idhc3OHNTwg",
+        "title": "提問"
+      }
+    ]
   },
   {
     "n": "0530",
@@ -540,16 +786,28 @@
     "t": "斜槓的50道難題",
     "a": "",
     "u": "39c34a20271a81249d09fd6caed9960b",
-    "y": "https://www.youtube.com/watch?v=e2k928bwwaM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=e2k928bwwaM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "e2k928bwwaM",
+        "title": "斜槓的50道難題：你最想知道的成為斜槓青年關鍵提問，關鍵思考與實踐方法"
+      }
+    ]
   },
   {
     "n": "0543",
     "t": "旅者的禮物",
     "a": "安迪·安德魯斯",
     "u": "39c34a20271a816b80e2fd01db3b6873",
-    "y": "https://www.youtube.com/watch?v=1Hhb3iiX57s&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1Hhb3iiX57s",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1Hhb3iiX57s",
+        "title": "旅者的禮物  / The Traveler’s Gift"
+      }
+    ]
   },
   {
     "n": "0544",
@@ -580,16 +838,28 @@
     "t": "智慧協作時代",
     "a": "湯瑪斯．戴文波特",
     "u": "39c34a20271a817d8b71f171ff700674",
-    "y": "https://www.youtube.com/watch?v=qZeHMa4WAjg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qZeHMa4WAjg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qZeHMa4WAjg",
+        "title": "智慧協作時代：一人即團隊的高生產力新商業模式 / Working with AI: Real Stories of Human-Machine Collaboration"
+      }
+    ]
   },
   {
     "n": "0572",
     "t": "最重要的事，只有一件",
     "a": "凱勒、帕帕森",
     "u": "39c34a20271a818686d4d40d52cda961",
-    "y": "https://www.youtube.com/watch?v=fOqPlWZ_Lgk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=fOqPlWZ_Lgk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "fOqPlWZ_Lgk",
+        "title": "最重要的事，只有一件"
+      }
+    ]
   },
   {
     "n": "0587",
@@ -636,16 +906,28 @@
     "t": "每週工作4小時",
     "a": "蒂莫西・費里斯",
     "u": "39c34a20271a812da9b1d0a9381fb06b",
-    "y": "https://www.youtube.com/watch?v=tNQEqDw9uPw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=tNQEqDw9uPw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "tNQEqDw9uPw",
+        "title": "每週工作4小時：擺脫朝九晚五，隨心旅行，盡享新貴生活"
+      }
+    ]
   },
   {
     "n": "0628",
     "t": "毫無意義的工作",
     "a": "大衛·格雷伯",
     "u": "39c34a20271a812da9b1d0a9381fb06b",
-    "y": "https://www.youtube.com/watch?v=apzk64aFZLs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=apzk64aFZLs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "apzk64aFZLs",
+        "title": "毫無意義的工作：狗屁工作理論 / Bullshit Jobs: A Theory"
+      }
+    ]
   },
   {
     "n": "0636",
@@ -660,8 +942,14 @@
     "t": "深度工作力",
     "a": "卡爾·紐波特",
     "u": "39c34a20271a8144a7a5f3f4c537bc12",
-    "y": "https://www.youtube.com/results?search_query=%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C%E5%8A%9B+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=38vl0oN3Ct4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "38vl0oN3Ct4",
+        "title": "深度工作力：淺薄時代，個人成功的關鍵能力 / Deep Work: Rules for Focused Success in a Distracted World"
+      }
+    ]
   },
   {
     "n": "0657",
@@ -676,24 +964,42 @@
     "t": "為什麼偉大不能被計劃",
     "a": "斯坦利、雷曼",
     "u": "39c34a20271a81b58289fbb7fafbf806",
-    "y": "https://www.youtube.com/watch?v=3dxxUjXywyw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=3dxxUjXywyw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3dxxUjXywyw",
+        "title": "為什麼偉大不能被計劃 / Why Greatness Cannot Be Planned"
+      }
+    ]
   },
   {
     "n": "0666",
     "t": "為什麼精英都是時間控",
     "a": "樺澤紫苑",
     "u": "39c34a20271a814bbbf8c67185fac8a0",
-    "y": "https://www.youtube.com/watch?v=MNxnHoDTnR4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=MNxnHoDTnR4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "MNxnHoDTnR4",
+        "title": "為什麼精英都是時間控"
+      }
+    ]
   },
   {
     "n": "0671",
     "t": "為自己工作——世界頂級設計師成功法則",
     "a": "David Airey",
     "u": "39c34a20271a81ee8aadc4ed3f5f271d",
-    "y": "https://www.youtube.com/watch?v=ive-ijkQKn8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ive-ijkQKn8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ive-ijkQKn8",
+        "title": "為自己工作——世界頂級設計師成功法則 / Work for Money, Design for Love"
+      }
+    ]
   },
   {
     "n": "0677",
@@ -708,16 +1014,28 @@
     "t": "無路徑之路",
     "a": "Paul Millerd",
     "u": "39c34a20271a81f1bfd9d31837e206bc",
-    "y": "https://www.youtube.com/results?search_query=%E7%84%A1%E8%B7%AF%E5%BE%91%E4%B9%8B%E8%B7%AF+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=YOtG-thshhg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YOtG-thshhg",
+        "title": "無路徑之路 The Pathless Path"
+      }
+    ]
   },
   {
     "n": "0685",
     "t": "獨立工作者，現在開始為自己工作",
     "a": "朴勝晤",
     "u": "39c34a20271a814a916fcf86182a9d57",
-    "y": "https://www.youtube.com/watch?v=AxgI-Dq13Yc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=AxgI-Dq13Yc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "AxgI-Dq13Yc",
+        "title": "獨立工作者現在開始為自己工作"
+      }
+    ]
   },
   {
     "n": "0702",
@@ -748,8 +1066,14 @@
     "t": "當呼吸化為空氣",
     "a": "保羅·卡拉尼提",
     "u": "39c34a20271a81928c01e2214997c0ec",
-    "y": "https://www.youtube.com/watch?v=FhaFnzh2aBw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=FhaFnzh2aBw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "FhaFnzh2aBw",
+        "title": "當呼吸化為空氣 / When Breath Becomes Air"
+      }
+    ]
   },
   {
     "n": "0725",
@@ -772,48 +1096,84 @@
     "t": "相信就是力量",
     "a": "威廉．沃克．阿特金森",
     "u": "39c34a20271a8142b987c1092c030dac",
-    "y": "https://www.youtube.com/watch?v=pumVhORiF1Q&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=pumVhORiF1Q",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "pumVhORiF1Q",
+        "title": "相信就是力量 / Thought-force in Business and Everyday Life"
+      }
+    ]
   },
   {
     "n": "0739",
     "t": "秀出你的工作",
     "a": "奧斯丁．克萊恩",
     "u": "39c34a20271a81c5a0d7fb98a7cf661f",
-    "y": "https://www.youtube.com/watch?v=h6_dF76vWCk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=h6_dF76vWCk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "h6_dF76vWCk",
+        "title": "秀出你的工作 / Show Your Work"
+      }
+    ]
   },
   {
     "n": "0741",
     "t": "稻盛和夫的思考之道",
     "a": "稻盛和夫",
     "u": "39c34a20271a81dbb3b3e6110d4890a9",
-    "y": "https://www.youtube.com/watch?v=mc_VVGOvLiE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=mc_VVGOvLiE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "mc_VVGOvLiE",
+        "title": "稻盛和夫的思考之道"
+      }
+    ]
   },
   {
     "n": "0754",
     "t": "第一次工作就該懂",
     "a": "雷德．霍夫曼",
     "u": "39c34a20271a8106a2cee0cf29d3c7a8",
-    "y": "https://www.youtube.com/watch?v=fDDJIPzsBr0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=fDDJIPzsBr0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "fDDJIPzsBr0",
+        "title": "第一次工作就該懂"
+      }
+    ]
   },
   {
     "n": "0757",
     "t": "第三個千年思維",
     "a": "Saul Perlmutter 等",
     "u": "39c34a20271a819c85e4d77186d6b76d",
-    "y": "https://www.youtube.com/watch?v=c6Mx8P_j-XY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=c6Mx8P_j-XY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "c6Mx8P_j-XY",
+        "title": "第三個千年思維：重塑世界的科學決策術 / Third Millennium Thinking: Creating Sense in a World of Nonsense"
+      }
+    ]
   },
   {
     "n": "0760",
     "t": "第三選擇",
     "a": "史蒂芬·柯維",
     "u": "39c34a20271a8147888bc2d9b82967de",
-    "y": "https://www.youtube.com/results?search_query=%E7%AC%AC%E4%B8%89%E9%81%B8%E6%93%87+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=f6sN2gdTAR8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "f6sN2gdTAR8",
+        "title": "第三選擇：解決生命中最困難的問題 / The 3rd Alternative Solving Life’s Most Difficult Problems"
+      }
+    ]
   },
   {
     "n": "0764",
@@ -836,32 +1196,56 @@
     "t": "管理你的每一天",
     "a": "99U",
     "u": "39c34a20271a81b592e7c48928c7f6a6",
-    "y": "https://www.youtube.com/watch?v=lyqZcREd2t0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=lyqZcREd2t0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "lyqZcREd2t0",
+        "title": "管理你的每一天：建立好習慣、鍛鍊專注力、磨練創意  / MANAGE YOUR DAY-TO-DAY"
+      }
+    ]
   },
   {
     "n": "0798",
     "t": "習慣成功，與奧里森.馬登對話",
     "a": "奧里森·馬登",
     "u": "39c34a20271a8132a477e7da177283fb",
-    "y": "https://www.youtube.com/watch?v=WqOQmBZjIw8&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=WqOQmBZjIw8",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "WqOQmBZjIw8",
+        "title": "習慣成功，與奧里森. 馬登對話"
+      }
+    ]
   },
   {
     "n": "0801",
     "t": "聰明人都實踐的輸出力法則",
     "a": "金川顯教",
     "u": "39c34a20271a814c800ec7367b4dc085",
-    "y": "https://www.youtube.com/watch?v=eAvNCiJlg5Y&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=eAvNCiJlg5Y",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "eAvNCiJlg5Y",
+        "title": "聰明人都實踐的輸出⼒法則"
+      }
+    ]
   },
   {
     "n": "0802",
     "t": "職場人的生成式AI工作法",
     "a": "法瑞、羅薩尼",
     "u": "39c34a20271a811eb66ef678fa883707",
-    "y": "https://www.youtube.com/watch?v=WUkrwEGHSVU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=WUkrwEGHSVU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "WUkrwEGHSVU",
+        "title": "職場人的生成式AI工作法"
+      }
+    ]
   },
   {
     "n": "0803",
@@ -876,8 +1260,14 @@
     "t": "臨終前最常聽到的五個遺憾",
     "a": "布朗妮·威爾",
     "u": "39c34a20271a8128b553c7194e44f5cc",
-    "y": "https://www.youtube.com/watch?v=t29y6t0R0zc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=t29y6t0R0zc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "t29y6t0R0zc",
+        "title": "臨終前最常聽到的五個遺憾 / The Top Five Regrets of the Dying"
+      }
+    ]
   },
   {
     "n": "0818",
@@ -900,16 +1290,28 @@
     "t": "要嘛驚喜，要嘛拒絕",
     "a": "德瑞克·席佛斯",
     "u": "39c34a20271a819e9a2ddd20ee88646b",
-    "y": "https://www.youtube.com/watch?v=w1reZ7KV9J0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=w1reZ7KV9J0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "w1reZ7KV9J0",
+        "title": "要嘛驚喜，要嘛拒絕 / Hell Yeah or No"
+      }
+    ]
   },
   {
     "n": "0859",
     "t": "觀察者文集",
     "a": "安迪·安德魯斯",
     "u": "39c34a20271a819798acddba233bee1d",
-    "y": "https://www.youtube.com/watch?v=pck5FCZW90w&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=pck5FCZW90w",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "pck5FCZW90w",
+        "title": "觀察者文集 / The Noticer Collection"
+      }
+    ]
   },
   {
     "n": "0875",
@@ -940,8 +1342,14 @@
     "t": "讓自己更值錢",
     "a": "博恩．崔西",
     "u": "39c34a20271a81e5b05bdf4294c83815",
-    "y": "https://www.youtube.com/watch?v=EMuPuUVmlcs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=EMuPuUVmlcs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "EMuPuUVmlcs",
+        "title": "讓自己更值錢 / Earn What You Are Really Worth：How to maximize Your Income at Any Time in Any Market"
+      }
+    ]
   },
   {
     "n": "0906",
@@ -964,8 +1372,14 @@
     "t": "超效率工作法",
     "a": "金川顯教",
     "u": "39c34a20271a81b2bb23d617ab534bc0",
-    "y": "https://www.youtube.com/watch?v=qG4xdgmcqiY&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qG4xdgmcqiY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qG4xdgmcqiY",
+        "title": "超效率工作法"
+      }
+    ]
   },
   {
     "n": "0928",
@@ -980,32 +1394,56 @@
     "t": "踏實感的練習",
     "a": "布萊德．史托伯格",
     "u": "39c34a20271a8163a5a2e3cfa353325d",
-    "y": "https://www.youtube.com/watch?v=XmEDaCT1wok&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=XmEDaCT1wok",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "XmEDaCT1wok",
+        "title": "踏實感的練習踏實感的練習：走出過度努力的耗損，打造持久的成功 / The Practice of Groundedness"
+      }
+    ]
   },
   {
     "n": "0938",
     "t": "逆向工程，你我都能變優秀的祕訣",
     "a": "朗恩．傅利曼",
     "u": "39c34a20271a8120b6afe00b5186fa7f",
-    "y": "https://www.youtube.com/watch?v=ZyevNvLfRII&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZyevNvLfRII",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZyevNvLfRII",
+        "title": "逆向工程，你我都能變優秀的祕訣 / Decoding Greatness: How the Best in the World Reverse Engineer Success"
+      }
+    ]
   },
   {
     "n": "0940",
     "t": "逆襲人生21個底層邏輯",
     "a": "呂白",
     "u": "39c34a20271a813497c7dad39bc3ba30",
-    "y": "https://www.youtube.com/watch?v=G8pAnKMNV3M&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=G8pAnKMNV3M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "G8pAnKMNV3M",
+        "title": "逆襲人生21個底層邏輯：快速做出改變的高效率成長指南"
+      }
+    ]
   },
   {
     "n": "0942",
     "t": "這一天過得很充實",
     "a": "蘿拉．范德康",
     "u": "39c34a20271a8129ae8bc4426768193f",
-    "y": "https://www.youtube.com/watch?v=oS6CMTyZYsQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=oS6CMTyZYsQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "oS6CMTyZYsQ",
+        "title": "這一天過得很充實"
+      }
+    ]
   },
   {
     "n": "0948",
@@ -1028,8 +1466,18 @@
     "t": "選擇的價值",
     "a": "卡斯·桑斯坦",
     "u": "39c34a20271a81719046e5a11aa7c970",
-    "y": "https://www.youtube.com/watch?v=EEPL2jorpDs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=XlQhgnroIWk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "XlQhgnroIWk",
+        "title": "選擇的價值：如何做出更自由的決策 / Choosing Not to Choose: Understanding the Value of Choice"
+      },
+      {
+        "id": "EEPL2jorpDs",
+        "title": "選擇的價值 / Choosing Not to Choose: Understanding the Value of Choice"
+      }
+    ]
   },
   {
     "n": "0961",
@@ -1052,8 +1500,14 @@
     "t": "釋放：過上無壓力生活的7個原則",
     "a": "Michael Olpin",
     "u": "39c34a20271a81a4a63ff5edbbaa1b10",
-    "y": "https://www.youtube.com/watch?v=s4J0NFafGdg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=s4J0NFafGdg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "s4J0NFafGdg",
+        "title": "釋放：過上無壓力生活的7個原則 / Unwind 7 Principles for a Stress-Free Life"
+      }
+    ]
   },
   {
     "n": "0975",
@@ -1132,47 +1586,87 @@
     "t": "世界頂尖人士如何度過他們的「假日」",
     "a": "越川慎司",
     "u": "3b034a20271a815d8959e7c8ec1604e2",
-    "y": "https://www.youtube.com/watch?v=WH_XfgXpFcw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=WH_XfgXpFcw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "WH_XfgXpFcw",
+        "title": "世界頂尖人士如何度過他們的「假日」"
+      }
+    ]
   },
   {
     "n": "1065",
     "t": "設計你的工作和人生",
     "a": "比爾・博內特、戴夫・伊萬斯",
     "u": "3bc34a20271a8179b8f0e15f96a38258",
-    "y": "https://www.youtube.com/watch?v=TEvZDKc9gDk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=JPR1kDQO-bY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "JPR1kDQO-bY",
+        "title": "設計你的工作和人生"
+      },
+      {
+        "id": "TEvZDKc9gDk",
+        "title": "設計你的工作和人生"
+      }
+    ]
   },
   {
     "n": "1072",
     "t": "人生很短，我決定活得有趣",
     "a": "李冰",
     "u": "3c434a20271a818191d0fcc45110bd5b",
-    "y": "https://www.youtube.com/watch?v=Xmz4HXIx8u0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=Xmz4HXIx8u0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "Xmz4HXIx8u0",
+        "title": "人生很短，我決定活得有趣"
+      }
+    ]
   },
   {
     "n": "1081",
     "t": "聰明人的個人成長",
     "a": "史蒂夫・帕弗利納（Steve Pavlina）",
     "u": "3c434a20271a81588a50c1c573bcb3fd",
-    "y": "https://www.youtube.com/watch?v=dC1Mv_bnSWE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=dC1Mv_bnSWE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "dC1Mv_bnSWE",
+        "title": "聰明人的個人成長之路  / Personal Development for Smart People"
+      }
+    ]
   },
   {
     "n": "1082",
     "t": "如何將知識轉化為行動",
     "a": "肯・布蘭佳、保羅・梅爾、迪克・魯厄",
     "u": "3c434a20271a81698e23ea8d6c8cd9df",
-    "y": "https://www.youtube.com/watch?v=k4rMxBoPcyM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=k4rMxBoPcyM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "k4rMxBoPcyM",
+        "title": "如何將知識轉化為行動"
+      }
+    ]
   },
   {
     "n": "1127",
     "t": "微實驗：透過微小的嘗試，探索人生的無限可能",
     "a": "安蘿爾・勒坎弗（Anne-Laure Le Cunff）",
     "u": "a5f34a20271a83e2bee88146b9053f8e",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=B3uNQW_Q-6M",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "B3uNQW_Q-6M",
+        "title": "微實驗"
+      }
+    ]
   }
 ]
