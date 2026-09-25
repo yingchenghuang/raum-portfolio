@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;1,400&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260823-4">
-  <script src="app.js?v=20260926-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260926-4">
+  <script src="app.js?v=20260926-3" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -38,6 +38,17 @@
     <section class="playlist-section" aria-labelledby="playlist-title">
       <div class="playlist-heading"><p class="eyebrow">YOUTUBE / 書摘影片</p><h2 id="playlist-title">最新書摘影片</h2><p>播放清單會隨 YouTube 上架自動更新。</p></div>
       <div class="playlist-frame"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p" title="空間的靈光｜YouTube 書摘影片播放清單" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </section>
+
+    <section id="videos" class="video-archive" aria-labelledby="videos-title">
+      <header class="catalog-heading">
+        <div><p class="eyebrow">THE AURA OF SPACE / 書摘影片</p><h2 id="videos-title">全部影片</h2></div>
+        <p>依 YouTube 播放清單順序整理，點選影片可觀看，已配對的書目可直達完整筆記。</p>
+      </header>
+      <label class="video-search">搜尋影片標題或書籍編號 <input id="videoSearch" type="search" placeholder="搜尋書摘影片" autocomplete="off"></label>
+      <p id="videoStatus" class="result-status" aria-live="polite">正在載入影片…</p>
+      <div id="videoList" class="video-list"></div>
+      <button id="loadMoreVideos" class="load-more" type="button" hidden>顯示更多影片 ↓</button>
     </section>
 
     <section id="library" class="library" aria-labelledby="library-title">
