@@ -4,16 +4,28 @@
     "t": "Hello, Cruel World!",
     "a": "梅琳達・溫納・莫耶",
     "u": "39c34a20271a814c9165c2562785b526",
-    "y": "https://www.youtube.com/watch?v=VQMJRLcrYcs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=VQMJRLcrYcs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "VQMJRLcrYcs",
+        "title": "Hello, Cruel World! / 你好，殘酷世界！在可怕時代養出出色孩子的科學策略"
+      }
+    ]
   },
   {
     "n": "0036",
     "t": "i世代報告",
     "a": "珍．特溫格",
     "u": "39c34a20271a81969153d74b0452a3bf",
-    "y": "https://www.youtube.com/watch?v=KIQUX2PTU54&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=KIQUX2PTU54",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "KIQUX2PTU54",
+        "title": "i世代報告"
+      }
+    ]
   },
   {
     "n": "0043",
@@ -52,8 +64,14 @@
     "t": "全光譜",
     "a": "亞當．羅傑斯",
     "u": "39c34a20271a816e9c87d3d804641a5e",
-    "y": "https://www.youtube.com/watch?v=psKl205QTG4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=psKl205QTG4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "psKl205QTG4",
+        "title": "全光譜 / Full Spectrum: How the Science of Color Made Us Modern"
+      }
+    ]
   },
   {
     "n": "0216",
@@ -100,24 +118,42 @@
     "t": "單向度的人：發達工業社會的意識型態研究",
     "a": "赫伯特·馬庫色",
     "u": "39c34a20271a81b5b087f7cf8653a9eb",
-    "y": "https://www.youtube.com/watch?v=YgW6CuisZdg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=YgW6CuisZdg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "YgW6CuisZdg",
+        "title": "單向度的人: 發達工業社會的意識型態研究 / One-Dimensional Man: Studies in the Ideology of Advanced Industrial Society"
+      }
+    ]
   },
   {
     "n": "0323",
     "t": "圍城",
     "a": "錢鍾書",
     "u": "39c34a20271a8169a8a3e6337a1439c8",
-    "y": "https://www.youtube.com/watch?v=uz15EMOTGiw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=uz15EMOTGiw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "uz15EMOTGiw",
+        "title": "圍城"
+      }
+    ]
   },
   {
     "n": "0356",
     "t": "天真的人類學家",
     "a": "奈吉爾·巴利",
     "u": "39c34a20271a81eba597e301d7385857",
-    "y": "https://www.youtube.com/watch?v=gHgqjgx0tHc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=gHgqjgx0tHc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "gHgqjgx0tHc",
+        "title": "天真的人類學家 / The Innocent Anthropologist"
+      }
+    ]
   },
   {
     "n": "0373",
@@ -140,8 +176,14 @@
     "t": "對話城市：柏林成為柏林",
     "a": "",
     "u": "39c34a20271a814d8850d3a6f3b80d89",
-    "y": "https://www.youtube.com/watch?v=TlClWdAhf_E&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=TlClWdAhf_E",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "TlClWdAhf_E",
+        "title": "對話城市：柏林成為柏林 / The Dialogic City: Berlin wird Berlin"
+      }
+    ]
   },
   {
     "n": "0533",
@@ -164,16 +206,28 @@
     "t": "最後一個故事，就這樣啦",
     "a": "埃特加·凱雷特",
     "u": "39c34a20271a81038a23c12e7eb40ccc",
-    "y": "https://www.youtube.com/watch?v=8Tzmvnmdn30&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=8Tzmvnmdn30",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "8Tzmvnmdn30",
+        "title": "最後一個故事，就這樣啦"
+      }
+    ]
   },
   {
     "n": "0585",
     "t": "未來關我什麼事：跨世代的哲學思辨",
     "a": "山謬．薛富勒",
     "u": "39c34a20271a81a8a41ef6551773141a",
-    "y": "https://www.youtube.com/watch?v=vEgwqegkl6o&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=vEgwqegkl6o",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "vEgwqegkl6o",
+        "title": "未來關我什麼事：跨世代的哲學思辨 / Why Worry About Future Generations?"
+      }
+    ]
   },
   {
     "n": "0590",
@@ -188,16 +242,28 @@
     "t": "歌利亞的詛咒：社會崩潰的歷史與未來",
     "a": "路克·坎普",
     "u": "39c34a20271a81748533ee890a078d62",
-    "y": "https://www.youtube.com/watch?v=h23dnMk63BQ&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=h23dnMk63BQ",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "h23dnMk63BQ",
+        "title": "歌利亞的詛咒：社會崩潰的歷史與未來 / Goliath's Curse: The History and Future of Societal Collapse"
+      }
+    ]
   },
   {
     "n": "0638",
     "t": "沉思錄",
     "a": "馬可·奧勒留",
     "u": "39c34a20271a81f596e9ded3fffb924e",
-    "y": "https://www.youtube.com/watch?v=1XZVtM2r3eE&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1XZVtM2r3eE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1XZVtM2r3eE",
+        "title": "沉思錄 / Meditations"
+      }
+    ]
   },
   {
     "n": "0652",
@@ -212,8 +278,14 @@
     "t": "深刻認識一個人",
     "a": "大衛．布魯克斯",
     "u": "39c34a20271a81b4a7fedfd90c800055",
-    "y": "https://www.youtube.com/watch?v=IBH3ySIVSWM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=IBH3ySIVSWM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "IBH3ySIVSWM",
+        "title": "深刻認識一個人 / How to Know a Person"
+      }
+    ]
   },
   {
     "n": "0681",
@@ -236,8 +308,14 @@
     "t": "異數",
     "a": "Malcolm Gladwell",
     "u": "39c34a20271a81078968d81d20e65120",
-    "y": "https://www.youtube.com/watch?v=ZQxk3Sq5q1U&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZQxk3Sq5q1U",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZQxk3Sq5q1U",
+        "title": "異數 / Outliers The Story of Success"
+      }
+    ]
   },
   {
     "n": "0721",
@@ -260,8 +338,14 @@
     "t": "第二曲線：關於重塑社會的思考",
     "a": "查爾斯·漢迪",
     "u": "39c34a20271a81088afbf6d5376480a9",
-    "y": "https://www.youtube.com/watch?v=z1TX4zBUlYA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=z1TX4zBUlYA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "z1TX4zBUlYA",
+        "title": "第二曲線：關於重塑社會的思考  / The Second Curve: Thoughts on Reinventing Society"
+      }
+    ]
   },
   {
     "n": "0847",
@@ -284,8 +368,14 @@
     "t": "謝謝你遲到：以慢制勝，破題未來格局",
     "a": "托馬斯·弗里德曼",
     "u": "39c34a20271a815c8543f7217f3c59a4",
-    "y": "https://www.youtube.com/watch?v=5KThq6u-pws&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=5KThq6u-pws",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "5KThq6u-pws",
+        "title": "謝謝你遲到：以慢制勝，破題未來格局 / Thank You for Being Late"
+      }
+    ]
   },
   {
     "n": "0954",
@@ -308,8 +398,14 @@
     "t": "開竅 開悟 開智",
     "a": "",
     "u": "39c34a20271a81358a23ce24c2fa5d6c",
-    "y": "https://www.youtube.com/watch?v=bh-gMlvXHPg&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=bh-gMlvXHPg",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "bh-gMlvXHPg",
+        "title": "開竅 開悟 開智"
+      }
+    ]
   },
   {
     "n": "1005",
@@ -324,16 +420,28 @@
     "t": "隱藏的潛能",
     "a": "亞當·格蘭特",
     "u": "39c34a20271a8105b467facae2af80dd",
-    "y": "https://www.youtube.com/watch?v=AYdGIPEwxME&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=AYdGIPEwxME",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "AYdGIPEwxME",
+        "title": "隱藏的潛能 / Hidden Potential"
+      }
+    ]
   },
   {
     "n": "1071",
     "t": "靈魂在工作：從異化、焦慮到自主",
     "a": "弗朗科・比弗・貝拉爾迪（Franco Berardi）",
     "u": "3c434a20271a817f9b77fda09bcc552f",
-    "y": "https://www.youtube.com/watch?v=il4wxsFt92g&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=il4wxsFt92g",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "il4wxsFt92g",
+        "title": "靈魂在工作：從異化、焦慮到自主"
+      }
+    ]
   },
   {
     "n": "1074",
@@ -364,8 +472,14 @@
     "t": "最後的人類工作：失連世界中的連結勞動",
     "a": "艾莉森・普（Allison J. Pugh）",
     "u": "3ce34a20271a81b3947bec74f8257a42",
-    "y": "https://www.youtube.com/watch?v=qdvCJVoeaNI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qdvCJVoeaNI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qdvCJVoeaNI",
+        "title": "最後的人類工作：失連世界中的連結勞動"
+      }
+    ]
   },
   {
     "n": "1123",
@@ -380,7 +494,13 @@
     "t": "慷慨的感染力",
     "a": "克里斯・安德森（Chris Anderson）",
     "u": "08434a20271a82429ff481f96665ca6f",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=1MbckenESPc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1MbckenESPc",
+        "title": "慷慨的力量"
+      }
+    ]
   }
 ]
