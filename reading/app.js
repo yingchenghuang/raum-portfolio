@@ -6,7 +6,8 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20260926-1';
+const DATA_VERSION = '20260926-2';
+const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 
 async function loadBooks(){
   const groups = await Promise.all(categories.map(async ([key,label]) => {
@@ -116,7 +117,7 @@ const noteCache = new Map();
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 let noteUpdatesPromise;
 function loadNoteUpdate(book){
-  if(Number(book.n)<1116 && !['0185','0498'].includes(book.n)) return Promise.resolve(null);
+  if(Number(book.n)<1116 && !UPDATED_NOTE_IDS.has(book.n)) return Promise.resolve(null);
   noteUpdatesPromise ??= fetch(`notes/updates-20260926.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).catch(() => ({}));
   return noteUpdatesPromise.then(updates => updates[book.u] || null);
 }
