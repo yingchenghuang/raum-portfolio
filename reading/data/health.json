@@ -4,16 +4,28 @@
     "t": "1%法則",
     "a": "湯姆·康奈蘭",
     "u": "39c34a20271a81e5a338f435ca42fb64",
-    "y": "https://www.youtube.com/watch?v=ZdjXEGZlolA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZdjXEGZlolA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZdjXEGZlolA",
+        "title": "1%法則 / The 1% Solution for Work and Life: How to Make Your Next 30 Days the Best Ever"
+      }
+    ]
   },
   {
     "n": "0034",
     "t": "Good Energy代謝力打造最強好能量",
     "a": "凱西・明斯、卡利・明斯",
     "u": "39c34a20271a81a1b881fff72294b6df",
-    "y": "https://www.youtube.com/watch?v=_tGDSDlTJsU&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=_tGDSDlTJsU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "_tGDSDlTJsU",
+        "title": "Good Energy代謝力打造最強好能量"
+      }
+    ]
   },
   {
     "n": "0045",
@@ -36,16 +48,28 @@
     "t": "丟吧！成為更好的自己",
     "a": "山下英子",
     "u": "39c34a20271a814793a7e232fbb09bc0",
-    "y": "https://www.youtube.com/watch?v=2PixoYL7JDo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=2PixoYL7JDo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "2PixoYL7JDo",
+        "title": "丟吧！成為更好的自己"
+      }
+    ]
   },
   {
     "n": "0102",
     "t": "九十歲的風景：長壽而知足的生活反思",
     "a": "查爾斯·韓第",
     "u": "39c34a20271a8104b348ed2d1089b7ae",
-    "y": "https://www.youtube.com/watch?v=igVZITmTMNk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=igVZITmTMNk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "igVZITmTMNk",
+        "title": "九十歲的風景：長壽而知足的生活反思 / The View from Ninety: Reflections on How to Live a Long, Contented Life"
+      }
+    ]
   },
   {
     "n": "0160",
@@ -60,8 +84,14 @@
     "t": "免疫系統全方位復原計畫",
     "a": "蘇珊．布魯",
     "u": "39c34a20271a81daa5f4efc94dd30c9e",
-    "y": "https://www.youtube.com/watch?v=PIhABQFO37k&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=PIhABQFO37k",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PIhABQFO37k",
+        "title": "免疫系統全方位復原計畫"
+      }
+    ]
   },
   {
     "n": "0239",
@@ -92,32 +122,56 @@
     "t": "大腦營養學全書",
     "a": "張立人",
     "u": "39c34a20271a811e9f91eef418c1ccd5",
-    "y": "https://www.youtube.com/watch?v=R3VSDMf5_z0&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=R3VSDMf5_z0",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "R3VSDMf5_z0",
+        "title": "大腦營養學全書"
+      }
+    ]
   },
   {
     "n": "0351",
     "t": "大腦韌性",
     "a": "Sanjay Gupta",
     "u": "39c34a20271a8176a8e2c0d5e301dc32",
-    "y": "https://www.youtube.com/results?search_query=%E5%A4%A7%E8%85%A6%E9%9F%8C%E6%80%A7+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=UYb6C8CmC50",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "UYb6C8CmC50",
+        "title": "大腦韌性 :高齡化時代最重要的健康資產 / Keep Sharp Build a Better Brain at Any Age"
+      }
+    ]
   },
   {
     "n": "0359",
     "t": "失眠的年代：即刻救援你的睡眠",
     "a": "許承翰",
     "u": "39c34a20271a81eba597e301d7385857",
-    "y": "https://www.youtube.com/watch?v=_xG1rPo7Qnk&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=_xG1rPo7Qnk",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "_xG1rPo7Qnk",
+        "title": "失眠的年代：即刻救援你的睡眠，不睡這個殺手就在你身邊"
+      }
+    ]
   },
   {
     "n": "0361",
     "t": "失衡的免疫",
     "a": "Monty Lyman",
     "u": "39c34a20271a815cb11ce4954db7e811",
-    "y": "https://www.youtube.com/watch?v=U6kcUQjqsVs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=U6kcUQjqsVs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "U6kcUQjqsVs",
+        "title": "失衡的免疫"
+      }
+    ]
   },
   {
     "n": "0386",
@@ -140,24 +194,42 @@
     "t": "心念自癒力：突破中醫、西醫的心療法",
     "a": "許瑞云",
     "u": "39c34a20271a81f79e76c4ceaa1887e7",
-    "y": "https://www.youtube.com/results?search_query=%E5%BF%83%E5%BF%B5%E8%87%AA%E7%99%92%E5%8A%9B%EF%BC%9A%E7%AA%81%E7%A0%B4%E4%B8%AD%E9%86%AB%E3%80%81%E8%A5%BF%E9%86%AB%E7%9A%84%E5%BF%83%E7%99%82%E6%B3%95+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=efKaf2idBMU",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "efKaf2idBMU",
+        "title": "心念自癒力"
+      }
+    ]
   },
   {
     "n": "0459",
     "t": "心靈的傷，身體會記住",
     "a": "貝塞爾．范德寇",
     "u": "39c34a20271a817db07eeec6183faacc",
-    "y": "https://www.youtube.com/watch?v=LI__7Ta_oTw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=LI__7Ta_oTw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "LI__7Ta_oTw",
+        "title": "心靈的傷，身體會記住 / The Body Keeps the Score"
+      }
+    ]
   },
   {
     "n": "0497",
     "t": "我全都要：顛覆大腦二選一慣性的進階思維",
     "a": "溫蒂·史密斯",
     "u": "39c34a20271a816a873fca980dbb56f3",
-    "y": "https://www.youtube.com/watch?v=r7ZEGeSnOYs&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=r7ZEGeSnOYs",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "r7ZEGeSnOYs",
+        "title": "我全都要: 顛覆大腦二選一慣性的進階思維 /Both And Thinking: Embracing Creative Tensions to Solve Your Toughest Problems"
+      }
+    ]
   },
   {
     "n": "0514",
@@ -204,16 +276,28 @@
     "t": "相信自己很棒",
     "a": "珍‧新賽羅",
     "u": "39c34a20271a816d98b3f13326bfb999",
-    "y": "https://www.youtube.com/watch?v=SfDCCJUkmHM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=SfDCCJUkmHM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "SfDCCJUkmHM",
+        "title": "相信自己很棒 / You are a Badass"
+      }
+    ]
   },
   {
     "n": "0732",
     "t": "睡眠正能量",
     "a": "理查德·懷斯曼",
     "u": "39c34a20271a8154b0b2f1f759625e6f",
-    "y": "https://www.youtube.com/watch?v=N8_56GHS0yA&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=N8_56GHS0yA",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "N8_56GHS0yA",
+        "title": "睡眠正能量 / Sleep Positive Energy"
+      }
+    ]
   },
   {
     "n": "0735",
@@ -228,32 +312,56 @@
     "t": "絕佳時間：如何利用生物鐘活得更健康",
     "a": "羅素·福斯特",
     "u": "39c34a20271a819f8a64f64dd3cef831",
-    "y": "https://www.youtube.com/watch?v=ioUqsEgyE6Q&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ioUqsEgyE6Q",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ioUqsEgyE6Q",
+        "title": "絕佳時間：如何利用生物鐘活得更健康"
+      }
+    ]
   },
   {
     "n": "0790",
     "t": "給壯世代的百歲人生思維",
     "a": "安德魯．史考特",
     "u": "39c34a20271a8179b919d51c6280dc20",
-    "y": "https://www.youtube.com/watch?v=TWoualD6Mdc&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=TWoualD6Mdc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "TWoualD6Mdc",
+        "title": "給壯世代的百歲人生思維 / The Longevity Imperative: Building a Better Society for Healthier, Longer Lives"
+      }
+    ]
   },
   {
     "n": "0804",
     "t": "肉體與石頭",
     "a": "",
     "u": "39c34a20271a815db5ccdaff1e4f83be",
-    "y": "https://www.youtube.com/watch?v=O0lUAIRf2zo&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=O0lUAIRf2zo",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "O0lUAIRf2zo",
+        "title": "肉體與石頭 / Flesh and Stone: The Body and the City in Western Civilization"
+      }
+    ]
   },
   {
     "n": "0805",
     "t": "能量校準",
     "a": "丹妮絲．琳恩",
     "u": "39c34a20271a816c84fad0e87943b80d",
-    "y": "https://www.youtube.com/watch?v=ZAJvVQ_mv0I&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=ZAJvVQ_mv0I",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "ZAJvVQ_mv0I",
+        "title": "能量校準 / Energy Strands The Ultimate Guide to Clearing the Cords That Are Constricting Your Life"
+      }
+    ]
   },
   {
     "n": "0806",
@@ -276,8 +384,14 @@
     "t": "說話，改造大腦",
     "a": "瑪莉艾倫·麥克唐納",
     "u": "39c34a20271a81b08fd2fd475d487f2e",
-    "y": "https://www.youtube.com/watch?v=1B6GYlga2WM&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=1B6GYlga2WM",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "1B6GYlga2WM",
+        "title": "說話，改造大腦 / More Than Words: How Talking Sharpens the Mind and Shapes Our World"
+      }
+    ]
   },
   {
     "n": "0877",
@@ -292,16 +406,28 @@
     "t": "超級溝通者：如何解鎖連結的秘密語言",
     "a": "查爾斯·杜希格",
     "u": "39c34a20271a814a89b2ed03fc7a4f6e",
-    "y": "https://www.youtube.com/results?search_query=%E8%B6%85%E7%B4%9A%E6%BA%9D%E9%80%9A%E8%80%85%EF%BC%9A%E5%A6%82%E4%BD%95%E8%A7%A3%E9%8E%96%E9%80%A3%E7%B5%90%E7%9A%84%E7%A7%98%E5%AF%86%E8%AA%9E%E8%A8%80+%E6%9B%B8%E6%91%98",
-    "ys": "search"
+    "y": "https://www.youtube.com/watch?v=mhpLqk4mOxI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "mhpLqk4mOxI",
+        "title": "超級溝通者 / Supercommunicators"
+      }
+    ]
   },
   {
     "n": "0923",
     "t": "超預期壽命",
     "a": "彼得．阿提亞",
     "u": "39c34a20271a8194a11cdee0973ffdcd",
-    "y": "https://www.youtube.com/watch?v=qA7IjW34MF4&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=qA7IjW34MF4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "qA7IjW34MF4",
+        "title": "超預期壽命 / Outlive: The Science and Art of Longevity"
+      }
+    ]
   },
   {
     "n": "0934",
@@ -316,23 +442,41 @@
     "t": "順著大腦習性，懶人也有高績效",
     "a": "菅原道仁",
     "u": "39c34a20271a8164980eee329cad657a",
-    "y": "https://www.youtube.com/watch?v=JUlf7u6yMiw&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=JUlf7u6yMiw",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "JUlf7u6yMiw",
+        "title": "順著大腦習性，懶人也有高績效：靠意志力只會中途放棄，腦神經醫師教你指揮大腦不拖拉，恆毅力、專注力大幅提升！"
+      }
+    ]
   },
   {
     "n": "1097",
     "t": "得了抑鬱症後，我開始拉車賣蛋糕",
     "a": "鏘鏘堂阿哲",
     "u": "3c734a20271a8099bac4ee0400bfe794",
-    "y": "https://www.youtube.com/watch?v=UwiXAWr0izI&list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "playlist"
+    "y": "https://www.youtube.com/watch?v=UwiXAWr0izI",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "UwiXAWr0izI",
+        "title": "得了抑鬱症後，我開始拉車賣蛋糕"
+      }
+    ]
   },
   {
     "n": "1121",
     "t": "生命在於靜止：有趣動物的冷知識",
     "a": "麻生羽呂、篠原薰",
     "u": "3d634a20271a81779edfcca65f9626d8",
-    "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
-    "ys": "collection"
+    "y": "https://www.youtube.com/watch?v=KWeSEIVuZkc",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "KWeSEIVuZkc",
+        "title": "生命在於靜止：有趣動物冷知識"
+      }
+    ]
   }
 ]
