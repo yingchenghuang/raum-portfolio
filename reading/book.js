@@ -5,7 +5,8 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20260926-1';
+const DATA_VERSION = '20260926-2';
+const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
 async function loadBookPage(){
@@ -38,7 +39,7 @@ function videoActionLabel(book){
   return book.ys==='playlist' ? '我的書摘影片' : book.ys==='video' ? '筆記所附影片' : book.ys==='collection' ? '我的書摘播放清單' : '搜尋相關影片';
 }
 async function loadNote(book){
-  const hasUpdate=Number(book.n)>=1116||['0185','0498'].includes(book.n);
+  const hasUpdate=Number(book.n)>=1116||UPDATED_NOTE_IDS.has(book.n);
   if(hasUpdate && !noteUpdatesPromise) noteUpdatesPromise=fetch(`notes/updates-20260926.json?v=${DATA_VERSION}`).then(response=>response.ok?response.json():{}).catch(()=>({}));
   let page=hasUpdate?(await noteUpdatesPromise)[book.u]:null;
   if(!page){
