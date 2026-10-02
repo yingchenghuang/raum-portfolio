@@ -18170,7 +18170,33 @@ function WorksSection({ lang, motion }) {
 
 function ArchiveSection({ lang, motion }) {
   const c = window.COPY[lang];
-  const ARCHIVE = window.ARCHIVE;
+  // Keep the 2026 archive aligned with all project data, including deployment-time additions.
+  const ARCHIVE = window.ARCHIVE.map((group) => {
+    if (String(group.year) !== '2026') return group;
+    const items = group.items.map((item) => ({ ...item }));
+    window.PROJECTS.filter((project) => String(project.year) === '2026').forEach((project) => {
+      const link = '#' + project.id;
+      const existing = items.find((item) => item.link === link || (project.no && item.no === project.no));
+      const entry = {
+        no: project.no,
+        month: project.month,
+        title_zh: project.title_zh,
+        title_en: project.title_en,
+        title_de: project.title_de,
+        site: project.site_zh,
+        site_zh: project.site_zh,
+        site_en: project.site_en,
+        site_de: project.site_de,
+        type: project.type,
+        link,
+      };
+      if (existing) Object.assign(existing, entry);
+      else items.push(entry);
+    });
+    items.sort((a, b) => Number(b.month || 0) - Number(a.month || 0)
+      || String(b.no || '').localeCompare(String(a.no || '')));
+    return { ...group, items };
+  });
   const totalItems = ARCHIVE.reduce((a, y) => a + y.items.length, 0);
   return (
     <section className="rp-archive" id="archive">
