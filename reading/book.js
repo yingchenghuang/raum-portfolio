@@ -5,7 +5,7 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20261023-1';
+const DATA_VERSION = '20261101-1';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
@@ -41,7 +41,7 @@ function videoActionLabel(book){
 async function loadNote(book){
   let page=null;
   if(Number(book.n)>=1131){
-    const newest=await fetch(`notes/updates-20261023.json?v=${DATA_VERSION}`);
+    const newest=await fetch(`notes/updates-20261101.json?v=${DATA_VERSION}`);
     if(newest.ok) page=(await newest.json())[book.u]||null;
   }
   const hasUpdate=Number(book.n)>=1116||UPDATED_NOTE_IDS.has(book.n);

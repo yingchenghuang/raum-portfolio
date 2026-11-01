@@ -426,6 +426,62 @@
     "t": "花衣魔笛手：傳說背後的歐洲中世紀",
     "a": "阿部謹也（Kinya Abe）",
     "u": "3e834a20271a83dfb49601023683724e",
+    "y": "https://www.youtube.com/watch?v=3DLEnMjOTm4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "3DLEnMjOTm4",
+        "title": "花衣魔笛手：傳說背後的歐洲中世紀"
+      }
+    ]
+  },
+  {
+    "n": "1140",
+    "u": "c4234a20271a828a8e4c812a059d93c0",
+    "t": "跟史家一起創作：近代史學的閱讀方法與寫作技藝",
+    "a": "皮國立",
+    "y": "https://www.youtube.com/watch?v=PpMGRUF3xDE",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PpMGRUF3xDE",
+        "title": "跟史家一起創作：近代史學的閱讀方法與寫作技藝"
+      }
+    ]
+  },
+  {
+    "n": "1141",
+    "u": "a3434a20271a8338b66281d6443cfc08",
+    "t": "萬物的名字",
+    "a": "傑森・羅伯茲（Jason Roberts）",
+    "y": "https://www.youtube.com/watch?v=PzDocNHvzu4",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PzDocNHvzu4",
+        "title": "萬物的名字"
+      }
+    ]
+  },
+  {
+    "n": "1142",
+    "u": "5eb34a20271a831ba4348169b748d03e",
+    "t": "幽影之國：台灣的故事與其生存奮鬥的400年",
+    "a": "何貴森（Chris Horton）",
+    "y": "https://www.youtube.com/watch?v=PSLhCHOFKbY",
+    "ys": "playlist",
+    "videos": [
+      {
+        "id": "PSLhCHOFKbY",
+        "title": "幽影之國：台灣的故事與其生存奮鬥的400年"
+      }
+    ]
+  },
+  {
+    "n": "1144",
+    "u": "c6534a20271a83459c1f813f63d275d9",
+    "t": "李登輝的政策視野：從農經幕僚到總統之路",
+    "a": "洪紹洋",
     "y": "https://www.youtube.com/playlist?list=PLN-PofMHjHBTTpN-N8oXoAFpC0wUOp83p",
     "ys": "collection"
   }
