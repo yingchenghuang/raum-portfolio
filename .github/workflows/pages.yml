@@ -176,6 +176,9 @@ jobs:
           path.write_text(html, encoding='utf-8')
           PY
 
+      - name: Sync writings 132 and 133
+        run: node .github/scripts/sync-writings-132-133-20261108.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
