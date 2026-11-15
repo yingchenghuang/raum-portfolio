@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20261101-1';
+const DATA_VERSION = '20261115-1';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 
 async function loadBooks(){
@@ -69,7 +69,7 @@ function renderShelf(){
   const source = state.filtered.slice(-14).reverse();
   if(source.length && !source.some(b => b.n===state.selected?.n)) state.selected = source[0];
   $('#bookShelf').innerHTML = source.length ? source.map(book =>
-    `<button class="book-3d ${book.n===state.selected?.n?'active':''}" data-book="${book.n}" title="${escapeHtml(book.t)} — ${escapeHtml(book.a || '作者待補')}"><span class="book-object"><span class="book-front"><span class="cover-fallback"><b>${escapeHtml(book.t)}</b><small>${escapeHtml(book.a || 'RAUM+ ARCHIVE')}</small></span>${state.covers[book.n]?`<img src="${escapeHtml(state.covers[book.n])}" alt="《${escapeHtml(book.t)}》真實書封" loading="lazy">`:''}</span></span><span class="book-caption">NO. ${book.n}</span></button>`
+    `<button class="book-3d ${book.n===state.selected?.n?'active':''}" data-book="${book.n}" title="${escapeHtml(book.t)} — ${escapeHtml(book.a || '作者待補')}"><span class="book-object"><span class="book-front"><span class="cover-fallback"><b>${escapeHtml(book.t)}</b><small>${escapeHtml(book.a || 'RAUM+ ARCHIVE')}</small></span>${state.covers[book.n]?`<img src="${escapeHtml(state.covers[book.n])}" alt="《${escapeHtml(book.t)}》書封" loading="lazy">`:''}</span></span><span class="book-caption">NO. ${book.n}</span></button>`
   ).join('') : '<p>沒有符合條件的書。</p>';
   renderSelected();
 }
@@ -77,7 +77,7 @@ function renderShelf(){
 function renderSelected(){
   const book = state.selected;
   if(!book){ $('#selectedBook').innerHTML = '<p>請調整搜尋條件。</p>'; return; }
-  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${videoActionLabel(book)} ↗</a>`:''}</div>`;
+  $('#selectedBook').innerHTML = `<span class="num">NO. ${book.n}</span><h3>${escapeHtml(book.t)}</h3><p class="author">${escapeHtml(book.a || '作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-actions"><button class="read-note" data-read-note="${book.n}">快速閱讀筆記 →</button><a href="book.html?id=${encodeURIComponent(book.n)}">開啟完整頁面 ↗</a>${book.notion?`<a href="${escapeHtml(book.notion)}" target="_blank" rel="noreferrer">Notion 原筆記 ↗</a>`:''}${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${videoActionLabel(book)} ↗</a>`:''}</div>`;
   renderPath();
 }
 
@@ -117,7 +117,7 @@ const noteCache = new Map();
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 let noteUpdatesPromise;
 function loadNoteUpdate(book){
-  if(Number(book.n)>=1131) return fetch(`notes/updates-20261101.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).then(updates => updates[book.u] || null).catch(() => null);
+  if(Number(book.n)>=1131 || ['0087','0504'].includes(book.n)) return fetch(`notes/updates-20261115.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).then(updates => updates[book.u] || null).catch(() => null);
   if(Number(book.n)<1116 && !UPDATED_NOTE_IDS.has(book.n)) return Promise.resolve(null);
   noteUpdatesPromise ??= fetch(`notes/updates-20260926.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).catch(() => ({}));
   return noteUpdatesPromise.then(updates => updates[book.u] || null);
@@ -236,9 +236,10 @@ async function loadVideoCatalog(){
 function renderVideoCatalog(){
   const q=state.videoQuery||'';
   const filtered=state.videos.filter(v=>!q||`${v.title} ${v.book||''}`.toLocaleLowerCase('zh-Hant').includes(q));
-  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對影片（2026-11-01 增量同步；含播放清單與頻道新片）`;
+  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對影片（2026-11-15 增量同步；含播放清單與頻道新片）`;
   $('#videoList').innerHTML=filtered.slice(0,state.videoVisibleCount).map(v=>`<article class="video-card"><a class="video-card-image" href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer"><img loading="lazy" src="https://i.ytimg.com/vi/${escapeHtml(v.id)}/hqdefault.jpg" alt="${escapeHtml(v.title)}的影片縮圖"><span aria-hidden="true">▶</span></a><div><h3>${escapeHtml(v.title)}</h3><a href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer">觀看影片 ↗</a>${v.book?`<a href="book.html?id=${escapeHtml(v.book)}">第 ${escapeHtml(v.book)} 本閱讀筆記 ↗</a>`:''}</div></article>`).join('')||'<p>找不到符合的影片。</p>';
   $('#loadMoreVideos').hidden=filtered.length<=state.videoVisibleCount;
 }
 
 loadBooks().then(()=>loadVideoCatalog().catch(error=>{$('#videoStatus').textContent=error.message;})).catch(error => { $('#resultStatus').textContent=`資料載入失敗：${error.message}`; console.error(error); });
+

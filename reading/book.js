@@ -5,7 +5,7 @@ const categories = [
 ];
 const $ = selector => document.querySelector(selector);
 const escapeHtml = (value='') => String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-const DATA_VERSION = '20261101-1';
+const DATA_VERSION = '20261115-1';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 
@@ -23,7 +23,7 @@ async function loadBookPage(){
   document.querySelector('meta[name="description"]').content=`《${book.t}》完整閱讀筆記，作者：${book.a||'作者待補'}。`;
   $('#bookPage').innerHTML=`<section class="book-page-hero">
     <div class="book-page-cover">${covers[book.n]?`<img src="${escapeHtml(covers[book.n])}" alt="《${escapeHtml(book.t)}》書封">`:`<span>NO COVER<br>NO. ${book.n}</span>`}</div>
-    <div class="book-page-meta"><span class="num">NO. ${book.n} / COMPLETE NOTE</span><h1>${escapeHtml(book.t)}</h1><p class="author">${escapeHtml(book.a||'作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-page-actions"><button id="copyLink" type="button">複製本頁連結</button>${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${videoActionLabel(book)} ↗</a>`:''}</div></div>
+    <div class="book-page-meta"><span class="num">NO. ${book.n} / COMPLETE NOTE</span><h1>${escapeHtml(book.t)}</h1><p class="author">${escapeHtml(book.a||'作者待補')}</p><span class="category">${escapeHtml(book.categoryLabel)} / RAUM+ ARCHIVE</span><div class="book-page-actions"><button id="copyLink" type="button">複製本頁連結</button>${book.notion?`<a href="${escapeHtml(book.notion)}" target="_blank" rel="noreferrer">Notion 原筆記 ↗</a>`:''}${book.y?`<a href="${escapeHtml(book.y)}" target="_blank" rel="noreferrer">${videoActionLabel(book)} ↗</a>`:''}</div></div>
   </section>${renderFeaturedVideo(book)}<article class="book-page-note"><p class="book-page-note-heading">FULL READING NOTE / 完整閱讀筆記</p><div id="fullNote" class="note-content"><p class="note-loading">正在載入完整筆記…</p></div></article>`;
   $('#copyLink').addEventListener('click',copyPageLink);
   await loadNote(book);
@@ -40,8 +40,8 @@ function videoActionLabel(book){
 }
 async function loadNote(book){
   let page=null;
-  if(Number(book.n)>=1131){
-    const newest=await fetch(`notes/updates-20261101.json?v=${DATA_VERSION}`);
+  if(Number(book.n)>=1131 || ['0087','0504'].includes(book.n)){
+    const newest=await fetch(`notes/updates-20261115.json?v=${DATA_VERSION}`);
     if(newest.ok) page=(await newest.json())[book.u]||null;
   }
   const hasUpdate=Number(book.n)>=1116||UPDATED_NOTE_IDS.has(book.n);
@@ -102,3 +102,4 @@ function renderFeaturedVideo(book){
 }
 
 loadBookPage().catch(error=>{ $('#bookPage').innerHTML=`<p class="book-page-error">${escapeHtml(error.message)}<br><br><a href="./#all-books">← 返回所有書單</a></p>`; console.error(error); });
+
