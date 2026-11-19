@@ -203,6 +203,9 @@ jobs:
       - name: Sync writing 144
         run: node .github/scripts/sync-writing-144-20261118.mjs
 
+      - name: Sync writing 145
+        run: node .github/scripts/sync-writing-145-20261119.mjs
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
