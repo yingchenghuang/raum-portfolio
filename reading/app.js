@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20261115-1';
+const DATA_VERSION = '20261125-1';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 
 async function loadBooks(){
@@ -117,6 +117,7 @@ const noteCache = new Map();
 function noteBucket(id){ let hash=5381; for(const char of id) hash=((hash<<5)+hash)^char.charCodeAt(0); return (hash>>>0)%128; }
 let noteUpdatesPromise;
 function loadNoteUpdate(book){
+  if(book.n==="1150") return fetch(`notes/updates-20261125.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).then(updates => updates[book.u] || null);
   if(Number(book.n)>=1131 || ['0087','0504'].includes(book.n)) return fetch(`notes/updates-20261115.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).then(updates => updates[book.u] || null).catch(() => null);
   if(Number(book.n)<1116 && !UPDATED_NOTE_IDS.has(book.n)) return Promise.resolve(null);
   noteUpdatesPromise ??= fetch(`notes/updates-20260926.json?v=${DATA_VERSION}`).then(response => response.ok ? response.json() : {}).catch(() => ({}));
@@ -236,7 +237,7 @@ async function loadVideoCatalog(){
 function renderVideoCatalog(){
   const q=state.videoQuery||'';
   const filtered=state.videos.filter(v=>!q||`${v.title} ${v.book||''}`.toLocaleLowerCase('zh-Hant').includes(q));
-  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對影片（2026-11-15 增量同步；含播放清單與頻道新片）`;
+  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對影片（2026-11-25 核對頻道最新影片；保留既有索引）`;
   $('#videoList').innerHTML=filtered.slice(0,state.videoVisibleCount).map(v=>`<article class="video-card"><a class="video-card-image" href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer"><img loading="lazy" src="https://i.ytimg.com/vi/${escapeHtml(v.id)}/hqdefault.jpg" alt="${escapeHtml(v.title)}的影片縮圖"><span aria-hidden="true">▶</span></a><div><h3>${escapeHtml(v.title)}</h3><a href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer">觀看影片 ↗</a>${v.book?`<a href="book.html?id=${escapeHtml(v.book)}">第 ${escapeHtml(v.book)} 本閱讀筆記 ↗</a>`:''}</div></article>`).join('')||'<p>找不到符合的影片。</p>';
   $('#loadMoreVideos').hidden=filtered.length<=state.videoVisibleCount;
 }
