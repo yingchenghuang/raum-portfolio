@@ -6,7 +6,7 @@ const categories = [
 
 const state = { books: [], covers: {}, filtered: [], category: 'all', query: '', selected: null, visibleCount: 60 };
 const $ = (selector) => document.querySelector(selector);
-const DATA_VERSION = '20261125-1';
+const DATA_VERSION = '20261125-2';
 const UPDATED_NOTE_IDS = new Set(["0222","0223","0224","0225","1026","1028","1029","1030","1056","1057","0185","0498"]);
 
 async function loadBooks(){
@@ -237,7 +237,7 @@ async function loadVideoCatalog(){
 function renderVideoCatalog(){
   const q=state.videoQuery||'';
   const filtered=state.videos.filter(v=>!q||`${v.title} ${v.book||''}`.toLocaleLowerCase('zh-Hant').includes(q));
-  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對影片（2026-11-25 核對頻道最新影片；保留既有索引）`;
+  $('#videoStatus').textContent=`${filtered.length.toLocaleString('en-US')} 支影片／已核對影片（2026-11-25 同步播放清單；新增《花錢的藝術》）`;
   $('#videoList').innerHTML=filtered.slice(0,state.videoVisibleCount).map(v=>`<article class="video-card"><a class="video-card-image" href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer"><img loading="lazy" src="https://i.ytimg.com/vi/${escapeHtml(v.id)}/hqdefault.jpg" alt="${escapeHtml(v.title)}的影片縮圖"><span aria-hidden="true">▶</span></a><div><h3>${escapeHtml(v.title)}</h3><a href="https://www.youtube.com/watch?v=${escapeHtml(v.id)}" target="_blank" rel="noreferrer">觀看影片 ↗</a>${v.book?`<a href="book.html?id=${escapeHtml(v.book)}">第 ${escapeHtml(v.book)} 本閱讀筆記 ↗</a>`:''}</div></article>`).join('')||'<p>找不到符合的影片。</p>';
   $('#loadMoreVideos').hidden=filtered.length<=state.videoVisibleCount;
 }
